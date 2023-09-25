@@ -1,0 +1,51 @@
+[
+    {
+        "name": "DeskTop",
+        "id": 11
+    },
+    {
+        "name": "Laptop",
+        "id": 13,
+        "Child": [
+            {
+                "brand": "Asus",
+                "id": 2
+            }, {
+                "brand": "HP",
+                "id": 4
+            }, {
+                "brand": "Dell",
+                "id": 6
+            }, {
+                "brand": "Apple",
+                "id": 8
+            }
+        ]
+    },
+    {
+        "name": "Phone",
+        "id": 15
+    },
+    {
+        "name": "UPS",
+        "id": 17
+    }, {
+        "name": "Monitor",
+        "id": 19
+    }, {
+        "name": "Keyboard",
+        "id": 111
+    } {
+        "name": "Mice",
+        "id": 113
+    } {
+        "name": "HeadPhone",
+        "id": 115
+    } {
+        "name": "SSD",
+        "id": 117
+    } {
+        "name": "Casing",
+        "id": 119
+    }
+]

@@ -9,19 +9,140 @@ const Router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <div class="relative group">
-        <button class="text-blue-500 hover:text-blue-600 font-bold py-2 px-4">
-          Hover me
-        </button>
-        <div class="absolute hidden bg-white shadow-lg py-2 rounded">
-         
-          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 1</a>
-          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 2</a>
-          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 3</a>
-        </div>
-      </div>
-      ,
+        element: <p>home</p>
+      
       },
+      {
+        path: "desktop",
+        element: <p>my desktop</p>
+      
+      },
+      {
+        path: "desktopOffer",
+        element: <p>my desktop ofer</p>
+      
+      },
+      {
+        path: "Brand",
+        element: <p>my Brand</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "Mini",
+        element: <p>Apple</p>
+      
+      },
+      {
+        path: "Apple",
+        element: <p>Apple</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+
     ],
   },
   {

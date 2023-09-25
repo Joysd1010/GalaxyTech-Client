@@ -13,6 +13,8 @@ const Footer = () => {
   return (
     <div className="bg-[#270722] px-20 text-gray-400  py-8">
       <div className="flex ">
+        
+
         <div className="flex flex-col gap-5">
           <h3 className="text-white tracking-[3px]">SUPPORT </h3>
           <button className=" rounded-[50px] hover:border-red-500 border-gray-800 border-2 py-3 pl-3 pr-10 flex gap-3 items-center">
@@ -26,7 +28,7 @@ const Footer = () => {
           </button>
           <button className=" rounded-[50px] hover:border-red-500 border-gray-800 border-2 py-3 pl-3 pr-10 flex gap-3 items-center">
             {" "}
-            <BiLogoGmail size={25} color="white" />
+            <BiLogoGmail size={20} color="white" />
             <div class=" h-[3em] w-px  bg-gradient-to-tr from-transparent via-neutral-700 to-transparent opacity-100 dark:opacity-100"></div>
             <div className="flex flex-col items-start">
               <p className="text-xs">Mail Us At</p>
@@ -102,14 +104,14 @@ const Footer = () => {
         <p className=" text-xs">
           Experience the Galaxy Tech mobile app. Get it on :
         </p>
-        <button className="rounded-xl border-[1px] border-gray-400 flex items-center gap-2 p-2">
+        <button className="rounded-xl hover:border-red-500 border-[1px] border-gray-400 flex items-center gap-2 p-2">
           <PiGooglePlayLogo size={25} />
           <div className=" flex flex-col items-start leading-[12px]">
             <p className=" text-[10px]">Download from</p>{" "}
             <h1 className="font-semibold text-white">Google Play</h1>
           </div>
         </button>
-        <button className="rounded-xl border-[1px] border-gray-400 flex items-center gap-2 p-2">
+        <button className="rounded-xl hover:border-red-500 border-[1px] border-gray-400 flex items-center gap-2 p-2">
           <LiaAppStoreIos size={25} />
           <div className=" flex flex-col items-start leading-[12px]">
             <p className=" text-[10px]">Download from</p>{" "}

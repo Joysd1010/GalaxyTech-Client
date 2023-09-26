@@ -43,6 +43,101 @@ const Router = createBrowserRouter([
       
       },
       {
+        path: "laptop",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "intelpc",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "amdpc",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "Asus",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "HP",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "Dell",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "MacBook",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "allLaptop",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
+        path: "AllPC",
+        element: <p>home</p>
+      
+      },
+      {
         path: "AllPC",
         element: <p>home</p>
       

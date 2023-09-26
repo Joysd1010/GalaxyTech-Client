@@ -16,14 +16,14 @@ const Header = () => {
 
 
   return (
-    <div className="px-10 bg-[#270722]">
+    <div className="px-10 py-3 bg-[#270722]">
       <div className="flex items-center justify-around">
         <img src={logo} className=" w-36" />
-        <div>
+        <div >
           <input
             type="text"
             placeholder=" Search"
-            className="  inset-x-0 inset-y-0 dark:shadow-gray-800 outline-none shadow-inner rounded-lg pl-3 py-2 "
+            className=" w-[400px] inset-x-0 inset-y-0 dark:shadow-gray-800 outline-none shadow-inner rounded-lg pl-3 py-2 "
           />
           <button className="relative right-7">
             <BsSearch />
@@ -66,7 +66,7 @@ const Header = () => {
           </div>
         </div>
         <Link>
-          <button className="group relative px-5 py-2.5 inline-flex justify-center items-center  rounded-md bg-gradient-to-r from-blue-500 via-red-500 to-pink-500 tracking-wide text-base text-white font-medium antialiased overflow-hidden active:top-0.5 focus:outline-none">
+          <button className="group relative px-5 py-2.5 inline-flex justify-center items-center  rounded-md bg-gradient-to-r from-blue-800 via-red-500 to-violet-800 tracking-wide text-base text-white font-medium antialiased overflow-hidden active:top-0.5 focus:outline-none">
             {/* button::before */}
             <span className="absolute top-1/2 left-0 w-full opacity-0 transition-all duration-300 ease-in-out transform -translate-x-full -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-0">
               Custom PC

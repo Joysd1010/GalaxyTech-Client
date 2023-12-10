@@ -1,0 +1,3671 @@
+[
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "6GB",
+      "romSize": "64GB",
+      "modelName": "ExamplePhone Y",
+      "rearCameraSpecification": "Triple camera (64MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Full HD+ IPS LCD",
+      "processorChipsetName": "MediaTek Helio G95",
+      "processorChipsetSize": "12nm",
+      "batterySize": "5000mAh"
+
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1AjvsA36S-fPNLRCb9BQzFlI3vWEPEDuQ",
+      "link2": "https://drive.google.com/uc?export=download&id=1RgpnUgNx2Fymc80dPmxxQYTP4W7XO0A_",
+      "link3": "https://drive.google.com/uc?export=download&id=1HPna0QCD1-rOfoiIRDzPw7DlWELvKkJY",
+      "link4": "https://drive.google.com/uc?export=download&id=1udB3rGsROZqi1lDnP8S4noP5BOQ9Cm48"
+    },
+    "price": {
+      "regularPrice": 399,
+      "discountPrice": 349,
+      "emiPrice": 35
+    },
+    "physicalDescription": {
+      "thickness": "8.2mm",
+      "weight": "180g",
+      "bodyMaterial": "Plastic",
+      "color": "Aqua Blue"
+    },
+    "displayInfo": {
+      "size": "6.4 inches",
+      "displayType": "IPS LCD",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "88%",
+      "displayFeatures": ["HDR support", "60Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Proximity sensor", "Ambient light sensor", "Magnetometer"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "18W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "MediaTek Helio G95",
+      "size": "12nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.05GHz",
+      "GPU": "Mali-G76"
+    },
+    "memory": {
+      "ramSize": "6GB",
+      "romSize": "64GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "eMMC 5.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "2MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "Full HD at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Single speaker",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 11",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 5",
+      "bluetoothDetail": "Bluetooth 5.0",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone Z",
+      "rearCameraSpecification": "Penta camera (108MP + 16MP + 12MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
+      "displayQuality": "Quad HD+ Super AMOLED",
+      "processorChipsetName": "Exynos 990",
+      "processorChipsetSize": "7nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=11B2qqUTySWHtQAtao3n2uUH4peHG0sFF",
+      "link2": "https://drive.google.com/uc?export=download&id=1X7cmGODsfgTGX59VVm9_u2t3wjF1N-OJ",
+      "link3": "https://drive.google.com/uc?export=download&id=1bPJIeGcsjmfcqxNbbFV1qJaYEm_LcKK2",
+      "link4": "https://drive.google.com/uc?export=download&id=1apFVSIkvn9156TTnhrG_BbvNrSIkI2hJ"
+    },
+    "price": {
+      "regularPrice": 899,
+      "discountPrice": 799,
+      "emiPrice": 79
+    },
+    "physicalDescription": {
+      "thickness": "8.5mm",
+      "weight": "190g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Mystic Silver"
+    },
+    "displayInfo": {
+      "size": "6.7 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "93%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Barometer"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "30W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Exynos 990",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.73GHz",
+      "GPU": "Mali-G77 MP11"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 1TB",
+      "romType": "UFS 3.0"
+    },
+    "camera": {
+      "numberOfCameras": 7,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.7", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Quad-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "12MP telephoto" },
+          { "aperture": "f/2.0", "features": ["Macro"], "lensDetail": "8MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensing"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 13",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "4GB",
+      "romSize": "64GB",
+      "modelName": "ExamplePhone A",
+      "rearCameraSpecification": "Dual camera (48MP + 5MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "HD+ IPS LCD",
+      "processorChipsetName": "Qualcomm Snapdragon 665",
+      "processorChipsetSize": "11nm",
+      "batterySize": "4000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1BCBn_pgP5R7uybODxVbQK050gLQVgezT",
+      "link2": "https://drive.google.com/uc?export=download&id=1IZalQnUfoPoWKOvLStJ53b9lpeUrS_E_",
+      "link3": "https://drive.google.com/uc?export=download&id=1xXNfBP661JQoAfNce9BrAmvOnhsi6Qyd",
+      "link4": "https://drive.google.com/uc?export=download&id=1zQNPQn_s6wlDBREO2F2o-xCjFJ7djlWY"
+    },
+    "price": {
+      "regularPrice": 299,
+      "discountPrice": 249,
+      "emiPrice": 25
+    },
+    "physicalDescription": {
+      "thickness": "8.0mm",
+      "weight": "170g",
+      "bodyMaterial": "Plastic",
+      "color": "Pearl White"
+    },
+    "displayInfo": {
+      "size": "6.2 inches",
+      "displayType": "IPS LCD",
+      "resolution": "HD+ (720 x 1520 pixels)",
+      "screenToBodyRatio": "82%",
+      "displayFeatures": ["60Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Proximity sensor", "Ambient light sensor"],
+      "facelock": "No",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4000mAh",
+      "chargingWatt": "15W",
+      "chargerType": "Micro-USB"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 665",
+      "size": "11nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.0GHz",
+      "GPU": "Adreno 610"
+    },
+    "memory": {
+      "ramSize": "4GB",
+      "romSize": "64GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "eMMC 5.1"
+    },
+    "camera": {
+      "numberOfCameras": 3,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Depth sensing"], "lensDetail": "5MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "Full HD at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Single speaker",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 12",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 5",
+      "bluetoothDetail": "Bluetooth 5.0",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+  
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone B",
+      "rearCameraSpecification": "Triple camera (64MP + 12MP + 5MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Full HD+ AMOLED",
+      "processorChipsetName": "Samsung Exynos 980",
+      "processorChipsetSize": "8nm",
+      "batterySize": "4500mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1urdwJmDV_tmObksEeAA3ev_g82OuJSEM",
+      "link2": "https://drive.google.com/uc?export=download&id=10f244I5TvnEz9m0-IMdnV8Kdk-OmErsR",
+      "link3": "https://drive.google.com/uc?export=download&id=17d8na34c5Orr3ZNLNKf79GDOnO7GEFgJ",
+      "link4": "https://drive.google.com/uc?export=download&id=1gMIeizig15w41xmZ-OwbiDVAn3s_HD2_"
+    },
+    "price": {
+      "regularPrice": 599,
+      "discountPrice": 549,
+      "emiPrice": 49
+    },
+    "physicalDescription": {
+      "thickness": "7.9mm",
+      "weight": "175g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Crimson Red"
+    },
+    "displayInfo": {
+      "size": "6.3 inches",
+      "displayType": "AMOLED",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "91%",
+      "displayFeatures": ["HDR10+", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4500mAh",
+      "chargingWatt": "25W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Samsung Exynos 980",
+      "size": "8nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.2GHz",
+      "GPU": "Mali-G76 MP5"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 2.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Depth sensing"], "lensDetail": "5MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 60fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 13",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+  
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone C",
+      "rearCameraSpecification": "Quad camera (108MP + 12MP + 20MP + 2MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
+      "displayQuality": "Quad HD+ AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 888",
+      "processorChipsetSize": "5nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1ctf9mV9gF_EhC542TClj9WNIe9bFDT3U",
+      "link2": "https://drive.google.com/uc?export=download&id=1CQxm1F_hZ1G8Zn2xmSSedkqJf852Tgd8",
+      "link3": "https://drive.google.com/uc?export=download&id=1MksgK72Gy5LuPK7vatL_KmeggKUrUDq2",
+      "link4": "https://drive.google.com/uc?export=download&id=19kLrX0w9xrNKh8so8MMZTVdIL5S_6C_B"
+    },
+    "price": {
+      "regularPrice": 899,
+      "discountPrice": 799,
+      "emiPrice": 79
+    },
+    "physicalDescription": {
+      "thickness": "7.8mm",
+      "weight": "185g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Starry Black"
+    },
+    "displayInfo": {
+      "size": "6.5 inches",
+      "displayType": "AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "92%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "30W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 888",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.84GHz",
+      "GPU": "Adreno 660"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 1TB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 6,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "20MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "2MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 14",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone D",
+      "rearCameraSpecification": "Triple camera (48MP + 20MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 870",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4800mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1OZzetjn-C9WNcrRqV1HZDWwmUITmmDmK",
+      "link2": "https://drive.google.com/uc?export=download&id=1Abe6kQD_ljP0uZlHIpvkajQxuveTuhv1",
+      "link3": "https://drive.google.com/uc?export=download&id=1dKlkDWtyunGDKEYcvQhAOtW646aRz8FF",
+      "link4": "https://drive.google.com/uc?export=download&id=1YGabHr2_9WrB4C8vAHq8aBYtGquF5ZrZ"
+    },
+    "price": {
+      "regularPrice": 699,
+      "discountPrice": 649,
+      "emiPrice": 69
+    },
+    "physicalDescription": {
+      "thickness": "8.1mm",
+      "weight": "178g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Ocean Blue"
+    },
+    "displayInfo": {
+      "size": "6.4 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "90%",
+      "displayFeatures": ["HDR10+", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4800mAh",
+      "chargingWatt": "33W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 870",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "3.2GHz",
+      "GPU": "Adreno 650"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "20MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "8MP telephoto" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 60fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 15",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone E",
+      "rearCameraSpecification": "Quad camera (108MP + 12MP + 16MP + 5MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
+      "displayQuality": "Quad HD+ AMOLED",
+      "processorChipsetName": "Apple A15 Bionic",
+      "processorChipsetSize": "5nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1W8McRnAyr9Q3Y4NyATX_wxzp1QW9xApL",
+      "link2": "https://drive.google.com/uc?export=download&id=1f-qKw7aVYTK1e2mC8u38IhPEoTgIQr0E",
+      "link3": "https://drive.google.com/uc?export=download&id=10kteC3Jnmb99Ro50mtKNQALRaP8dgFbN",
+      "link4": "https://drive.google.com/uc?export=download&id=1mTmf13EAcZz8IvgzYu4DKAOM5tB_FQK_"
+    },
+    "price": {
+      "regularPrice": 1099,
+      "discountPrice": 999,
+      "emiPrice": 89
+    },
+    "physicalDescription": {
+      "thickness": "7.7mm",
+      "weight": "175g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Space Gray"
+    },
+    "displayInfo": {
+      "size": "6.7 inches",
+      "displayType": "AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "94%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Barometer"],
+      "facelock": "Yes",
+      "fingerprint": "No"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "40W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Apple A15 Bionic",
+      "size": "5nm",
+      "coreCount": "Hexa-core",
+      "clockSpeed": "3.23GHz",
+      "GPU": "Apple GPU"
+    },
+    "memory": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "sdCardSlot": "No",
+      "slotCapacity": "",
+      "romType": "NVMe"
+    },
+    "camera": {
+      "numberOfCameras": 6,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.6", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "16MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "5MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "iOS 16",
+      "uiDetails": "iOS"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "No",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "6GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone F",
+      "rearCameraSpecification": "Triple camera (50MP + 12MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ OLED",
+      "processorChipsetName": "Huawei Kirin 990",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4200mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1sF8E9fflk7mWQI2yJ7vlh4LCZna5kMrr",
+      "link2": "https://drive.google.com/uc?export=download&id=1rIHkuZ41lvx42ibBgOg_j2q6NX7Sgm0m",
+      "link3": "https://drive.google.com/uc?export=download&id=1uExqZ7e4wMtSkPhZ3jQa30cz4vEiOxlq",
+      "link4": "https://drive.google.com/uc?export=download&id=1d1wlvy_wf3aXr5dKkMx4PmBlcYmqd-fv"
+    },
+    "price": {
+      "regularPrice": 799,
+      "discountPrice": 699,
+      "emiPrice": 59
+    },
+    "physicalDescription": {
+      "thickness": "7.5mm",
+      "weight": "170g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Emerald Green"
+    },
+    "displayInfo": {
+      "size": "6.3 inches",
+      "displayType": "OLED",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "88%",
+      "displayFeatures": ["HDR10", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor", "IR blaster"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4200mAh",
+      "chargingWatt": "22.5W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Huawei Kirin 990",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.86GHz",
+      "GPU": "Mali-G76 MP16"
+    },
+    "memory": {
+      "ramSize": "6GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "UFS 3.0"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "50MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "8MP telephoto" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 60fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "EMUI 12",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.1",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "6GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone F",
+      "rearCameraSpecification": "Triple camera (50MP + 12MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ OLED",
+      "processorChipsetName": "Huawei Kirin 990",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4200mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=13X1DpUzXr_Idbm3rBBm5gmtaipxDyJZC",
+      "link2": "https://drive.google.com/uc?export=download&id=1a1Y23DW9Un8Iw95NtUvAfs19_jRHMNJx",
+      "link3": "https://drive.google.com/uc?export=download&id=1-lEp16bqbMjAukkKBXG0WviXfCbIsNZ4",
+      "link4": "https://drive.google.com/uc?export=download&id=1aVJRt6aGSN46Bgqt0RQtedb99K9ZGOLn"
+    },
+    "price": {
+      "regularPrice": 799,
+      "discountPrice": 699,
+      "emiPrice": 59
+    },
+    "physicalDescription": {
+      "thickness": "7.5mm",
+      "weight": "170g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Emerald Green"
+    },
+    "displayInfo": {
+      "size": "6.3 inches",
+      "displayType": "OLED",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "88%",
+      "displayFeatures": ["HDR10", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor", "IR blaster"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4200mAh",
+      "chargingWatt": "22.5W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Huawei Kirin 990",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.86GHz",
+      "GPU": "Mali-G76 MP16"
+    },
+    "memory": {
+      "ramSize": "6GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "UFS 3.0"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "50MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "8MP telephoto" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 60fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "EMUI 12",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.1",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone G",
+      "rearCameraSpecification": "Quad camera (64MP + 16MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "Mediatek Dimensity 1200",
+      "processorChipsetSize": "6nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=126jgzG_FkY6p_q9D3A73tvtMWATuOSed",
+      "link2": "https://drive.google.com/uc?export=download&id=16xujWuE3zGRQtT9M0p9YQU6Fg9RErIZW",
+      "link3": "https://drive.google.com/uc?export=download&id=1_JbqPRjsKwG3YWqBkNJ_VIySOBfEPM0R",
+      "link4": "https://drive.google.com/uc?export=download&id=1D-2RdBbE4NWpZpJAHqDwjJCEh4xNnZvt"
+    },
+    "price": {
+      "regularPrice": 899,
+      "discountPrice": 799,
+      "emiPrice": 69
+    },
+    "physicalDescription": {
+      "thickness": "7.6mm",
+      "weight": "175g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Mystic Black"
+    },
+    "displayInfo": {
+      "size": "6.5 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "91%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor", "IR blaster"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "33W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Mediatek Dimensity 1200",
+      "size": "6nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "3.0GHz",
+      "GPU": "Mali-G77 MC9"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 5,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "8MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "2MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 60fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 13",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone H",
+      "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
+      "displayQuality": "Quad HD+ AMOLED",
+      "processorChipsetName": "Samsung Exynos 2200",
+      "processorChipsetSize": "4nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1on4aoWzUtPJZzKfq9A1bYabe9FDO257w",
+      "link2": "https://drive.google.com/uc?export=download&id=1rs85Bz1TsGDL2q9zmzw9s-ooUTSWYOIc",
+      "link3": "https://drive.google.com/uc?export=download&id=150rTpfsT-fosSMYcDNE9Q2YkiU5WTP8S",
+      "link4": "https://drive.google.com/uc?export=download&id=1X0Jhdhe1ewRCpk-a7AckgtV_iugWMbEH"
+    },
+    "price": {
+      "regularPrice": 999,
+      "discountPrice": 899,
+      "emiPrice": 79
+    },
+    "physicalDescription": {
+      "thickness": "7.7mm",
+      "weight": "180g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Phantom Silver"
+    },
+    "displayInfo": {
+      "size": "6.7 inches",
+      "displayType": "AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "93%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "45W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Samsung Exynos 2200",
+      "size": "4nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "3.2GHz",
+      "GPU": "Mali-G710 MP24"
+    },
+    "memory": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 1TB",
+      "romType": "UFS 4.0"
+    },
+    "camera": {
+      "numberOfCameras": 7,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.6", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "48MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "20MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 14",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone I",
+      "rearCameraSpecification": "Triple camera (64MP + 12MP + 5MP)",
+      "frontCameraSpecification": "Single front camera (20MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 765G",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4500mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1on4aoWzUtPJZzKfq9A1bYabe9FDO257w",
+      "link2": "https://drive.google.com/uc?export=download&id=1rs85Bz1TsGDL2q9zmzw9s-ooUTSWYOIc",
+      "link3": "https://drive.google.com/uc?export=download&id=150rTpfsT-fosSMYcDNE9Q2YkiU5WTP8S",
+      "link4": "https://drive.google.com/uc?export=download&id=1X0Jhdhe1ewRCpk-a7AckgtV_iugWMbEH"
+    },
+    "price": {
+      "regularPrice": 749,
+      "discountPrice": 699,
+      "emiPrice": 59
+    },
+    "physicalDescription": {
+      "thickness": "8.2mm",
+      "weight": "182g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Sapphire Blue"
+    },
+    "displayInfo": {
+      "size": "6.4 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "90%",
+      "displayFeatures": ["HDR10+", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4500mAh",
+      "chargingWatt": "25W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 765G",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.4GHz",
+      "GPU": "Adreno 620"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 2.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "5MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "20MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 60fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 15",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone J",
+      "rearCameraSpecification": "Quad camera (108MP + 20MP + 12MP + 8MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
+      "displayQuality": "Quad HD+ AMOLED",
+      "processorChipsetName": "Samsung Exynos 1280",
+      "processorChipsetSize": "6nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1IUYuPOaJRnKDJRpG-v_-rBER8Mbz2Ng1",
+      "link2": "https://drive.google.com/uc?export=download&id=18Nz2qkhgSUhxRjNAdRmpaqDh0RqCIXyH",
+      "link3": "https://drive.google.com/uc?export=download&id=1kIy7LqW4RVN3kOh3uS5nXxadCttEm1eE",
+      "link4": "https://drive.google.com/uc?export=download&id=18mWXeFmLuBRqCjMedKuPO5bE2vXtWqdT"
+    },
+    "price": {
+      "regularPrice": 849,
+      "discountPrice": 799,
+      "emiPrice": 69
+    },
+    "physicalDescription": {
+      "thickness": "7.8mm",
+      "weight": "178g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Starry Black"
+    },
+    "displayInfo": {
+      "size": "6.6 inches",
+      "displayType": "AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "92%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "40W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Samsung Exynos 1280",
+      "size": "6nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.9GHz",
+      "GPU": "Mali-G78 MP12"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 6,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.6", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "20MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "12MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 16",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone K",
+      "rearCameraSpecification": "Triple camera (48MP + 8MP + 5MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 870",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4500mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1Q5Qne6SK7LRneA-SvDVjM9ssD0w7Qg8r",
+      "link2": "https://drive.google.com/uc?export=download&id=18i0NDeWZROq-HNffb52Xqh6FVEZ-Ajft",
+      "link3": "https://drive.google.com/uc?export=download&id=1opIJOyzC-jQ_CbBOgwR3tki116jMgmVO",
+      "link4": "https://drive.google.com/uc?export=download&id=1Ji93ZXo4TDhcshoaOKVChTibBgBe4U3-"
+    },
+    "price": {
+      "regularPrice": 699,
+      "discountPrice": 649,
+      "emiPrice": 54
+    },
+    "physicalDescription": {
+      "thickness": "8.5mm",
+      "weight": "185g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Cerulean Blue"
+    },
+    "displayInfo": {
+      "size": "6.5 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "91%",
+      "displayFeatures": ["HDR10+", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4500mAh",
+      "chargingWatt": "30W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 870",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "3.2GHz",
+      "GPU": "Adreno 650"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "5MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 60fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 17",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone L",
+      "rearCameraSpecification": "Quad camera (64MP + 16MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "MediaTek Dimensity 1100",
+      "processorChipsetSize": "6nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1IJQXjjcsT0XYlbVrJ5RzJoJFcDkFgOSH",
+      "link2": "https://drive.google.com/uc?export=download&id=1hehXwgb-_Ni7pMPvb05EXuwIfoETHIAi",
+      "link3": "https://drive.google.com/uc?export=download&id=1sYMESm6y4RW0yOnRrBWSCu_dZ5cRr4x5",
+      "link4": "https://drive.google.com/uc?export=download&id=1yEhv17VRUk96YYAjJHcDX6HwL7AR6ufG"
+    },
+    "price": {
+      "regularPrice": 799,
+      "discountPrice": 749,
+      "emiPrice": 64
+    },
+    "physicalDescription": {
+      "thickness": "7.9mm",
+      "weight": "180g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Mystic Silver"
+    },
+    "displayInfo": {
+      "size": "6.4 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "92%",
+      "displayFeatures": ["HDR10+", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "33W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "MediaTek Dimensity 1100",
+      "size": "6nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.6GHz",
+      "GPU": "Mali-G77 MC9"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 5,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 60fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 18",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone M",
+      "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 5MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 16MP)",
+      "displayQuality": "Quad HD+ AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 888",
+      "processorChipsetSize": "5nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1cl5PepcGoQB7Z1m2CGDydjfUXaNH2mQt",
+      "link2": "https://drive.google.com/uc?export=download&id=1niGKiGqQhERXP4yYYv6-t_n52o5IHzsC",
+      "link3": "https://drive.google.com/uc?export=download&id=1nqM-gJBkbNJCGVgdpN83ExoaFJ78mV5E",
+      "link4": "https://drive.google.com/uc?export=download&id=1xbJmt1PDOAZRcDUCUxcVnxZPVEyTCW9Y"
+    },
+    "price": {
+      "regularPrice": 1099,
+      "discountPrice": 999,
+      "emiPrice": 89
+    },
+    "physicalDescription": {
+      "thickness": "8.0mm",
+      "weight": "188g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Sunset Orange"
+    },
+    "displayInfo": {
+      "size": "6.7 inches",
+      "displayType": "AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "93%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "50W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 888",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.84GHz",
+      "GPU": "Adreno 660"
+    },
+    "memory": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "sdCardSlot": "No",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 7,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.6", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "48MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "20MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "12MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "5MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 19",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone N",
+      "rearCameraSpecification": "Quad camera (48MP + 12MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ IPS LCD",
+      "processorChipsetName": "Qualcomm Snapdragon 750G",
+      "processorChipsetSize": "8nm",
+      "batterySize": "4000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1UTM6FLRyXHYKHhMWEA1kiQe8AFWOgfzZ",
+      "link2": "https://drive.google.com/uc?export=download&id=1ukUXXKYBWujMYhchikRYer298nwtRf7d",
+      "link3": "https://drive.google.com/uc?export=download&id=1qV29Cbxw7On2BBownjr8_ipGmHQSqC4-",
+      "link4": "https://drive.google.com/uc?export=download&id=1b9x7xr_MnOtJBMY6VdgZlMNsdb9-K7RI"
+    },
+    "price": {
+      "regularPrice": 599,
+      "discountPrice": 549,
+      "emiPrice": 45
+    },
+    "physicalDescription": {
+      "thickness": "8.4mm",
+      "weight": "175g",
+      "bodyMaterial": "Plastic",
+      "color": "Midnight Black"
+    },
+    "displayInfo": {
+      "size": "6.3 inches",
+      "displayType": "IPS LCD",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "85%",
+      "displayFeatures": ["HDR10", "60Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4000mAh",
+      "chargingWatt": "18W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 750G",
+      "size": "8nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.2GHz",
+      "GPU": "Adreno 619"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 2.2"
+    },
+    "camera": {
+      "numberOfCameras": 5,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Mono speaker",
+      "microphone": "Single microphone",
+      "speakerFeatures": ["Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "No"
+    },
+    "os": {
+      "operatingSystem": "Android 20",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.1",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone P",
+      "rearCameraSpecification": "Triple camera (64MP + 16MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Quad HD+ AMOLED",
+      "processorChipsetName": "Samsung Exynos 2100",
+      "processorChipsetSize": "5nm",
+      "batterySize": "4500mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=16vg4_zonCmGF-nYktXMrOd411j7kFnxm",
+      "link2": "https://drive.google.com/uc?export=download&id=1N8bNReX2w9QY3ojcsvD4N_L4LlHgVcWm",
+      "link3": "https://drive.google.com/uc?export=download&id=1B808-bUE9jUwfI431mn6FlDh4PIgp4Is",
+      "link4": "https://drive.google.com/uc?export=download&id=1dfcn9Pzf-Bs3EJ6eyhfWcmlUrNOuaOzH"
+    },
+    "price": {
+      "regularPrice": 899,
+      "discountPrice": 849,
+      "emiPrice": 71
+    },
+    "physicalDescription": {
+      "thickness": "7.7mm",
+      "weight": "172g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Pearl White"
+    },
+    "displayInfo": {
+      "size": "6.5 inches",
+      "displayType": "AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "94%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4500mAh",
+      "chargingWatt": "40W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Samsung Exynos 2100",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.9GHz",
+      "GPU": "Mali-G78 MP14"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "sdCardSlot": "No",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "8MP telephoto" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 21",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone Q",
+      "rearCameraSpecification": "Quad camera (64MP + 8MP + 5MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "MediaTek Helio G95",
+      "processorChipsetSize": "12nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1qENWDG5C3HLvIxWqA6b__uysjP7hmw7P",
+      "link2": "https://drive.google.com/uc?export=download&id=13_EQaQAcq7yaimt3cYgLuxqedqcK5U6y",
+      "link3": "https://drive.google.com/uc?export=download&id=13SMH3rKbLfqUL9YIj8fcD42XJ-VXH-Fy",
+      "link4": "https://drive.google.com/uc?export=download&id=11T7DkAXkgs_E_SpOhMLa-YPX6y-v-N7W"
+    },
+    "price": {
+      "regularPrice": 499,
+      "discountPrice": 449,
+      "emiPrice": 37
+    },
+    "physicalDescription": {
+      "thickness": "8.6mm",
+      "weight": "190g",
+      "bodyMaterial": "Plastic",
+      "color": "Aurora Blue"
+    },
+    "displayInfo": {
+      "size": "6.4 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "90%",
+      "displayFeatures": ["HDR10", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "25W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "MediaTek Helio G95",
+      "size": "12nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.05GHz",
+      "GPU": "Mali-G76 MC4"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "eMMC 5.1"
+    },
+    "camera": {
+      "numberOfCameras": 5,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "5MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Mono speaker",
+      "microphone": "Single microphone",
+      "speakerFeatures": ["Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "No"
+    },
+    "os": {
+      "operatingSystem": "Android 22",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.1",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone R",
+      "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 8MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 16MP)",
+      "displayQuality": "Quad HD+ AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 888",
+      "processorChipsetSize": "5nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1DIyCm7JZ9nnIsP0pCij1xHJifwbLy6EQ",
+      "link2": "https://drive.google.com/uc?export=download&id=1hsxqV6p2VD3RdlAVGrd3ilIJ-4ndvHgC",
+      "link3": "https://drive.google.com/uc?export=download&id=1_3ZwFv_IJ8ZnhE_IXSc-Io2uDDjLrafd",
+      "link4": "https://drive.google.com/uc?export=download&id=1dwtofxgRGMDH7IMlzcsSJgdgiE9Vmk1a"
+    },
+    "price": {
+      "regularPrice": 1199,
+      "discountPrice": 1099,
+      "emiPrice": 91
+    },
+    "physicalDescription": {
+      "thickness": "8.1mm",
+      "weight": "180g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Cosmic Black"
+    },
+    "displayInfo": {
+      "size": "6.6 inches",
+      "displayType": "AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "95%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "55W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 888",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.84GHz",
+      "GPU": "Adreno 660"
+    },
+    "memory": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "sdCardSlot": "No",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 7,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.6", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "48MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "20MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "12MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "8MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 23",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone X",
+      "rearCameraSpecification": "Quad camera (48MP + 16MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Full HD+ AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 765G",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4500mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1lrGoxbErT_WfnHcPCXhBfbNF9zT5Lovm",
+      "link2": "https://drive.google.com/uc?export=download&id=1FrSnkJ8DLugzt0nFOIKFRJPOgQKj_ut1",
+      "link3": "https://drive.google.com/uc?export=download&id=1gnWG3ak7-SCBgHkXZ3we14_lXUweNkX7",
+      "link4": "https://drive.google.com/uc?export=download&id=1qUnFluL6m1zTLfJsFV0ZdabyoJPMI-tZ"
+    },
+    "price": {
+      "regularPrice": 799,
+      "discountPrice": 749,
+      "emiPrice": 63
+    },
+    "physicalDescription": {
+      "thickness": "7.8mm",
+      "weight": "175g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Midnight Blue"
+    },
+    "displayInfo": {
+      "size": "6.5 inches",
+      "displayType": "AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "91%",
+      "displayFeatures": ["HDR10", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4500mAh",
+      "chargingWatt": "30W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 765G",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.4GHz",
+      "GPU": "Adreno 620"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 2.1"
+    },
+    "camera": {
+      "numberOfCameras": 5,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 24",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "6GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone Y",
+      "rearCameraSpecification": "Triple camera (48MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ IPS LCD",
+      "processorChipsetName": "MediaTek Helio P70",
+      "processorChipsetSize": "12nm",
+      "batterySize": "4000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1uLJ2PWnLB_euPJNEj2kkM8W2tPNT3td-",
+      "link2": "https://drive.google.com/uc?export=download&id=1GORlH2kx1F4iScoFYCPHJJ2M5yxNhwSO",
+      "link3": "https://drive.google.com/uc?export=download&id=1YJHM9Ubiw5LeGeF3AXAbNSyV_OUJozww",
+      "link4": "https://drive.google.com/uc?export=download&id=12Fb8ZgTq_IMKQkp4krZ3L-TAerR6pe0z"
+    },
+    "price": {
+      "regularPrice": 399,
+      "discountPrice": 349,
+      "emiPrice": 29
+    },
+    "physicalDescription": {
+      "thickness": "8.3mm",
+      "weight": "170g",
+      "bodyMaterial": "Plastic",
+      "color": "Pearl White"
+    },
+    "displayInfo": {
+      "size": "6.2 inches",
+      "displayType": "IPS LCD",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "88%",
+      "displayFeatures": ["HDR", "60Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4000mAh",
+      "chargingWatt": "18W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "MediaTek Helio P70",
+      "size": "12nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.1GHz",
+      "GPU": "Mali-G72 MP3"
+    },
+    "memory": {
+      "ramSize": "6GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "eMMC 5.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "Full HD at 30fps",
+        "rearCamera": "Full HD at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Mono speaker",
+      "microphone": "Single microphone",
+      "speakerFeatures": ["Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "No"
+    },
+    "os": {
+      "operatingSystem": "Android 25",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 5",
+      "bluetoothDetail": "Bluetooth 5.0",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone Z",
+      "rearCameraSpecification": "Penta camera (108MP + 16MP + 12MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
+      "displayQuality": "Quad HD+ Super AMOLED",
+      "processorChipsetName": "Samsung Exynos 2100",
+      "processorChipsetSize": "5nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1ot1aMMzVHCSWppRA8rdwANIcSq73e_i2",
+      "link2": "https://drive.google.com/uc?export=download&id=1Fpqe3RdRvSa4bcdLAqQ_rhfJBbAfsap0",
+      "link3": "https://drive.google.com/uc?export=download&id=1dnIyNaXb-Dmpq6dQKmH144x5JTkButto",
+      "link4": "https://drive.google.com/uc?export=download&id=15ogs9XRXLpbd8495RqLDWk3ehlOBPMF4"
+    },
+    "price": {
+      "regularPrice": 999,
+      "discountPrice": 949,
+      "emiPrice": 79
+    },
+    "physicalDescription": {
+      "thickness": "7.9mm",
+      "weight": "175g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Mystic Bronze"
+    },
+    "displayInfo": {
+      "size": "6.7 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "93%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "45W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Samsung Exynos 2100",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.9GHz",
+      "GPU": "Mali-G78 MP14"
+    },
+    "memory": {
+      "ramSize": "16GB",
+      "romSize": "512GB",
+      "sdCardSlot": "No",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 7,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "12MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 26",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone S",
+      "rearCameraSpecification": "Triple camera (50MP + 16MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (20MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 870",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4700mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1wv_tS_PX0B4IHtFWuCqIuiPPi4W7LK6g",
+      "link2": "https://drive.google.com/uc?export=download&id=1jrmqa-kqbMvNaMOiMyLlelHH194i1hgw",
+      "link3": "https://drive.google.com/uc?export=download&id=1_WKX7je89yHuaHF9OMOqcl3J_QUfnrTZ",
+      "link4": "https://drive.google.com/uc?export=download&id=1_eWFDsaM5aHGTVzsBxwFzRJC50hiVQwk"
+    },
+    "price": {
+      "regularPrice": 699,
+      "discountPrice": 649,
+      "emiPrice": 54
+    },
+    "physicalDescription": {
+      "thickness": "8.0mm",
+      "weight": "180g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Phantom Black"
+    },
+    "displayInfo": {
+      "size": "6.4 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "92%",
+      "displayFeatures": ["HDR10+", "90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4700mAh",
+      "chargingWatt": "33W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 870",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "3.2GHz",
+      "GPU": "Adreno 650"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "50MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "20MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 27",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone Pro",
+      "rearCameraSpecification": "Quad camera (64MP + 20MP + 12MP + 8MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
+      "displayQuality": "Quad HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 888",
+      "processorChipsetSize": "5nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1Y6cZdOw-3NNJTNZX2B24cNYTsW6bKwU-",
+      "link2": "https://drive.google.com/uc?export=download&id=1UX8pgc6K_vRACffsitD6KoD6628U1uCK",
+      "link3": "https://drive.google.com/uc?export=download&id=1ZRywAdbOZ1jlfT6gP56E3JNN63HM_uC0",
+      "link4": "https://drive.google.com/uc?export=download&id=1fx5TVnNuX235ssdoml3HW7aO-all4i4T"
+    },
+    "price": {
+      "regularPrice": 1199,
+      "discountPrice": 1099,
+      "emiPrice": 91
+    },
+    "physicalDescription": {
+      "thickness": "7.7mm",
+      "weight": "185g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Mystic Silver"
+    },
+    "displayInfo": {
+      "size": "6.6 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "94%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "65W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 888",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.84GHz",
+      "GPU": "Adreno 660"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "512GB",
+      "sdCardSlot": "No",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 6,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "20MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "12MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 28",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone Lite",
+      "rearCameraSpecification": "Dual camera (20MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (12MP)",
+      "displayQuality": "Full HD+ LCD",
+      "processorChipsetName": "MediaTek Helio G80",
+      "processorChipsetSize": "12nm",
+      "batterySize": "4000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1Ip62DpbrBCmwuTAgwIkpdmrUINLvZr-f",
+      "link2": "https://drive.google.com/uc?export=download&id=1r796Hkxq_GWEPpM8sA5syW3I6MpTLfkZ",
+      "link3": "https://drive.google.com/uc?export=download&id=1HOFAOBRKdbCzPcZo2eYkwnyrSm3BFEAO",
+      "link4": "https://drive.google.com/uc?export=download&id=1fOgrKX7WEm9lZNxWXWvPVYQ8yWALqteo"
+    },
+    "price": {
+      "regularPrice": 299,
+      "discountPrice": 249,
+      "emiPrice": 20
+    },
+    "physicalDescription": {
+      "thickness": "8.5mm",
+      "weight": "170g",
+      "bodyMaterial": "Plastic",
+      "color": "Aqua Blue"
+    },
+    "displayInfo": {
+      "size": "6.2 inches",
+      "displayType": "LCD",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "87%",
+      "displayFeatures": ["60Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "No",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4000mAh",
+      "chargingWatt": "18W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "MediaTek Helio G80",
+      "size": "12nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.0GHz",
+      "GPU": "Mali-G52 MC2"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "eMMC 5.1"
+    },
+    "camera": {
+      "numberOfCameras": 3,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "20MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "12MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "Full HD at 30fps",
+        "rearCamera": "Full HD at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Mono speaker",
+      "microphone": "Single microphone",
+      "speakerFeatures": ["Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "No"
+    },
+    "os": {
+      "operatingSystem": "Android 29",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 5",
+      "bluetoothDetail": "Bluetooth 5.0",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone A1",
+      "rearCameraSpecification": "Triple camera (48MP + 12MP + 5MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ AMOLED",
+      "processorChipsetName": "Samsung Exynos 850",
+      "processorChipsetSize": "8nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1YTqjhkR4kIfEqnJfJ0pmtsVkFjFC4CFg",
+      "link2": "https://drive.google.com/uc?export=download&id=11BxsKurGNxqx0BVONHDvoQ0DpU-q87A3",
+      "link3": "https://drive.google.com/uc?export=download&id=1ldXQUZEc4pty_z1tWRxiPafU_yNeoRxW",
+      "link4": "https://drive.google.com/uc?export=download&id=18GGls6WJceKBe0WJTl_5ybDiPiN10ShD"
+    },
+    "price": {
+      "regularPrice": 349,
+      "discountPrice": 299,
+      "emiPrice": 25
+    },
+    "physicalDescription": {
+      "thickness": "8.2mm",
+      "weight": "175g",
+      "bodyMaterial": "Plastic",
+      "color": "Coral Red"
+    },
+    "displayInfo": {
+      "size": "6.5 inches",
+      "displayType": "AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "90%",
+      "displayFeatures": ["HDR10"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "No",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "18W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Samsung Exynos 850",
+      "size": "8nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.0GHz",
+      "GPU": "Mali-G52"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "eMMC 5.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "5MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "Full HD at 30fps",
+        "rearCamera": "Full HD at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Mono speaker",
+      "microphone": "Single microphone",
+      "speakerFeatures": ["Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "No"
+    },
+    "os": {
+      "operatingSystem": "Android 30",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.1",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone X2",
+      "rearCameraSpecification": "Quad camera (64MP + 16MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Quad HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 870",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4500mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1WQ9RMOsYMB4fOV3_XxK3b5fKOjOhqLMS",
+      "link2": "https://drive.google.com/uc?export=download&id=1_TdD9hDuEAFnsXpddWSgo4vh3ZLAp0Mm",
+      "link3": "https://drive.google.com/uc?export=download&id=1kuq5DQx8bXSwPxQeJfEF07EcRxsmIBjX",
+      "link4": "https://drive.google.com/uc?export=download&id=1kOERu92YUqNe7BzOtdPt1LrwdWkV80q7"
+    },
+    "price": {
+      "regularPrice": 799,
+      "discountPrice": 749,
+      "emiPrice": 62
+    },
+    "physicalDescription": {
+      "thickness": "8.1mm",
+      "weight": "178g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Midnight Black"
+    },
+    "displayInfo": {
+      "size": "6.5 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "91%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4500mAh",
+      "chargingWatt": "33W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 870",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "3.2GHz",
+      "GPU": "Adreno 650"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "512GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 1TB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 5,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 31",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "6GB",
+      "romSize": "128GB",
+      "modelName": "ExamplePhone E1",
+      "rearCameraSpecification": "Dual camera (48MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (16MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "MediaTek Dimensity 720",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1XPmOMFObXubpcAgiHtTgUr_28a_Lsmse",
+      "link2": "https://drive.google.com/uc?export=download&id=1ezG1BFrziH4uF7IX3vX3AZ1quTiTStOY",
+      "link3": "https://drive.google.com/uc?export=download&id=1DyIXVHBa6hhu2sqJVMwy6B7IDd00eCEJ",
+      "link4": "https://drive.google.com/uc?export=download&id=1_L9LQ5XwdsybM7ZV0Ynkhopu3aap4DKR"
+    },
+    "price": {
+      "regularPrice": 449,
+      "discountPrice": 399,
+      "emiPrice": 33
+    },
+    "physicalDescription": {
+      "thickness": "8.3mm",
+      "weight": "172g",
+      "bodyMaterial": "Glass and Plastic",
+      "color": "Sunset Orange"
+    },
+    "displayInfo": {
+      "size": "6.4 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "89%",
+      "displayFeatures": ["HDR10"]
+    },
+    "sensors": {
+      "sensorList": ["Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "No",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4000mAh",
+      "chargingWatt": "25W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "MediaTek Dimensity 720",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.0GHz",
+      "GPU": "Mali-G57 MC3"
+    },
+    "memory": {
+      "ramSize": "6GB",
+      "romSize": "128GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 256GB",
+      "romType": "UFS 2.1"
+    },
+    "camera": {
+      "numberOfCameras": 3,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "8MP ultra-wide" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "16MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "Full HD at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Mono speaker",
+      "microphone": "Single microphone",
+      "speakerFeatures": ["Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "No"
+    },
+    "os": {
+      "operatingSystem": "Android 32",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "4G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.1",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "16GB",
+      "romSize": "1TB",
+      "modelName": "ExamplePhone Pro Max",
+      "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 5MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
+      "displayQuality": "Quad HD+ Super AMOLED",
+      "processorChipsetName": "Samsung Exynos 990",
+      "processorChipsetSize": "7nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1VWDWK_uoPR25eD43U85-heZ-vQZx705H",
+      "link2": "https://drive.google.com/uc?export=download&id=10iDYAmOgATDlH0GZvswIx8hlA_7AMbMy",
+      "link3": "https://drive.google.com/uc?export=download&id=14r_dfCqE2vxLJZZoGx8T_-bg63Lmlwoh",
+      "link4": "https://drive.google.com/uc?export=download&id=11vG_n1uVByn81K1YINK0AmqviuGJ0fqP"
+    },
+    "price": {
+      "regularPrice": 1399,
+      "discountPrice": 1299,
+      "emiPrice": 108
+    },
+    "physicalDescription": {
+      "thickness": "8.5mm",
+      "weight": "195g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Mystic Bronze"
+    },
+    "displayInfo": {
+      "size": "6.7 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "93%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "45W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Samsung Exynos 990",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.73GHz",
+      "GPU": "Mali-G77 MP11"
+    },
+    "memory": {
+      "ramSize": "16GB",
+      "romSize": "1TB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 1TB",
+      "romType": "UFS 3.0"
+    },
+    "camera": {
+      "numberOfCameras": 7,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Quad-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "48MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "20MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "12MP depth sensor" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "5MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 33",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "6GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone Z3",
+      "rearCameraSpecification": "Triple camera (64MP + 16MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (20MP)",
+      "displayQuality": "Full HD+ LCD",
+      "processorChipsetName": "Qualcomm Snapdragon 765G",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4500mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1Y2pWws0FdKsPvar3bvrhe-Y132v-4EdR",
+      "link2": "https://drive.google.com/uc?export=download&id=1DubE21mgkP8HZrLXczYI1spEXIT4Vwf_",
+      "link3": "https://drive.google.com/uc?export=download&id=19pXJu3zZbLUUXQAmdPelAE3Xk_ngiHZW",
+      "link4": "https://drive.google.com/uc?export=download&id=1ndiWiq4_Fk4YdfXmtwFrc3t8WswPWjHz"
+    },
+    "price": {
+      "regularPrice": 599,
+      "discountPrice": 549,
+      "emiPrice": 45
+    },
+    "physicalDescription": {
+      "thickness": "7.9mm",
+      "weight": "170g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Ocean Blue"
+    },
+    "displayInfo": {
+      "size": "6.3 inches",
+      "displayType": "LCD",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "88%",
+      "displayFeatures": ["90Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4500mAh",
+      "chargingWatt": "30W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 765G",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.4GHz",
+      "GPU": "Adreno 620"
+    },
+    "memory": {
+      "ramSize": "6GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 2.1"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "8MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "20MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 34",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone F4",
+      "rearCameraSpecification": "Quad camera (48MP + 16MP + 8MP + 2MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 750G",
+      "processorChipsetSize": "8nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1CmdpO-rW_-rH3WkR6C8kdaNJtr8tUk9y",
+      "link2": "https://drive.google.com/uc?export=download&id=165UkX3e84_PWfCboxo7M4N5Zz21N29I0",
+      "link3": "https://drive.google.com/uc?export=download&id=1S1-FiDhKhhgAtIAv1iGJrMJJgPiKkSFv",
+      "link4": "https://drive.google.com/uc?export=download&id=1R-r3tUKG65jAlmnyJx3N_vo2nWfSpLNu"
+    },
+    "price": {
+      "regularPrice": 499,
+      "discountPrice": 449,
+      "emiPrice": 37
+    },
+    "physicalDescription": {
+      "thickness": "7.8mm",
+      "weight": "168g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Midnight Black"
+    },
+    "displayInfo": {
+      "size": "6.5 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2400 pixels)",
+      "screenToBodyRatio": "91%",
+      "displayFeatures": ["HDR10"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "33W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 750G",
+      "size": "8nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.2GHz",
+      "GPU": "Adreno 619"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 2.2"
+    },
+    "camera": {
+      "numberOfCameras": 5,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "48MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "8MP macro" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "2MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 35",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone M7",
+      "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 5MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
+      "displayQuality": "Quad HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 888",
+      "processorChipsetSize": "5nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=125FWxruSc70BSv6nSkuCYs0U6Ix0FJKV",
+      "link2": "https://drive.google.com/uc?export=download&id=1GnxIjKnLVdU73aBKzBevQnnX6rXvsPof",
+      "link3": "https://drive.google.com/uc?export=download&id=15SIjUFtHkrgb6-kN-Oc-FbHggI0_adXf",
+      "link4": "https://drive.google.com/uc?export=download&id=1kjv_MOU5kPH9miGnkHGwHqxdgk55Ta8t"
+    },
+    "price": {
+      "regularPrice": 1499,
+      "discountPrice": 1399,
+      "emiPrice": 116
+    },
+    "physicalDescription": {
+      "thickness": "8.6mm",
+      "weight": "200g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Celestial Blue"
+    },
+    "displayInfo": {
+      "size": "6.8 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "94%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "65W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 888",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.84GHz",
+      "GPU": "Adreno 660"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "512GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 1TB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 7,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.7", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "48MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "20MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "12MP depth sensor" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "5MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 36",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "8GB",
+      "romSize": "256GB",
+      "modelName": "ExamplePhone R1",
+      "rearCameraSpecification": "Triple camera (64MP + 16MP + 8MP)",
+      "frontCameraSpecification": "Single front camera (20MP)",
+      "displayQuality": "Full HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 870",
+      "processorChipsetSize": "7nm",
+      "batterySize": "4500mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1Gk6c3oKT5d7Q1HXYKAJTJLRZB71wBzBN",
+      "link2": "https://drive.google.com/uc?export=download&id=1VAg26A4z1EK4GndPCLNRCXxUktYdTCdq",
+      "link3": "https://drive.google.com/uc?export=download&id=1Ae1pjEw7Q6yNCVJGk5-CaOhLCnDgm0i-",
+      "link4": "https://drive.google.com/uc?export=download&id=1A-W-437oAFVTrWfxg1oLFVbeow-Sdf50"
+    },
+    "price": {
+      "regularPrice": 699,
+      "discountPrice": 649,
+      "emiPrice": 54
+    },
+    "physicalDescription": {
+      "thickness": "8.0mm",
+      "weight": "175g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Aurora Blue"
+    },
+    "displayInfo": {
+      "size": "6.4 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Full HD+ (1080 x 2340 pixels)",
+      "screenToBodyRatio": "90%",
+      "displayFeatures": ["HDR10"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "4500mAh",
+      "chargingWatt": "33W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 870",
+      "size": "7nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "3.2GHz",
+      "GPU": "Adreno 650"
+    },
+    "memory": {
+      "ramSize": "8GB",
+      "romSize": "256GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 512GB",
+      "romType": "UFS 3.0"
+    },
+    "camera": {
+      "numberOfCameras": 4,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "64MP wide", "flashDetail": "Dual-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "16MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "8MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "20MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 30fps",
+        "rearCamera": "4K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 37",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "3.5mm"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "12GB",
+      "romSize": "512GB",
+      "modelName": "ExamplePhone X2",
+      "rearCameraSpecification": "Quad camera (108MP + 48MP + 20MP + 12MP)",
+      "frontCameraSpecification": "Single front camera (32MP)",
+      "displayQuality": "Quad HD+ Super AMOLED",
+      "processorChipsetName": "Samsung Exynos 2100",
+      "processorChipsetSize": "5nm",
+      "batterySize": "5000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1C_U2ftXrybwqt-iRx0fBQENoGjy7ObIl",
+      "link2": "https://drive.google.com/uc?export=download&id=1JKSAS6kW0BF6EHkHpeJ2Pp6cZNpDGzjt",
+      "link3": "https://drive.google.com/uc?export=download&id=13InNAnnJp3cu1vOwuc5E8a90VzVh4r-h",
+      "link4": "https://drive.google.com/uc?export=download&id=1JyCIrtnlac8gmWwf8x72F4tchR_j32ss"
+    },
+    "price": {
+      "regularPrice": 1099,
+      "discountPrice": 999,
+      "emiPrice": 83
+    },
+    "physicalDescription": {
+      "thickness": "8.2mm",
+      "weight": "180g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Mystic Black"
+    },
+    "displayInfo": {
+      "size": "6.6 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "92%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "5000mAh",
+      "chargingWatt": "45W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Samsung Exynos 2100",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.9GHz",
+      "GPU": "Mali-G78 MP14"
+    },
+    "memory": {
+      "ramSize": "12GB",
+      "romSize": "512GB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 1TB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 5,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.8", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Quad-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "48MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "20MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "12MP depth sensor" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 38",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  },
+
+  {
+    "quantity":20,
+    "keyFeatures": {
+      "ramSize": "16GB",
+      "romSize": "1TB",
+      "modelName": "ExamplePhone Ultra",
+      "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 5MP)",
+      "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
+      "displayQuality": "Quad HD+ Super AMOLED",
+      "processorChipsetName": "Qualcomm Snapdragon 888",
+      "processorChipsetSize": "5nm",
+      "batterySize": "6000mAh"
+    },
+    "image": {
+      "link1": "https://drive.google.com/uc?export=download&id=1IZalQnUfoPoWKOvLStJ53b9lpeUrS_E_",
+      "link2": "https://drive.google.com/uc?export=download&id=1BCBn_pgP5R7uybODxVbQK050gLQVgezT",
+      "link3": "https://drive.google.com/uc?export=download&id=1xXNfBP661JQoAfNce9BrAmvOnhsi6Qyd",
+      "link4": "https://drive.google.com/uc?export=download&id=1xXNfBP661JQoAfNce9BrAmvOnhsi6Qyd"
+    },
+    "price": {
+      "regularPrice": 1599,
+      "discountPrice": 1499,
+      "emiPrice": 125
+    },
+    "physicalDescription": {
+      "thickness": "8.3mm",
+      "weight": "210g",
+      "bodyMaterial": "Glass and Aluminum",
+      "color": "Phantom Silver"
+    },
+    "displayInfo": {
+      "size": "6.7 inches",
+      "displayType": "Super AMOLED",
+      "resolution": "Quad HD+ (1440 x 3200 pixels)",
+      "screenToBodyRatio": "95%",
+      "displayFeatures": ["HDR10+", "120Hz refresh rate"]
+    },
+    "sensors": {
+      "sensorList": ["Face ID", "Accelerometer", "Gyroscope", "Proximity sensor", "Ambient light sensor", "Fingerprint sensor"],
+      "facelock": "Yes",
+      "fingerprint": "Yes"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyProvider": "Manufacturer's Warranty"
+    },
+    "battery": {
+      "batterySize": "6000mAh",
+      "chargingWatt": "65W",
+      "chargerType": "USB-C"
+    },
+    "processor": {
+      "chipsetName": "Qualcomm Snapdragon 888",
+      "size": "5nm",
+      "coreCount": "Octa-core",
+      "clockSpeed": "2.84GHz",
+      "GPU": "Adreno 660"
+    },
+    "memory": {
+      "ramSize": "16GB",
+      "romSize": "1TB",
+      "sdCardSlot": "Yes",
+      "slotCapacity": "Up to 1TB",
+      "romType": "UFS 3.1"
+    },
+    "camera": {
+      "numberOfCameras": 7,
+      "cameraSpecification": {
+        "rearCamera": [
+          { "aperture": "f/1.7", "features": ["Night mode", "Portrait mode"], "lensDetail": "108MP wide", "flashDetail": "Quad-LED" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "48MP ultra-wide" },
+          { "aperture": "f/2.4", "features": ["Telephoto"], "lensDetail": "20MP telephoto" },
+          { "aperture": "f/2.4", "features": ["Depth sensor"], "lensDetail": "12MP depth sensor" },
+          { "aperture": "f/2.4", "features": ["Macro"], "lensDetail": "5MP macro" }
+        ],
+        "frontCamera": [
+          { "aperture": "f/2.0", "features": ["Portrait mode"], "lensDetail": "32MP wide" },
+          { "aperture": "f/2.2", "features": ["Ultra-wide"], "lensDetail": "12MP ultra-wide" }
+        ]
+      },
+      "videoRecordingDetail": {
+        "frontCamera": "4K at 60fps",
+        "rearCamera": "8K at 30fps"
+      }
+    },
+    "audio": {
+      "speaker": "Stereo speakers",
+      "microphone": "Dual-microphone",
+      "speakerFeatures": ["Dolby Atmos", "Hi-Res Audio"],
+      "secondaryNoiseCancellationMic": "Yes"
+    },
+    "os": {
+      "operatingSystem": "Android 39",
+      "uiDetails": "Custom UI"
+    },
+    "network": {
+      "bandDetail": "5G support",
+      "wifiDetail": "Wi-Fi 6E",
+      "bluetoothDetail": "Bluetooth 5.2",
+      "otgSupport": "Yes",
+      "audioJack": "No"
+    }
+  }
+  
+  ]

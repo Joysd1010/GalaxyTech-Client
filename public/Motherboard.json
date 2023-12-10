@@ -1,0 +1,98 @@
+[
+    {
+      "keyFeatures": {
+        "name": "ASUS ROG Strix B550-F Gaming",
+        "modelName": "B550-F Gaming",
+        "brandName": "ASUS",
+        "supportedCPU": "AMD Ryzen 5000 Series",
+        "graphicsOutput": "HDMI, DisplayPort",
+        "specialFeatures": ["ROG SupremeFX Audio", "AI Noise-Canceling Microphone", "Aura Sync RGB Lighting"],
+        "price": {
+          "regular": 200,
+          "discount": 180,
+          "emi": 10
+        }
+      },
+      "basic": {
+        "chipset": "AMD B550",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000"],
+        "audioFeature": "ROG SupremeFX",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://example.com/motherboard1_image1.jpg",
+        "https://example.com/motherboard1_image2.jpg",
+        "https://example.com/motherboard1_image3.jpg"
+      ],
+      "quantity": 80,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Manufacturer's Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["3200 MHz", "3000 MHz", "2933 MHz", "2800 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "dvi": false,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 2 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "MSI MAG B450 Tomahawk",
+        "modelName": "B450 Tomahawk",
+        "brandName": "MSI",
+        "supportedCPU": "AMD Ryzen 3000 Series",
+        "graphicsOutput": "DVI-D, HDMI",
+        "specialFeatures": ["Audio Boost", "Core Boost", "Flash BIOS Button"],
+        "price": {
+          "regular": 120,
+          "discount": 110,
+          "emi": 8
+        }
+      },
+      "basic": {
+        "chipset": "AMD B450",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 3000", "Ryzen 2000", "Ryzen 1000"],
+        "audioFeature": "Audio Boost",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://example.com/motherboard2_image1.jpg",
+        "https://example.com/motherboard2_image2.jpg",
+        "https://example.com/motherboard2_image3.jpg"
+      ],
+      "quantity": 60,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 64,
+        "supportedMemoryBusList": ["3466 MHz", "3200 MHz", "2933 MHz", "2667 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "dvi": true,
+        "usbOutputs": ["USB 3.1 Gen 2", "USB 3.1 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.1 Gen 2 Type-A", "USB 3.1 Gen 1 Type-A", "Audio Jacks"],
+        "tpm": false
+      }
+    }
+    // Add more motherboards as needed
+  ]
+  

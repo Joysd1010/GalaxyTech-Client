@@ -1,0 +1,140 @@
+[
+  {
+    "key": {
+      "modelname": "Dell UltraSharp U2719D",
+      "brand": "Dell",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB-C"],
+      "features": ["InfinityEdge Display", "IPS Panel", "VESA Mount"],
+      "price": {
+        "regular": 400,
+        "discount": 380,
+        "emi": 35
+      },
+      "monitorname": "Dell U2719D"
+    },
+    "power": {
+      "powerConsumption": "35W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 5W"
+      }
+    },
+    "imageLinks": [
+      "https://example.com/hp_elitebook/image1.jpg",
+      "https://example.com/hp_elitebook/image2.jpg",
+      "https://example.com/hp_elitebook/image3.jpg"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "5.4 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "60Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "5ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 30
+  },
+  {
+    "key": {
+      "modelname": "ASUS ROG Swift PG279Q",
+      "brand": "ASUS",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["G-Sync", "165Hz Refresh Rate", "IPS Panel"],
+      "price": {
+        "regular": 600,
+        "discount": 550,
+        "emi": 50
+      },
+      "monitorname": "ASUS PG279Q"
+    },
+    "power": {
+      "powerConsumption": "90W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "3.5mm headphone jack",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["3.5mm headphone jack"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 2W"
+      }
+    },
+    "imageLinks": [
+      "https://example.com/hp_elitebook/image1.jpg",
+      "https://example.com/hp_elitebook/image2.jpg",
+      "https://example.com/hp_elitebook/image3.jpg"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "7.5 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "165Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 25
+  }
+]

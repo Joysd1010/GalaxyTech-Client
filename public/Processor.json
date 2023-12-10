@@ -1,0 +1,47 @@
+[
+  {
+    "keyFeatures": {
+      "brand": "AMD",
+      "model": "Ryzen 7 5800X",
+      "speed": 3.8,
+      "core": 8,
+      "thread": 16,
+      "socket": "AM4",
+      "cache": 32,
+      "name": "AMD Ryzen 7 5000 Series",
+      "price": {
+        "regular": 350,
+        "discount": 320,
+        "emi": 30
+      }
+    },
+    "quantity": 40,
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "Limited Warranty"
+    },
+    "imageLinks": [
+      "https://example.com/hp_elitebook/image2.jpg",
+      "https://example.com/hp_elitebook/image3.jpg"
+    ],
+    "memory": {
+      "maxSize": 128,
+      "supportedTypes": ["DDR4"],
+      "maxMemoryChannels": 2
+    },
+    "basic": {
+      "baseFrequency": 3.8,
+      "boostFrequency": 4.7,
+      "core": 8,
+      "Thread": 16,
+      "defaultTDP": "105W",
+      "l2Cache": 4,
+      "l3Cache": 32,
+      "specialFeatures": [
+        "Precision Boost 2",
+        "Simultaneous Multithreading",
+        "AMD StoreMI Technology"
+      ]
+    }
+  }
+]

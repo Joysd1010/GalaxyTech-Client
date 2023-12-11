@@ -31,9 +31,9 @@
       }
     },
     "imageLinks": [
-      "https://example.com/hp_elitebook/image1.jpg",
-      "https://example.com/hp_elitebook/image2.jpg",
-      "https://example.com/hp_elitebook/image3.jpg"
+      "https://drive.google.com/uc?export=download&id=16UDBGLYO_fovX86JW0jaqYaN4TgMqGt6",
+      "https://drive.google.com/uc?export=download&id=1GtQMmro0dAnZPWpqojLIP0Cb5_hKGFWg",
+      "https://drive.google.com/uc?export=download&id=1NU0V2gNkZAJYPub5A05M1ZdapTbEnC5r"
     ],
     "physical": {
       "color": "Black",
@@ -100,9 +100,9 @@
       }
     },
     "imageLinks": [
-      "https://example.com/hp_elitebook/image1.jpg",
-      "https://example.com/hp_elitebook/image2.jpg",
-      "https://example.com/hp_elitebook/image3.jpg"
+      "https://drive.google.com/uc?export=download&id=1OeDTY5Seraco8sMHDCFpDdJlsCz45C-1",
+      "https://drive.google.com/uc?export=download&id=1XNnQbPwXyAzamps3yOzKgK4QoYp-Qajs",
+      "https://drive.google.com/uc?export=download&id=1QbB-RzQf_HW6TIyxioXYCFn2RMNP3FeG"
     ],
     "physical": {
       "color": "Black",
@@ -136,5 +136,1511 @@
       "warrantyType": "On-site"
     },
     "quantity": 25
+  },
+  {
+    "key": {
+      "modelname": "LG 34GN850-B",
+      "brand": "LG",
+      "resolution": "3440x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB-C"],
+      "features": ["Nano IPS", "G-Sync Compatible", "Curved Display"],
+      "price": {
+        "regular": 800,
+        "discount": 750,
+        "emi": 70
+      },
+      "monitorname": "LG 34GN850-B"
+    },
+    "power": {
+      "powerConsumption": "48W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 7W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1UcOuvVs2jP-fe0GgBDZbKfsIE_uA8Qwy",
+      "https://drive.google.com/uc?export=download&id=19MIKCn-KMgSrxjbo6DGsViQ9jUkPGirJ",
+      "https://drive.google.com/uc?export=download&id=12QarI4-RUR8YX3EhqJ-lJmc3iYFC8NDn"
+    ],
+    "physical": {
+      "color": "Silver",
+      "weight": "7.2 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6800K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "34-inch",
+      "type": "Nano IPS",
+      "panel": "Curved",
+      "resolution": "3440x1440",
+      "surface": "Glossy",
+      "aspectRatio": "21:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "400 cd/m²",
+      "refreshRate": "144Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "1ms",
+      "curvature": "Curved"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 20
+  },
+  {
+    "key": {
+      "modelname": "Samsung Odyssey G7",
+      "brand": "Samsung",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB"],
+      "features": ["QLED", "Curved Display", "240Hz Refresh Rate"],
+      "price": {
+        "regular": 900,
+        "discount": 850,
+        "emi": 80
+      },
+      "monitorname": "Samsung Odyssey G7"
+    },
+    "power": {
+      "powerConsumption": "42W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "No built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C14 power cord"
+    },
+    "ports": {
+      "audioJack": false,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": [],
+      "speakerDetails": {}
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1e4WcbECJqladQzdAdyXq_5xUIBlHYjTG",
+      "https://drive.google.com/uc?export=download&id=1emcxY7Ipj36X1zZqwakRNZ1bkMBu_433",
+      "https://drive.google.com/uc?export=download&id=1CjBJc-tMfQ3NqRWJrlCZ21gjGyxef8Ey"
+    ],
+    "physical": {
+      "color": "Dark Gray",
+      "weight": "6.8 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6700K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "QLED",
+      "panel": "Curved",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "240Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "1ms",
+      "curvature": "Curved"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 15
+  },
+  {
+    "key": {
+      "modelname": "Acer Predator X27",
+      "brand": "Acer",
+      "resolution": "3840x2160",
+      "portsDetails": ["HDMI", "DisplayPort", "USB"],
+      "features": ["4K UHD", "G-Sync Ultimate", "HDR"],
+      "price": {
+        "regular": 1500,
+        "discount": 1400,
+        "emi": 120
+      },
+      "monitorname": "Acer Predator X27"
+    },
+    "power": {
+      "powerConsumption": "65W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 7W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1I7YAxRipy-ykPk5KVBeAgyKblZ4I6LTD",
+      "https://drive.google.com/uc?export=download&id=11YUJZbGY6mpFnGUnZotk5mUNX4l5bg5F",
+      "https://drive.google.com/uc?export=download&id=1pTYQlnJ2oe04c7nxWq0FQG-TmbX1ntVJ"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "9.5 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6800K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "3840x2160",
+      "surface": "Glossy",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "600 cd/m²",
+      "refreshRate": "144Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 10
+  },
+  {
+    "key": {
+      "modelname": "ASUS ROG Swift PG279QZ",
+      "brand": "ASUS",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB"],
+      "features": ["G-Sync", "165Hz Refresh Rate", "IPS Panel"],
+      "price": {
+        "regular": 700,
+        "discount": 650,
+        "emi": 60
+      },
+      "monitorname": "ASUS ROG Swift PG279QZ"
+    },
+    "power": {
+      "powerConsumption": "40W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "No built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C14 power cord"
+    },
+    "ports": {
+      "audioJack": false,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": [],
+      "speakerDetails": {}
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1tA4g2YKjIe7_tR5ZMtnXeXfclI-pK-Mm",
+      "https://drive.google.com/uc?export=download&id=1xlHSolCGojBhEVSuOck3rxpQMaDPvGOF",
+      "https://drive.google.com/uc?export=download&id=1QO9gtnHhgpCKRxXSNqbrTrcP7ZGr9wW0"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "7.0 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6600K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "400 cd/m²",
+      "refreshRate": "165Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 25
+  },
+  {
+    "key": {
+      "modelname": "ViewSonic VX3276-2K-MHD",
+      "brand": "ViewSonic",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "Mini DisplayPort"],
+      "features": ["SuperClear IPS", "Frameless Design", "75Hz Refresh Rate"],
+      "price": {
+        "regular": 300,
+        "discount": 280,
+        "emi": 25
+      },
+      "monitorname": "ViewSonic VX3276-2K-MHD"
+    },
+    "power": {
+      "powerConsumption": "32W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "No built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": false,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": [],
+      "speakerDetails": {}
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1Z-oQVSSVMR-_Pf71hsqTO1-bna0MBuvU",
+      "https://drive.google.com/uc?export=download&id=1srp1BReVNP0nasl6ikoVtoRU0W_9k8EE",
+      "https://drive.google.com/uc?export=download&id=1MpksNXJnufNVe1acdWvb_-ev3ydhcbzE"
+    ],
+    "physical": {
+      "color": "Silver",
+      "weight": "6.0 kg",
+      "monitorStand": "Tilt",
+      "wallMount": true,
+      "securityLock": false,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "32-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "250 cd/m²",
+      "refreshRate": "75Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 18
+  },
+  {
+    "key": {
+      "modelname": "BenQ EX2780Q",
+      "brand": "BenQ",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB-C"],
+      "features": ["HDRi Technology", "FreeSync", "2.1 Channel Speaker"],
+      "price": {
+        "regular": 500,
+        "discount": 480,
+        "emi": 45
+      },
+      "monitorname": "BenQ EX2780Q"
+    },
+    "power": {
+      "powerConsumption": "55W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "2.1 Channel",
+        "outputPower": "5W x 2, 10W Subwoofer"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1zHLQ_s_jyXRf2IWjsTUEEotgNiKLTjKS",
+      "https://drive.google.com/uc?export=download&id=15aYfDAZ-HBAU0d4uF4THwSjTS5NZ61St",
+      "https://drive.google.com/uc?export=download&id=1lfqm4_2qwBXI4x6TF0IFYIOSRwlhOxB3"
+    ],
+    "physical": {
+      "color": "Gray",
+      "weight": "5.5 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6700K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "144Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "5ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 12
+  },
+  {
+    "key": {
+      "modelname": "ASUS ROG Swift PG279Q",
+      "brand": "ASUS",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["G-Sync", "IPS Panel", "Ultra-low Motion Blur"],
+      "price": {
+        "regular": 600,
+        "discount": 550,
+        "emi": 50
+      },
+      "monitorname": "ASUS PG279Q"
+    },
+    "power": {
+      "powerConsumption": "40W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 4W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1YgP2YywOcQq7OfQdnDZxQRCvGNk6kHna",
+      "https://drive.google.com/uc?export=download&id=1hZ7FMyHsGakOJO9GJxMCGwwX270IgWdX",
+      "https://drive.google.com/uc?export=download&id=1-q5jKc58vHZw-K4bQCVrdYUhGh0g4fdZ"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "6.0 kg",
+      "monitorStand": "Height-adjustable, Pivot, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6600K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "144Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 25
+  },
+  {
+    "key": {
+      "modelname": "Acer Predator X34",
+      "brand": "Acer",
+      "resolution": "3440x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["G-Sync", "Curved Display", "UltraWide"],
+      "price": {
+        "regular": 900,
+        "discount": 850,
+        "emi": 75
+      },
+      "monitorname": "Acer X34"
+    },
+    "power": {
+      "powerConsumption": "50W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 8W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1Zq4hvi8lYjshcfatEQUPLoYyvExYJV_a",
+      "https://drive.google.com/uc?export=download&id=1EgbMhPOZwvXy_HqMCNVK7qJx53PhlEMv",
+      "https://drive.google.com/uc?export=download&id=1lSwwpXD-G0SNTmQzvFE-QNV5Ag9y4G3K"
+    ],
+    "physical": {
+      "color": "Dark Gray",
+      "weight": "8.5 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6700K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "34-inch",
+      "type": "IPS",
+      "panel": "Curved",
+      "resolution": "3440x1440",
+      "surface": "Glossy",
+      "aspectRatio": "21:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "400 cd/m²",
+      "refreshRate": "100Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "4ms",
+      "curvature": "Curved"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 15
+  },
+  {
+    "key": {
+      "modelname": "Samsung Odyssey G7",
+      "brand": "Samsung",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["QLED", "Curved Display", "240Hz Refresh Rate"],
+      "price": {
+        "regular": 750,
+        "discount": 720,
+        "emi": 65
+      },
+      "monitorname": "Samsung G7"
+    },
+    "power": {
+      "powerConsumption": "42W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 6W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=19eCxXhyxbxSUFySpEQZgT0Q_UW3cTbVK",
+      "https://drive.google.com/uc?export=download&id=1N9JRluLXIfJy_Llt-DrO08VVU9JhBtcK",
+      "https://drive.google.com/uc?export=download&id=1jAKkTHYpfnNQ0SklucplYx9pm-PlxC-V"
+    ],
+    "physical": {
+      "color": "White",
+      "weight": "7.8 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6600K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "QLED",
+      "panel": "Curved",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "240Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "1ms",
+      "curvature": "Curved"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 18
+  },
+  {
+    "key": {
+      "modelname": "BenQ EX2780Q",
+      "brand": "BenQ",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB-C"],
+      "features": ["HDRi", "Cinema Mode", "2.1 Channel Speaker"],
+      "price": {
+        "regular": 500,
+        "discount": 480,
+        "emi": 45
+      },
+      "monitorname": "BenQ EX2780Q"
+    },
+    "power": {
+      "powerConsumption": "38W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["2.1 Channel Speaker"],
+      "speakerDetails": {
+        "speakerType": "2.1 Channel",
+        "outputPower": "2x 2W + 5W subwoofer"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=18ms7zKkkWVVkb3rvwB4PA7WFpV-roMRC",
+      "https://drive.google.com/uc?export=download&id=130E_gkX4xQaJO3v2VQSLFZzg3ZDT-lIa",
+      "https://drive.google.com/uc?export=download&id=181z-Sa-zeRnDXIh7aVOydm5K_-n4Ml5_"
+    ],
+    "physical": {
+      "color": "Silver",
+      "weight": "6.2 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "75Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "5ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 22
+  },
+  {
+    "key": {
+      "modelname": "ViewSonic VX3276-2K-MHD",
+      "brand": "ViewSonic",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "VGA"],
+      "features": ["Frameless Design", "SuperClear IPS", "Blue Light Filter"],
+      "price": {
+        "regular": 350,
+        "discount": 330,
+        "emi": 30
+      },
+      "monitorname": "ViewSonic VX3276-2K-MHD"
+    },
+    "power": {
+      "powerConsumption": "30W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": true,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 3W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1vx4huSgpKQ8_ntXNR8PWZI_PG3OQfoiF",
+      "https://drive.google.com/uc?export=download&id=1GimZVVyjSSbqdVxVZlWI0QDwMUzch3MX",
+      "https://drive.google.com/uc?export=download&id=1SewGk5KdKhcW1LNcTThK2hCOTeIUnKhy"
+    ],
+    "physical": {
+      "color": "Silver",
+      "weight": "5.8 kg",
+      "monitorStand": "Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "32-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "250 cd/m²",
+      "refreshRate": "60Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 28
+  },
+  {
+    "key": {
+      "modelname": "HP Omen X 27",
+      "brand": "HP",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["AMD FreeSync", "Quad HD", "240Hz Refresh Rate"],
+      "price": {
+        "regular": 700,
+        "discount": 670,
+        "emi": 60
+      },
+      "monitorname": "HP Omen X 27"
+    },
+    "power": {
+      "powerConsumption": "45W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 5W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1Jys4B48G6NyJLYQpCx89rAhwgrOVQI2e",
+      "https://drive.google.com/uc?export=download&id=1P3guajp0tY7hA2N-Li0dgtXOOAkz7LoY",
+      "https://drive.google.com/uc?export=download&id=10QB0bQxmtgkVnb0Oq92Cyt--Yvaggeo-"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "6.5 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6600K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "TN",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "170°/160°",
+      "brightness": "400 cd/m²",
+      "refreshRate": "240Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "1ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 18
+  },
+  {
+    "key": {
+      "modelname": "Dell Alienware AW3420DW",
+      "brand": "Dell",
+      "resolution": "3440x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["NVIDIA G-Sync", "Curved Display", "120Hz Refresh Rate"],
+      "price": {
+        "regular": 1000,
+        "discount": 950,
+        "emi": 90
+      },
+      "monitorname": "Dell AW3420DW"
+    },
+    "power": {
+      "powerConsumption": "60W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 8W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1jZpU2xNtaf372JisZ7gPdbSuYeBU8AIE",
+      "https://drive.google.com/uc?export=download&id=1y6aPCJ-67xRi6161-cDlHtF5OaKCFeRK",
+      "https://drive.google.com/uc?export=download&id=1odJFCBjv2hjhqruaAN-yoOERtqRc8p25"
+    ],
+    "physical": {
+      "color": "Dark Silver",
+      "weight": "9.0 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6800K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "34-inch",
+      "type": "IPS",
+      "panel": "Curved",
+      "resolution": "3440x1440",
+      "surface": "Glossy",
+      "aspectRatio": "21:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "120Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "2ms",
+      "curvature": "Curved"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 12
+  },
+  {
+    "key": {
+      "modelname": "LG 27UK650-W",
+      "brand": "LG",
+      "resolution": "3840x2160",
+      "portsDetails": ["HDMI", "DisplayPort", "USB-C"],
+      "features": ["4K UHD", "HDR10", "FreeSync"],
+      "price": {
+        "regular": 550,
+        "discount": 520,
+        "emi": 48
+      },
+      "monitorname": "LG 27UK650-W"
+    },
+    "power": {
+      "powerConsumption": "40W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 5W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1KfJ6qhJdOdN2sUw1EYSeYTfZxlPIS_Yi",
+      "https://drive.google.com/uc?export=download&id=12Q9zIWLDI3PY_a1BB328wpaGLrV6JUYX",
+      "https://drive.google.com/uc?export=download&id=1FudeGGfo7RMjgRvsfQWHHebwRBjFn8wQ"
+    ],
+    "physical": {
+      "color": "White",
+      "weight": "5.0 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "3840x2160",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "60Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "5ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 20
+  },
+  {
+    "key": {
+      "modelname": "AOC CQ32G1",
+      "brand": "AOC",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "VGA"],
+      "features": ["Curved Display", "144Hz Refresh Rate", "AMD FreeSync"],
+      "price": {
+        "regular": 400,
+        "discount": 380,
+        "emi": 35
+      },
+      "monitorname": "AOC CQ32G1"
+    },
+    "power": {
+      "powerConsumption": "50W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": true,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 4W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1w6QI6kvKcAWHJb3spDIHneaMdqwZctPJ",
+      "https://drive.google.com/uc?export=download&id=1tZl_vDOOJwFkGcBb0TTZn-4EyqewgbOz",
+      "https://drive.google.com/uc?export=download&id=11B3xuWnpnGZu7Zx9ZdLtoW2ZAtNZ_O4b"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "7.0 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6600K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "32-inch",
+      "type": "VA",
+      "panel": "Curved",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "300 cd/m²",
+      "refreshRate": "144Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "1ms",
+      "curvature": "Curved"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 15
+  },
+  {
+    "key": {
+      "modelname": "Philips 275E1S",
+      "brand": "Philips",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort"],
+      "features": ["Ultra Narrow Border", "FreeSync", "SmartContrast"],
+      "price": {
+        "regular": 300,
+        "discount": 280,
+        "emi": 25
+      },
+      "monitorname": "Philips 275E1S"
+    },
+    "power": {
+      "powerConsumption": "35W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 3W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1VbL9gw1qEludTi3AFSBVviGWWE_1YsVl",
+      "https://drive.google.com/uc?export=download&id=1DIc9KPqhQsjPo7ldeWBBweJI2wCQQmtY",
+      "https://drive.google.com/uc?export=download&id=1zldICiPuTG0cowzGtb6663mDptp7Unru"
+    ],
+    "physical": {
+      "color": "Silver",
+      "weight": "4.5 kg",
+      "monitorStand": "Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "250 cd/m²",
+      "refreshRate": "75Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 30
+  },
+  {
+    "key": {
+      "modelname": "MSI Optix MAG321CQR",
+      "brand": "MSI",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB-C"],
+      "features": ["Curved Display", "Mystic Light", "FreeSync"],
+      "price": {
+        "regular": 450,
+        "discount": 420,
+        "emi": 38
+      },
+      "monitorname": "MSI MAG321CQR"
+    },
+    "power": {
+      "powerConsumption": "55W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 6W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1YI076ftIzlxkl4r_ENmWB5Ku6hgONWjL",
+      "https://drive.google.com/uc?export=download&id=1Zg0WkEWKZS0qFvkTaz-anE0u_wq5g402",
+      "https://drive.google.com/uc?export=download&id=1AGjXQwEqxxI0p-6zMpz1G4g6Pon7zaIn"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "8.0 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6700K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "32-inch",
+      "type": "VA",
+      "panel": "Curved",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "400 cd/m²",
+      "refreshRate": "144Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "1ms",
+      "curvature": "Curved"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 20
+  },
+  {
+    "key": {
+      "modelname": "Alienware AW2521HFL",
+      "brand": "Alienware",
+      "resolution": "1920x1080",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["240Hz Refresh Rate", "IPS Nano Color", "FreeSync"],
+      "price": {
+        "regular": 550,
+        "discount": 520,
+        "emi": 48
+      },
+      "monitorname": "Alienware AW2521HFL"
+    },
+    "power": {
+      "powerConsumption": "30W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 3W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1POXmudt1owvnprqvSdSA_Aowhoj93PgD",
+      "https://drive.google.com/uc?export=download&id=1aVkNV8JrWSw8xYGTBIMTxwhkmb2MDw8r",
+      "https://drive.google.com/uc?export=download&id=1tbFxsu-N0hGxwg9KZ7ZKuKYd8uJ8dPOx"
+    ],
+    "physical": {
+      "color": "Dark Gray",
+      "weight": "6.2 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6600K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "25-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "1920x1080",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "400 cd/m²",
+      "refreshRate": "240Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "1ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 15
+  },
+  {
+    "key": {
+      "modelname": "ASUS ROG Swift PG279Q",
+      "brand": "ASUS",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["G-Sync", "165Hz Refresh Rate", "IPS Panel"],
+      "price": {
+        "regular": 700,
+        "discount": 670,
+        "emi": 60
+      },
+      "monitorname": "ASUS PG279Q"
+    },
+    "power": {
+      "powerConsumption": "35W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 2W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1BpuBrgwbRAmm5YFvZ-JKRy-zxeecOV8J",
+      "https://drive.google.com/uc?export=download&id=18bWYS-S2sWcxQya_Rzu_kt-MJlegeZEz",
+      "https://drive.google.com/uc?export=download&id=1nBq-Z0hOsOIwZHkgGMc__5_ZjYTDueXh"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "7.0 kg",
+      "monitorStand": "Height-adjustable, Tilt, Swivel",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt", "Swivel"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "165Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 22
+  },
+  {
+    "key": {
+      "modelname": "Acer R240HY bidx",
+      "brand": "Acer",
+      "resolution": "1920x1080",
+      "portsDetails": ["HDMI", "DVI", "VGA"],
+      "features": ["Zero Frame Design", "IPS Panel", "Blue Light Filter"],
+      "price": {
+        "regular": 150,
+        "discount": 130,
+        "emi": 15
+      },
+      "monitorname": "Acer R240HY"
+    },
+    "power": {
+      "powerConsumption": "25W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "No built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": false,
+      "hdmi": true,
+      "vga": true,
+      "audioFeatures": ["No built-in speakers"],
+      "speakerDetails": null
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1Ay9pw9IpltHlHUoLMLYao-OOhvRFaCod",
+      "https://drive.google.com/uc?export=download&id=1NzRCUbT32J5sdSflAdcBYsDqlMZ5YQ4Z",
+      "https://drive.google.com/uc?export=download&id=1BWUGbxN2dD6zv_fkB3YtPQJR0J8zRaec"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "3.0 kg",
+      "monitorStand": "Tilt",
+      "wallMount": true,
+      "securityLock": false,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "23.8-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "1920x1080",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "250 cd/m²",
+      "refreshRate": "60Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "4ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "1 year",
+      "warrantyType": "Carry-in"
+    },
+    "quantity": 25
+  },
+  {
+    "key": {
+      "modelname": "Dell S2719DGF",
+      "brand": "Dell",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["AMD FreeSync", "1ms Response Time", "155Hz Refresh Rate"],
+      "price": {
+        "regular": 450,
+        "discount": 420,
+        "emi": 40
+      },
+      "monitorname": "Dell S2719DGF"
+    },
+    "power": {
+      "powerConsumption": "38W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 4W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1woYO1mYaouCct-eUUiaoXoDLpTgU_T-h",
+      "https://drive.google.com/uc?export=download&id=1ieUoGD2hg8O3_Psz_uw21kP6mN1V3hOU",
+      "https://drive.google.com/uc?export=download&id=1L0h706l7W_9n8SSZ8kiVQvpgGqf0Ygdj"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "6.2 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6600K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "TN",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "170°/160°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "155Hz",
+      "colorSupport": "16.7 million colors",
+      "responseTime": "1ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "3 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 15
+  },
+  {
+    "key": {
+      "modelname": "Acer Nitro XV272U",
+      "brand": "Acer",
+      "resolution": "2560x1440",
+      "portsDetails": ["HDMI", "DisplayPort", "USB 3.0"],
+      "features": ["AMD FreeSync", "IPS Panel", "144Hz Refresh Rate"],
+      "price": {
+        "regular": 500,
+        "discount": 470,
+        "emi": 45
+      },
+      "monitorname": "Acer Nitro XV272U"
+    },
+    "power": {
+      "powerConsumption": "42W (typical)",
+      "voltageRange": "100-240 V",
+      "audio": "Built-in speakers",
+      "powerSupply": "External",
+      "socketDetails": "C13 power cord"
+    },
+    "ports": {
+      "audioJack": true,
+      "hdmi": true,
+      "vga": false,
+      "audioFeatures": ["Built-in speakers"],
+      "speakerDetails": {
+        "speakerType": "Stereo",
+        "outputPower": "2x 3W"
+      }
+    },
+    "imageLinks": [
+      "https://drive.google.com/uc?export=download&id=1tiVA360qdwiqLhl4w_H5xKm_6nrBnqBA",
+      "https://drive.google.com/uc?export=download&id=1lb0mospiq-0atTSFYYQZlx3wmcX5n2bV",
+      "https://drive.google.com/uc?export=download&id=1s8_YEMY3nnG4ZVOOeQFV6acuw8yIeu_2"
+    ],
+    "physical": {
+      "color": "Black",
+      "weight": "5.5 kg",
+      "monitorStand": "Height-adjustable, Tilt",
+      "wallMount": true,
+      "securityLock": true,
+      "tiltFeatures": ["Tilt"]
+    },
+    "video": {
+      "colorTemperature": "6500K",
+      "flickerFree": true,
+      "lowBlueLight": true
+    },
+    "display": {
+      "size": "27-inch",
+      "type": "IPS",
+      "panel": "Flat",
+      "resolution": "2560x1440",
+      "surface": "Matte",
+      "aspectRatio": "16:9",
+      "viewingAngle": "178°/178°",
+      "brightness": "350 cd/m²",
+      "refreshRate": "144Hz",
+      "colorSupport": "1.07 billion colors",
+      "responseTime": "1ms",
+      "curvature": "Flat"
+    },
+    "warrantyDetails": {
+      "warrantyPeriod": "2 years",
+      "warrantyType": "On-site"
+    },
+    "quantity": 20
   }
 ]

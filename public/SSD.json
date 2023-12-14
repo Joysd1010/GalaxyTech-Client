@@ -1,0 +1,76 @@
+[
+    {
+      "keyFeatures": {
+        "readSpeed": "3500 MB/s",
+        "writeSpeed": "2500 MB/s",
+        "interface": "NVMe PCIe 3.0",
+        "modelName": "Samsung 970 EVO Plus",
+        "brandName": "Samsung",
+        "formFactor": "M.2 2280",
+        "name": "970 EVO Plus",
+        "cellStatus": "MLC",
+        "price": {
+          "regular": 150,
+          "discount": 140,
+          "emi": 15
+        },
+        "tbw": "600TB",
+        "mtbf": "1.5 million hours",
+        "flashType": "V-NAND",
+        "size": "1TB",
+        "operatingTemperature": "0°C to 70°C",
+        "storageTemperature": "-45°C to 85°C",
+        "shockResistance": "1500G",
+        "weight": "8 grams",
+        "physicalDimension": "80.15 x 22.15 x 2.38 mm"
+      },
+      "images": [
+        "https://example.com/ssd1_image1.jpg",
+        "https://example.com/ssd1_image2.jpg",
+        "https://example.com/ssd1_image3.jpg"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 30
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "560 MB/s",
+        "writeSpeed": "530 MB/s",
+        "interface": "SATA III",
+        "modelName": "Crucial MX500",
+        "brandName": "Crucial",
+        "formFactor": "2.5-inch",
+        "name": "MX500",
+        "cellStatus": "3D NAND",
+        "price": {
+          "regular": 80,
+          "discount": 75,
+          "emi": 8
+        },
+        "tbw": "360TB",
+        "mtbf": "1.8 million hours",
+        "flashType": "3D NAND",
+        "size": "500GB",
+        "operatingTemperature": "0°C to 70°C",
+        "storageTemperature": "-40°C to 85°C",
+        "shockResistance": "1500G",
+        "weight": "45 grams",
+        "physicalDimension": "100.45 x 69.85 x 7 mm"
+      },
+      "images": [
+        "https://example.com/ssd2_image1.jpg",
+        "https://example.com/ssd2_image2.jpg",
+        "https://example.com/ssd2_image3.jpg"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 50
+    }
+    
+  ]
+  

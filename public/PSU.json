@@ -1,0 +1,1009 @@
+[
+    {
+      "keyFeatures": {
+        "name": "Corsair RM750x",
+        "modelName": "RM750x",
+        "brandName": "Corsair",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit"],
+        "cableFeatures": ["Modular Design", "Sleeved Cables"],
+        "price": {
+          "regular": 120,
+          "discount": 110,
+          "emi": 12
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 750,
+        "certification": "Corsair Link Compatible"
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "10A",
+        "modularType": "Fully Modular",
+        "outputWatt": 750,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "150 x 86 x 160mm",
+        "weight": "2.5 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 7,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1sP4TtQQQMwV6-HMCuhwtx6uekKdhkOfd",
+        "https://drive.google.com/uc?export=download&id=1C0fIwul897BAx37mUnizQBbZP39T2THB",
+        "https://drive.google.com/uc?export=download&id=1mlx61af3zh8W6CKbb4GV2W9e1rHk47yG"
+      ],
+      "quantity": 25
+    },
+    {
+      "keyFeatures": {
+        "name": "EVGA SuperNOVA 850 G3",
+        "modelName": "SuperNOVA 850 G3",
+        "brandName": "EVGA",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Single Sleeved Cables"],
+        "price": {
+          "regular": 150,
+          "discount": 140,
+          "emi": 15
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 130,
+        "totalWatt": 850,
+        "certification": "ECO Mode"
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "12A",
+        "modularType": "Fully Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "150 x 85 x 150mm",
+        "weight": "2.8 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1psq4Ot6S8l-qQ9sKyD9Nc75km7YO3bxb",
+        "https://drive.google.com/uc?export=download&id=1e_UekMRdFs3QY4Hp08bWJsFwt4t7kik0",
+        "https://drive.google.com/uc?export=download&id=1-Gojf0eAC_MtT8LjfTY_xCtGTzDZLbXl"
+      ],
+      "quantity": 20
+    },
+    {
+      "keyFeatures": {
+        "name": "EVGA SuperNOVA 850 G3",
+        "modelName": "SuperNOVA 850 G3",
+        "brandName": "EVGA",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Sleeved Cables"],
+        "price": {
+          "regular": 150,
+          "discount": 140,
+          "emi": 15
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 130,
+        "totalWatt": 850,
+        "certification": "EVGA ECO Mode",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "12A",
+        "modularType": "Fully Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 85 x 150mm",
+        "weight": "2.8 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1WPHSC42ALMia0duPQCgAqIz-BHbSx0Ga",
+        "https://drive.google.com/uc?export=download&id=1zoKlUuFu-6jzWHO3fUsW9esBBcGPbKEj",
+        "https://drive.google.com/uc?export=download&id=17PVcGWCTtnhiyo3dZSWD33ZI8NdqR_kp"
+      ],
+      "quantity": 30
+    },
+    {
+      "keyFeatures": {
+        "name": "Cooler Master MWE Gold 650 V2",
+        "modelName": "MWE Gold 650 V2",
+        "brandName": "Cooler Master",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Semi-Modular", "Flat Cables"],
+        "price": {
+          "regular": 85,
+          "discount": 78,
+          "emi": 10
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 650,
+        "certification": "ErP 2013",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "8A",
+        "modularType": "Semi-Modular",
+        "outputWatt": 650,
+        "manufacturingDetails": "Made in Malaysia",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "140 x 86 x 150mm",
+        "weight": "2.2 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Px8mNaY5AM08kJhPdro0F1jnRzW5c1X9",
+        "https://drive.google.com/uc?export=download&id=1EXK1lQojZJSTGMTnVehlEuvSfywPmSVW",
+        "https://drive.google.com/uc?export=download&id=1FJYhziwksEuFHO8wHGHWuLxOz2nRj1yi"
+      ],
+      "quantity": 20
+    },
+    {
+      "keyFeatures": {
+        "name": "Seasonic Focus GX-750",
+        "modelName": "Focus GX-750",
+        "brandName": "Seasonic",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Flat Cables"],
+        "price": {
+          "regular": 130,
+          "discount": 120,
+          "emi": 13
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 750,
+        "certification": "Hybrid Silent Fan Control",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "10A",
+        "modularType": "Fully Modular",
+        "outputWatt": 750,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 86 x 150mm",
+        "weight": "2.4 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1i0_qsVBAcrXcU7iBiwGSpupgv_dVs9Fl",
+        "https://drive.google.com/uc?export=download&id=1p8qoXJfj4ZVzXhTLJY1Bufn5-YqDk7Vu",
+        "https://drive.google.com/uc?export=download&id=1Xn7LRNNupliIr6YJ5UfjBuifZCK-EHo6"
+      ],
+      "quantity": 15
+    },
+    {
+      "keyFeatures": {
+        "name": "Seasonic Focus GX-750",
+        "modelName": "Focus GX-750",
+        "brandName": "Seasonic",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Flat Cables"],
+        "price": {
+          "regular": 130,
+          "discount": 120,
+          "emi": 13
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 750,
+        "certification": "Hybrid Silent Fan Control",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "10A",
+        "modularType": "Fully Modular",
+        "outputWatt": 750,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 86 x 150mm",
+        "weight": "2.4 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Fm_dQi7E82p8V8RJZPgWk-cDkCe8LXeO",
+        "https://drive.google.com/uc?export=download&id=1D2JOdlCA5lWnM9WeLu1UTNmJFSyGW4WS",
+        "https://drive.google.com/uc?export=download&id=1CoojXINWvUHqD4nG4UwPP8xl40NJvlaE"
+      ],
+      "quantity": 15
+    },
+    {
+      "keyFeatures": {
+        "name": "NZXT C750",
+        "modelName": "C750",
+        "brandName": "NZXT",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit"],
+        "cableFeatures": ["Fully Modular", "Customizable Individually Sleeved Cables"],
+        "price": {
+          "regular": 140,
+          "discount": 130,
+          "emi": 14
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 750,
+        "certification": "CAM-powered Digital RGB Lighting",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "12A",
+        "modularType": "Fully Modular",
+        "outputWatt": 750,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "150 x 85 x 160mm",
+        "weight": "2.6 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 7,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1j0T8dMxSEyR_omR2-pn2D5h5GCKov-SL",
+        "https://drive.google.com/uc?export=download&id=1K-3qfa-RhCBMoWrA-vj0RXjd8FsZcNKG",
+        "https://drive.google.com/uc?export=download&id=1reLa3FP7sAsM7NPYT75fNOgUMmgkwZVX"
+      ],
+      "quantity": 18
+    },
+    {
+      "keyFeatures": {
+        "name": "Thermaltake Toughpower GF1 750W",
+        "modelName": "Toughpower GF1 750W",
+        "brandName": "Thermaltake",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Flat Cables"],
+        "price": {
+          "regular": 125,
+          "discount": 115,
+          "emi": 12.5
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 140,
+        "totalWatt": 750,
+        "certification": "RGB Sync",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "11A",
+        "modularType": "Fully Modular",
+        "outputWatt": 750,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 87 x 150mm",
+        "weight": "2.3 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1xgYq4d_nizcAHiVNyECUUqBfzF_moo1w",
+        "https://drive.google.com/uc?export=download&id=1G6tSq9gp2BdQccCw7esK9CFLudz0Qk-X",
+        "https://drive.google.com/uc?export=download&id=1cj2cDX3aZEcKhBuFvQlDfgkiNXzQRj2j"
+      ],
+      "quantity": 22
+    },
+    {
+      "keyFeatures": {
+        "name": "Antec Earthwatts Gold Pro 750W",
+        "modelName": "Earthwatts Gold Pro 750W",
+        "brandName": "Antec",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Semi-Modular", "Flat Cables"],
+        "price": {
+          "regular": 95,
+          "discount": 88,
+          "emi": 10.5
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 750,
+        "certification": "AQ3 Antec Quality 3-year warranty",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "9A",
+        "modularType": "Semi-Modular",
+        "outputWatt": 750,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "150 x 86 x 140mm",
+        "weight": "2.1 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1AMlIqBng7rh9NNtuYEGTERDqGI1rI_QU",
+        "https://drive.google.com/uc?export=download&id=1S6KEntMjqOii_xX8BkFborkPb8Lx7ZdN",
+        "https://drive.google.com/uc?export=download&id=1HLVtZtysj8cYkockvckdtK36_03GUXA_"
+      ],
+      "quantity": 25
+    },
+    {
+      "keyFeatures": {
+        "name": "be quiet! Straight Power 11 850W Platinum",
+        "modelName": "Straight Power 11 850W",
+        "brandName": "be quiet!",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Sleeved Cables"],
+        "price": {
+          "regular": 180,
+          "discount": 170,
+          "emi": 18
+        },
+        "efficiency": "80 PLUS Platinum",
+        "fanSize": 135,
+        "totalWatt": 850,
+        "certification": "Silent Wings 3 Fan",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "10A",
+        "modularType": "Fully Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in Germany",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "170 x 85 x 150mm",
+        "weight": "2.7 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 7,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1VNJXdXRlHXk6UN6fM4OPFrScL_mAISLG",
+        "https://drive.google.com/uc?export=download&id=1RtB2FIcTsInL-Q_dbq2uVy8nybm8QAci",
+        "https://drive.google.com/uc?export=download&id=1rzgMqIW8zK6ZIbH6Ka5qZh1quJZAQU5a"
+      ],
+      "quantity": 15
+    },
+    {
+      "keyFeatures": {
+        "name": "SilverStone Strider Gold S Series 750W",
+        "modelName": "Strider Gold S 750W",
+        "brandName": "SilverStone",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Flat Cables"],
+        "price": {
+          "regular": 120,
+          "discount": 110,
+          "emi": 12
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 750,
+        "certification": "Compact Design",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "9A",
+        "modularType": "Fully Modular",
+        "outputWatt": 750,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "140 x 86 x 150mm",
+        "weight": "2.3 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1-TUn4vZ_Vk6LarT-QgCcCUK1IgOCTfrI",
+        "https://drive.google.com/uc?export=download&id=1tEEYFoA4eb_QxE4IBBMSijd2N6utRlrF",
+        "https://drive.google.com/uc?export=download&id=1O_RxmaY3n0dLO-ntENAvfzMM413z5-WF"
+      ],
+      "quantity": 20
+    },
+    {
+      "keyFeatures": {
+        "name": "Deepcool DQ850-M-V2L WH 850W",
+        "modelName": "DQ850-M-V2L",
+        "brandName": "Deepcool",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Semi-Modular", "Flat Cables"],
+        "price": {
+          "regular": 95,
+          "discount": 88,
+          "emi": 10.5
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 850,
+        "certification": "Active Power Factor Correction",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "11A",
+        "modularType": "Semi-Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "150 x 85 x 160mm",
+        "weight": "2.4 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1yJeuDnUoEagrNWWQxa0wCrWa7HfDRqds",
+        "https://drive.google.com/uc?export=download&id=1FRouw4KcmbjdON0pY7nJLuakLyoK_8Lk",
+        "https://drive.google.com/uc?export=download&id=1_NE_sm4b46TT3pz-vYRbUC9qplgWgPIq"
+      ],
+      "quantity": 18
+    },
+    {
+      "keyFeatures": {
+        "name": "Gigabyte AORUS P850W 80+ Gold",
+        "modelName": "AORUS P850W",
+        "brandName": "Gigabyte",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Customizable RGB Lighting"],
+        "price": {
+          "regular": 160,
+          "discount": 150,
+          "emi": 16
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 135,
+        "totalWatt": 850,
+        "certification": "Smart Fan Control",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "10A",
+        "modularType": "Fully Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 87 x 150mm",
+        "weight": "2.5 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 7,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Cdd3KZie0K7G-fWyMNdn5TT5HoYENFrM",
+        "https://drive.google.com/uc?export=download&id=1bqjfBfONb9zTwDLPbIp3PfdZJ5sR8r9O",
+        "https://drive.google.com/uc?export=download&id=10apzfaK1acrQCELOTk7wExZSxN9bDTPh"
+      ],
+      "quantity": 22
+    },
+    {
+      "keyFeatures": {
+        "name": "ASUS ROG Thor 850W Platinum",
+        "modelName": "ROG Thor 850W",
+        "brandName": "ASUS",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Sleeved Cables"],
+        "price": {
+          "regular": 200,
+          "discount": 190,
+          "emi": 20
+        },
+        "efficiency": "80 PLUS Platinum",
+        "fanSize": 135,
+        "totalWatt": 850,
+        "certification": "Aura Sync RGB Lighting",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "11A",
+        "modularType": "Fully Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "170 x 85 x 150mm",
+        "weight": "2.8 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1dKb0cG00NFPUOIbNO1-GG0Mv1HS594EM",
+        "https://drive.google.com/uc?export=download&id=1DGojDAmUQMIHeMRsG9IYgQ-540CEgeCw",
+        "https://drive.google.com/uc?export=download&id=1CzRuUyf1BvGDh83RmYai1-GkPzNCOq10"
+      ],
+      "quantity": 25
+    },
+    {
+      "keyFeatures": {
+        "name": "Rosewill Photon 1200W 80+ Gold",
+        "modelName": "Photon 1200W",
+        "brandName": "Rosewill",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Flat Black Cables"],
+        "price": {
+          "regular": 180,
+          "discount": 170,
+          "emi": 18
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 135,
+        "totalWatt": 1200,
+        "certification": "Silent 135mm Fan",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "15A",
+        "modularType": "Fully Modular",
+        "outputWatt": 1200,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "180 x 85 x 150mm",
+        "weight": "3.2 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=19Z414zt7oCm4vaZtnwj57qLEmWz16Hf9",
+        "https://drive.google.com/uc?export=download&id=11TN8QfHo3McJfnBoyAMHE1tSTS83dq8d",
+        "https://drive.google.com/uc?export=download&id=1sL_ot3hkbzDvy6NFkYEq5XxqnwEOPdF4"
+      ],
+      "quantity": 15
+    },
+    {
+      "keyFeatures": {
+        "name": "Corsair AX1000 80+ Titanium",
+        "modelName": "AX1000",
+        "brandName": "Corsair",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Individually Sleeved Cables"],
+        "price": {
+          "regular": 300,
+          "discount": 280,
+          "emi": 30
+        },
+        "efficiency": "80 PLUS Titanium",
+        "fanSize": 140,
+        "totalWatt": 1000,
+        "certification": "Zero RPM Fan Mode",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "12A",
+        "modularType": "Fully Modular",
+        "outputWatt": 1000,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "190 x 87 x 150mm",
+        "weight": "3.5 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 10,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1IIiqAA6zDTNdMGuWyFxrwMUz6lioxKqs",
+        "https://drive.google.com/uc?export=download&id=1FwnHGznZzAEzsovZ2JDxUUiU9C4wqKmQ",
+        "https://drive.google.com/uc?export=download&id=1WVrmB7reMMJt6h-xSfiEX4zWcGSm9o22"
+      ],
+      "quantity": 12
+    },
+    {
+      "keyFeatures": {
+        "name": "Cooler Master V850 Gold V2",
+        "modelName": "V850 Gold V2",
+        "brandName": "Cooler Master",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Flat Cables"],
+        "price": {
+          "regular": 150,
+          "discount": 140,
+          "emi": 15
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 135,
+        "totalWatt": 850,
+        "certification": "Quiet Operation",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "10A",
+        "modularType": "Fully Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 85 x 150mm",
+        "weight": "2.9 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 7,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1saIiSJGC0zNDV8qVgJO-kq01zJTrvING",
+        "https://drive.google.com/uc?export=download&id=1Cyjj0QCEzKOkhwfJpyf190c1vDtX7dJP",
+        "https://drive.google.com/uc?export=download&id=1rFWjMzuRf9ICBY0Gq19CmjN0URvaZMd8"
+      ],
+      "quantity": 18
+    },
+    {
+      "keyFeatures": {
+        "name": "Thermaltake Toughpower iRGB Plus 1250W",
+        "modelName": "Toughpower iRGB Plus 1250W",
+        "brandName": "Thermaltake",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "RGB Lighting"],
+        "price": {
+          "regular": 220,
+          "discount": 200,
+          "emi": 22
+        },
+        "efficiency": "80 PLUS Platinum",
+        "fanSize": 140,
+        "totalWatt": 1250,
+        "certification": "Riing Plus RGB Fan",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "16A",
+        "modularType": "Fully Modular",
+        "outputWatt": 1250,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "200 x 87 x 150mm",
+        "weight": "3.8 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1S5TIOSleRPVQv1HPqZEXxnreAynGwilx",
+        "https://drive.google.com/uc?export=download&id=1xdm3VyEMVHN87SGencCv_9bvK8GNOhLR",
+        "https://drive.google.com/uc?export=download&id=1UjBjWmkqYLUKbfAn6owPJWdpGToclzCa"
+      ],
+      "quantity": 14
+    },
+    {
+      "keyFeatures": {
+        "name": "Deepcool Gamer Storm DQ1000-M-V2L 1000W",
+        "modelName": "DQ1000-M-V2L",
+        "brandName": "Deepcool",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Semi-Modular", "Flat Cables"],
+        "price": {
+          "regular": 130,
+          "discount": 120,
+          "emi": 13
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 120,
+        "totalWatt": 1000,
+        "certification": "Hybrid Fan",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "14A",
+        "modularType": "Semi-Modular",
+        "outputWatt": 1000,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 85 x 150mm",
+        "weight": "3.0 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1cB24QArTIHL6E6iKyaOvzWs7ajl4xQbw",
+        "https://drive.google.com/uc?export=download&id=1L65ShKcTWx9nhlXmZNqoYajzM2hxdVqJ",
+        "https://drive.google.com/uc?export=download&id=1rcnonr7YRuf2_U9fDFVCNHZHlwgwAn30"
+      ],
+      "quantity": 20
+    },
+    {
+      "keyFeatures": {
+        "name": "AORUS P1200W 80+ Platinum",
+        "modelName": "AORUS P1200W",
+        "brandName": "AORUS",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Customizable RGB Lighting"],
+        "price": {
+          "regular": 250,
+          "discount": 230,
+          "emi": 25
+        },
+        "efficiency": "80 PLUS Platinum",
+        "fanSize": 140,
+        "totalWatt": 1200,
+        "certification": "Smart Power Sensor",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "15A",
+        "modularType": "Fully Modular",
+        "outputWatt": 1200,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "170 x 87 x 160mm",
+        "weight": "3.5 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 7,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=100Ho-E6GMqAVywQ9FHBCDVGkidIA0Pug",
+        "https://drive.google.com/uc?export=download&id=1e7V__gMWgcQqaXZ7ErmftKZvSIjWfnUL",
+        "https://drive.google.com/uc?export=download&id=1SwN1OHYrFxdODsczW0t5ML5SAsTe7ORl"
+      ],
+      "quantity": 18
+    },
+    {
+      "keyFeatures": {
+        "name": "Fractal Design Ion+ 860P 860W Platinum",
+        "modelName": "Ion+ 860P",
+        "brandName": "Fractal Design",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Flat Cables"],
+        "price": {
+          "regular": 170,
+          "discount": 160,
+          "emi": 17
+        },
+        "efficiency": "80 PLUS Platinum",
+        "fanSize": 140,
+        "totalWatt": 860,
+        "certification": "UltraFlex Cables",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "13A",
+        "modularType": "Fully Modular",
+        "outputWatt": 860,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 85 x 150mm",
+        "weight": "3.0 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1M4CN8P69USGHk_2fVif04fj-YkAq_eM6",
+        "https://drive.google.com/uc?export=download&id=1Rq73g9CfxDJ4B1sYAui5qPfcqcHU_-IM",
+        "https://drive.google.com/uc?export=download&id=1G4v1QhGgdTAu2T8gVk4HDqKP-aY6cpqW"
+      ],
+      "quantity": 15
+    },
+    {
+      "keyFeatures": {
+        "name": "ROG Strix 850G 850W Gold",
+        "modelName": "ROG Strix 850G",
+        "brandName": "ASUS",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Sleeved Cables"],
+        "price": {
+          "regular": 200,
+          "discount": 190,
+          "emi": 20
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 135,
+        "totalWatt": 850,
+        "certification": "Axial-tech Fan Design",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "12A",
+        "modularType": "Fully Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "170 x 87 x 150mm",
+        "weight": "2.9 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1cjDrI3ZhmV27_F8ENsrgqxjiCKb7kK7W",
+        "https://drive.google.com/uc?export=download&id=19WwrQ1oT9WuVy19skvQiA6J_7ubDTXMT",
+        "https://drive.google.com/uc?export=download&id=1Qh6AQG1zzCBcgrrDf3Q7nz5bPoFC-nKE"
+      ],
+      "quantity": 20
+    },
+    {
+      "keyFeatures": {
+        "name": "Seasonic PRIME GX-1000 80+ Gold",
+        "modelName": "PRIME GX-1000",
+        "brandName": "Seasonic",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Sleeved Cables"],
+        "price": {
+          "regular": 250,
+          "discount": 240,
+          "emi": 25
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 135,
+        "totalWatt": 1000,
+        "certification": "Premium Hybrid Fan Control",
+        "rgbLighting": false
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "14A",
+        "modularType": "Fully Modular",
+        "outputWatt": 1000,
+        "manufacturingDetails": "Made in Taiwan",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "180 x 85 x 150mm",
+        "weight": "3.2 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 10,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1ff0_1rQW6stvIvNEbk47ngg3zKg3jlrM",
+        "https://drive.google.com/uc?export=download&id=1Iq_eLGcsouLr8p-tqR5IfFjxwG9b0BWq",
+        "https://drive.google.com/uc?export=download&id=1-k54-hIy4GVJ8r3qlnKkhK9CSrgvhPtH"
+      ],
+      "quantity": 17
+    },
+    {
+      "keyFeatures": {
+        "name": "NZXT C850 850W 80+ Gold",
+        "modelName": "C850",
+        "brandName": "NZXT",
+        "protectionDetails": ["Over Voltage", "Over Current", "Short Circuit", "Under Voltage"],
+        "cableFeatures": ["Fully Modular", "Individually Sleeved Cables"],
+        "price": {
+          "regular": 160,
+          "discount": 150,
+          "emi": 16
+        },
+        "efficiency": "80 PLUS Gold",
+        "fanSize": 135,
+        "totalWatt": 850,
+        "certification": "CAM-powered Digital RGB Lighting",
+        "rgbLighting": true
+      },
+      "voltage": {
+        "inputVoltage": "100-240V",
+        "frequency": "50-60Hz",
+        "currentFlow": "11A",
+        "modularType": "Fully Modular",
+        "outputWatt": 850,
+        "manufacturingDetails": "Made in China",
+        "connectorFeatures": ["ATX", "EPS", "PCIe", "SATA", "Peripheral"]
+      },
+      "physicalDimension": {
+        "dimension": "160 x 87 x 150mm",
+        "weight": "2.8 kg"
+      },
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1LuenTQE_vmDspbdzhk3EU5dO0dyjqKcv",
+        "https://drive.google.com/uc?export=download&id=1EJvpNJaKmDkMWO-gzo95Z7FJ5rCy_UJT",
+        "https://drive.google.com/uc?export=download&id=15SEhMUbvrJT7k6nezPaErJSL0_hecuNE"
+      ],
+      "quantity": 22
+    }
+  ]
+  

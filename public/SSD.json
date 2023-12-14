@@ -25,9 +25,9 @@
         "physicalDimension": "80.15 x 22.15 x 2.38 mm"
       },
       "images": [
-        "https://example.com/ssd1_image1.jpg",
-        "https://example.com/ssd1_image2.jpg",
-        "https://example.com/ssd1_image3.jpg"
+        "https://drive.google.com/uc?export=download&id=14Lsv3iw5Ge-0s3tLeE21QC4qrKvGfCMr",
+        "https://drive.google.com/uc?export=download&id=140Sdle8ysLo93Htpraio0iKW-SkPQXwq",
+        "https://drive.google.com/uc?export=download&id=1EoOX4hDk8nrHCUtONtnM_mdQg4ZlW3MM"
       ],
       "warrantyDetails": {
         "warrantyPeriod": 5,
@@ -61,16 +61,552 @@
         "physicalDimension": "100.45 x 69.85 x 7 mm"
       },
       "images": [
-        "https://example.com/ssd2_image1.jpg",
-        "https://example.com/ssd2_image2.jpg",
-        "https://example.com/ssd2_image3.jpg"
+        "https://drive.google.com/uc?export=download&id=1rr2hpbFH0it6xhCC3hZ3PLhNdOaP-TLA",
+        "https://drive.google.com/uc?export=download&id=13tMV8ElXhejS0-i9adQ1tzFeF5hsJoLv",
+        "https://drive.google.com/uc?export=download&id=1B6vZr7cyYMO_x_ALW8U0CHGVgsql-x7l"
       ],
       "warrantyDetails": {
         "warrantyPeriod": 3,
         "warrantyType": "Limited Warranty"
       },
       "quantity": 50
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3200 MB/s",
+        "writeSpeed": "2000 MB/s",
+        "interface": "NVMe PCIe 4.0",
+        "modelName": "Corsair MP510",
+        "brandName": "Corsair",
+        "formFactor": "M.2 2280",
+        "name": "MP510",
+        "cellStatus": "TLC",
+        "price": {
+          "regular": 130,
+          "discount": 120,
+          "emi": 12
+        },
+        "tbw": "500TB",
+        "mtbf": "1.2 million hours",
+        "flashType": "3D NAND",
+        "size": "1TB",
+        "operatingTemperature": "0°C to 75°C",
+        "storageTemperature": "-40°C to 85°C",
+        "shockResistance": "1200G",
+        "weight": "7 grams",
+        "physicalDimension": "80.5 x 22.2 x 2.5 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Fc6bzMK-DIzRsChLxFI-iiiU-m5Ypx4K",
+        "https://drive.google.com/uc?export=download&id=1HPkP_blvgZBwiy6Fr4kxe9sZyca0fyjr",
+        "https://drive.google.com/uc?export=download&id=1VfbLIcGA-k1cRpsRwcseHsWNrFyX-yN5"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 25
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3000 MB/s",
+        "writeSpeed": "1800 MB/s",
+        "interface": "SATA III",
+        "modelName": "Crucial MX500",
+        "brandName": "Crucial",
+        "formFactor": "2.5-inch",
+        "name": "MX500",
+        "cellStatus": "3D NAND",
+        "price": {
+          "regular": 100,
+          "discount": 95,
+          "emi": 10
+        },
+        "tbw": "400TB",
+        "mtbf": "1.8 million hours",
+        "flashType": "Micron TLC",
+        "size": "500GB",
+        "operatingTemperature": "0°C to 70°C",
+        "storageTemperature": "-30°C to 85°C",
+        "shockResistance": "2000G",
+        "weight": "70 grams",
+        "physicalDimension": "100.5 x 69.85 x 7 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Cs08_yl3c054UHJeOIy9xMFsRVv54EuM",
+        "https://drive.google.com/uc?export=download&id=1VsyBqAlNhwbyi9GkpEODKbyyhcdhtu-M",
+        "https://drive.google.com/uc?export=download&id=1o24yyv8s2bOBDeYr-UNqMM54-Aer3RBj"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 4,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 20
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3400 MB/s",
+        "writeSpeed": "2200 MB/s",
+        "interface": "NVMe PCIe 4.0",
+        "modelName": "WD Black SN750",
+        "brandName": "Western Digital",
+        "formFactor": "M.2 2280",
+        "name": "Black SN750",
+        "cellStatus": "TLC",
+        "price": {
+          "regular": 180,
+          "discount": 170,
+          "emi": 18
+        },
+        "tbw": "800TB",
+        "mtbf": "1.6 million hours",
+        "flashType": "3D NAND",
+        "size": "2TB",
+        "operatingTemperature": "0°C to 80°C",
+        "storageTemperature": "-35°C to 85°C",
+        "shockResistance": "1800G",
+        "weight": "6 grams",
+        "physicalDimension": "85 x 22 x 2.5 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1NkI3rlctIAXCIFjArw3OMxqLAHHjmCYA",
+        "https://drive.google.com/uc?export=download&id=1YcASS9k0lJdBGPvZifpYW-PXDxJwpnB4",
+        "https://drive.google.com/uc?export=download&id=1EGBFQpFMJYo5lHF_w9MeYg28BhvJbdq7"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 15
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "2800 MB/s",
+        "writeSpeed": "1600 MB/s",
+        "interface": "SATA III",
+        "modelName": "Kingston A2000",
+        "brandName": "Kingston",
+        "formFactor": "M.2 2280",
+        "name": "A2000",
+        "cellStatus": "NVMe",
+        "price": {
+          "regular": 90,
+          "discount": 85,
+          "emi": 9
+        },
+        "tbw": "300TB",
+        "mtbf": "2 million hours",
+        "flashType": "3D NAND",
+        "size": "500GB",
+        "operatingTemperature": "0°C to 75°C",
+        "storageTemperature": "-40°C to 85°C",
+        "shockResistance": "1500G",
+        "weight": "5 grams",
+        "physicalDimension": "80 x 22 x 1.8 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1rmkOwt7g5VuU8pZO_8LbXNT8XyjipKc-",
+        "https://drive.google.com/uc?export=download&id=1cAAwJuc4r0_DE2mN-V-ZMzBJMZOI9qCj",
+        "https://drive.google.com/uc?export=download&id=1MbhTKVNmBHHThJ6ScSvdAz27e1M0GZHQ"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 18
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3600 MB/s",
+        "writeSpeed": "2400 MB/s",
+        "interface": "NVMe PCIe 3.0",
+        "modelName": "ADATA XPG SX8200 Pro",
+        "brandName": "ADATA",
+        "formFactor": "M.2 2280",
+        "name": "XPG SX8200 Pro",
+        "cellStatus": "3D NAND",
+        "price": {
+          "regular": 160,
+          "discount": 150,
+          "emi": 16
+        },
+        "tbw": "700TB",
+        "mtbf": "1.5 million hours",
+        "flashType": "TLC",
+        "size": "1TB",
+        "operatingTemperature": "0°C to 70°C",
+        "storageTemperature": "-40°C to 85°C",
+        "shockResistance": "1700G",
+        "weight": "7 grams",
+        "physicalDimension": "80 x 22 x 3.5 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1khOzmLX_-LbGc9YyaxCov6-Ht2wo_BWT",
+        "https://drive.google.com/uc?export=download&id=165ZLSTCTds_sschBiKyQZpUBG289Lo3i",
+        "https://drive.google.com/uc?export=download&id=1AKvc1-5YuQG9jqp0UCb90wieUl0XAq49"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 4,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 22
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3100 MB/s",
+        "writeSpeed": "2000 MB/s",
+        "interface": "NVMe PCIe 3.0",
+        "modelName": "Seagate FireCuda 520",
+        "brandName": "Seagate",
+        "formFactor": "M.2 2280",
+        "name": "FireCuda 520",
+        "cellStatus": "TLC",
+        "price": {
+          "regular": 140,
+          "discount": 130,
+          "emi": 14
+        },
+        "tbw": "600TB",
+        "mtbf": "1.7 million hours",
+        "flashType": "3D NAND",
+        "size": "1TB",
+        "operatingTemperature": "0°C to 75°C",
+        "storageTemperature": "-35°C to 80°C",
+        "shockResistance": "1600G",
+        "weight": "6 grams",
+        "physicalDimension": "80 x 22 x 3.7 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1t-2_j7xeNgVFdwmhCMW9vHzPdwCyHP21",
+        "https://drive.google.com/uc?export=download&id=1lU6A82HhxO3zN8f4ewsiOvJboLyg5Rqm",
+        "https://drive.google.com/uc?export=download&id=1SWGxMwG6bhGPKgf0dsPUuxbHm4zio5FM"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 19
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3300 MB/s",
+        "writeSpeed": "2100 MB/s",
+        "interface": "NVMe PCIe 4.0",
+        "modelName": "Intel 670p",
+        "brandName": "Intel",
+        "formFactor": "M.2 2280",
+        "name": "670p",
+        "cellStatus": "QLC",
+        "price": {
+          "regular": 120,
+          "discount": 110,
+          "emi": 12
+        },
+        "tbw": "500TB",
+        "mtbf": "1.4 million hours",
+        "flashType": "3D NAND",
+        "size": "1TB",
+        "operatingTemperature": "0°C to 70°C",
+        "storageTemperature": "-30°C to 85°C",
+        "shockResistance": "1400G",
+        "weight": "7 grams",
+        "physicalDimension": "80 x 22 x 2.2 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Fq1jdyjTt_OSk3oGWJtQgcZ0UDjWcnQT",
+        "https://drive.google.com/uc?export=download&id=1uEP_-C42Tr-Oa_1h6cHRa_Y-AVDsOlef",
+        "https://drive.google.com/uc?export=download&id=1wm33HOxsX1zSGbTTh_tP-RPMpuuoxUJS"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 25
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "2900 MB/s",
+        "writeSpeed": "1700 MB/s",
+        "interface": "SATA III",
+        "modelName": "SanDisk Ultra 3D",
+        "brandName": "SanDisk",
+        "formFactor": "2.5-inch",
+        "name": "Ultra 3D",
+        "cellStatus": "3D NAND",
+        "price": {
+          "regular": 80,
+          "discount": 75,
+          "emi": 8
+        },
+        "tbw": "400TB",
+        "mtbf": "1.9 million hours",
+        "flashType": "BiCS3",
+        "size": "500GB",
+        "operatingTemperature": "0°C to 65°C",
+        "storageTemperature": "-40°C to 85°C",
+        "shockResistance": "1800G",
+        "weight": "75 grams",
+        "physicalDimension": "100 x 69.85 x 7 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1zsWhQElm5W80ISxMqtRGjsuAFD4AeFue",
+        "https://drive.google.com/uc?export=download&id=1MZPJ81CRctSYUZv9M8uI1E6tJppW361l",
+        "https://drive.google.com/uc?export=download&id=1G4LgIbWSCeL6jacHncFxk_E52VHw4Gfo"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 30
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3500 MB/s",
+        "writeSpeed": "2400 MB/s",
+        "interface": "NVMe PCIe 3.0",
+        "modelName": "HP EX950",
+        "brandName": "HP",
+        "formFactor": "M.2 2280",
+        "name": "EX950",
+        "cellStatus": "TLC",
+        "price": {
+          "regular": 170,
+          "discount": 160,
+          "emi": 17
+        },
+        "tbw": "700TB",
+        "mtbf": "1.6 million hours",
+        "flashType": "3D NAND",
+        "size": "2TB",
+        "operatingTemperature": "0°C to 75°C",
+        "storageTemperature": "-35°C to 85°C",
+        "shockResistance": "1600G",
+        "weight": "6 grams",
+        "physicalDimension": "80 x 22 x 3 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1558VE-Pb5-yXqM-qip_Tab7i4ml1gYsk",
+        "https://drive.google.com/uc?export=download&id=10x2zYM6zeY9pdSj89hFH5EJQjECsQnSn",
+        "https://drive.google.com/uc?export=download&id=1q2iJ_IXiBIQmw4rsydkv4Fg0MtWuKUAW"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 4,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 22
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3200 MB/s",
+        "writeSpeed": "1900 MB/s",
+        "interface": "SATA III",
+        "modelName": "ADATA SU800",
+        "brandName": "ADATA",
+        "formFactor": "2.5-inch",
+        "name": "SU800",
+        "cellStatus": "3D NAND",
+        "price": {
+          "regular": 85,
+          "discount": 80,
+          "emi": 9
+        },
+        "tbw": "350TB",
+        "mtbf": "2 million hours",
+        "flashType": "TLC",
+        "size": "1TB",
+        "operatingTemperature": "0°C to 70°C",
+        "storageTemperature": "-40°C to 85°C",
+        "shockResistance": "1700G",
+        "weight": "70 grams",
+        "physicalDimension": "100.45 x 69.85 x 7 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1InHDkFQZJ8Y1vlYPZEGNz3AwwY99QaO4",
+        "https://drive.google.com/uc?export=download&id=1bE-qcKk2lTqC82T-hbHII0FdaDZb7ukf",
+        "https://drive.google.com/uc?export=download&id=1D8drsIx15XewWLB7WFqHjqopGtcx4d0p"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 18
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "3600 MB/s",
+        "writeSpeed": "2300 MB/s",
+        "interface": "NVMe PCIe 4.0",
+        "modelName": "Crucial P5",
+        "brandName": "Crucial",
+        "formFactor": "M.2 2280",
+        "name": "P5",
+        "cellStatus": "TLC",
+        "price": {
+          "regular": 190,
+          "discount": 180,
+          "emi": 19
+        },
+        "tbw": "750TB",
+        "mtbf": "1.7 million hours",
+        "flashType": "3D NAND",
+        "size": "2TB",
+        "operatingTemperature": "0°C to 80°C",
+        "storageTemperature": "-35°C to 85°C",
+        "shockResistance": "1800G",
+        "weight": "5 grams",
+        "physicalDimension": "80.5 x 22.15 x 2.2 mm"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1p1cUjALaKLC-UpK-vvXiZuvRcXm0VX-U",
+        "https://drive.google.com/uc?export=download&id=1Ax-dLQLnDK-daHokjDvdHZ8_cpD-8BDT",
+        "https://drive.google.com/uc?export=download&id=1-Giz4npIiOY1ivBqTusEVjhNoVXRlxPf"
+      ],
+      "warrantyDetails": {
+        "warrantyPeriod": 5,
+        "warrantyType": "Limited Warranty"
+      },
+      "quantity": 20
+    },
+    {
+      "keyFeatures": {
+        "name": "Biostar B550MH",
+        "modelName": "B550MH",
+        "brandName": "Biostar",
+        "supportedCPU": "AMD Ryzen 5000 Series",
+        "graphicsOutput": "HDMI 2.1, DisplayPort 1.4",
+        "specialFeatures": ["Hi-Fi Audio", "RGB Lighting", "M.2 Cooling"],
+        "price": {
+          "regular": 130,
+          "discount": 120,
+          "emi": 7
+        }
+      },
+      "basic": {
+        "chipset": "AMD B550",
+        "formFactor": "Micro-ATX",
+        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000"],
+        "audioFeature": "Hi-Fi Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1-ga9ENOqG63FNpiGIy2wO0OEkXwEgfkF",
+        "https://drive.google.com/uc?export=download&id=1uqEg71INjMHfdxDgr606xPui8jQcZrZG",
+        "https://drive.google.com/uc?export=download&id=115pLF-lrSjqjfPOrhmsvbxKajzNJgP30"
+      ],
+      "quantity": 35,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4400 MHz", "4133 MHz", "3800 MHz", "3600 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASRock B460 Steel Legend",
+        "modelName": "B460 Steel Legend",
+        "brandName": "ASRock",
+        "supportedCPU": "Intel 10th Gen Core Processors",
+        "graphicsOutput": "HDMI 1.4, DisplayPort 1.4",
+        "specialFeatures": ["Steel Legend Armor", "Intel 1Gb Ethernet", "Polychrome SYNC"],
+        "price": {
+          "regular": 160,
+          "discount": 150,
+          "emi": 8
+        }
+      },
+      "basic": {
+        "chipset": "Intel B460",
+        "formFactor": "ATX",
+        "supportedCPUList": ["Intel 10th Gen Core"],
+        "audioFeature": "Realtek ALC1200 Audio",
+        "socketInfo": "LGA 1200"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1rO4A9kQR7AcwjhwlagupO6VrG3Le1Dad",
+        "https://drive.google.com/uc?export=download&id=1DImcJyXDj1CQOJyP9wv1M_ZMx_HL4OGh",
+        "https://drive.google.com/uc?export=download&id=1guus6buWDJyLWri7jmV_f9bOIyjfnXsD"
+      ],
+      "quantity": 28,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["2933 MHz", "2666 MHz", "2400 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 1 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "Gigabyte B450 AORUS M",
+        "modelName": "B450 AORUS M",
+        "brandName": "Gigabyte",
+        "supportedCPU": "AMD Ryzen 2000 Series",
+        "graphicsOutput": "HDMI 2.0, DVI-D",
+        "specialFeatures": ["Ultra Durable Armor", "RGB Fusion", "Smart Fan 5"],
+        "price": {
+          "regular": 110,
+          "discount": 100,
+          "emi": 6
+        }
+      },
+      "basic": {
+        "chipset": "AMD B450",
+        "formFactor": "Micro-ATX",
+        "supportedCPUList": ["AMD Ryzen 2000", "Ryzen 1000"],
+        "audioFeature": "Realtek ALC892 Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Vh9x6Ri8bG8qmr3PJELAZyEUnK9gPlVb",
+        "https://drive.google.com/uc?export=download&id=1GK2ZWv1sgUERngPfy8wfMUh17knZVTVy",
+        "https://drive.google.com/uc?export=download&id=1agKeUzcm_GwoatL3b7o8SOlHkB3uEjjC"
+      ],
+      "quantity": 40,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 64,
+        "supportedMemoryBusList": ["3200 MHz", "2933 MHz", "2667 MHz", "2400 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "dvi": true,
+        "usbOutputs": ["USB 3.1 Gen 2", "USB 3.1 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.1 Gen 2 Type-A", "USB 3.1 Gen 1 Type-A", "Audio Jacks"],
+        "tpm": false
+      }
     }
-    
   ]
   

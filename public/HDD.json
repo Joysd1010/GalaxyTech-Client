@@ -1,0 +1,249 @@
+[
+    {
+      "keyFeatures": {
+        "readSpeed": "150 MB/s",
+        "writeSpeed": "150 MB/s",
+        "modelName": "Seagate Barracuda",
+        "brandName": "Seagate",
+        "name": "Barracuda",
+        "size": "2TB",
+        "rpm": "7200",
+        "interface": "SATA III",
+        "type": "HDD",
+        "formFactor": "3.5-inch",
+        "price": {
+          "regular": 60,
+          "discount": 55,
+          "emi": 6
+        }
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1PDFd5oaQLq79TX9d2iyfj42zXMxiHcgL",
+        "https://drive.google.com/uc?export=download&id=1vY8h81-hXNn8_t6zOLxd939l5l0Aq1Wp",
+        "https://drive.google.com/uc?export=download&id=1p4-MmzaFMTtbg8W-PpmB5xf1zM-Coiys"
+      ],
+      "quantity": 40,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "specialFeatures": ["Quiet Operation", "Optimized for Desktops", "Low Power Consumption"]
+    },
+    {
+      "keyFeatures": {
+        "readSpeed": "200 MB/s",
+        "writeSpeed": "180 MB/s",
+        "modelName": "Western Digital Blue",
+        "brandName": "WD",
+        "name": "Blue",
+        "size": "1TB",
+        "rpm": "5400",
+        "interface": "SATA III",
+        "type": "HDD",
+        "formFactor": "3.5-inch",
+        "price": {
+          "regular": 45,
+          "discount": 40,
+          "emi": 5
+        }
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1CH8kXnLQEpI42Nj05Bp9GB2ZQSi5UyYo",
+        "https://drive.google.com/uc?export=download&id=1xLg7L4_CjmESRoJlPM9JZQsgPS7TCkti",
+        "https://drive.google.com/uc?export=download&id=1IFsT4p5y7uJ9Y_iIRhRioRSDXdHW6KEg"
+      ],
+      "quantity": 30,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Manufacturer's Warranty"
+      },
+      "specialFeatures": ["ShockGuard Technology", "StableTrac", "NoTouch Ramp Load Technology"]
+    },
+    {
+      "keyFeatures": {
+        "modelName": "ASUS ROG Strix B550-F Gaming",
+        "brandName": "ASUS",
+        "name": "ROG Strix B550-F Gaming",
+        "socketType": "AM4",
+        "chipset": "B550",
+        "memoryType": "DDR4",
+        "memorySlots": 4,
+        "maxMemory": "128GB",
+        "audio": "SupremeFX S1220A",
+        "LAN": "Intel 2.5Gb Ethernet",
+        "formFactor": "ATX",
+        "price": {
+          "regular": 200,
+          "discount": 185,
+          "emi": 12
+        }
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1CtDS0QlYHAo4PTuLdBCIMoAdqtcxJZre",
+        "https://drive.google.com/uc?export=download&id=1ppYsQtptIqRjem5ya7vnoUL__P4w7fU5",
+        "https://drive.google.com/uc?export=download&id=1VStZ_Vkhnvb0nUoP17g-1HjgaSJzGFzF"
+      ],
+      "quantity": 25,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "specialFeatures": ["RGB Lighting", "PCIe 4.0 Support", "Wi-Fi 6"]
+    },
+    {
+      "keyFeatures": {
+        "modelName": "MSI MPG B450 Tomahawk Max",
+        "brandName": "MSI",
+        "name": "MPG B450 Tomahawk Max",
+        "socketType": "AM4",
+        "chipset": "B450",
+        "memoryType": "DDR4",
+        "memorySlots": 4,
+        "maxMemory": "64GB",
+        "audio": "Realtek ALC892",
+        "LAN": "Realtek 8111H",
+        "formFactor": "ATX",
+        "price": {
+          "regular": 120,
+          "discount": 110,
+          "emi": 10
+        }
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1ah1gPvmN5SCOxEZjeM0Prio22xTmi7yq",
+        "https://drive.google.com/uc?export=download&id=1kLeHgOoVFm08OwZnJIDjQ90biH5g_dSS",
+        "https://drive.google.com/uc?export=download&id=1SuIQdtrewGf7AF-Kgcqb19gOwiMWltuT"
+      ],
+      "quantity": 30,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "specialFeatures": ["Mystic Light RGB", "USB Type-C", "Extended Heatsink Design"]
+    },
+    {
+      "keyFeatures": {
+        "modelName": "Gigabyte B550 AORUS Pro",
+        "brandName": "Gigabyte",
+        "name": "B550 AORUS Pro",
+        "socketType": "AM4",
+        "chipset": "B550",
+        "memoryType": "DDR4",
+        "memorySlots": 4,
+        "maxMemory": "128GB",
+        "audio": "Realtek ALC1220-VB",
+        "LAN": "Intel GbE LAN",
+        "formFactor": "ATX",
+        "price": {
+          "regular": 180,
+          "discount": 170,
+          "emi": 15
+        }
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1049j58DYlbT_kqbhEFN3mZd6E9152-NS",
+        "https://drive.google.com/uc?export=download&id=1gIKJV_BkTpOdZkWDHO91JecpI2WpVzOc",
+        "https://drive.google.com/uc?export=download&id=1wKUIlwEVu0EdwdRmiEKoVsPsZJT3ex-B"
+      ],
+      "quantity": 22,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "specialFeatures": ["RGB Fusion 2.0", "PCIe 4.0 Support", "Smart Fan 5"]
+    },
+    {
+      "keyFeatures": {
+        "modelName": "EVGA Z590 FTW WiFi 6",
+        "brandName": "EVGA",
+        "name": "Z590 FTW WiFi 6",
+        "socketType": "LGA1200",
+        "chipset": "Z590",
+        "memoryType": "DDR4",
+        "memorySlots": 4,
+        "maxMemory": "128GB",
+        "audio": "Realtek ALC1220",
+        "LAN": "Intel i225V 2.5Gb/s Ethernet",
+        "formFactor": "ATX",
+        "price": {
+          "regular": 250,
+          "discount": 230,
+          "emi": 20
+        }
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1m2g-xulIezjHN3NOB7IxlHby7x5K6H78",
+        "https://drive.google.com/uc?export=download&id=1u5j9MwiYHqEMuNd_utq5_3TmFvHqkbG_",
+        "https://drive.google.com/uc?export=download&id=14cQoZgD4q7tPGwwmGiww0QmzGFTG6Puw"
+      ],
+      "quantity": 15,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "specialFeatures": ["Wireless AX", "Debug LED", "Triple BIOS Support"]
+    },
+    {
+      "keyFeatures": {
+        "modelName": "Biostar B450MH",
+        "brandName": "Biostar",
+        "name": "B450MH",
+        "socketType": "AM4",
+        "chipset": "B450",
+        "memoryType": "DDR4",
+        "memorySlots": 2,
+        "maxMemory": "32GB",
+        "audio": "Realtek ALC887",
+        "LAN": "Realtek 8111H",
+        "formFactor": "Micro ATX",
+        "price": {
+          "regular": 80,
+          "discount": 75,
+          "emi": 8
+        }
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1GGzkjE9m8qp6TPVRaMc5QeFe_6CT8KCs",
+        "https://drive.google.com/uc?export=download&id=1fcT6-KSoKYRCr-8Kwaj591vxy4Gy8muq",
+        "https://drive.google.com/uc?export=download&id=14TAXC-ANsNCj_QQMUmkU9ira9KEr51bQ"
+      ],
+      "quantity": 20,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "specialFeatures": ["Super Durable Caps", "Iron Slot Protection", "LED Header"]
+    },
+    {
+      "keyFeatures": {
+        "modelName": "ASUS Prime X570-Pro",
+        "brandName": "ASUS",
+        "name": "Prime X570-Pro",
+        "socketType": "AM4",
+        "chipset": "X570",
+        "memoryType": "DDR4",
+        "memorySlots": 4,
+        "maxMemory": "128GB",
+        "audio": "Realtek S1220A",
+        "LAN": "Intel I211-AT",
+        "formFactor": "ATX",
+        "price": {
+          "regular": 220,
+          "discount": 200,
+          "emi": 18
+        }
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1f7VBcF4TROQqZllY-_IZFC90to9dakNA",
+        "https://drive.google.com/uc?export=download&id=1bs2xH6Ve8GRIPqf17waXy7BQ_dWEhUhX",
+        "https://drive.google.com/uc?export=download&id=1jKDEAGlht2fzg_hBD-KUmCHYoN7q_l99"
+      ],
+      "quantity": 18,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "specialFeatures": ["5-Way Optimization", "Aura Sync RGB", "PCIe 4.0 Ready"]
+    }
+  ]
+  

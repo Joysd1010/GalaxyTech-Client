@@ -1,0 +1,943 @@
+[
+    {
+      "keyFeatures": {
+        "name": "ASUS ROG Strix B550-F Gaming",
+        "modelName": "B550-F Gaming",
+        "brandName": "ASUS",
+        "supportedCPU": "AMD Ryzen 5000 Series",
+        "graphicsOutput": "HDMI, DisplayPort",
+        "specialFeatures": ["ROG SupremeFX Audio", "AI Noise-Canceling Microphone", "Aura Sync RGB Lighting"],
+        "price": {
+          "regular": 200,
+          "discount": 180,
+          "emi": 10
+        }
+      },
+      "basic": {
+        "chipset": "AMD B550",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000"],
+        "audioFeature": "ROG SupremeFX",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1HPF5EOEUlJfPHhXzIKvhd2rrIa6VgLdw",
+        "https://drive.google.com/uc?export=download&id=1mKRrNsIP1OibmVBhPbDYLEJ9L2wwN5P5",
+        "https://drive.google.com/uc?export=download&id=1mFIoI2c9IsE3LxUeKITaQZzNtOx5ok_S"
+      ],
+      "quantity": 80,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Manufacturer's Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["3200 MHz", "3000 MHz", "2933 MHz", "2800 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "dvi": false,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 2 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "MSI MAG B450 Tomahawk",
+        "modelName": "B450 Tomahawk",
+        "brandName": "MSI",
+        "supportedCPU": "AMD Ryzen 3000 Series",
+        "graphicsOutput": "DVI-D, HDMI",
+        "specialFeatures": ["Audio Boost", "Core Boost", "Flash BIOS Button"],
+        "price": {
+          "regular": 120,
+          "discount": 110,
+          "emi": 8
+        }
+      },
+      "basic": {
+        "chipset": "AMD B450",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 3000", "Ryzen 2000", "Ryzen 1000"],
+        "audioFeature": "Audio Boost",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=164lAOd0_DIztiN3AetDKWcd7GbW9dDuR",
+        "https://drive.google.com/uc?export=download&id=1NnXBtCFCvOElRMpdarY3tXP8kCTfgyPH",
+        "https://drive.google.com/uc?export=download&id=1qPh4g5TpG9c7lL0gX8nDMcpUlzLZT3NT"
+      ],
+      "quantity": 60,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 64,
+        "supportedMemoryBusList": ["3466 MHz", "3200 MHz", "2933 MHz", "2667 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "dvi": true,
+        "usbOutputs": ["USB 3.1 Gen 2", "USB 3.1 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.1 Gen 2 Type-A", "USB 3.1 Gen 1 Type-A", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASUS ROG Strix B550-F Gaming",
+        "modelName": "ROG Strix B550-F",
+        "brandName": "ASUS",
+        "supportedCPU": "AMD Ryzen 5000 Series",
+        "graphicsOutput": "HDMI 2.1, DisplayPort 1.4",
+        "specialFeatures": ["ROG SupremeFX Audio", "AI Overclocking", "Aura Sync RGB"],
+        "price": {
+          "regular": 200,
+          "discount": 190,
+          "emi": 12
+        }
+      },
+      "basic": {
+        "chipset": "AMD B550",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000", "Ryzen 2000"],
+        "audioFeature": "ROG SupremeFX Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Hj03gOzJBX0n_-Ott9J_B_LQUTaNaEPe",
+        "https://drive.google.com/uc?export=download&id=11js_3y5Q4ID9I2N8yABSGMaARrjBNZuD",
+        "https://drive.google.com/uc?export=download&id=1MJCaBwsVr_G7DRwntfkvdid09bGIQoDH"
+      ],
+      "quantity": 45,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4800 MHz", "4400 MHz", "4133 MHz", "3600 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "Gigabyte Aorus X570 Elite",
+        "modelName": "Aorus X570 Elite",
+        "brandName": "Gigabyte",
+        "supportedCPU": "AMD Ryzen 5000 Series",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Realtek ALC1200 Audio", "PCIe 4.0 Support", "RGB Fusion 2.0"],
+        "price": {
+          "regular": 220,
+          "discount": 210,
+          "emi": 10
+        }
+      },
+      "basic": {
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000", "Ryzen 2000"],
+        "audioFeature": "Realtek ALC1200 Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1v8Jq4gZqocbUcYgE1QZ_53Gb4YRaYTvk",
+        "https://drive.google.com/uc?export=download&id=1MlC13o6xcj7bfi8yPZrT2TdY-k_hHKZZ",
+        "https://drive.google.com/uc?export=download&id=1ZU4tXm2qJEK0lBV3sSdU2ais8s10t4h8"
+      ],
+      "quantity": 35,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4400 MHz", "4000 MHz", "3600 MHz", "3200 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "Gigabyte Aorus X570 Elite",
+        "modelName": "Aorus X570 Elite",
+        "brandName": "Gigabyte",
+        "supportedCPU": "AMD Ryzen 5000 Series",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Realtek ALC1200 Audio", "PCIe 4.0 Support", "RGB Fusion 2.0"],
+        "price": {
+          "regular": 220,
+          "discount": 210,
+          "emi": 10
+        }
+      },
+      "basic": {
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000", "Ryzen 2000"],
+        "audioFeature": "Realtek ALC1200 Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1AmOlYnZcIqeuwrJOZ3QeBsV7IiUR4JMw",
+        "https://drive.google.com/uc?export=download&id=1gp8KMXMHV7NrRrYs4iidKk4Mp1bkIwrc",
+        "https://drive.google.com/uc?export=download&id=16zHC2vmDvu4LnpsJQHCgRXg2ITgXkJOa"
+      ],
+      "quantity": 35,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4400 MHz", "4000 MHz", "3600 MHz", "3200 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASRock B550M-ITX/ac",
+        "modelName": "B550M-ITX/ac",
+        "brandName": "ASRock",
+        "supportedCPU": "AMD Ryzen 5000 Series",
+        "graphicsOutput": "HDMI 2.1, DisplayPort 1.4",
+        "specialFeatures": ["Realtek ALC887 Audio", "Wi-Fi 6", "Steel Slot PCIe"],
+        "price": {
+          "regular": 180,
+          "discount": 170,
+          "emi": 9
+        }
+      },
+      "basic": {
+        "chipset": "AMD B550",
+        "formFactor": "Mini-ITX",
+        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000", "Ryzen 2000"],
+        "audioFeature": "Realtek ALC887 Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1zf5yritYzyS9SiPF6M8QrR50zJd6TW-a",
+        "https://drive.google.com/uc?export=download&id=16dqj55_HwoEVUg--fCksPTewejkMsR_k",
+        "https://drive.google.com/uc?export=download&id=164yEBqMQnunLGMHqCvEdpDhbi5P_FEvW"
+      ],
+      "quantity": 25,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 2,
+        "maxMemorySize": 64,
+        "supportedMemoryBusList": ["4800 MHz", "4400 MHz", "4133 MHz", "3600 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "MSI MPG B550 Gaming Edge WiFi",
+        "modelName": "MPG B550 Gaming Edge",
+        "brandName": "MSI",
+        "supportedCPU": "AMD Ryzen 5000 Series",
+        "graphicsOutput": "HDMI 2.1, DisplayPort 1.4",
+        "specialFeatures": ["Audio Boost 4", "Wi-Fi 6", "Mystic Light RGB"],
+        "price": {
+          "regular": 210,
+          "discount": 200,
+          "emi": 11
+        }
+      },
+      "basic": {
+        "chipset": "AMD B550",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000", "Ryzen 2000"],
+        "audioFeature": "Audio Boost 4",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1Xxr7i-kdWAmZ0iBmEn1N4bTBD3nuKlDt",
+        "https://drive.google.com/uc?export=download&id=1hu_NGcDvnptntH80gDgr6MKQkMy-YeAU",
+        "https://drive.google.com/uc?export=download&id=1_EhgzBwUnGCRCll_Yo4vUCw51ns-Vz8L"
+      ],
+      "quantity": 40,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4400 MHz", "4000 MHz", "3600 MHz", "3200 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "EVGA Z590 FTW WiFi",
+        "modelName": "Z590 FTW",
+        "brandName": "EVGA",
+        "supportedCPU": "Intel 11th Gen Core Processors",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Creative Sound Core3D Audio", "Wi-Fi 6", "EVGA ELEET X1"],
+        "price": {
+          "regular": 250,
+          "discount": 240,
+          "emi": 13
+        }
+      },
+      "basic": {
+        "chipset": "Intel Z590",
+        "formFactor": "ATX",
+        "supportedCPUList": ["Intel 11th Gen Core", "10th Gen Core"],
+        "audioFeature": "Creative Sound Core3D Audio",
+        "socketInfo": "LGA 1200"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1m_C5fq_lkFEu0lEJ1X-15nj2XSSPwRRB",
+        "https://drive.google.com/uc?export=download&id=1uonEv5IHEDlbzP7RDiiAP5AHNQV7GWkf",
+        "https://drive.google.com/uc?export=download&id=16y93WXvke08xx80NuK5kh8Cf5IdouxFT"
+      ],
+      "quantity": 30,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["5333 MHz", "4800 MHz", "4400 MHz", "4000 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASUS TUF Gaming B460-PRO",
+        "modelName": "TUF Gaming B460-PRO",
+        "brandName": "ASUS",
+        "supportedCPU": "Intel 10th Gen Core Processors",
+        "graphicsOutput": "HDMI 1.4b, DisplayPort 1.4",
+        "specialFeatures": ["TUF Gaming Audio", "Intel 1Gb Ethernet", "Military-grade Components"],
+        "price": {
+          "regular": 150,
+          "discount": 140,
+          "emi": 7
+        }
+      },
+      "basic": {
+        "chipset": "Intel B460",
+        "formFactor": "ATX",
+        "supportedCPUList": ["Intel 10th Gen Core"],
+        "audioFeature": "TUF Gaming Audio",
+        "socketInfo": "LGA 1200"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1xW7wG0RzAV2LhHCQk86IxTMTLcNociY_",
+        "https://drive.google.com/uc?export=download&id=15Z5nS8pPGd_Zz-hS5W8aXhEOA9oQbkuP",
+        "https://drive.google.com/uc?export=download&id=1Iu7amNmVK780L6ZDR2yLNFunH5SjzOn0"
+      ],
+      "quantity": 50,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["2933 MHz", "2666 MHz", "2400 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 1 Type-A", "USB 2.0 Type-A", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "Biostar Racing X570GT8",
+        "modelName": "Racing X570GT8",
+        "brandName": "Biostar",
+        "supportedCPU": "AMD Ryzen 3000 Series",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Hi-Fi Audio", "RGB Lighting", "Dual BIOS"],
+        "price": {
+          "regular": 180,
+          "discount": 170,
+          "emi": 9
+        }
+      },
+      "basic": {
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 3000", "Ryzen 2000", "Ryzen 1000"],
+        "audioFeature": "Hi-Fi Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1cvPJSPIoHKS6IT8JyiydqgR0lwx45ewJ",
+        "https://drive.google.com/uc?export=download&id=1tseOQfL5YE8oRmIY6NBeWkFzCCVzK11E",
+        "https://drive.google.com/uc?export=download&id=1J_Eb3BWVKZG_Eqp9cGNLmueCyaHBwDzx"
+      ],
+      "quantity": 30,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4000 MHz", "3600 MHz", "3200 MHz", "2933 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASRock H470M-ITX/ac",
+        "modelName": "H470M-ITX/ac",
+        "brandName": "ASRock",
+        "supportedCPU": "Intel 10th Gen Core Processors",
+        "graphicsOutput": "HDMI 1.4, DisplayPort 1.4",
+        "specialFeatures": ["Realtek ALC1200 Audio", "Wi-Fi 6", "Ultra M.2 Slot"],
+        "price": {
+          "regular": 160,
+          "discount": 150,
+          "emi": 8
+        }
+      },
+      "basic": {
+        "chipset": "Intel H470",
+        "formFactor": "Mini-ITX",
+        "supportedCPUList": ["Intel 10th Gen Core"],
+        "audioFeature": "Realtek ALC1200 Audio",
+        "socketInfo": "LGA 1200"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1nWYIjdMh98Ir3AwW2ybbpu9ilJLAem7T",
+        "https://drive.google.com/uc?export=download&id=1OShx0nz_CtkqJZ1-xziYZ-KfQ5qeH2_K",
+        "https://drive.google.com/uc?export=download&id=1-SSbOHxRnzrnRhAXJQrql3XIZvL9tUow"
+      ],
+      "quantity": 25,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 2,
+        "maxMemorySize": 64,
+        "supportedMemoryBusList": ["2933 MHz", "2666 MHz", "2400 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["Ultra M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "MSI MPG Z490 Gaming Edge WiFi",
+        "modelName": "MPG Z490 Gaming Edge",
+        "brandName": "MSI",
+        "supportedCPU": "Intel 10th Gen Core Processors",
+        "graphicsOutput": "HDMI 1.4b, DisplayPort 1.4",
+        "specialFeatures": ["Audio Boost", "Wi-Fi 6", "Mystic Light RGB"],
+        "price": {
+          "regular": 220,
+          "discount": 210,
+          "emi": 11
+        }
+      },
+      "basic": {
+        "chipset": "Intel Z490",
+        "formFactor": "ATX",
+        "supportedCPUList": ["Intel 10th Gen Core"],
+        "audioFeature": "Audio Boost",
+        "socketInfo": "LGA 1200"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1YSyNX8Cm6R4FeQS8EVmDLNhnBTuZWpHA",
+        "https://drive.google.com/uc?export=download&id=19SxT4aXmxb_N5757pjaK40IYbst2ydhy",
+        "https://drive.google.com/uc?export=download&id=1ceCUlfhW99t0CaVMnTAcAl3JtFumvFwA"
+      ],
+      "quantity": 35,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4800 MHz", "4400 MHz", "4133 MHz", "3600 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "Gigabyte B360M DS3H",
+        "modelName": "B360M DS3H",
+        "brandName": "Gigabyte",
+        "supportedCPU": "Intel 8th Gen Core Processors",
+        "graphicsOutput": "DVI-D, HDMI",
+        "specialFeatures": ["High-Quality Audio Capacitors", "Dual Ultra-Fast M.2", "Smart Fan 5"],
+        "price": {
+          "regular": 120,
+          "discount": 110,
+          "emi": 8
+        }
+      },
+      "basic": {
+        "chipset": "Intel B360",
+        "formFactor": "Micro-ATX",
+        "supportedCPUList": ["Intel 8th Gen Core"],
+        "audioFeature": "High-Quality Audio Capacitors",
+        "socketInfo": "LGA 1151"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1LKaQ4jZ4ysljNgjzFhXb1vQr3iXlPbBL",
+        "https://drive.google.com/uc?export=download&id=170XFZrR9W3CPpSN_6QhmqgYv3SET5Hyl",
+        "https://drive.google.com/uc?export=download&id=1t_FuBcce6qv-9P_KvhhxE39qdE4HROs5"
+      ],
+      "quantity": 40,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 64,
+        "supportedMemoryBusList": ["2666 MHz", "2400 MHz"]
+      },
+      "connectorPorts": {
+        "dvi": true,
+        "hdmi": true,
+        "usbOutputs": ["USB 3.1 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["Dual M.2", "SATA"],
+        "ioPortList": ["USB 3.1 Gen 1 Type-A", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASUS Prime X570-P",
+        "modelName": "Prime X570-P",
+        "brandName": "ASUS",
+        "supportedCPU": "AMD Ryzen 3000 Series",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Realtek S1200A Audio", "ASUS OptiMem", "UEFI BIOS"],
+        "price": {
+          "regular": 190,
+          "discount": 180,
+          "emi": 10
+        }
+      },
+      "basic": {
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 3000", "Ryzen 2000", "Ryzen 1000"],
+        "audioFeature": "Realtek S1200A Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1fU1srQWFIgy7BdsktDoZPhdcMljSqHuT",
+        "https://drive.google.com/uc?export=download&id=1kzBCuIWF7Hu-9b_bjGeynsNm_QeB9QNe",
+        "https://drive.google.com/uc?export=download&id=1-46b7JNSi2tk6VNLmhGOQXv_4JU68N_t"
+      ],
+      "quantity": 50,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4400 MHz", "4000 MHz", "3600 MHz", "3200 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASRock X570 Phantom Gaming-ITX/TB3",
+        "modelName": "X570 Phantom Gaming-ITX/TB3",
+        "brandName": "ASRock",
+        "supportedCPU": "AMD Ryzen 3000 Series",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Thunderbolt 3", "Polychrome RGB", "7.1 CH HD Audio"],
+        "price": {
+          "regular": 250,
+          "discount": 240,
+          "emi": 13
+        }
+      },
+      "basic": {
+        "chipset": "AMD X570",
+        "formFactor": "Mini-ITX",
+        "supportedCPUList": ["AMD Ryzen 3000"],
+        "audioFeature": "7.1 CH HD Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1owPwogcu8VJfd3DR5BuabPCj6ECxJSVF",
+        "https://drive.google.com/uc?export=download&id=1A8ODNNTBcSQ6nv6SWpAGNqGg7LXgG81a",
+        "https://drive.google.com/uc?export=download&id=1O3gN2GmC3plCqDP80d5nQ_0k9KjLYgYb"
+      ],
+      "quantity": 20,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 2,
+        "maxMemorySize": 64,
+        "supportedMemoryBusList": ["4666 MHz", "4400 MHz", "4133 MHz", "3600 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "Thunderbolt 3"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["Ultra M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 2 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "Gigabyte Z590I AORUS ULTRA",
+        "modelName": "Z590I AORUS ULTRA",
+        "brandName": "Gigabyte",
+        "supportedCPU": "Intel 11th Gen Core Processors",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Direct 8+1 Phases Digital VRM", "Intel Wi-Fi 6", "RGB Fusion 2.0"],
+        "price": {
+          "regular": 230,
+          "discount": 220,
+          "emi": 12
+        }
+      },
+      "basic": {
+        "chipset": "Intel Z590",
+        "formFactor": "Mini-ITX",
+        "supportedCPUList": ["Intel 11th Gen Core"],
+        "audioFeature": "Realtek ALC1220-VB Audio",
+        "socketInfo": "LGA 1200"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1tfydN-UogLco561Kc12VmfSuJ0AGpdaE",
+        "https://drive.google.com/uc?export=download&id=1Wgq0XgIe38xL9fascC4vq4DJWCZ4bHGY",
+        "https://drive.google.com/uc?export=download&id=18zVjY8UTncC6BAU3TL5qnleXsf5Nxgls"
+      ],
+      "quantity": 18,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 2,
+        "maxMemorySize": 64,
+        "supportedMemoryBusList": ["5600 MHz", "5333 MHz", "5000 MHz", "4800 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASUS ROG Crosshair VIII Hero",
+        "modelName": "ROG Crosshair VIII Hero",
+        "brandName": "ASUS",
+        "supportedCPU": "AMD Ryzen 3000 Series",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["SupremeFX S1220 Audio", "Wi-Fi 6", "Aura Sync RGB"],
+        "price": {
+          "regular": 320,
+          "discount": 310,
+          "emi": 15
+        }
+      },
+      "basic": {
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 3000"],
+        "audioFeature": "SupremeFX S1220 Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1F8aR8WZ0DrunnlCJLvjfiy_-coSxq93L",
+        "https://drive.google.com/uc?export=download&id=1oBGYattAPabf_eKKeifjsjwbwxZ1Wz5F",
+        "https://drive.google.com/uc?export=download&id=1IgZlOhZkYonnmGbwWyZZQYLJbbwAx-nC"
+      ],
+      "quantity": 22,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4800 MHz", "4600 MHz", "4400 MHz", "4133 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "MSI MAG B560M Mortar WiFi",
+        "modelName": "MAG B560M Mortar WiFi",
+        "brandName": "MSI",
+        "supportedCPU": "Intel 11th Gen Core Processors",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Audio Boost 4", "Wi-Fi 6E", "Lightning Gen 4 M.2"],
+        "price": {
+          "regular": 180,
+          "discount": 170,
+          "emi": 9
+        }
+      },
+      "basic": {
+        "chipset": "Intel B560",
+        "formFactor": "Micro-ATX",
+        "supportedCPUList": ["Intel 11th Gen Core"],
+        "audioFeature": "Audio Boost 4",
+        "socketInfo": "LGA 1200"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1QSH5oPaSJ9UWGuViOUh-5OCJb4Wajb72",
+        "https://drive.google.com/uc?export=download&id=1CfDoIsZQYKHvQR1_MqAp-hLeY3sUoBi8",
+        "https://drive.google.com/uc?export=download&id=1Rl55BL8S5BS3GdJPm2xVC1k2uIaH9tQI"
+      ],
+      "quantity": 28,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["5066 MHz", "4800 MHz", "4600 MHz", "4400 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["Lightning Gen 4 M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "EVGA Z490 Dark",
+        "modelName": "Z490 Dark",
+        "brandName": "EVGA",
+        "supportedCPU": "Intel 10th Gen Core Processors",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["Creative Sound Core3D Audio", "10-layer PCB", "Triple BIOS"],
+        "price": {
+          "regular": 300,
+          "discount": 290,
+          "emi": 14
+        }
+      },
+      "basic": {
+        "chipset": "Intel Z490",
+        "formFactor": "E-ATX",
+        "supportedCPUList": ["Intel 10th Gen Core"],
+        "audioFeature": "Creative Sound Core3D Audio",
+        "socketInfo": "LGA 1200"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=1HrDcobIBU41Edq5KSOB-TSivEqdQuJQn",
+        "https://drive.google.com/uc?export=download&id=14LM4fRwFnQ9yBv_AamWyelW1AI2NFogQ",
+        "https://drive.google.com/uc?export=download&id=1SWrsfX6KOvxcS1Gy8Azfoz9Bi7EFqZo8"
+      ],
+      "quantity": 15,
+      "warrantyDetails": {
+        "warrantyPeriod": 2,
+        "warrantyType": "Limited Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4800 MHz", "4600 MHz", "4400 MHz", "4133 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "1 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": false
+      }
+    },
+    {
+      "keyFeatures": {
+        "name": "ASUS ROG Strix X570-E Gaming",
+        "modelName": "ROG Strix X570-E Gaming",
+        "brandName": "ASUS",
+        "supportedCPU": "AMD Ryzen 3000 Series",
+        "graphicsOutput": "HDMI 2.0, DisplayPort 1.4",
+        "specialFeatures": ["SupremeFX S1220A Audio", "Wi-Fi 6", "Aura Sync RGB"],
+        "price": {
+          "regular": 280,
+          "discount": 270,
+          "emi": 14
+        }
+      },
+      "basic": {
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "supportedCPUList": ["AMD Ryzen 3000"],
+        "audioFeature": "SupremeFX S1220A Audio",
+        "socketInfo": "AM4"
+      },
+      "images": [
+        "https://drive.google.com/uc?export=download&id=16jN5oTDRkM7Q83aRB1CCKcgQiDlYBDHv",
+        "https://drive.google.com/uc?export=download&id=1jXlVUNyHr7qU5UZSjBcm8BsExKD6ulUe",
+        "https://drive.google.com/uc?export=download&id=1Cm3sLV0rcR0CdEjeB96ZOoB338xz5-GP"
+      ],
+      "quantity": 25,
+      "warrantyDetails": {
+        "warrantyPeriod": 3,
+        "warrantyType": "Extended Warranty"
+      },
+      "memory": {
+        "ramType": "DDR4",
+        "slotsOfRam": 4,
+        "maxMemorySize": 128,
+        "supportedMemoryBusList": ["4600 MHz", "4400 MHz", "4133 MHz", "3800 MHz"]
+      },
+      "connectorPorts": {
+        "hdmi": true,
+        "displayPort": true,
+        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
+        "lanPort": "2.5 GbE",
+        "storageSlots": ["M.2", "SATA"],
+        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
+        "tpm": true
+      }
+    }
+  ]
+  

@@ -5,7 +5,7 @@ import Laptop from "./NavItem/Laptop";
 import Monitor from "./NavItem/Monitor";
 import Phone from "./NavItem/Phone";
 import Components from "./NavItem/Components";
-// import NavLinks from './Navlink';
+import NavLinks from './../../../assets/Menu.json';
 
 const NavBar = () => {
   // ========================== to do ================
@@ -15,14 +15,15 @@ const NavBar = () => {
   // -------------- dropdown activated style handler ------------------
   
   return (
-    <div className=" px-20 py-3 shadow-md sticky flex gap-x-10">
+    <div className=" px-20 z-40 py-3 shadow-md sticky flex gap-x-10">
     {/* ******************************* Desktop navigation *************************** */}
+   
     <DeskTop/>
     <Laptop/>
-    <Components/>
     <Phone/>
-    
+    <Components/>
     <Monitor/>
+   
   </div>
 );
 };

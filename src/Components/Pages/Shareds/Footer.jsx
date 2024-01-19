@@ -11,7 +11,7 @@ const Footer = () => {
   // # make use of email.js
   // # make use of phone call, implement facility to make phone call
   return (
-    <div className="bg-[#270722] px-20 text-gray-400  py-8">
+    <div className="bg-[#120f39] px-20 text-gray-400  py-8">
       <div className="flex ">
         
 

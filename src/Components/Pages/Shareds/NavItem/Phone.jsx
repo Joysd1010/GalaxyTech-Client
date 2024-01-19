@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Phone = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    
+
 
     const handleOpen = () => {
       setIsDropdownOpen(true);

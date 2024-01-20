@@ -2,10 +2,11 @@ import React from "react";
 import Slider from "./Slider";
 import Transition from "./Transition";
 import Timer from "./Timer";
+import Category from "./Category";
 
 const Home = () => {
   return (
-    <div>
+    <div className=" pb-5">
       <div className="flex gap-2 mx-5">
         <div className="w-2/3">
           <Slider />
@@ -28,6 +29,7 @@ const Home = () => {
         </div>
       </div>
       <Transition/>
+      <Category/>
     </div>
   );
 };

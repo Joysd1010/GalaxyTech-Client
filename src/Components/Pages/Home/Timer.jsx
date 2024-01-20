@@ -54,7 +54,7 @@ const Timer = () => {
         </div>
         <div>
           <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-7 bg-blue-600 w-full text-white">
-            Days
+            Minutes
           </h1>
 
           <h1 className=" text-center rounded-md text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.minutes}</h1>

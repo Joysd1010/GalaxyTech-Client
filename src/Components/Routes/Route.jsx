@@ -3,6 +3,7 @@ import Layout from "../Layout/Layout";
 import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/LOGIN/Login";
+import Signup from "../Pages/Login/Signup/signup";
 
 const Router = createBrowserRouter([
   {
@@ -20,8 +21,8 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "desktopOffer",
-        element: <p>my desktop ofer</p>
+        path: "/signup",
+        element: <Signup/>
       
       },
       {

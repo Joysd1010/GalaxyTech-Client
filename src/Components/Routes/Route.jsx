@@ -61,7 +61,7 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "Asus",
+        path: "monitor/Asus",
         element: <p>home</p>
       
       },

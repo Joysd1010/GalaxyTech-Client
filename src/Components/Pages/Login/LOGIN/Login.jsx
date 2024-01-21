@@ -44,7 +44,7 @@ const Login = () => {
   };
 
   return (
-    <div className="pt-16">
+    <div className="">
       {/* <Helmet>
           <title>Sumner Sports camp | Login</title>
         </Helmet> */}

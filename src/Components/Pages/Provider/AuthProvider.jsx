@@ -11,7 +11,7 @@ import app from "../Firebase/firebase.config";
 import { useState } from "react";
 import { GoogleAuthProvider } from "firebase/auth";
 import { signInWithPopup } from "firebase/auth";
-import { useLocation } from "react-router-dom";
+
 
 export const AuthContext = createContext(null);
 
@@ -37,6 +37,8 @@ const AuthProvider = ({ children }) => {
   const googleSignIn = () => {
     setLoading(true);
     return signInWithPopup(auth, googleProvider);
+    
+
   };
 
   const updateUser = (name, photo) => {

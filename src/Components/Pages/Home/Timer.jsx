@@ -53,7 +53,7 @@ const Timer = () => {
           <h1 className=" text-center rounded-md text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.hours}</h1>
         </div>
         <div>
-          <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-7 bg-blue-600 w-full text-white">
+          <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-3 bg-blue-600 w-full text-white">
             Minutes
           </h1>
 

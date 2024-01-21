@@ -4,6 +4,10 @@ import Transition from "./Transition";
 import Timer from "./Timer";
 import Category from "./Category";
 
+
+// ================== to do ==================
+// show featured products
+// category linking
 const Home = () => {
   return (
     <div className=" pb-5">
@@ -17,7 +21,7 @@ const Home = () => {
             src="https://img.freepik.com/premium-vector/cyber-monday-sale-banner-template_7087-895.jpg"
             alt=""
           />
-          <h1 className="text-white bg-blue-700 text-2xl text-center rounded-lg my-3 py-3 mr-3">
+          <h1 className="text-white bg-blue-700 text-2xl text-center rounded-lg my-3 py-3 mr-4">
             -:Offers time left:-
           </h1>
           <Timer />

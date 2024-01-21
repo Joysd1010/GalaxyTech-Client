@@ -18,7 +18,8 @@ const DeskTop = () => {
     const handleClose = () => {
         setIsDropdownOpen(false);
     };
-    return (<div>
+    return (
+    <div>
         <div className="dropdown dropdown-hover ">
             <label tabIndex={0}
                 className={
@@ -43,7 +44,7 @@ const DeskTop = () => {
                     </div>
 
                     {
-                    Submenu && (<ul tabindex="0" class="dropdown-content z-[1]  shadow bg-base-100  w-40">
+                    Submenu && (<ul tabindex="0" className="dropdown-content z-[1]  shadow bg-base-100  w-40">
                         <li className=" text-black hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
                            <NavLink to={'intelpc'}>Intel PC</NavLink> 
                         </li>

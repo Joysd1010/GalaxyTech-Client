@@ -4,22 +4,23 @@ import { BsSearch } from "react-icons/bs";
 import { FaGift, FaUser } from "react-icons/fa";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
 
+ 
 
-
-// ======================= to do ==============================
-// # make all the link connected
-// # Account will be conditional with user name 
-// # Implementing search 
-
+  // ======================= to do ==============================
+  // # make all the link connected
+  // # Account will be conditional with user name
+  // # Implementing search
 
   return (
     <div className="px-10 py-3 bg-[#270722]">
       <div className="flex items-center justify-around">
-        <img src={logo} className=" w-36" />
-        <div >
+      <Link to={'/'}> <img src={logo} className=" w-36" /></Link> 
+        <div>
           <input
             type="text"
             placeholder=" Search"
@@ -37,7 +38,7 @@ const Header = () => {
           </Link>
         </div>
         <div className=" flex items-center gap-3">
-          <div class="animate-pulse">
+          <div className="animate-pulse">
             <AiTwotoneThunderbolt color="red" size={25} />
           </div>
 
@@ -47,22 +48,37 @@ const Header = () => {
           </Link>
         </div>
         <div className=" flex items-center gap-3">
-          <FaUser color="red" size={25} />
+          {user ? (
+            <div className=" border-4 border-red-500  rounded-full "><img className=" w-20 p-2 rounded-full" src={user.photoURL} alt="" /></div>
+            
+          ) : (
+            <FaUser color="red" size={25} />
+          )}
 
           <div>
             {" "}
-            <h1 className="text-lg font-bold text-white">Account</h1>
-            <div className="flex gap-1">
-              <Link>
-                {" "}
-                <p className=" hover:text-red-400 text-xs text-white">Log in</p>
-              </Link>
-              <p className=" text-xs text-white"> Or</p>
-              <Link>
-                {" "}
-                <p className=" hover:text-red-400 text-xs text-white">Sign Up</p>
-              </Link>
-            </div>
+            <h1 className="text-lg font-bold text-white">
+              {user ? user.displayName : "Account"}
+            </h1>
+            {user ? (
+              <h1 onClick={logOut} className=" hover:text-red-400 text-xs text-white cursor-pointer">LogOut</h1>
+            ) : (
+              <div className="flex gap-1">
+                <Link to={'/login'}>
+                  
+                  <p className=" hover:text-red-400 text-xs text-white">
+                    Log in
+                  </p>
+                </Link>
+                <p className=" text-xs text-white"> Or</p>
+                <Link to={'/signup'}>
+                  {" "}
+                  <p className=" hover:text-red-400 text-xs text-white">
+                    Sign Up
+                  </p>
+                </Link>
+              </div>
+            )}
           </div>
         </div>
         <Link>

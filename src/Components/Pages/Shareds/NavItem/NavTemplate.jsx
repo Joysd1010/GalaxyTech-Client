@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { RxTriangleRight } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
+const NavTemplate = ({ element,header }) => {
 
-const Laptop = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
  
 
@@ -23,7 +23,7 @@ const Laptop = () => {
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}
         >
-          <NavLink to={"laptop"}>Laptop</NavLink>
+          <NavLink to={header.path}>{header.value}</NavLink>
         </label>
         <div
           onMouseEnter={handleOpen}
@@ -31,26 +31,15 @@ const Laptop = () => {
           tabIndex={0}
           className="dropdown-content z-[1]  flex flex-col   shadow-md bg-base-100 border-t-4 border-t-[#FF0303] w-36"
         >
-          <div className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
-            <NavLink to={"Asus"}>Asus</NavLink>
-          </div>
-          <div className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
-            <NavLink to={"HP"}> HP</NavLink>
-          </div>
-          <div className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
-            <NavLink to={"Dell"}>Dell</NavLink>
-          </div>
-          <div className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
-            <NavLink to={"MacBook"}>MacBook</NavLink>
-          </div>
-          <div className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
-            <NavLink to={"allLaptop"}>All Laptop</NavLink>
-          </div>
-          
+          {element.map((item, index) => (
+            <div className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
+              <NavLink to={item.path}>{item.value}</NavLink>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Laptop;
+export default NavTemplate;

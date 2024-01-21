@@ -1,6 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import Error from "../Pages/Error/Error";
+import Home from "../Pages/Home/Home";
+import Login from "../Pages/Login/LOGIN/Login";
+import Signup from "../Pages/Login/Signup/signup";
 
 const Router = createBrowserRouter([
   {
@@ -9,17 +12,17 @@ const Router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <p>home</p>
+        element: <Home/>
       
       },
       {
-        path: "desktop",
-        element: <p>my desktop</p>
+        path: "/login",
+        element: <Login/>
       
       },
       {
-        path: "desktopOffer",
-        element: <p>my desktop ofer</p>
+        path: "/signup",
+        element: <Signup/>
       
       },
       {
@@ -58,7 +61,7 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "Asus",
+        path: "monitor/Asus",
         element: <p>home</p>
       
       },
@@ -237,12 +240,13 @@ const Router = createBrowserRouter([
         element: <p>home</p>
       
       },
+      {
+        path: "*",
+        element: <Error/>,
+      },
 
     ],
   },
-  {
-    path: "*",
-    element: <Error/>,
-  },
+  
 ]);
 export default Router;

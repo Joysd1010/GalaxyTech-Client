@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Error = () => {
     return (
         <div >
-            <img src={gif} className='w-full h-[670px]' />
+            <img src={gif} className='w-full h-[500px]' />
             <Link to={'/'}>
             <button
   type="button"

@@ -1,52 +1,92 @@
 [
     {
         "name": "DeskTop",
-        "link":"desktop",
-        "id": 11
-    },
-    {
-        "name": "Laptop",
-        "id": 13,
-        "Child": [
+        "link": "desktop",
+        "id": "1",
+        "child": [
             {
-                "brand": "Asus",
-                "id": 2
-            }, {
-                "brand": "HP",
-                "id": 4
-            }, {
-                "brand": "Dell",
-                "id": 6
-            }, {
-                "brand": "Apple",
-                "id": 8
+                "name": "Desktop Offer",
+                "link": "desktop",
+                "id": "1",
+                "child": [
+                    {
+                        "submenu": "Intel PC",
+                        "link": "",
+                        "id": "1"
+                    },
+                    {
+                        "submenu": "AMD PC",
+                        "link": "",
+                        "id": "1"
+                    }
+                ]
+            },
+            {
+                "name": "Brand PC",
+                "link": "desktop",
+                "id": "1"
+            },
+            {
+                "name": "Apple iMac",
+                "link": "desktop",
+                "id": "1"
+            },
+            {
+                "name": "Mini PC",
+                "link": "desktop",
+                "id": "1"
+            },
+            
+            {
+                "name": "Show All PC",
+                "link": "desktop",
+                "id": "1"
             }
         ]
     },
     {
-        "name": "Phone",
-        "id": 15
-    },
-    {
-        "name": "UPS",
-        "id": 17
-    }, {
-        "name": "Monitor",
-        "id": 19
-    }, {
-        "name": "Keyboard",
-        "id": 111
-    } {
-        "name": "Mice",
-        "id": 113
-    } {
-        "name": "HeadPhone",
-        "id": 115
-    } {
-        "name": "SSD",
-        "id": 117
-    } {
-        "name": "Casing",
-        "id": 119
+        "name": "Laptop",
+        "link": "desktop",
+        "id": "1",
+        "child": [
+            {
+                "name": "Asus",
+                "link": "desktop",
+                "id": "1"
+                
+            },
+            {
+                "name": "HP",
+                "link": "desktop",
+                "id": "1"
+            },
+            {
+                "name": "Dell",
+                "link": "desktop",
+                "id": "1",
+                "child": [
+                    {
+                        "submenu": "Intel PC",
+                        "link": "",
+                        "id": "1"
+                    },
+                    {
+                        "submenu": "AMD PC",
+                        "link": "",
+                        "id": "1"
+                    }]
+            },
+            {
+                "name": "MacBook",
+                "link": "desktop",
+                "id": "1"
+            },
+            
+            {
+                "name": "ALl Laptop",
+                "link": "desktop",
+                "id": "1"
+            }
+        ]
     }
 ]

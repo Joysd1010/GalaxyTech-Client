@@ -11,7 +11,7 @@ const Footer = () => {
   // # make use of email.js
   // # make use of phone call, implement facility to make phone call
   return (
-    <div className="bg-[#270722] px-20 text-gray-400  py-8">
+    <div className="bg-[#120f39] px-20 text-gray-400  py-8">
       <div className="flex ">
         
 
@@ -20,7 +20,7 @@ const Footer = () => {
           <button className=" rounded-[50px] hover:border-red-500 border-gray-800 border-2 py-3 pl-3 pr-10 flex gap-3 items-center">
             {" "}
             <FaPhoneAlt size={20} color="white" />
-            <div class=" h-[3em] w-px  bg-gradient-to-tr from-transparent via-neutral-700 to-transparent opacity-100 dark:opacity-100"></div>
+            <div className=" h-[3em] w-px  bg-gradient-to-tr from-transparent via-neutral-700 to-transparent opacity-100 dark:opacity-100"></div>
             <div className="flex flex-col items-start">
               <p className="text-xs">10 AM - 7 PM</p>
               <h3 className=" text-xl font-semibold text-red-500">0165896</h3>
@@ -29,7 +29,7 @@ const Footer = () => {
           <button className=" rounded-[50px] hover:border-red-500 border-gray-800 border-2 py-3 pl-3 pr-10 flex gap-3 items-center">
             {" "}
             <BiLogoGmail size={20} color="white" />
-            <div class=" h-[3em] w-px  bg-gradient-to-tr from-transparent via-neutral-700 to-transparent opacity-100 dark:opacity-100"></div>
+            <div className=" h-[3em] w-px  bg-gradient-to-tr from-transparent via-neutral-700 to-transparent opacity-100 dark:opacity-100"></div>
             <div className="flex flex-col items-start">
               <p className="text-xs">Mail Us At</p>
               <h3 className=" text-xl font-semibold text-red-500">
@@ -98,7 +98,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr class="my-3 h-0.5 border-t-0 bg-gray-800 opacity-100 dark:opacity-50" />
+      <hr className="my-3 h-0.5 border-t-0 bg-gray-800 opacity-100 dark:opacity-50" />
       <div className="flex justify-between">
       <div className=" flex items-center gap-5">
         <p className=" text-xs">
@@ -126,7 +126,7 @@ const Footer = () => {
       </div>
 
       </div>
-      <hr class="my-3 h-0.5 border-t-0 bg-gray-800 opacity-100 dark:opacity-50" />
+      <hr className="my-3 h-0.5 border-t-0 bg-gray-800 opacity-100 dark:opacity-50" />
 <div className="flex justify-between text-xs">
     <div className="flex items-center gap-1"><AiOutlineCopyright/> 2023 Galaxy Tech | All right reserved </div>
     <div>Powered by : Galaxy Tech</div>

@@ -45,9 +45,7 @@ const Login = () => {
 
   return (
     <div className="">
-      {/* <Helmet>
-          <title>Sumner Sports camp | Login</title>
-        </Helmet> */}
+      
       <div className=" py-10 px-3 md:px-10 md:mx-20 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-36">
           <div>
@@ -71,7 +69,7 @@ const Login = () => {
                 type="email"
                 id="mail"
                 placeholder="Enter mail here"
-                className="w-full max-w-xs shadow-lg duration-700 hover:shadow-[#5572e6] shadow-[#dd7474] border-blue-600 input input-bordered"
+                className="w-full max-w-xs shadow-lg duration-700 bg-white  hover:shadow-[#5572e6] shadow-[#dd7474] border-blue-600 input "
                 {...register("email", { required: true })}
               />
               {errors.email && <span>This field is required</span>}
@@ -82,7 +80,7 @@ const Login = () => {
                 type="password"
                 id="pass"
                 placeholder="Enter your password"
-                className="w-full max-w-xs shadow-lg duration-700 hover:shadow-[#5572e6] shadow-[#dd7474] border-blue-600 input input-bordered "
+                className="w-full max-w-xs bg-white  shadow-lg duration-700 hover:shadow-[#5572e6] shadow-[#dd7474] border-blue-600 input "
                 {...register("password", { required: true })}
               />
               {errors.password && <span>This field is required</span>}
@@ -90,7 +88,7 @@ const Login = () => {
 
                 type="submit"
                 value="Login"
-                className="w-full max-w-xs my-5 duration-1000 shadow-lg hover:shadow-[#5572e6] shadow-[#dd7474] bg-[#F379A7] hover:bg-blue-400 input input-bordered btn"
+                className="w-full max-w-xs my-5 duration-1000 shadow-lg text-slate-800 hover:shadow-[#5572e6] shadow-[#dd7474] bg-[#F379A7] hover:bg-blue-400 input input-bordered btn"
               />{" "}
             </form>
             <p className="text-xl text-white">{error}</p>

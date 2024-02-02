@@ -24,7 +24,7 @@ const Header = () => {
           <input
             type="text"
             placeholder=" Search"
-            className=" w-[400px] inset-x-0 inset-y-0 dark:shadow-gray-800 outline-none shadow-inner rounded-lg pl-3 py-2 "
+            className=" w-[400px] inset-x-0 inset-y-0 dark:shadow-gray-800 bg-white outline-none shadow-inner rounded-lg pl-3 py-2 "
           />
           <button className="relative right-7">
             <BsSearch />

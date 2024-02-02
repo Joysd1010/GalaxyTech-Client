@@ -25,7 +25,7 @@ const NavBar = () => {
     { value: "Asus", path: "laptop",param:'Asus' },
     { value: "Lenovo", path: "laptop",param:'Lenovo' },
     { value: "MSI", path: "laptop", param:'MSI'},
-    { value: "Hp", path: "laptop/", param:'HP'},
+    { value: "Hp", path: "laptop", param:'HP'},
     { value: "All", path: "laptop",param:'All' },
     
   ];

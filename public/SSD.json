@@ -469,144 +469,111 @@
     },
     {
       "keyFeatures": {
-        "name": "Biostar B550MH",
-        "modelName": "B550MH",
-        "brandName": "Biostar",
-        "supportedCPU": "AMD Ryzen 5000 Series",
-        "graphicsOutput": "HDMI 2.1, DisplayPort 1.4",
-        "specialFeatures": ["Hi-Fi Audio", "RGB Lighting", "M.2 Cooling"],
+        "readSpeed": "3200 MB/s",
+        "writeSpeed": "2000 MB/s",
+        "interface": "NVMe PCIe 4.0",
+        "modelName": "WD Black SN850",
+        "brandName": "Western Digital",
+        "formFactor": "M.2 2280",
+        "name": "Black SN850",
+        "cellStatus": "TLC",
         "price": {
-          "regular": 130,
-          "discount": 120,
-          "emi": 7
-        }
-      },
-      "basic": {
-        "chipset": "AMD B550",
-        "formFactor": "Micro-ATX",
-        "supportedCPUList": ["AMD Ryzen 5000", "Ryzen 3000"],
-        "audioFeature": "Hi-Fi Audio",
-        "socketInfo": "AM4"
+          "regular": 180,
+          "discount": 170,
+          "emi": 18
+        },
+        "tbw": "800TB",
+        "mtbf": "1.8 million hours",
+        "flashType": "3D NAND",
+        "size": "2TB",
+        "operatingTemperature": "0°C to 75°C",
+        "storageTemperature": "-40°C to 85°C",
+        "shockResistance": "1200G",
+        "weight": "10 grams",
+        "physicalDimension": "80.15 x 22.15 x 3.5 mm"
       },
       "images": [
         "https://drive.google.com/uc?export=download&id=1-ga9ENOqG63FNpiGIy2wO0OEkXwEgfkF",
-        "https://drive.google.com/uc?export=download&id=1uqEg71INjMHfdxDgr606xPui8jQcZrZG",
-        "https://drive.google.com/uc?export=download&id=115pLF-lrSjqjfPOrhmsvbxKajzNJgP30"
+        "https://drive.google.com/uc?export=download&id=115pLF-lrSjqjfPOrhmsvbxKajzNJgP30",
+        "https://drive.google.com/uc?export=download&id=1uqEg71INjMHfdxDgr606xPui8jQcZrZG"
       ],
-      "quantity": 35,
       "warrantyDetails": {
-        "warrantyPeriod": 2,
+        "warrantyPeriod": 3,
         "warrantyType": "Limited Warranty"
       },
-      "memory": {
-        "ramType": "DDR4",
-        "slotsOfRam": 4,
-        "maxMemorySize": 128,
-        "supportedMemoryBusList": ["4400 MHz", "4133 MHz", "3800 MHz", "3600 MHz"]
-      },
-      "connectorPorts": {
-        "hdmi": true,
-        "displayPort": true,
-        "usbOutputs": ["USB 3.2 Gen 2", "USB 3.2 Gen 1", "USB 2.0"],
-        "lanPort": "1 GbE",
-        "storageSlots": ["M.2", "SATA"],
-        "ioPortList": ["USB 3.2 Gen 2 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
-        "tpm": true
-      }
+      "quantity": 25
     },
     {
       "keyFeatures": {
-        "name": "ASRock B460 Steel Legend",
-        "modelName": "B460 Steel Legend",
-        "brandName": "ASRock",
-        "supportedCPU": "Intel 10th Gen Core Processors",
-        "graphicsOutput": "HDMI 1.4, DisplayPort 1.4",
-        "specialFeatures": ["Steel Legend Armor", "Intel 1Gb Ethernet", "Polychrome SYNC"],
+        "readSpeed": "3000 MB/s",
+        "writeSpeed": "1800 MB/s",
+        "interface": "SATA III",
+        "modelName": "Crucial MX500",
+        "brandName": "Crucial",
+        "formFactor": "2.5-inch",
+        "name": "MX500",
+        "cellStatus": "3D NAND",
         "price": {
-          "regular": 160,
-          "discount": 150,
-          "emi": 8
-        }
-      },
-      "basic": {
-        "chipset": "Intel B460",
-        "formFactor": "ATX",
-        "supportedCPUList": ["Intel 10th Gen Core"],
-        "audioFeature": "Realtek ALC1200 Audio",
-        "socketInfo": "LGA 1200"
+          "regular": 120,
+          "discount": 110,
+          "emi": 12
+        },
+        "tbw": "500TB",
+        "mtbf": "2 million hours",
+        "flashType": "3D NAND",
+        "size": "1TB",
+        "operatingTemperature": "0°C to 70°C",
+        "storageTemperature": "-30°C to 85°C",
+        "shockResistance": "1300G",
+        "weight": "7 grams",
+        "physicalDimension": "69.85 x 100.5 x 7.0 mm"
       },
       "images": [
         "https://drive.google.com/uc?export=download&id=1rO4A9kQR7AcwjhwlagupO6VrG3Le1Dad",
         "https://drive.google.com/uc?export=download&id=1DImcJyXDj1CQOJyP9wv1M_ZMx_HL4OGh",
         "https://drive.google.com/uc?export=download&id=1guus6buWDJyLWri7jmV_f9bOIyjfnXsD"
       ],
-      "quantity": 28,
       "warrantyDetails": {
-        "warrantyPeriod": 3,
-        "warrantyType": "Extended Warranty"
+        "warrantyPeriod": 4,
+        "warrantyType": "Limited Warranty"
       },
-      "memory": {
-        "ramType": "DDR4",
-        "slotsOfRam": 4,
-        "maxMemorySize": 128,
-        "supportedMemoryBusList": ["2933 MHz", "2666 MHz", "2400 MHz"]
-      },
-      "connectorPorts": {
-        "hdmi": true,
-        "displayPort": true,
-        "usbOutputs": ["USB 3.2 Gen 1", "USB 2.0"],
-        "lanPort": "2.5 GbE",
-        "storageSlots": ["M.2", "SATA"],
-        "ioPortList": ["USB 3.2 Gen 1 Type-A", "USB 3.2 Gen 1 Type-C", "Audio Jacks"],
-        "tpm": false
-      }
+      "quantity": 40
     },
     {
       "keyFeatures": {
-        "name": "Gigabyte B450 AORUS M",
-        "modelName": "B450 AORUS M",
-        "brandName": "Gigabyte",
-        "supportedCPU": "AMD Ryzen 2000 Series",
-        "graphicsOutput": "HDMI 2.0, DVI-D",
-        "specialFeatures": ["Ultra Durable Armor", "RGB Fusion", "Smart Fan 5"],
+        "readSpeed": "2800 MB/s",
+        "writeSpeed": "1600 MB/s",
+        "interface": "NVMe PCIe 3.0",
+        "modelName": "Kingston A2000",
+        "brandName": "Kingston",
+        "formFactor": "M.2 2280",
+        "name": "A2000",
+        "cellStatus": "TLC",
         "price": {
-          "regular": 110,
-          "discount": 100,
-          "emi": 6
-        }
-      },
-      "basic": {
-        "chipset": "AMD B450",
-        "formFactor": "Micro-ATX",
-        "supportedCPUList": ["AMD Ryzen 2000", "Ryzen 1000"],
-        "audioFeature": "Realtek ALC892 Audio",
-        "socketInfo": "AM4"
+          "regular": 100,
+          "discount": 90,
+          "emi": 10
+        },
+        "tbw": "400TB",
+        "mtbf": "1.5 million hours",
+        "flashType": "3D NAND",
+        "size": "500GB",
+        "operatingTemperature": "0°C to 75°C",
+        "storageTemperature": "-40°C to 80°C",
+        "shockResistance": "1000G",
+        "weight": "6 grams",
+        "physicalDimension": "80 x 22 x 3.5 mm"
       },
       "images": [
         "https://drive.google.com/uc?export=download&id=1Vh9x6Ri8bG8qmr3PJELAZyEUnK9gPlVb",
         "https://drive.google.com/uc?export=download&id=1GK2ZWv1sgUERngPfy8wfMUh17knZVTVy",
         "https://drive.google.com/uc?export=download&id=1agKeUzcm_GwoatL3b7o8SOlHkB3uEjjC"
       ],
-      "quantity": 40,
       "warrantyDetails": {
         "warrantyPeriod": 2,
         "warrantyType": "Limited Warranty"
       },
-      "memory": {
-        "ramType": "DDR4",
-        "slotsOfRam": 4,
-        "maxMemorySize": 64,
-        "supportedMemoryBusList": ["3200 MHz", "2933 MHz", "2667 MHz", "2400 MHz"]
-      },
-      "connectorPorts": {
-        "hdmi": true,
-        "dvi": true,
-        "usbOutputs": ["USB 3.1 Gen 2", "USB 3.1 Gen 1", "USB 2.0"],
-        "lanPort": "1 GbE",
-        "storageSlots": ["M.2", "SATA"],
-        "ioPortList": ["USB 3.1 Gen 2 Type-A", "USB 3.1 Gen 1 Type-A", "Audio Jacks"],
-        "tpm": false
-      }
+      "quantity": 50
     }
   ]
   

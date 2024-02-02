@@ -61,21 +61,20 @@
     },
     {
       "keyFeatures": {
-        "modelName": "ASUS ROG Strix B550-F Gaming",
-        "brandName": "ASUS",
-        "name": "ROG Strix B550-F Gaming",
-        "socketType": "AM4",
-        "chipset": "B550",
-        "memoryType": "DDR4",
-        "memorySlots": 4,
-        "maxMemory": "128GB",
-        "audio": "SupremeFX S1220A",
-        "LAN": "Intel 2.5Gb Ethernet",
-        "formFactor": "ATX",
+        "readSpeed": "220 MB/s",
+        "writeSpeed": "200 MB/s",
+        "modelName": "Seagate Barracuda",
+        "brandName": "Seagate",
+        "name": "Barracuda",
+        "size": "2TB",
+        "rpm": "7200",
+        "interface": "SATA III",
+        "type": "HDD",
+        "formFactor": "3.5-inch",
         "price": {
-          "regular": 200,
-          "discount": 185,
-          "emi": 12
+          "regular": 65,
+          "discount": 60,
+          "emi": 7
         }
       },
       "images": [
@@ -85,28 +84,27 @@
       ],
       "quantity": 25,
       "warrantyDetails": {
-        "warrantyPeriod": 3,
-        "warrantyType": "Extended Warranty"
+        "warrantyPeriod": 5,
+        "warrantyType": "Manufacturer's Warranty"
       },
-      "specialFeatures": ["RGB Lighting", "PCIe 4.0 Support", "Wi-Fi 6"]
+      "specialFeatures": ["OptiCache Technology", "Seagate AcuTrac", "Multi-Tier Caching Technology"]
     },
     {
       "keyFeatures": {
-        "modelName": "MSI MPG B450 Tomahawk Max",
-        "brandName": "MSI",
-        "name": "MPG B450 Tomahawk Max",
-        "socketType": "AM4",
-        "chipset": "B450",
-        "memoryType": "DDR4",
-        "memorySlots": 4,
-        "maxMemory": "64GB",
-        "audio": "Realtek ALC892",
-        "LAN": "Realtek 8111H",
-        "formFactor": "ATX",
+        "readSpeed": "180 MB/s",
+        "writeSpeed": "160 MB/s",
+        "modelName": "Toshiba P300",
+        "brandName": "Toshiba",
+        "name": "P300",
+        "size": "1TB",
+        "rpm": "7200",
+        "interface": "SATA III",
+        "type": "HDD",
+        "formFactor": "3.5-inch",
         "price": {
-          "regular": 120,
-          "discount": 110,
-          "emi": 10
+          "regular": 50,
+          "discount": 48,
+          "emi": 6
         }
       },
       "images": [
@@ -114,30 +112,29 @@
         "https://drive.google.com/uc?export=download&id=1kLeHgOoVFm08OwZnJIDjQ90biH5g_dSS",
         "https://drive.google.com/uc?export=download&id=1SuIQdtrewGf7AF-Kgcqb19gOwiMWltuT"
       ],
-      "quantity": 30,
+      "quantity": 20,
       "warrantyDetails": {
-        "warrantyPeriod": 2,
-        "warrantyType": "Limited Warranty"
+        "warrantyPeriod": 4,
+        "warrantyType": "Manufacturer's Warranty"
       },
-      "specialFeatures": ["Mystic Light RGB", "USB Type-C", "Extended Heatsink Design"]
+      "specialFeatures": ["Advanced Format Technology", "Data Protection Technology", "Internal Shock Detection"]
     },
     {
       "keyFeatures": {
-        "modelName": "Gigabyte B550 AORUS Pro",
-        "brandName": "Gigabyte",
-        "name": "B550 AORUS Pro",
-        "socketType": "AM4",
-        "chipset": "B550",
-        "memoryType": "DDR4",
-        "memorySlots": 4,
-        "maxMemory": "128GB",
-        "audio": "Realtek ALC1220-VB",
-        "LAN": "Intel GbE LAN",
-        "formFactor": "ATX",
+        "readSpeed": "240 MB/s",
+        "writeSpeed": "220 MB/s",
+        "modelName": "Samsung Spinpoint",
+        "brandName": "Samsung",
+        "name": "Spinpoint",
+        "size": "4TB",
+        "rpm": "5400",
+        "interface": "SATA III",
+        "type": "HDD",
+        "formFactor": "3.5-inch",
         "price": {
-          "regular": 180,
-          "discount": 170,
-          "emi": 15
+          "regular": 85,
+          "discount": 80,
+          "emi": 9
         }
       },
       "images": [
@@ -145,30 +142,29 @@
         "https://drive.google.com/uc?export=download&id=1gIKJV_BkTpOdZkWDHO91JecpI2WpVzOc",
         "https://drive.google.com/uc?export=download&id=1wKUIlwEVu0EdwdRmiEKoVsPsZJT3ex-B"
       ],
-      "quantity": 22,
+      "quantity": 15,
       "warrantyDetails": {
-        "warrantyPeriod": 3,
-        "warrantyType": "Extended Warranty"
+        "warrantyPeriod": 6,
+        "warrantyType": "Manufacturer's Warranty"
       },
-      "specialFeatures": ["RGB Fusion 2.0", "PCIe 4.0 Support", "Smart Fan 5"]
+      "specialFeatures": ["NoiseGuard Technology", "SilentSeek Technology", "Dual-Actuator Technology"]
     },
     {
       "keyFeatures": {
-        "modelName": "EVGA Z590 FTW WiFi 6",
-        "brandName": "EVGA",
-        "name": "Z590 FTW WiFi 6",
-        "socketType": "LGA1200",
-        "chipset": "Z590",
-        "memoryType": "DDR4",
-        "memorySlots": 4,
-        "maxMemory": "128GB",
-        "audio": "Realtek ALC1220",
-        "LAN": "Intel i225V 2.5Gb/s Ethernet",
-        "formFactor": "ATX",
+        "readSpeed": "210 MB/s",
+        "writeSpeed": "190 MB/s",
+        "modelName": "Hitachi Ultrastar",
+        "brandName": "Hitachi",
+        "name": "Ultrastar",
+        "size": "3TB",
+        "rpm": "7200",
+        "interface": "SATA III",
+        "type": "HDD",
+        "formFactor": "3.5-inch",
         "price": {
-          "regular": 250,
-          "discount": 230,
-          "emi": 20
+          "regular": 75,
+          "discount": 70,
+          "emi": 8
         }
       },
       "images": [
@@ -176,30 +172,29 @@
         "https://drive.google.com/uc?export=download&id=1u5j9MwiYHqEMuNd_utq5_3TmFvHqkbG_",
         "https://drive.google.com/uc?export=download&id=14cQoZgD4q7tPGwwmGiww0QmzGFTG6Puw"
       ],
-      "quantity": 15,
+      "quantity": 18,
       "warrantyDetails": {
-        "warrantyPeriod": 3,
-        "warrantyType": "Extended Warranty"
+        "warrantyPeriod": 4,
+        "warrantyType": "Manufacturer's Warranty"
       },
-      "specialFeatures": ["Wireless AX", "Debug LED", "Triple BIOS Support"]
+      "specialFeatures": ["Rotational Vibration Safeguard", "Advanced Power Management", "HiVERT Technology"]
     },
     {
       "keyFeatures": {
-        "modelName": "Biostar B450MH",
-        "brandName": "Biostar",
-        "name": "B450MH",
-        "socketType": "AM4",
-        "chipset": "B450",
-        "memoryType": "DDR4",
-        "memorySlots": 2,
-        "maxMemory": "32GB",
-        "audio": "Realtek ALC887",
-        "LAN": "Realtek 8111H",
-        "formFactor": "Micro ATX",
+        "readSpeed": "230 MB/s",
+        "writeSpeed": "210 MB/s",
+        "modelName": "SanDisk SSD Plus",
+        "brandName": "SanDisk",
+        "name": "SSD Plus",
+        "size": "512GB",
+        "rpm": "N/A",
+        "interface": "SATA III",
+        "type": "SSD",
+        "formFactor": "2.5-inch",
         "price": {
-          "regular": 80,
-          "discount": 75,
-          "emi": 8
+          "regular": 95,
+          "discount": 90,
+          "emi": 10
         }
       },
       "images": [
@@ -207,43 +202,42 @@
         "https://drive.google.com/uc?export=download&id=1fcT6-KSoKYRCr-8Kwaj591vxy4Gy8muq",
         "https://drive.google.com/uc?export=download&id=14TAXC-ANsNCj_QQMUmkU9ira9KEr51bQ"
       ],
-      "quantity": 20,
+      "quantity": 22,
       "warrantyDetails": {
-        "warrantyPeriod": 2,
-        "warrantyType": "Limited Warranty"
+        "warrantyPeriod": 5,
+        "warrantyType": "Manufacturer's Warranty"
       },
-      "specialFeatures": ["Super Durable Caps", "Iron Slot Protection", "LED Header"]
+      "specialFeatures": ["NAND Flash Technology", "Shock Resistant", "Up to 545MB/s Read Speed"]
     },
     {
       "keyFeatures": {
-        "modelName": "ASUS Prime X570-Pro",
-        "brandName": "ASUS",
-        "name": "Prime X570-Pro",
-        "socketType": "AM4",
-        "chipset": "X570",
-        "memoryType": "DDR4",
-        "memorySlots": 4,
-        "maxMemory": "128GB",
-        "audio": "Realtek S1220A",
-        "LAN": "Intel I211-AT",
-        "formFactor": "ATX",
+        "readSpeed": "250 MB/s",
+        "writeSpeed": "230 MB/s",
+        "modelName": "Corsair MP510",
+        "brandName": "Corsair",
+        "name": "MP510",
+        "size": "1TB",
+        "rpm": "N/A",
+        "interface": "NVMe PCIe Gen3",
+        "type": "SSD",
+        "formFactor": "M.2",
         "price": {
-          "regular": 220,
-          "discount": 200,
-          "emi": 18
+          "regular": 120,
+          "discount": 110,
+          "emi": 12
         }
       },
       "images": [
         "https://drive.google.com/uc?export=download&id=1f7VBcF4TROQqZllY-_IZFC90to9dakNA",
         "https://drive.google.com/uc?export=download&id=1bs2xH6Ve8GRIPqf17waXy7BQ_dWEhUhX",
-        "https://drive.google.com/uc?export=download&id=1jKDEAGlht2fzg_hBD-KUmCHYoN7q_l99"
+        "https://drive.google.com/uc?export=download&id=1gIKJV_BkTpOdZkWDHO91JecpI2WpVzOc"
       ],
-      "quantity": 18,
+      "quantity": 15,
       "warrantyDetails": {
         "warrantyPeriod": 3,
-        "warrantyType": "Extended Warranty"
+        "warrantyType": "Manufacturer's Warranty"
       },
-      "specialFeatures": ["5-Way Optimization", "Aura Sync RGB", "PCIe 4.0 Ready"]
+      "specialFeatures": ["High-Density 3D TLC NAND", "Compact M.2 Form Factor", "Up to 3,480MB/s Read Speed"]
     }
   ]
   

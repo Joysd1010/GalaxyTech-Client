@@ -4,7 +4,8 @@
     "keyFeatures": {
       "ramSize": "6GB",
       "romSize": "64GB",
-      "modelName": "ExamplePhone Y",
+      "modelName": "iphone6",
+      "brand": "apple",
       "rearCameraSpecification": "Triple camera (64MP + 8MP + 2MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Full HD+ IPS LCD",
@@ -106,7 +107,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone Z",
+      "modelName": "iphone7",
+      "brand": "apple",
       "rearCameraSpecification": "Penta camera (108MP + 16MP + 12MP + 8MP + 2MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
       "displayQuality": "Quad HD+ Super AMOLED",
@@ -210,7 +212,8 @@
     "keyFeatures": {
       "ramSize": "4GB",
       "romSize": "64GB",
-      "modelName": "ExamplePhone A",
+      "modelName": "iphone8",
+      "brand": "apple",
       "rearCameraSpecification": "Dual camera (48MP + 5MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "HD+ IPS LCD",
@@ -310,7 +313,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone B",
+      "modelName": "iphone9",
+      "brand": "apple",
       "rearCameraSpecification": "Triple camera (64MP + 12MP + 5MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Full HD+ AMOLED",
@@ -411,7 +415,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone C",
+      "modelName": "iphone10",
+      "brand": "apple",
       "rearCameraSpecification": "Quad camera (108MP + 12MP + 20MP + 2MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
       "displayQuality": "Quad HD+ AMOLED",
@@ -514,7 +519,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone D",
+      "modelName": "iphone15",
+      "brand": "apple",
       "rearCameraSpecification": "Triple camera (48MP + 20MP + 8MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -615,7 +621,8 @@
     "keyFeatures": {
       "ramSize": "16GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone E",
+      "modelName": "iphone14",
+      "brand": "apple",
       "rearCameraSpecification": "Quad camera (108MP + 12MP + 16MP + 5MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
       "displayQuality": "Quad HD+ AMOLED",
@@ -718,7 +725,8 @@
     "keyFeatures": {
       "ramSize": "6GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone F",
+      "modelName": "iphone13",
+      "brand": "apple",
       "rearCameraSpecification": "Triple camera (50MP + 12MP + 8MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ OLED",
@@ -819,7 +827,8 @@
     "keyFeatures": {
       "ramSize": "6GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone F",
+      "modelName": "iphone12",
+      "brand": "apple",
       "rearCameraSpecification": "Triple camera (50MP + 12MP + 8MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ OLED",
@@ -920,7 +929,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone G",
+      "modelName": "iphone11 pro",
+      "brand": "apple",
       "rearCameraSpecification": "Quad camera (64MP + 16MP + 8MP + 2MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -1022,7 +1032,8 @@
     "keyFeatures": {
       "ramSize": "16GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone H",
+      "modelName": "iphone15 pro",
+      "brand": "apple",
       "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 8MP + 2MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
       "displayQuality": "Quad HD+ AMOLED",
@@ -1126,7 +1137,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone I",
+      "modelName": "iphone15 pro max",
+      "brand": "apple",
       "rearCameraSpecification": "Triple camera (64MP + 12MP + 5MP)",
       "frontCameraSpecification": "Single front camera (20MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -1227,7 +1239,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone J",
+      "modelName": "iphone13 pro",
+      "brand": "apple",
       "rearCameraSpecification": "Quad camera (108MP + 20MP + 12MP + 8MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
       "displayQuality": "Quad HD+ AMOLED",
@@ -1330,7 +1343,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone K",
+      "modelName": "iphone13 pro max",
+      "brand": "apple",
       "rearCameraSpecification": "Triple camera (48MP + 8MP + 5MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -1431,7 +1445,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone L",
+      "modelName": "galaxy S23",
+      "brand": "samsung",
       "rearCameraSpecification": "Quad camera (64MP + 16MP + 8MP + 2MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -1533,7 +1548,8 @@
     "keyFeatures": {
       "ramSize": "16GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone M",
+      "modelName": "galaxy S23 ultra",
+      "brand": "samsung",
       "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 5MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 16MP)",
       "displayQuality": "Quad HD+ AMOLED",
@@ -1636,7 +1652,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone N",
+      "modelName": "galaxy S22 ultra",
+      "brand": "samsung",
       "rearCameraSpecification": "Quad camera (48MP + 12MP + 8MP + 2MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ IPS LCD",
@@ -1738,7 +1755,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone P",
+      "modelName": "galaxy S22",
+      "brand": "samsung",
       "rearCameraSpecification": "Triple camera (64MP + 16MP + 8MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Quad HD+ AMOLED",
@@ -1838,7 +1856,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone Q",
+      "modelName": "galaxy S21 ultra",
+      "brand": "samsung",
       "rearCameraSpecification": "Quad camera (64MP + 8MP + 5MP + 2MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -1940,7 +1959,8 @@
     "keyFeatures": {
       "ramSize": "16GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone R",
+      "modelName": "galaxy S21",
+      "brand": "samsung",
       "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 8MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 16MP)",
       "displayQuality": "Quad HD+ AMOLED",
@@ -2043,7 +2063,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone X",
+      "modelName": "galaxy S20",
+      "brand": "samsung",
       "rearCameraSpecification": "Quad camera (48MP + 16MP + 8MP + 2MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Full HD+ AMOLED",
@@ -2145,7 +2166,8 @@
     "keyFeatures": {
       "ramSize": "6GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone Y",
+      "modelName": "galaxy z fold",
+      "brand": "samsung",
       "rearCameraSpecification": "Triple camera (48MP + 8MP + 2MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ IPS LCD",
@@ -2246,7 +2268,8 @@
     "keyFeatures": {
       "ramSize": "16GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone Z",
+      "modelName": "galaxy z fold ultra",
+      "brand": "samsung",
       "rearCameraSpecification": "Penta camera (108MP + 16MP + 12MP + 8MP + 2MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 8MP)",
       "displayQuality": "Quad HD+ Super AMOLED",
@@ -2349,7 +2372,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone S",
+      "modelName": "galaxy a3",
+      "brand": "samsung",
       "rearCameraSpecification": "Triple camera (50MP + 16MP + 8MP)",
       "frontCameraSpecification": "Single front camera (20MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -2450,7 +2474,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone Pro",
+      "modelName": "redmi 10",
+      "brand": "redmi",
       "rearCameraSpecification": "Quad camera (64MP + 20MP + 12MP + 8MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
       "displayQuality": "Quad HD+ Super AMOLED",
@@ -2552,7 +2577,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone Lite",
+      "modelName": "redmi 11",
+      "brand": "redmi",
       "rearCameraSpecification": "Dual camera (20MP + 8MP)",
       "frontCameraSpecification": "Single front camera (12MP)",
       "displayQuality": "Full HD+ LCD",
@@ -2652,7 +2678,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone A1",
+      "modelName": "redmi 12",
+      "brand": "redmi",
       "rearCameraSpecification": "Triple camera (48MP + 12MP + 5MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ AMOLED",
@@ -2753,7 +2780,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone X2",
+      "modelName": "redmi 13",
+      "brand": "redmi",
       "rearCameraSpecification": "Quad camera (64MP + 16MP + 8MP + 2MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Quad HD+ Super AMOLED",
@@ -2855,7 +2883,8 @@
     "keyFeatures": {
       "ramSize": "6GB",
       "romSize": "128GB",
-      "modelName": "ExamplePhone E1",
+      "modelName": "redmi 13 pro",
+      "brand": "redmi",
       "rearCameraSpecification": "Dual camera (48MP + 8MP)",
       "frontCameraSpecification": "Single front camera (16MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -2955,7 +2984,8 @@
     "keyFeatures": {
       "ramSize": "16GB",
       "romSize": "1TB",
-      "modelName": "ExamplePhone Pro Max",
+      "modelName": "redmi 13s",
+      "brand": "redmi",
       "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 5MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
       "displayQuality": "Quad HD+ Super AMOLED",
@@ -3059,7 +3089,8 @@
     "keyFeatures": {
       "ramSize": "6GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone Z3",
+      "modelName": "realme 8",
+      "brand": "realme",
       "rearCameraSpecification": "Triple camera (64MP + 16MP + 8MP)",
       "frontCameraSpecification": "Single front camera (20MP)",
       "displayQuality": "Full HD+ LCD",
@@ -3160,7 +3191,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone F4",
+      "modelName": "realme 9",
+      "brand": "realme",
       "rearCameraSpecification": "Quad camera (48MP + 16MP + 8MP + 2MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -3262,7 +3294,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone M7",
+      "modelName": "realme 10",
+      "brand": "realme",
       "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 5MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
       "displayQuality": "Quad HD+ Super AMOLED",
@@ -3366,7 +3399,8 @@
     "keyFeatures": {
       "ramSize": "8GB",
       "romSize": "256GB",
-      "modelName": "ExamplePhone R1",
+      "modelName": "realme 11",
+      "brand": "realme",
       "rearCameraSpecification": "Triple camera (64MP + 16MP + 8MP)",
       "frontCameraSpecification": "Single front camera (20MP)",
       "displayQuality": "Full HD+ Super AMOLED",
@@ -3467,7 +3501,8 @@
     "keyFeatures": {
       "ramSize": "12GB",
       "romSize": "512GB",
-      "modelName": "ExamplePhone X2",
+      "modelName": "realme 8 pro",
+      "brand": "realme",
       "rearCameraSpecification": "Quad camera (108MP + 48MP + 20MP + 12MP)",
       "frontCameraSpecification": "Single front camera (32MP)",
       "displayQuality": "Quad HD+ Super AMOLED",
@@ -3569,7 +3604,8 @@
     "keyFeatures": {
       "ramSize": "16GB",
       "romSize": "1TB",
-      "modelName": "ExamplePhone Ultra",
+      "modelName": "realme 9 pro",
+      "brand": "realme",
       "rearCameraSpecification": "Penta camera (108MP + 48MP + 20MP + 12MP + 5MP)",
       "frontCameraSpecification": "Dual front camera (32MP + 12MP)",
       "displayQuality": "Quad HD+ Super AMOLED",

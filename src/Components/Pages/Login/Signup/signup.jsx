@@ -91,7 +91,7 @@ const Signup = () => {
                 {...register("name", { required: true })}
                 name="name"
                 placeholder="Name"
-                className="input input-bordered"
+                className="input bg-white  input-bordered"
               />
               {errors.name && (
                 <span className="text-red-600">Name is required</span>
@@ -108,7 +108,7 @@ const Signup = () => {
                 type="text"
                 {...register("photoURL", { required: true })}
                 placeholder="Photo URL"
-                className="input input-bordered"
+                className="input bg-white  input-bordered"
               />
               {errors.photoURL && (
                 <span className="text-red-600">Photo URL is required</span>
@@ -123,7 +123,7 @@ const Signup = () => {
                 {...register("email", { required: true })}
                 name="email"
                 placeholder="email"
-                className="input input-bordered"
+                className="input bg-white  input-bordered"
               />
               {errors.email && (
                 <span className="text-red-600">Email is required</span>
@@ -145,7 +145,7 @@ const Signup = () => {
                     pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
                   })}
                   placeholder="password"
-                  className="input input-bordered"
+                  className="input bg-white input-bordered"
                 />
                 {errors.password?.type === "required" && (
                   <p className="text-red-500">Password is required</p>
@@ -175,7 +175,7 @@ const Signup = () => {
                   type="password"
                   id="confirm_pass"
                   placeholder="Enter your confirm password"
-                  className="w-full max-w-xs input input-bordered "
+                  className="w-full bg-white  max-w-xs input input-bordered "
                   {...register("confirmPassword", {
                     required: true,
                     validate: (value) =>

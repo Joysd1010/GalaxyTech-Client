@@ -4,6 +4,7 @@ import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/LOGIN/Login";
 import Signup from "../Pages/Login/Signup/signup";
+import Laptop from "../Pages/Products/Laptop/Laptop"
 
 const Router = createBrowserRouter([
   {
@@ -26,8 +27,8 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "Brand",
-        element: <p>my Brand</p>
+        path: "laptop",
+        element: <Laptop/>
       
       },
       {
@@ -111,139 +112,11 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "AllPC",
-        element: <p>home</p>
+        path:'*',
+        element:<Error/>
+      }
       
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
       
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "*",
-        element: <Error/>,
-      },
 
     ],
   },

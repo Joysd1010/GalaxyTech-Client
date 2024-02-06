@@ -3700,7 +3700,7 @@
       "wifiDetail": "Wi-Fi 6E",
       "bluetoothDetail": "Bluetooth 5.2",
       "otgSupport": "Yes",
-      "audioJack": "No"
+      "audioJack": "Yes"
     }
   }
   

@@ -5,6 +5,7 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/LOGIN/Login";
 import Signup from "../Pages/Login/Signup/signup";
 import Laptop from "../Pages/Products/Laptop/Laptop"
+import DetailPage from "../Pages/Products/Laptop/DetailPage";
 
 const Router = createBrowserRouter([
   {
@@ -31,10 +32,10 @@ const Router = createBrowserRouter([
         element: <Laptop/>
       
       },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
+      { path: "laptop/:id",
+        element: <DetailPage/>,
+        loader: ({ params }) =>
+        fetch(`http://localhost:5000/laptop/detail/${params.id}`)      
       },
       {
         path: "Mini",

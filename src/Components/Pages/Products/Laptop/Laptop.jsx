@@ -14,10 +14,6 @@ const Laptop = () => {
   const postPerPage=12;
   const [MaxPrice, setMaxPrice] = useState(0);
   const param = location.state;
-
-  // const indexOfFirstCard = (currentPage) => (currentPage - 1) * postPerPage;
-  // const indexOfLastCard = (currentPage) => currentPage * postPerPage;
-
   const setCurrentPost = () => {
     
       const start = (CurrentPage -1)* postPerPage ;

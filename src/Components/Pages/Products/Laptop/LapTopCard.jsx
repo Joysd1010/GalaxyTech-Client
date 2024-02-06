@@ -1,8 +1,10 @@
 import React from "react";
 import { FaCartPlus } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const LapTopCard = ({ state }) => {
+  
   const {
     discountedPrice,
     ramType,
@@ -20,11 +22,12 @@ const LapTopCard = ({ state }) => {
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
       <div className=" my-5 w-44 mx-auto overflow-hidden">
-        <img
+        <Link to={`laptop/${state._id}`}><img
           src={image}
           alt="drive image "
           className="transition duration-300 ease-in-out hover:scale-110"
-        />
+        /></Link>
+        
       </div>
       <div>
         <hr className=" " />

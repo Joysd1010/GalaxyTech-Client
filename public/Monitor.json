@@ -4,7 +4,7 @@
       "modelname": "Dell UltraSharp U2719D",
       "brand": "Dell",
       "resolution": "2560x1440",
-      "portsDetails": ["HDMI", "DisplayPort", "USB-C"],
+      "portsDeftails": ["HDMI", "DisplayPort", "USB-C"],
       "features": ["InfinityEdge Display", "IPS Panel", "VESA Mount"],
       "price": {
         "regular": 400,

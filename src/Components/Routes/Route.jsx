@@ -6,6 +6,7 @@ import Login from "../Pages/Login/LOGIN/Login";
 import Signup from "../Pages/Login/Signup/signup";
 import Laptop from "../Pages/Products/Laptop/Laptop"
 import DetailPage from "../Pages/Products/Laptop/DetailPage";
+import Monitor from "../Pages/Products/Monitor/Monitor";
 
 const Router = createBrowserRouter([
   {
@@ -32,84 +33,24 @@ const Router = createBrowserRouter([
         element: <Laptop/>
       
       },
-      { path: "laptop/:id",
+      { path: "laptopId/:id",
         element: <DetailPage/>,
         loader: ({ params }) =>
         fetch(`http://localhost:5000/laptop/detail/${params.id}`)      
       },
       {
-        path: "Mini",
-        element: <p>Apple</p>
+        path: "monitor",
+        element: <Monitor/>
       
       },
       {
-        path: "Apple",
-        element: <p>Apple</p>
+        path: "ALL",
+        element: <p>hello this is processor</p>
       
       },
       {
-        path: "laptop",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "intelpc",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "amdpc",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "monitor/Asus",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "HP",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "Dell",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "MacBook",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "allLaptop",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
-      
-      },
-      {
-        path: "AllPC",
-        element: <p>home</p>
+        path: "ALL",
+        element: <p>hello this is processor</p>
       
       },
       {

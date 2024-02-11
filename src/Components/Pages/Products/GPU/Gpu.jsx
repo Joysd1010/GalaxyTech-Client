@@ -148,15 +148,23 @@ const Gpu = () => {
       )
     );
   };
-//-----------------------------Finding the chipSet filtered gpu---------------------------------
-const handleChip=(chip)=>{
-    setUseGpu(AllGpu.filter((item) => item.keyFeatures.chipset.startsWith(chip) ));
-}
+  //-----------------------------Finding the chipSet filtered gpu---------------------------------
+  const handleChip = (chip) => {
+    setUseGpu(
+      AllGpu.filter((item) => item.keyFeatures.chipset.startsWith(chip))
+    );
+  };
 
   //-------------------------UserDefinedFilter--------------------
   const HandleChoice = (container, attribute, value) => {
-    console.log(AllGpu.filter((item) => item[container][attribute] == value));
-    setUseGpu(AllGpu.filter((item) => item[container][attribute] == value));
+    
+    const filteredArray = AllGpu.filter(
+      (item) => item[container][attribute] == value
+    );
+    console.log(filteredArray)
+    
+    setUseGpu(filteredArray);
+    console.log(UseGpu);
   };
   //-------------------------Shorting------------------------------------
 
@@ -233,17 +241,17 @@ const handleChip=(chip)=>{
 
         {/*-----------------------------Processor Filter---------------------------------- */}
         <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Processor</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 "> ChipSet</h1>
           <hr />
           <div className=" px-5 py-2 class-name flex gap-2">
             <button
-              onClick={() => handleChip('NVIDIA')}
+              onClick={() => handleChip("NVIDIA")}
               className=" px-3 bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
             >
               NVIDIA
             </button>
             <button
-              onClick={() =>  handleChip('AMD')}
+              onClick={() => handleChip("AMD")}
               className=" px-3 bg-red-600 text-white btn  hover:bg-red-600 "
             >
               AMD Radeon
@@ -261,12 +269,12 @@ const handleChip=(chip)=>{
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("processor", "core", 4)}
+                onChange={() => HandleChoice("keyFeatures", "memorySize", 4)}
                 className="w-5    "
                 value=""
                 id="core1"
               />{" "}
-              <p> 4</p>
+              <p> 4 GB</p>
             </label>
             <label
               className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
@@ -274,12 +282,12 @@ const handleChip=(chip)=>{
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("processor", "core", 6)}
+                onChange={() => HandleChoice("keyFeatures", "memorySize", 6)}
                 className="w-5"
                 value=""
                 id="core2"
               />{" "}
-              <p> 6</p>
+              <p> 6 GB</p>
             </label>
             <label
               className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
@@ -287,39 +295,113 @@ const handleChip=(chip)=>{
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("processor", "core", 8)}
+                onChange={() => HandleChoice("keyFeatures", "memorySize", 8)}
                 className="w-5"
                 value=""
                 id="core3"
               />{" "}
-              <p> 8</p>
+              <p> 8 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="core4"
+            >
+              <input
+                type="checkbox"
+                onChange={() => HandleChoice("keyFeatures", "memorySize", 10)}
+                className="w-5"
+                value=""
+                id="core4"
+              />{" "}
+              <p> 10 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="core5"
+            >
+              <input
+                type="checkbox"
+                onChange={() => HandleChoice("keyFeatures", "memorySize", 12)}
+                className="w-5"
+                value=""
+                id="core5"
+              />{" "}
+              <p> 12 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="core6"
+            >
+              <input
+                type="checkbox"
+                onChange={() => HandleChoice("keyFeatures", "memorySize", 16)}
+                className="w-5"
+                value=""
+                id="core6"
+              />{" "}
+              <p> 16 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="core7"
+            >
+              <input
+                type="checkbox"
+                onChange={() => HandleChoice("keyFeatures", "memorySize", 24)}
+                className="w-5"
+                value=""
+                id="core7"
+              />{" "}
+              <p> 24 GB</p>
             </label>
           </div>
         </div>
 
         {/*-----------------------------graphics---------------------------------- */}
         <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Graphics</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 "> Memory Type</h1>
           <hr />
-          <div className=" px-5 py-2 class-name flex flex-wrap  gap-2">
-            <button
-              onClick={() => HandleChoice("graphics", "brand", "Intel")}
-              className=" px-2 bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
+          <div className="px-5 py-2 flex flex-col gap-2">
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Memory1"
             >
-              Intel
-            </button>
-            <button
-              onClick={() => HandleChoice("graphics", "brand", "AMD")}
-              className=" px-2 bg-red-600 text-white btn btn-active hover:bg-red-600 "
+              <input
+                type="checkbox"
+                onChange={() => HandleChoice("keyFeatures", "memoryType", 'GDDR6X')}
+                className="w-5    "
+                value=""
+                id="Memory1"
+              />{" "}
+              <p> GDDR6X</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Memory2"
             >
-              AMD Radeon
-            </button>
-            <button
-              onClick={() => HandleChoice("graphics", "brand", "Nvidia")}
-              className=" px-2 bg-[#73B301] text-white btn btn-active hover:bg-[#73B301] "
+              <input
+                type="checkbox"
+                onChange={() => HandleChoice("keyFeatures", "memoryType", 'GDDR6')}
+                className="w-5"
+                value=""
+                id="Memory2"
+              />{" "}
+              <p> GDDR6</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Memory3"
             >
-              NVIDIA
-            </button>
+              <input
+                type="checkbox"
+                onChange={() => HandleChoice("keyFeatures", "memoryType", 'GDDR5')}
+                className="w-5"
+                value=""
+                id="Memory3"
+              />{" "}
+              <p> GDDR5</p>
+            </label>
+           
           </div>
         </div>
       </div>

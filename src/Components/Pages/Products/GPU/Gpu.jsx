@@ -1,37 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
-
-import MonitorCard from "./MonitorCard";
+import LapTopCard from "./GpuCard";
 import { FaHome } from "react-icons/fa";
+import GpuCard from "./GpuCard";
 
-const Monitor = () => {
+const Gpu = () => {
   const axiosPoint = useAxiosPublic();
   const location = useLocation();
-  const [AllMonitor, setMonitor] = useState([]);
-  const [UseMonitor, setUseMonitor] = useState([]);
+  const [AllGpu, setGpu] = useState([]);
+  const [UseGpu, setUseGpu] = useState([]);
   const [Range, setRange] = useState(0);
   const [MinPrice, setMinPrice] = useState(0);
   const [CurrentPage, setPage] = useState(1);
   const postPerPage = 12;
   const [MaxPrice, setMaxPrice] = useState(0);
   const param = location.state;
-
-  //   console.log(location);
-
   const setCurrentPost = () => {
     const start = (CurrentPage - 1) * postPerPage;
     const end = postPerPage * CurrentPage;
-    setUseMonitor(AllMonitor.slice(start, end));
+
+    console.log(start, end);
+    setUseGpu(AllGpu.slice(start, end));
   };
 
   const handlePageChange = (newPage) => {
-    // console.log("this page", newPage);
+    console.log("this page", newPage);
     setPage(newPage);
   };
 
   useEffect(() => {
-    // console.log("Current page", CurrentPage);
+    console.log("Current page", CurrentPage);
     setCurrentPost();
   }, [CurrentPage]);
 
@@ -98,55 +97,66 @@ const Monitor = () => {
 
     return pageNumbers;
   };
-
-  const getAllMonitor = async () => {
+  const getAllGpu = async () => {
     try {
-      const response = await axiosPoint.get("/monitor");
-      setMonitor(response.data);
-      setUseMonitor(response.data.slice(0, 12));
+      const response = await axiosPoint.get("/gpu");
+
+      setGpu(response.data);
+      setUseGpu(response.data.slice(0, 12));
       setMinPrice(
-        Math.min(...response.data.map((item) => item.key.price.discount))
+        Math.min(
+          ...response.data.map((item) => item.keyFeatures.price.discount)
+        )
       );
       setMaxPrice(
-        Math.max(...response.data.map((item) => item.key.price.discount))
+        Math.max(
+          ...response.data.map((item) => item.keyFeatures.price.discount)
+        )
       );
     } catch (error) {
       console.error("Error fetching laptop data:", error);
     }
   };
 
-  const getMonitorByBrand = async (parameter) => {
+  const getGpuByBrand = async (parameter) => {
     try {
-      const response = await axiosPoint.get(`/monitor/${parameter}`);
-
-      setMonitor(response.data);
-      setUseMonitor(response.data.slice(0, 12));
+      const response = await axiosPoint.get(`/gpu/${parameter}`);
+      console.log(response.data);
+      setGpu(response.data);
+      setUseGpu(response.data.slice(0, 12));
       setMinPrice(
-        Math.min(...response.data.map((item) => item.key.price.discount))
+        Math.min(
+          ...response.data.map((item) => item.keyFeatures.price.discount)
+        )
       );
       setMaxPrice(
-        Math.max(...response.data.map((item) => item.key.price.discount))
+        Math.max(
+          ...response.data.map((item) => item.keyFeatures.price.discount)
+        )
       );
     } catch (error) {
       console.error("Error fetching laptop data:", error);
     }
   };
-
   //------------------------Price filter-----------------
   const handleOnchange = (value) => {
     setRange(value);
-    setUseMonitor(
-      AllMonitor?.filter((item) => item.key.price.discount <= value).slice(
+    setUseGpu(
+      AllGpu.filter((item) => item.keyFeatures.price.discount <= value).slice(
         0,
         12
       )
     );
   };
+//-----------------------------Finding the chipSet filtered gpu---------------------------------
+const handleChip=(chip)=>{
+    setUseGpu(AllGpu.filter((item) => item.keyFeatures.chipset.startsWith(chip) ));
+}
+
   //-------------------------UserDefinedFilter--------------------
-  const HandleChoice = (attribute, value) => {
-    setUseMonitor(
-      AllMonitor.filter((item) => item.display[attribute] == value)
-    );
+  const HandleChoice = (container, attribute, value) => {
+    console.log(AllGpu.filter((item) => item[container][attribute] == value));
+    setUseGpu(AllGpu.filter((item) => item[container][attribute] == value));
   };
   //-------------------------Shorting------------------------------------
 
@@ -155,12 +165,12 @@ const Monitor = () => {
 
     switch (sortBy) {
       case 2:
-        const sortedByPriceAsc = await shortingAsc(UseMonitor);
-        setUseMonitor(sortedByPriceAsc);
+        const sortedByPriceAsc = await shortingAsc(UseGpu);
+        setUseGpu(sortedByPriceAsc);
         break;
       case 3:
-        const sortedByPriceDesc = shortingDesc(UseMonitor);
-        setUseMonitor(sortedByPriceDesc);
+        const sortedByPriceDesc = shortingDesc(UseGpu);
+        setUseGpu(sortedByPriceDesc);
         break;
       default:
         break;
@@ -168,25 +178,25 @@ const Monitor = () => {
   };
 
   const shortingAsc = async (laptop) => {
-    const filterMonitor = [...laptop].sort(
-      (a, b) => a.key.price.discount - b.key.price.discount
+    const filterGpu = [...laptop].sort(
+      (a, b) => a.keyFeatures.price.discount - b.keyFeatures.price.discount
     );
-    return filterMonitor;
+    return filterGpu;
   };
 
   const shortingDesc = (laptop) => {
-    const filterMonitor = [...laptop].sort(
-      (a, b) => b.key.price.discount - a.key.price.discount
+    const filterGpu = [...laptop].sort(
+      (a, b) => b.keyFeatures.price.discount - a.keyFeatures.price.discount
     );
-    return filterMonitor;
+    return filterGpu;
   };
 
   //-----------------------fetching data-------------------------
   useEffect(() => {
     if (param === "All") {
-      getAllMonitor();
+      getAllGpu();
     } else {
-      getMonitorByBrand(param);
+      getGpuByBrand(param);
     }
     setCurrentPost();
   }, [param]);
@@ -217,60 +227,32 @@ const Monitor = () => {
           <div className="px-5 pb-2 text-center">
             <h1> {Range == 0 ? "Set Range" : "Under"}</h1>
             <hr className="mx-2/3" />
-            <h1>{Range} $</h1>
+            <h1> {Range}</h1>{" "}
           </div>
         </div>
 
-        {/*-----------------------------resolution Filter---------------------------------- */}
+        {/*-----------------------------Processor Filter---------------------------------- */}
         <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Resolution</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 "> Processor</h1>
           <hr />
-          <div className="px-5 py-2 flex flex-col gap-2">
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="pexel1"
+          <div className=" px-5 py-2 class-name flex gap-2">
+            <button
+              onClick={() => handleChip('NVIDIA')}
+              className=" px-3 bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
             >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("resolution", "1920x1080")}
-                className="w-5    "
-                value=""
-                id="pexel1"
-              />{" "}
-              <p> FHD</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="pexel2"
+              NVIDIA
+            </button>
+            <button
+              onClick={() =>  handleChip('AMD')}
+              className=" px-3 bg-red-600 text-white btn  hover:bg-red-600 "
             >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("resolution", "2560x1440")}
-                className="w-5"
-                value=""
-                id="pexel2"
-              />{" "}
-              <p> QHD</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="pexel3"
-            >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("resolution", "3840x2160")}
-                className="w-5"
-                value=""
-                id="pexel3"
-              />{" "}
-              <p> 4K</p>
-            </label>
-            
+              AMD Radeon
+            </button>
           </div>
         </div>
-        {/* ------------------------------Panel type------------------------ */}
+        {/* ------------------------------Processor core------------------------ */}
         <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Panel Type</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 "> Memory Size</h1>
           <hr />
           <div className="px-5 py-2 flex flex-col gap-2">
             <label
@@ -279,12 +261,12 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("type", "VA")}
+                onChange={() => HandleChoice("processor", "core", 4)}
                 className="w-5    "
                 value=""
                 id="core1"
               />{" "}
-              <p> VA Panel</p>
+              <p> 4</p>
             </label>
             <label
               className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
@@ -292,12 +274,12 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("type", "IPS")}
+                onChange={() => HandleChoice("processor", "core", 6)}
                 className="w-5"
                 value=""
                 id="core2"
               />{" "}
-              <p> IPS</p>
+              <p> 6</p>
             </label>
             <label
               className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
@@ -305,102 +287,41 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("type", "TN")}
+                onChange={() => HandleChoice("processor", "core", 8)}
                 className="w-5"
                 value=""
                 id="core3"
               />{" "}
-              <p> TN</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="core4"
-            >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("type", "QLED")}
-                className="w-5"
-                value=""
-                id="core4"
-              />{" "}
-              <p> QLED</p>
+              <p> 8</p>
             </label>
           </div>
         </div>
 
-        {/*-----------------------------Refresh Rate---------------------------------- */}
+        {/*-----------------------------graphics---------------------------------- */}
         <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Refresh Rate</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 "> Graphics</h1>
           <hr />
-          <div className="px-5 py-2 flex flex-col gap-2">
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="refresh1"
+          <div className=" px-5 py-2 class-name flex flex-wrap  gap-2">
+            <button
+              onClick={() => HandleChoice("graphics", "brand", "Intel")}
+              className=" px-2 bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
             >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "60Hz")}
-                className="w-5    "
-                value=""
-                id="refresh1"
-              />{" "}
-              <p> 60 Hz</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="refresh2"
+              Intel
+            </button>
+            <button
+              onClick={() => HandleChoice("graphics", "brand", "AMD")}
+              className=" px-2 bg-red-600 text-white btn btn-active hover:bg-red-600 "
             >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "75Hz")}
-                className="w-5"
-                value=""
-                id="refresh2"
-              />{" "}
-              <p> 75 Hz</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="refresh3"
+              AMD Radeon
+            </button>
+            <button
+              onClick={() => HandleChoice("graphics", "brand", "Nvidia")}
+              className=" px-2 bg-[#73B301] text-white btn btn-active hover:bg-[#73B301] "
             >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "144Hz")}
-                className="w-5"
-                value=""
-                id="refresh3"
-              />{" "}
-              <p> 144 Hz</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="refresh4"
-            >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "165Hz")}
-                className="w-5"
-                value=""
-                id="refresh4"
-              />{" "}
-              <p> 165 Hz</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="refresh5"
-            >
-              <input
-                type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "240Hz")}
-                className="w-5"
-                value=""
-                id="refresh5"
-              />{" "}
-              <p> 240 Hz</p>
-            </label>
+              NVIDIA
+            </button>
           </div>
         </div>
-
       </div>
 
       <div className=" col-span-4 ">
@@ -425,17 +346,17 @@ const Monitor = () => {
             </div>
           </div>
         </div>
-        {UseMonitor?.length > 1 ? (
+        {UseGpu?.length > 1 ? (
           <div className=" grid grid-cols-4 gap-3 pt-2 ">
-            {UseMonitor.map((item) => (
-              <MonitorCard key={item._id} state={item} />
+            {UseGpu.map((item) => (
+              <GpuCard key={item._id} state={item} />
             ))}
           </div>
         ) : (
           <div className="bg-white rounded-md my-2 mx-auto ">
             {" "}
             <h1 className="text-3xl text-center py-10 font-semibold text-gray-600">
-              Looking For your Monitor
+              Looking For your Gpu
             </h1>{" "}
             <hr className=" border-2" />{" "}
             <img
@@ -448,7 +369,7 @@ const Monitor = () => {
 
         <div className="pagination flex gap-6 py-6 ">
           {generatePageNumbers(
-            Math.ceil(AllMonitor.length / postPerPage),
+            Math.ceil(AllGpu.length / postPerPage),
             CurrentPage
           )}
         </div>
@@ -457,4 +378,4 @@ const Monitor = () => {
   );
 };
 
-export default Monitor;
+export default Gpu;

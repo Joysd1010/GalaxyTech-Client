@@ -7,6 +7,7 @@ import Signup from "../Pages/Login/Signup/signup";
 import Laptop from "../Pages/Products/Laptop/Laptop"
 import DetailPage from "../Pages/Products/Laptop/DetailPage";
 import Monitor from "../Pages/Products/Monitor/Monitor";
+import Gpu from "../Pages/Products/GPU/Gpu";
 
 const Router = createBrowserRouter([
   {
@@ -44,8 +45,8 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "ALL",
-        element: <p>hello this is processor</p>
+        path: "gpu",
+        element: <Gpu/>
       
       },
       {

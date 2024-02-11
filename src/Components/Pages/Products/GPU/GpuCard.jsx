@@ -3,84 +3,71 @@ import { FaCartPlus } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const MonitorCard = ({ state }) => {
-  
+const GpuCard = ({ state }) => {
   const {
     price,
-    modelname,
-    resolution,
-    portsDetails,
-    features,
-  } = state.key;
-  const { size, type,  refreshRate,  } = state.display;
- 
+    name,
+    memoryType,
+    memoryClock,
+    memorySize,
+    memoryInterface,
+    coreClockSpeed,
+  } = state.keyFeatures;
+  const { specialFeatures } = state.display;
+
   // const image = state.imageLinks[1]
-  const image = "https://img.telemart.ua/559699-709162-product_popup/acer-238-kg241ys3biip-umqx1ee301-black.png";
+  const image = "https://i.ibb.co/vk5jHSV/gtx-750-ti-1gb-800x800.jpg";
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
       <div className=" my-5 w-44 mx-auto overflow-hidden">
-       <img
+        <img
           src={image}
           alt="drive image "
           className="transition duration-300 ease-in-out hover:scale-110"
         />
-        
       </div>
       <div>
         <hr className=" " />
-        <Link to={`/laptopId/${state._id}`}>
-        <h1 className=" font-extrabold py-2 text-sm hover:underline hover:text-red-600 duration-200">
-          {modelname} {size} {refreshRate} {resolution === '2560x1440'
-    ? 'QHD'
-    : resolution === '3440x1440'
-    ? '4K'
-    : resolution === '1920x1440'
-    ? '2K'
-    : 'FHD'} Monitor
-        </h1></Link>
+        <Link to={`/gpuID/${state._id}`}>
+          <h1 className=" font-extrabold py-2 text-sm hover:underline hover:text-red-600 duration-200">
+            {name} {memorySize}GB {memoryType} Graphics Card
+          </h1>
+        </Link>
       </div>
       <div className=" flex flex-col gap-2 pt-2 pb-4 text-sm text-[#666767]">
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
-          <h1> Resolution : {" "}
-  {resolution === '2560x1440'
-    ? 'QHD'
-    : resolution === '3440x1440'
-    ? '4K'
-    : resolution === '1920x1440'
-    ? '2K'
-    : 'FHD'}
-</h1>
+          <h1>
+            {" "}
+            Core Clock :{" "}
+            {coreClockSpeed}
+          </h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>
           <h1>
             {" "}
-            Display : {type}, {refreshRate}
+            Memory Clock : {memoryClock}
           </h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
           <h1>
-            
-            Ports : {portsDetails.map((port, index) => (
-    <span key={index}>
-      {port}
-      {index < portsDetails.length - 1 ? ', ' : ''}
-    </span>
-  ))}
+            Memory Interface :{" "}
+            {memoryInterface}
           </h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
           <h1>
-  Features: {features.map((feature, index) => (
-    <span key={index}>
-      {feature}
-      {index < features.length - 1 ? ', ' : ''}
-    </span>
-  ))}
-</h1>
+            Features:{" "}
+            {specialFeatures.map((feature, index) => (
+              <span key={index}>
+                {feature}
+                {index < specialFeatures.length - 1 ? ", " : ""}
+              </span>
+            ))}
+          </h1>
         </div>
       </div>
       <div className="py-5">
@@ -99,7 +86,4 @@ const MonitorCard = ({ state }) => {
   );
 };
 
-
-
-
-export default MonitorCard;
+export default GpuCard;

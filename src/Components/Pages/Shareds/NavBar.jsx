@@ -24,13 +24,13 @@ const NavBar = () => {
     { value: "All", path: "laptop", param: "All" },
   ];
   const GPUJson = [
-    { value: "Nvidia", path: "gpu/Nvidia" },
-    { value: "Asus", path: "gpu/Asus" },
-    { value: "Gigabyte", path: "gpu/Gigabyte" },
-    { value: "AMD", path: "gpu/AMD" },
-    { value: "MSI", path: "gpu/MSI" },
-    { value: "Zotak", path: "gpu/Zotak" },
-    { value: "All", path: "gpu" },
+    { value: "Asus", path: "gpu", param:'Asus' },
+    { value: "Nvidia", path: "gpu", param:'Nvidia' },
+    { value: "Gigabyte", path: "gpu", param:'Gigabyte' },
+    { value: "AMD", path: "gpu", param:'AMD' },
+    { value: "MSI", path: "gpu", param:'MSI' },
+    { value: "Zotak", path: "gpu", param:'Zotak' },
+    { value: "All", path: "gpu" ,param:'All'},
   ];
   const MotherJson = [
     { value: "Asus", path: "mother/Asus" },
@@ -125,7 +125,7 @@ const NavBar = () => {
       />
       <NavTemplate
         element={GPUJson}
-        header={{ value: "Graphics Card", path: "gpu" }}
+        header={{ value: "Graphics Card", path: "gpu", param: "All" }}
       />
       <NavTemplate element={RamJson} header={{ value: "RAM", path: "ram" }} />
       <NavTemplate

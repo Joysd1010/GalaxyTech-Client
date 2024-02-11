@@ -8,6 +8,7 @@ import Laptop from "../Pages/Products/Laptop/Laptop"
 import DetailPage from "../Pages/Products/Laptop/DetailPage";
 import Monitor from "../Pages/Products/Monitor/Monitor";
 import Gpu from "../Pages/Products/GPU/Gpu";
+import Phone from "../Pages/Products/Phone/Phone";
 
 const Router = createBrowserRouter([
   {
@@ -50,8 +51,8 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "ALL",
-        element: <p>hello this is processor</p>
+        path: "phone",
+        element: <Phone/>
       
       },
       {

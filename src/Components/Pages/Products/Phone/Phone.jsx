@@ -477,7 +477,7 @@ const Phone = () => {
             </div>
           </div>
         </div>
-        {UsePhone?.length > 1 ? (
+        {UsePhone?.length > 0 ? (
           <div className=" grid grid-cols-4 gap-3 pt-2 ">
             {UsePhone.map((item) => (
               <PhoneCard key={item._id} state={item} />

@@ -19,11 +19,11 @@ const GpuCard = ({ state }) => {
   const image = "https://i.ibb.co/vk5jHSV/gtx-750-ti-1gb-800x800.jpg";
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
-      <div className=" my-5 w-44 mx-auto overflow-hidden">
+      <div className=" my-5 w-full mx-auto overflow-hidden">
         <img
           src={image}
           alt="drive image "
-          className="transition duration-300 ease-in-out hover:scale-110"
+          className="transition  duration-300 ease-in-out hover:scale-110"
         />
       </div>
       <div>

@@ -21,7 +21,7 @@ const GpuCard = ({ state }) => {
   const image = "https://www.netnest.com.au/Content/Images/MF-SM-S911BLIEATS.jpg";
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
-      <div className=" my-5 w-44 mx-auto overflow-hidden">
+      <div className=" my-5 w-full mx-auto overflow-hidden">
         <img
           src={image}
           alt="drive image "

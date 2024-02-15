@@ -23,6 +23,8 @@ const Gpu = () => {
     console.log(start, end);
     setUseGpu(AllGpu.slice(start, end));
   };
+  const [filter,setFilter]=useState([])
+  let filterCount=0;
 
   const handlePageChange = (newPage) => {
     console.log("this page", newPage);
@@ -156,15 +158,21 @@ const Gpu = () => {
   };
 
   //-------------------------UserDefinedFilter--------------------
-  const HandleChoice = (container, attribute, value) => {
+  const HandleChoice = (e, container, attribute, value) => {
+    console.log(e.target.checked);
     
-    const filteredArray = AllGpu.filter(
-      (item) => item[container][attribute] == value
-    );
-    console.log(filteredArray)
-    
-    setUseGpu(filteredArray);
-    console.log(UseGpu);
+    if(e.target.checked){
+      const filteredArray = AllGpu.filter(
+        (item) => item[container][attribute] == value
+      );
+      console.log(filteredArray)
+      
+      setUseGpu([...filteredArray]);
+      console.log(filteredArray);
+    }
+    else{
+      setUseGpu(AllGpu);
+    }
   };
   //-------------------------Shorting------------------------------------
 
@@ -269,9 +277,8 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memorySize", 4)}
-                className="w-5    "
-                value=""
+                onChange={(e) => HandleChoice(e, "keyFeatures", "memorySize", 4)}
+                className="w-5 "
                 id="core1"
               />{" "}
               <p> 4 GB</p>
@@ -282,7 +289,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memorySize", 6)}
+                onChange={(e) => HandleChoice(e, "keyFeatures", "memorySize", 6)}
                 className="w-5"
                 value=""
                 id="core2"
@@ -295,7 +302,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memorySize", 8)}
+                onChange={(e) => HandleChoice(e, "keyFeatures", "memorySize", 8)}
                 className="w-5"
                 value=""
                 id="core3"
@@ -308,7 +315,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memorySize", 10)}
+                onChange={(e) => HandleChoice(e,"keyFeatures", "memorySize", 10)}
                 className="w-5"
                 value=""
                 id="core4"
@@ -321,7 +328,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memorySize", 12)}
+                onChange={(e) => HandleChoice(e, "keyFeatures", "memorySize", 12)}
                 className="w-5"
                 value=""
                 id="core5"
@@ -334,7 +341,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memorySize", 16)}
+                onChange={(e) => HandleChoice(e,"keyFeatures", "memorySize", 16)}
                 className="w-5"
                 value=""
                 id="core6"
@@ -347,7 +354,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memorySize", 24)}
+                onChange={(e) => HandleChoice(e, "keyFeatures", "memorySize", 24)}
                 className="w-5"
                 value=""
                 id="core7"
@@ -368,7 +375,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memoryType", 'GDDR6X')}
+                onChange={(e) => HandleChoice(e,"keyFeatures", "memoryType", 'GDDR6X')}
                 className="w-5    "
                 value=""
                 id="Memory1"
@@ -381,7 +388,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memoryType", 'GDDR6')}
+                onChange={(e) => HandleChoice(e,"keyFeatures", "memoryType", 'GDDR6')}
                 className="w-5"
                 value=""
                 id="Memory2"
@@ -394,7 +401,7 @@ const Gpu = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("keyFeatures", "memoryType", 'GDDR5')}
+                onChange={(e) => HandleChoice(e,"keyFeatures", "memoryType", 'GDDR5')}
                 className="w-5"
                 value=""
                 id="Memory3"
@@ -428,7 +435,7 @@ const Gpu = () => {
             </div>
           </div>
         </div>
-        {UseGpu?.length > 1 ? (
+        {UseGpu?.length > 0 ? (
           <div className=" grid grid-cols-4 gap-3 pt-2 ">
             {UseGpu.map((item) => (
               <GpuCard key={item._id} state={item} />
@@ -448,6 +455,7 @@ const Gpu = () => {
             />
           </div>
         )}
+        
 
         <div className="pagination flex gap-6 py-6 ">
           {generatePageNumbers(

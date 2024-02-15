@@ -21,7 +21,7 @@ const LapTopCard = ({ state }) => {
   const image = "https://i.ibb.co/k5n3DVg/Lenovo3.png";
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
-      <div className=" my-5 w-44 mx-auto overflow-hidden">
+      <div className=" my-5 w-full mx-auto overflow-hidden">
        <img
           src={image}
           alt="drive image "

@@ -18,7 +18,7 @@ const MonitorCard = ({ state }) => {
   const image = "https://img.telemart.ua/559699-709162-product_popup/acer-238-kg241ys3biip-umqx1ee301-black.png";
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
-      <div className=" my-5 w-44 mx-auto overflow-hidden">
+      <div className=" my-5 w-full mx-auto overflow-hidden">
        <img
           src={image}
           alt="drive image "

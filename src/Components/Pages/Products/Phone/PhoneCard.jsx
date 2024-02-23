@@ -3,76 +3,74 @@ import { FaCartPlus } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const LapTopCard = ({ state }) => {
-  
+const GpuCard = ({ state }) => {
   const {
-    discountedPrice,
-    ramType,
-    generation,
-    modelname,
-    display,
-    storage,
-    ram,
-    specialFeatures,
+    
+    modelName,brand,
+    ramSize,romSize,
+    batterySize,rearCameraSpecification,
+    displayQuality,frontCameraSpecification,
+    processorChipsetSize,
+    processorChipsetName,
   } = state.keyFeatures;
-  const { brand, model, clockSpeed, cache, core, thread } = state.processor;
-  const { storageType, storageSize } = state.memory;
+  const { size } = state.displayInfo;
+  const { chargerType } = state.battery;
+  const { romType } = state.memory;
+
   // const image = state.imageLinks[1]
-  const image = "https://i.ibb.co/k5n3DVg/Lenovo3.png";
+  const image = "https://www.netnest.com.au/Content/Images/MF-SM-S911BLIEATS.jpg";
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
       <div className=" my-5 w-full mx-auto overflow-hidden">
-       <img
+        <img
           src={image}
           alt="drive image "
           className="transition duration-300 ease-in-out hover:scale-110"
         />
-        
       </div>
       <div>
         <hr className=" " />
-        <Link to={`/laptopId/${state._id}`}>
-        <h1 className=" font-extrabold py-2 text-sm hover:underline hover:text-red-600 duration-200">
-          {modelname} {brand} {model} {display}
-        </h1></Link>
+        <Link to={`/gpuID/${state._id}`}>
+          <h1 className=" font-extrabold py-2 text-sm hover:underline hover:text-red-600 duration-200">
+            {brand} {modelName} ({ramSize}/{romSize})  
+          </h1>
+        </Link>
       </div>
       <div className=" flex flex-col gap-2 pt-2 pb-4 text-sm text-[#666767]">
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
           <h1>
             {" "}
-            Processor : {brand} {model} {generation}gen ({core}C/{thread}T,{" "}
-            {clockSpeed}MHz,{cache}MB L3)
+            Display :{" "}
+            {size} {' '}{displayQuality}
           </h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>
           <h1>
             {" "}
-            RAM : {ram} GB {ramType} , Storage:{" "}
-            {storageSize > 2 ? `${storageSize} MB ` : `${storageSize} TB `}{" "}
-            {storageType}{" "}
+            Processor : {processorChipsetName} ({processorChipsetSize})
           </h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
           <h1>
-            {" "}
-            Display : {display} GB {ramType}{" "}
+            Camera :{" "}
+            {rearCameraSpecification} at rear  / {frontCameraSpecification}
           </h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
           <h1>
-            {" "}
-            Features : {specialFeatures[1]}, {specialFeatures[0]}{" "}
+            Features:{" "}
+            {batterySize},{chargerType},{romType}
           </h1>
         </div>
       </div>
       <div className="py-5">
         <hr />
         <h1 className=" text-xl text-center font-extrabold py-3  text-[#F04B22]">
-          {discountedPrice} $
+          {state.price.discountPrice} $
         </h1>
         <div className=" flex gap-2 px-16 text-sm py-2 rounded-md  text-blue-700 hover:text-white hover:bg-blue-700 transition duration-500 bg-indigo-50">
           <IoMdCart size={20} /> <h1> Buy Now</h1>
@@ -85,4 +83,4 @@ const LapTopCard = ({ state }) => {
   );
 };
 
-export default LapTopCard;
+export default GpuCard;

@@ -29,7 +29,7 @@ const NavTemplate = ({ element, header }) => {
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}
           tabIndex={0}
-          className="dropdown-content z-[1]  flex flex-col bg-white   shadow-md bg-base-100 border-t-4 border-t-[#FF0303] w-36"
+          className="dropdown-content z-[1]  flex flex-col bg-white   shadow-md  border-t-4 border-t-[#FF0303] w-36"
         >
           {element.map((item, index) => (
             <Link key={index} to={item.path} state={item.param}>

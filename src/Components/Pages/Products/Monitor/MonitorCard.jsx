@@ -3,22 +3,19 @@ import { FaCartPlus } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const LapTopCard = ({ state }) => {
+const MonitorCard = ({ state }) => {
   
   const {
-    discountedPrice,
-    ramType,
-    generation,
+    price,
     modelname,
-    display,
-    storage,
-    ram,
-    specialFeatures,
-  } = state.keyFeatures;
-  const { brand, model, clockSpeed, cache, core, thread } = state.processor;
-  const { storageType, storageSize } = state.memory;
+    resolution,
+    portsDetails,
+    features,
+  } = state.key;
+  const { size, type,  refreshRate,  } = state.display;
+ 
   // const image = state.imageLinks[1]
-  const image = "https://i.ibb.co/k5n3DVg/Lenovo3.png";
+  const image = "https://img.telemart.ua/559699-709162-product_popup/acer-238-kg241ys3biip-umqx1ee301-black.png";
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
       <div className=" my-5 w-full mx-auto overflow-hidden">
@@ -33,46 +30,63 @@ const LapTopCard = ({ state }) => {
         <hr className=" " />
         <Link to={`/laptopId/${state._id}`}>
         <h1 className=" font-extrabold py-2 text-sm hover:underline hover:text-red-600 duration-200">
-          {modelname} {brand} {model} {display}
+          {modelname} {size} {refreshRate} {resolution === '2560x1440'
+    ? 'QHD'
+    : resolution === '3440x1440'
+    ? '4K'
+    : resolution === '1920x1440'
+    ? '2K'
+    : 'FHD'} Monitor
         </h1></Link>
       </div>
       <div className=" flex flex-col gap-2 pt-2 pb-4 text-sm text-[#666767]">
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
-          <h1>
-            {" "}
-            Processor : {brand} {model} {generation}gen ({core}C/{thread}T,{" "}
-            {clockSpeed}MHz,{cache}MB L3)
-          </h1>
+          <h1> Resolution : {" "}
+  {resolution === '2560x1440'
+    ? 'QHD'
+    : resolution === '3440x1440'
+    ? '4K'
+    : resolution === '1920x1440'
+    ? '2K'
+    : 'FHD'}
+</h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>
           <h1>
             {" "}
-            RAM : {ram} GB {ramType} , Storage:{" "}
-            {storageSize > 2 ? `${storageSize} MB ` : `${storageSize} TB `}{" "}
-            {storageType}{" "}
+            Display : {type}, {refreshRate}
           </h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
           <h1>
-            {" "}
-            Display : {display} GB {ramType}{" "}
+            
+            Ports : {portsDetails.map((port, index) => (
+    <span key={index}>
+      {port}
+      {index < portsDetails.length - 1 ? ', ' : ''}
+    </span>
+  ))}
           </h1>
         </div>
         <div className=" flex gap-2 items-center">
           <p className="text-xs">■</p>{" "}
           <h1>
-            {" "}
-            Features : {specialFeatures[1]}, {specialFeatures[0]}{" "}
-          </h1>
+  Features: {features.map((feature, index) => (
+    <span key={index}>
+      {feature}
+      {index < features.length - 1 ? ', ' : ''}
+    </span>
+  ))}
+</h1>
         </div>
       </div>
       <div className="py-5">
         <hr />
         <h1 className=" text-xl text-center font-extrabold py-3  text-[#F04B22]">
-          {discountedPrice} $
+          {price.discount} $
         </h1>
         <div className=" flex gap-2 px-16 text-sm py-2 rounded-md  text-blue-700 hover:text-white hover:bg-blue-700 transition duration-500 bg-indigo-50">
           <IoMdCart size={20} /> <h1> Buy Now</h1>
@@ -85,4 +99,7 @@ const LapTopCard = ({ state }) => {
   );
 };
 
-export default LapTopCard;
+
+
+
+export default MonitorCard;

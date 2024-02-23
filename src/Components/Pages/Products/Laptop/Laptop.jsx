@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import LapTopCard from "./LapTopCard";
+import { FaHome } from "react-icons/fa";
 
 const Laptop = () => {
   const axiosPoint = useAxiosPublic();
@@ -14,10 +15,6 @@ const Laptop = () => {
   const postPerPage=12;
   const [MaxPrice, setMaxPrice] = useState(0);
   const param = location.state;
-
-  // const indexOfFirstCard = (currentPage) => (currentPage - 1) * postPerPage;
-  // const indexOfLastCard = (currentPage) => currentPage * postPerPage;
-
   const setCurrentPost = () => {
     
       const start = (CurrentPage -1)* postPerPage ;
@@ -227,10 +224,9 @@ const Laptop = () => {
           </div>
 
           <div className="px-5 pb-2 text-center">
-            <h1> Under</h1>
+          <h1> {Range==0?'Set Range':'Under'}</h1>
             <hr className="mx-2/3" />
-            <h1>{Range} $</h1>
-          </div>
+            <h1> {Range}</h1>          </div>
         </div>
 
         {/*-----------------------------Processor Filter---------------------------------- */}
@@ -329,7 +325,7 @@ const Laptop = () => {
 
       <div className=" col-span-4 ">
         <div className=" px-5 py-3 bg-white items-center  flex justify-between  rounded-md">
-          <h1 className="font-semibold text-lg">{param.toUpperCase()}</h1>
+        <div className="font-semibold text-lg flex items-center gap-1"><Link to={'/'}><FaHome/></Link>{" "} {location.pathname.toUpperCase()}/{param.toUpperCase()}</div>
           <div className=" flex items-center gap-2">
             <p className=" text-gray-500">Sort By : </p>{" "}
             <div>
@@ -354,7 +350,7 @@ const Laptop = () => {
           
            
           }
-        </div>:<div className="bg-white rounded-md my-2 mx-auto "> <h1 className="text-3xl text-center py-10 font-semibold text-gray-600">Sorry No Laptop Found</h1> <hr className=" border-2" /> <img className="mx-auto w-1/4" src="https://i.postimg.cc/kXqSBhC4/Untitleddesign-ezgif-com-optimize-1.gif" alt="" /></div> 
+        </div>:<div className="bg-white rounded-md my-2 mx-auto "> <h1 className="text-3xl text-center py-10 font-semibold text-gray-600">Looking For your Laptop</h1> <hr className=" border-2" /> <img className="mx-auto w-1/4" src="https://i.postimg.cc/kXqSBhC4/Untitleddesign-ezgif-com-optimize-1.gif" alt="" /></div> 
         }
         
         <div className="pagination flex gap-6 py-6 ">

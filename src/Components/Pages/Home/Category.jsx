@@ -7,6 +7,7 @@ import { GrStorage } from "react-icons/gr";
 import { PiMonitor, PiMouseLight } from "react-icons/pi";
 import { BsGpuCard } from "react-icons/bs";
 import { ImHeadphones } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -16,10 +17,15 @@ const Category = () => {
         Get Your Desired Product from Featured Category!
       </h1>
       <div className="pt-5 grid grid-cols-5 mx-28 gap-3">
-        <div className=" gap-1 flex flex-col items-center hover:border-red-600 hover:text-red-600 py-3 hover:scale-105 duration-500 bg-slate-200 border-slate-600 border-2 rounded-md">
-          <MdLaptop size={50} />
-          <h1 className="text-xl ">Laptop</h1>
-        </div>
+        <Link to={`laptop`} state={"All"}>
+          {" "}
+          <div className=" gap-1 flex flex-col items-center hover:border-red-600 hover:text-red-600 py-3 hover:scale-105 duration-500 bg-slate-200 border-slate-600 border-2 rounded-md">
+            <MdLaptop size={50} />
+            <h1 className="text-xl ">Laptop</h1>
+          </div>
+         
+        </Link>
+
         <div
           className='hover:border-red-600 hover:text-red-600 gap-1 flex flex-col items-center py-3 hover:scale-105 duration-500 bg-slate-200 border-slateimport { ImHeadphones } from "react-icons/im";
 border-slate-600 border-2 rounded-md'

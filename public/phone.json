@@ -14,12 +14,10 @@
       "batterySize": "5000mAh"
 
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1AjvsA36S-fPNLRCb9BQzFlI3vWEPEDuQ",
-      "link2": "https://drive.google.com/uc?export=download&id=1RgpnUgNx2Fymc80dPmxxQYTP4W7XO0A_",
-      "link3": "https://drive.google.com/uc?export=download&id=1HPna0QCD1-rOfoiIRDzPw7DlWELvKkJY",
-      "link4": "https://drive.google.com/uc?export=download&id=1udB3rGsROZqi1lDnP8S4noP5BOQ9Cm48"
-    },
+    "image": ["https://i.postimg.cc/DwmDpztM/i-Phone-14-Pro-Max-1.png",
+    "https://i.postimg.cc/cLK9Mb3q/i-Phone-14-Pro-Max-2.png",
+    "https://i.postimg.cc/MZDFWRwL/i-Phone-14-Pro-Max-3.png",
+    "https://i.postimg.cc/WbYYZvh6/i-Phone-14-Pro-Max-4.png"],
     "price": {
       "regularPrice": 399,
       "discountPrice": 349,
@@ -116,12 +114,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=11B2qqUTySWHtQAtao3n2uUH4peHG0sFF",
-      "link2": "https://drive.google.com/uc?export=download&id=1X7cmGODsfgTGX59VVm9_u2t3wjF1N-OJ",
-      "link3": "https://drive.google.com/uc?export=download&id=1bPJIeGcsjmfcqxNbbFV1qJaYEm_LcKK2",
-      "link4": "https://drive.google.com/uc?export=download&id=1apFVSIkvn9156TTnhrG_BbvNrSIkI2hJ"
-    },
+    "image": ["https://i.postimg.cc/NM8P22H5/i-Phone-14-Pro-1.png",
+    "https://i.postimg.cc/yxVpm6mn/i-Phone-14-Pro-2.png",
+    "https://i.postimg.cc/VkThx8wL/i-Phone-14-Pro-3.png",
+    "https://i.postimg.cc/3NnSnM9h/i-Phone-14-Pro-4.png"],
     "price": {
       "regularPrice": 899,
       "discountPrice": 799,
@@ -221,12 +217,11 @@
       "processorChipsetSize": "11nm",
       "batterySize": "4000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1BCBn_pgP5R7uybODxVbQK050gLQVgezT",
-      "link2": "https://drive.google.com/uc?export=download&id=1IZalQnUfoPoWKOvLStJ53b9lpeUrS_E_",
-      "link3": "https://drive.google.com/uc?export=download&id=1xXNfBP661JQoAfNce9BrAmvOnhsi6Qyd",
-      "link4": "https://drive.google.com/uc?export=download&id=1zQNPQn_s6wlDBREO2F2o-xCjFJ7djlWY"
-    },
+    "image": ["https://i.postimg.cc/DwmDpztM/i-Phone-14-Pro-Max-1.png",
+    "https://i.postimg.cc/cLK9Mb3q/i-Phone-14-Pro-Max-2.png",
+    "https://i.postimg.cc/MZDFWRwL/i-Phone-14-Pro-Max-3.png",
+    "https://i.postimg.cc/WbYYZvh6/i-Phone-14-Pro-Max-4.png"]
+    ,
     "price": {
       "regularPrice": 299,
       "discountPrice": 249,
@@ -322,12 +317,10 @@
       "processorChipsetSize": "8nm",
       "batterySize": "4500mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1urdwJmDV_tmObksEeAA3ev_g82OuJSEM",
-      "link2": "https://drive.google.com/uc?export=download&id=10f244I5TvnEz9m0-IMdnV8Kdk-OmErsR",
-      "link3": "https://drive.google.com/uc?export=download&id=17d8na34c5Orr3ZNLNKf79GDOnO7GEFgJ",
-      "link4": "https://drive.google.com/uc?export=download&id=1gMIeizig15w41xmZ-OwbiDVAn3s_HD2_"
-    },
+    "image": ["https://i.postimg.cc/DwmDpztM/i-Phone-14-Pro-Max-1.png",
+"https://i.postimg.cc/cLK9Mb3q/i-Phone-14-Pro-Max-2.png",
+"https://i.postimg.cc/MZDFWRwL/i-Phone-14-Pro-Max-3.png",
+"https://i.postimg.cc/WbYYZvh6/i-Phone-14-Pro-Max-4.png"],
     "price": {
       "regularPrice": 599,
       "discountPrice": 549,
@@ -424,12 +417,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1ctf9mV9gF_EhC542TClj9WNIe9bFDT3U",
-      "link2": "https://drive.google.com/uc?export=download&id=1CQxm1F_hZ1G8Zn2xmSSedkqJf852Tgd8",
-      "link3": "https://drive.google.com/uc?export=download&id=1MksgK72Gy5LuPK7vatL_KmeggKUrUDq2",
-      "link4": "https://drive.google.com/uc?export=download&id=19kLrX0w9xrNKh8so8MMZTVdIL5S_6C_B"
-    },
+    "image": ["https://i.postimg.cc/NM8P22H5/i-Phone-14-Pro-1.png",
+    "https://i.postimg.cc/yxVpm6mn/i-Phone-14-Pro-2.png",
+    "https://i.postimg.cc/VkThx8wL/i-Phone-14-Pro-3.png",
+    "https://i.postimg.cc/3NnSnM9h/i-Phone-14-Pro-4.png"],
     "price": {
       "regularPrice": 899,
       "discountPrice": 799,
@@ -528,12 +519,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4800mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1OZzetjn-C9WNcrRqV1HZDWwmUITmmDmK",
-      "link2": "https://drive.google.com/uc?export=download&id=1Abe6kQD_ljP0uZlHIpvkajQxuveTuhv1",
-      "link3": "https://drive.google.com/uc?export=download&id=1dKlkDWtyunGDKEYcvQhAOtW646aRz8FF",
-      "link4": "https://drive.google.com/uc?export=download&id=1YGabHr2_9WrB4C8vAHq8aBYtGquF5ZrZ"
-    },
+    "image": ["https://i.postimg.cc/DwmDpztM/i-Phone-14-Pro-Max-1.png",
+    "https://i.postimg.cc/cLK9Mb3q/i-Phone-14-Pro-Max-2.png",
+    "https://i.postimg.cc/MZDFWRwL/i-Phone-14-Pro-Max-3.png",
+    "https://i.postimg.cc/WbYYZvh6/i-Phone-14-Pro-Max-4.png"],
     "price": {
       "regularPrice": 699,
       "discountPrice": 649,
@@ -630,12 +619,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1W8McRnAyr9Q3Y4NyATX_wxzp1QW9xApL",
-      "link2": "https://drive.google.com/uc?export=download&id=1f-qKw7aVYTK1e2mC8u38IhPEoTgIQr0E",
-      "link3": "https://drive.google.com/uc?export=download&id=10kteC3Jnmb99Ro50mtKNQALRaP8dgFbN",
-      "link4": "https://drive.google.com/uc?export=download&id=1mTmf13EAcZz8IvgzYu4DKAOM5tB_FQK_"
-    },
+    "image": ["https://i.postimg.cc/NM8P22H5/i-Phone-14-Pro-1.png",
+    "https://i.postimg.cc/yxVpm6mn/i-Phone-14-Pro-2.png",
+    "https://i.postimg.cc/VkThx8wL/i-Phone-14-Pro-3.png",
+    "https://i.postimg.cc/3NnSnM9h/i-Phone-14-Pro-4.png"],
     "price": {
       "regularPrice": 1099,
       "discountPrice": 999,
@@ -734,12 +721,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4200mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1sF8E9fflk7mWQI2yJ7vlh4LCZna5kMrr",
-      "link2": "https://drive.google.com/uc?export=download&id=1rIHkuZ41lvx42ibBgOg_j2q6NX7Sgm0m",
-      "link3": "https://drive.google.com/uc?export=download&id=1uExqZ7e4wMtSkPhZ3jQa30cz4vEiOxlq",
-      "link4": "https://drive.google.com/uc?export=download&id=1d1wlvy_wf3aXr5dKkMx4PmBlcYmqd-fv"
-    },
+    "image": ["https://i.postimg.cc/DwmDpztM/i-Phone-14-Pro-Max-1.png",
+    "https://i.postimg.cc/cLK9Mb3q/i-Phone-14-Pro-Max-2.png",
+    "https://i.postimg.cc/MZDFWRwL/i-Phone-14-Pro-Max-3.png",
+    "https://i.postimg.cc/WbYYZvh6/i-Phone-14-Pro-Max-4.png"],
     "price": {
       "regularPrice": 799,
       "discountPrice": 699,
@@ -836,12 +821,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4200mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=13X1DpUzXr_Idbm3rBBm5gmtaipxDyJZC",
-      "link2": "https://drive.google.com/uc?export=download&id=1a1Y23DW9Un8Iw95NtUvAfs19_jRHMNJx",
-      "link3": "https://drive.google.com/uc?export=download&id=1-lEp16bqbMjAukkKBXG0WviXfCbIsNZ4",
-      "link4": "https://drive.google.com/uc?export=download&id=1aVJRt6aGSN46Bgqt0RQtedb99K9ZGOLn"
-    },
+    "image": ["https://i.postimg.cc/NM8P22H5/i-Phone-14-Pro-1.png",
+    "https://i.postimg.cc/yxVpm6mn/i-Phone-14-Pro-2.png",
+    "https://i.postimg.cc/VkThx8wL/i-Phone-14-Pro-3.png",
+    "https://i.postimg.cc/3NnSnM9h/i-Phone-14-Pro-4.png"],
     "price": {
       "regularPrice": 799,
       "discountPrice": 699,
@@ -938,12 +921,10 @@
       "processorChipsetSize": "6nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=126jgzG_FkY6p_q9D3A73tvtMWATuOSed",
-      "link2": "https://drive.google.com/uc?export=download&id=16xujWuE3zGRQtT9M0p9YQU6Fg9RErIZW",
-      "link3": "https://drive.google.com/uc?export=download&id=1_JbqPRjsKwG3YWqBkNJ_VIySOBfEPM0R",
-      "link4": "https://drive.google.com/uc?export=download&id=1D-2RdBbE4NWpZpJAHqDwjJCEh4xNnZvt"
-    },
+    "image":["https://i.postimg.cc/DwmDpztM/i-Phone-14-Pro-Max-1.png",
+    "https://i.postimg.cc/cLK9Mb3q/i-Phone-14-Pro-Max-2.png",
+    "https://i.postimg.cc/MZDFWRwL/i-Phone-14-Pro-Max-3.png",
+    "https://i.postimg.cc/WbYYZvh6/i-Phone-14-Pro-Max-4.png"],
     "price": {
       "regularPrice": 899,
       "discountPrice": 799,
@@ -1041,12 +1022,10 @@
       "processorChipsetSize": "4nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1on4aoWzUtPJZzKfq9A1bYabe9FDO257w",
-      "link2": "https://drive.google.com/uc?export=download&id=1rs85Bz1TsGDL2q9zmzw9s-ooUTSWYOIc",
-      "link3": "https://drive.google.com/uc?export=download&id=150rTpfsT-fosSMYcDNE9Q2YkiU5WTP8S",
-      "link4": "https://drive.google.com/uc?export=download&id=1X0Jhdhe1ewRCpk-a7AckgtV_iugWMbEH"
-    },
+    "image": ["https://i.postimg.cc/NM8P22H5/i-Phone-14-Pro-1.png",
+    "https://i.postimg.cc/yxVpm6mn/i-Phone-14-Pro-2.png",
+    "https://i.postimg.cc/VkThx8wL/i-Phone-14-Pro-3.png",
+    "https://i.postimg.cc/3NnSnM9h/i-Phone-14-Pro-4.png"],
     "price": {
       "regularPrice": 999,
       "discountPrice": 899,
@@ -1146,12 +1125,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4500mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1on4aoWzUtPJZzKfq9A1bYabe9FDO257w",
-      "link2": "https://drive.google.com/uc?export=download&id=1rs85Bz1TsGDL2q9zmzw9s-ooUTSWYOIc",
-      "link3": "https://drive.google.com/uc?export=download&id=150rTpfsT-fosSMYcDNE9Q2YkiU5WTP8S",
-      "link4": "https://drive.google.com/uc?export=download&id=1X0Jhdhe1ewRCpk-a7AckgtV_iugWMbEH"
-    },
+    "image": ["https://i.postimg.cc/DwmDpztM/i-Phone-14-Pro-Max-1.png",
+    "https://i.postimg.cc/cLK9Mb3q/i-Phone-14-Pro-Max-2.png",
+    "https://i.postimg.cc/MZDFWRwL/i-Phone-14-Pro-Max-3.png",
+    "https://i.postimg.cc/WbYYZvh6/i-Phone-14-Pro-Max-4.png"],
     "price": {
       "regularPrice": 749,
       "discountPrice": 699,
@@ -1248,12 +1225,10 @@
       "processorChipsetSize": "6nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1IUYuPOaJRnKDJRpG-v_-rBER8Mbz2Ng1",
-      "link2": "https://drive.google.com/uc?export=download&id=18Nz2qkhgSUhxRjNAdRmpaqDh0RqCIXyH",
-      "link3": "https://drive.google.com/uc?export=download&id=1kIy7LqW4RVN3kOh3uS5nXxadCttEm1eE",
-      "link4": "https://drive.google.com/uc?export=download&id=18mWXeFmLuBRqCjMedKuPO5bE2vXtWqdT"
-    },
+    "image": ["https://i.postimg.cc/NM8P22H5/i-Phone-14-Pro-1.png",
+    "https://i.postimg.cc/yxVpm6mn/i-Phone-14-Pro-2.png",
+    "https://i.postimg.cc/VkThx8wL/i-Phone-14-Pro-3.png",
+    "https://i.postimg.cc/3NnSnM9h/i-Phone-14-Pro-4.png"],
     "price": {
       "regularPrice": 849,
       "discountPrice": 799,
@@ -1352,12 +1327,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4500mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1Q5Qne6SK7LRneA-SvDVjM9ssD0w7Qg8r",
-      "link2": "https://drive.google.com/uc?export=download&id=18i0NDeWZROq-HNffb52Xqh6FVEZ-Ajft",
-      "link3": "https://drive.google.com/uc?export=download&id=1opIJOyzC-jQ_CbBOgwR3tki116jMgmVO",
-      "link4": "https://drive.google.com/uc?export=download&id=1Ji93ZXo4TDhcshoaOKVChTibBgBe4U3-"
-    },
+    "image": ["https://i.postimg.cc/NM8P22H5/i-Phone-14-Pro-1.png",
+    "https://i.postimg.cc/yxVpm6mn/i-Phone-14-Pro-2.png",
+    "https://i.postimg.cc/VkThx8wL/i-Phone-14-Pro-3.png",
+    "https://i.postimg.cc/3NnSnM9h/i-Phone-14-Pro-4.png"],
     "price": {
       "regularPrice": 699,
       "discountPrice": 649,
@@ -1454,12 +1427,10 @@
       "processorChipsetSize": "6nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1IJQXjjcsT0XYlbVrJ5RzJoJFcDkFgOSH",
-      "link2": "https://drive.google.com/uc?export=download&id=1hehXwgb-_Ni7pMPvb05EXuwIfoETHIAi",
-      "link3": "https://drive.google.com/uc?export=download&id=1sYMESm6y4RW0yOnRrBWSCu_dZ5cRr4x5",
-      "link4": "https://drive.google.com/uc?export=download&id=1yEhv17VRUk96YYAjJHcDX6HwL7AR6ufG"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 799,
       "discountPrice": 749,
@@ -1557,12 +1528,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1cl5PepcGoQB7Z1m2CGDydjfUXaNH2mQt",
-      "link2": "https://drive.google.com/uc?export=download&id=1niGKiGqQhERXP4yYYv6-t_n52o5IHzsC",
-      "link3": "https://drive.google.com/uc?export=download&id=1nqM-gJBkbNJCGVgdpN83ExoaFJ78mV5E",
-      "link4": "https://drive.google.com/uc?export=download&id=1xbJmt1PDOAZRcDUCUxcVnxZPVEyTCW9Y"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 1099,
       "discountPrice": 999,
@@ -1661,12 +1630,11 @@
       "processorChipsetSize": "8nm",
       "batterySize": "4000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1UTM6FLRyXHYKHhMWEA1kiQe8AFWOgfzZ",
-      "link2": "https://drive.google.com/uc?export=download&id=1ukUXXKYBWujMYhchikRYer298nwtRf7d",
-      "link3": "https://drive.google.com/uc?export=download&id=1qV29Cbxw7On2BBownjr8_ipGmHQSqC4-",
-      "link4": "https://drive.google.com/uc?export=download&id=1b9x7xr_MnOtJBMY6VdgZlMNsdb9-K7RI"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"]
+    ,
     "price": {
       "regularPrice": 599,
       "discountPrice": 549,
@@ -1764,12 +1732,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "4500mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=16vg4_zonCmGF-nYktXMrOd411j7kFnxm",
-      "link2": "https://drive.google.com/uc?export=download&id=1N8bNReX2w9QY3ojcsvD4N_L4LlHgVcWm",
-      "link3": "https://drive.google.com/uc?export=download&id=1B808-bUE9jUwfI431mn6FlDh4PIgp4Is",
-      "link4": "https://drive.google.com/uc?export=download&id=1dfcn9Pzf-Bs3EJ6eyhfWcmlUrNOuaOzH"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 899,
       "discountPrice": 849,
@@ -1865,12 +1831,10 @@
       "processorChipsetSize": "12nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1qENWDG5C3HLvIxWqA6b__uysjP7hmw7P",
-      "link2": "https://drive.google.com/uc?export=download&id=13_EQaQAcq7yaimt3cYgLuxqedqcK5U6y",
-      "link3": "https://drive.google.com/uc?export=download&id=13SMH3rKbLfqUL9YIj8fcD42XJ-VXH-Fy",
-      "link4": "https://drive.google.com/uc?export=download&id=11T7DkAXkgs_E_SpOhMLa-YPX6y-v-N7W"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 499,
       "discountPrice": 449,
@@ -1968,12 +1932,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1DIyCm7JZ9nnIsP0pCij1xHJifwbLy6EQ",
-      "link2": "https://drive.google.com/uc?export=download&id=1hsxqV6p2VD3RdlAVGrd3ilIJ-4ndvHgC",
-      "link3": "https://drive.google.com/uc?export=download&id=1_3ZwFv_IJ8ZnhE_IXSc-Io2uDDjLrafd",
-      "link4": "https://drive.google.com/uc?export=download&id=1dwtofxgRGMDH7IMlzcsSJgdgiE9Vmk1a"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 1199,
       "discountPrice": 1099,
@@ -2072,12 +2034,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4500mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1lrGoxbErT_WfnHcPCXhBfbNF9zT5Lovm",
-      "link2": "https://drive.google.com/uc?export=download&id=1FrSnkJ8DLugzt0nFOIKFRJPOgQKj_ut1",
-      "link3": "https://drive.google.com/uc?export=download&id=1gnWG3ak7-SCBgHkXZ3we14_lXUweNkX7",
-      "link4": "https://drive.google.com/uc?export=download&id=1qUnFluL6m1zTLfJsFV0ZdabyoJPMI-tZ"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 799,
       "discountPrice": 749,
@@ -2175,12 +2135,10 @@
       "processorChipsetSize": "12nm",
       "batterySize": "4000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1uLJ2PWnLB_euPJNEj2kkM8W2tPNT3td-",
-      "link2": "https://drive.google.com/uc?export=download&id=1GORlH2kx1F4iScoFYCPHJJ2M5yxNhwSO",
-      "link3": "https://drive.google.com/uc?export=download&id=1YJHM9Ubiw5LeGeF3AXAbNSyV_OUJozww",
-      "link4": "https://drive.google.com/uc?export=download&id=12Fb8ZgTq_IMKQkp4krZ3L-TAerR6pe0z"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 399,
       "discountPrice": 349,
@@ -2277,12 +2235,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1ot1aMMzVHCSWppRA8rdwANIcSq73e_i2",
-      "link2": "https://drive.google.com/uc?export=download&id=1Fpqe3RdRvSa4bcdLAqQ_rhfJBbAfsap0",
-      "link3": "https://drive.google.com/uc?export=download&id=1dnIyNaXb-Dmpq6dQKmH144x5JTkButto",
-      "link4": "https://drive.google.com/uc?export=download&id=15ogs9XRXLpbd8495RqLDWk3ehlOBPMF4"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 999,
       "discountPrice": 949,
@@ -2381,12 +2337,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4700mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1wv_tS_PX0B4IHtFWuCqIuiPPi4W7LK6g",
-      "link2": "https://drive.google.com/uc?export=download&id=1jrmqa-kqbMvNaMOiMyLlelHH194i1hgw",
-      "link3": "https://drive.google.com/uc?export=download&id=1_WKX7je89yHuaHF9OMOqcl3J_QUfnrTZ",
-      "link4": "https://drive.google.com/uc?export=download&id=1_eWFDsaM5aHGTVzsBxwFzRJC50hiVQwk"
-    },
+    "image": ["https://i.postimg.cc/ZqdQZMYP/Galaxy-S23-1.png",
+    "https://i.postimg.cc/d1cx0jDb/Galaxy-S23-2.png",
+    "https://i.postimg.cc/zXGP3BXG/Galaxy-S23-3.png",
+    "https://i.postimg.cc/MK9NYBrB/Galaxy-S23-4.png"],
     "price": {
       "regularPrice": 699,
       "discountPrice": 649,
@@ -2483,12 +2437,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1Y6cZdOw-3NNJTNZX2B24cNYTsW6bKwU-",
-      "link2": "https://drive.google.com/uc?export=download&id=1UX8pgc6K_vRACffsitD6KoD6628U1uCK",
-      "link3": "https://drive.google.com/uc?export=download&id=1ZRywAdbOZ1jlfT6gP56E3JNN63HM_uC0",
-      "link4": "https://drive.google.com/uc?export=download&id=1fx5TVnNuX235ssdoml3HW7aO-all4i4T"
-    },
+    "image": ["https://i.postimg.cc/vBv3ZRJn/redmi-13-1.png",
+    "https://i.postimg.cc/D0j61ryy/redmi-13-2.png",
+    "https://i.postimg.cc/sxDKB6zN/redmi-13-3.png",
+    "https://i.postimg.cc/T2Ct86qM/redmi-13-4.png"],
     "price": {
       "regularPrice": 1199,
       "discountPrice": 1099,
@@ -2586,12 +2538,10 @@
       "processorChipsetSize": "12nm",
       "batterySize": "4000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1Ip62DpbrBCmwuTAgwIkpdmrUINLvZr-f",
-      "link2": "https://drive.google.com/uc?export=download&id=1r796Hkxq_GWEPpM8sA5syW3I6MpTLfkZ",
-      "link3": "https://drive.google.com/uc?export=download&id=1HOFAOBRKdbCzPcZo2eYkwnyrSm3BFEAO",
-      "link4": "https://drive.google.com/uc?export=download&id=1fOgrKX7WEm9lZNxWXWvPVYQ8yWALqteo"
-    },
+    "image": ["https://i.postimg.cc/vBv3ZRJn/redmi-13-1.png",
+    "https://i.postimg.cc/D0j61ryy/redmi-13-2.png",
+    "https://i.postimg.cc/sxDKB6zN/redmi-13-3.png",
+    "https://i.postimg.cc/T2Ct86qM/redmi-13-4.png"],
     "price": {
       "regularPrice": 299,
       "discountPrice": 249,
@@ -2687,12 +2637,10 @@
       "processorChipsetSize": "8nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1YTqjhkR4kIfEqnJfJ0pmtsVkFjFC4CFg",
-      "link2": "https://drive.google.com/uc?export=download&id=11BxsKurGNxqx0BVONHDvoQ0DpU-q87A3",
-      "link3": "https://drive.google.com/uc?export=download&id=1ldXQUZEc4pty_z1tWRxiPafU_yNeoRxW",
-      "link4": "https://drive.google.com/uc?export=download&id=18GGls6WJceKBe0WJTl_5ybDiPiN10ShD"
-    },
+    "image": ["https://i.postimg.cc/vBv3ZRJn/redmi-13-1.png",
+    "https://i.postimg.cc/D0j61ryy/redmi-13-2.png",
+    "https://i.postimg.cc/sxDKB6zN/redmi-13-3.png",
+    "https://i.postimg.cc/T2Ct86qM/redmi-13-4.png"],
     "price": {
       "regularPrice": 349,
       "discountPrice": 299,
@@ -2789,12 +2737,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4500mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1WQ9RMOsYMB4fOV3_XxK3b5fKOjOhqLMS",
-      "link2": "https://drive.google.com/uc?export=download&id=1_TdD9hDuEAFnsXpddWSgo4vh3ZLAp0Mm",
-      "link3": "https://drive.google.com/uc?export=download&id=1kuq5DQx8bXSwPxQeJfEF07EcRxsmIBjX",
-      "link4": "https://drive.google.com/uc?export=download&id=1kOERu92YUqNe7BzOtdPt1LrwdWkV80q7"
-    },
+    "image":["https://i.postimg.cc/vBv3ZRJn/redmi-13-1.png",
+    "https://i.postimg.cc/D0j61ryy/redmi-13-2.png",
+    "https://i.postimg.cc/sxDKB6zN/redmi-13-3.png",
+    "https://i.postimg.cc/T2Ct86qM/redmi-13-4.png"],
     "price": {
       "regularPrice": 799,
       "discountPrice": 749,
@@ -2892,12 +2838,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1XPmOMFObXubpcAgiHtTgUr_28a_Lsmse",
-      "link2": "https://drive.google.com/uc?export=download&id=1ezG1BFrziH4uF7IX3vX3AZ1quTiTStOY",
-      "link3": "https://drive.google.com/uc?export=download&id=1DyIXVHBa6hhu2sqJVMwy6B7IDd00eCEJ",
-      "link4": "https://drive.google.com/uc?export=download&id=1_L9LQ5XwdsybM7ZV0Ynkhopu3aap4DKR"
-    },
+    "image": ["https://i.postimg.cc/vBv3ZRJn/redmi-13-1.png",
+    "https://i.postimg.cc/D0j61ryy/redmi-13-2.png",
+    "https://i.postimg.cc/sxDKB6zN/redmi-13-3.png",
+    "https://i.postimg.cc/T2Ct86qM/redmi-13-4.png"],
     "price": {
       "regularPrice": 449,
       "discountPrice": 399,
@@ -2993,12 +2937,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1VWDWK_uoPR25eD43U85-heZ-vQZx705H",
-      "link2": "https://drive.google.com/uc?export=download&id=10iDYAmOgATDlH0GZvswIx8hlA_7AMbMy",
-      "link3": "https://drive.google.com/uc?export=download&id=14r_dfCqE2vxLJZZoGx8T_-bg63Lmlwoh",
-      "link4": "https://drive.google.com/uc?export=download&id=11vG_n1uVByn81K1YINK0AmqviuGJ0fqP"
-    },
+    "image": ["https://i.postimg.cc/vBv3ZRJn/redmi-13-1.png",
+    "https://i.postimg.cc/D0j61ryy/redmi-13-2.png",
+    "https://i.postimg.cc/sxDKB6zN/redmi-13-3.png",
+    "https://i.postimg.cc/T2Ct86qM/redmi-13-4.png"],
     "price": {
       "regularPrice": 1399,
       "discountPrice": 1299,
@@ -3098,12 +3040,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4500mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1Y2pWws0FdKsPvar3bvrhe-Y132v-4EdR",
-      "link2": "https://drive.google.com/uc?export=download&id=1DubE21mgkP8HZrLXczYI1spEXIT4Vwf_",
-      "link3": "https://drive.google.com/uc?export=download&id=19pXJu3zZbLUUXQAmdPelAE3Xk_ngiHZW",
-      "link4": "https://drive.google.com/uc?export=download&id=1ndiWiq4_Fk4YdfXmtwFrc3t8WswPWjHz"
-    },
+    "image": ["https://i.postimg.cc/N0mdZ2bp/Realme-GT-Neo-5-1.png",
+    "https://i.postimg.cc/Vk377W9J/Realme-GT-Neo-5-2.png",
+    "https://i.postimg.cc/63KMK6mw/Realme-GT-Neo-5-3.png",
+    "https://i.postimg.cc/yYxvsbvJ/Realme-GT-Neo-5-4.png"],
     "price": {
       "regularPrice": 599,
       "discountPrice": 549,
@@ -3200,12 +3140,10 @@
       "processorChipsetSize": "8nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1CmdpO-rW_-rH3WkR6C8kdaNJtr8tUk9y",
-      "link2": "https://drive.google.com/uc?export=download&id=165UkX3e84_PWfCboxo7M4N5Zz21N29I0",
-      "link3": "https://drive.google.com/uc?export=download&id=1S1-FiDhKhhgAtIAv1iGJrMJJgPiKkSFv",
-      "link4": "https://drive.google.com/uc?export=download&id=1R-r3tUKG65jAlmnyJx3N_vo2nWfSpLNu"
-    },
+    "image": ["https://i.postimg.cc/N0mdZ2bp/Realme-GT-Neo-5-1.png",
+    "https://i.postimg.cc/Vk377W9J/Realme-GT-Neo-5-2.png",
+    "https://i.postimg.cc/63KMK6mw/Realme-GT-Neo-5-3.png",
+    "https://i.postimg.cc/yYxvsbvJ/Realme-GT-Neo-5-4.png"],
     "price": {
       "regularPrice": 499,
       "discountPrice": 449,
@@ -3303,12 +3241,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=125FWxruSc70BSv6nSkuCYs0U6Ix0FJKV",
-      "link2": "https://drive.google.com/uc?export=download&id=1GnxIjKnLVdU73aBKzBevQnnX6rXvsPof",
-      "link3": "https://drive.google.com/uc?export=download&id=15SIjUFtHkrgb6-kN-Oc-FbHggI0_adXf",
-      "link4": "https://drive.google.com/uc?export=download&id=1kjv_MOU5kPH9miGnkHGwHqxdgk55Ta8t"
-    },
+    "image": ["https://i.postimg.cc/N0mdZ2bp/Realme-GT-Neo-5-1.png",
+    "https://i.postimg.cc/Vk377W9J/Realme-GT-Neo-5-2.png",
+    "https://i.postimg.cc/63KMK6mw/Realme-GT-Neo-5-3.png",
+    "https://i.postimg.cc/yYxvsbvJ/Realme-GT-Neo-5-4.png"],
     "price": {
       "regularPrice": 1499,
       "discountPrice": 1399,
@@ -3408,12 +3344,10 @@
       "processorChipsetSize": "7nm",
       "batterySize": "4500mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1Gk6c3oKT5d7Q1HXYKAJTJLRZB71wBzBN",
-      "link2": "https://drive.google.com/uc?export=download&id=1VAg26A4z1EK4GndPCLNRCXxUktYdTCdq",
-      "link3": "https://drive.google.com/uc?export=download&id=1Ae1pjEw7Q6yNCVJGk5-CaOhLCnDgm0i-",
-      "link4": "https://drive.google.com/uc?export=download&id=1A-W-437oAFVTrWfxg1oLFVbeow-Sdf50"
-    },
+    "image": ["https://i.postimg.cc/N0mdZ2bp/Realme-GT-Neo-5-1.png",
+    "https://i.postimg.cc/Vk377W9J/Realme-GT-Neo-5-2.png",
+    "https://i.postimg.cc/63KMK6mw/Realme-GT-Neo-5-3.png",
+    "https://i.postimg.cc/yYxvsbvJ/Realme-GT-Neo-5-4.png"],
     "price": {
       "regularPrice": 699,
       "discountPrice": 649,
@@ -3510,12 +3444,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "5000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1C_U2ftXrybwqt-iRx0fBQENoGjy7ObIl",
-      "link2": "https://drive.google.com/uc?export=download&id=1JKSAS6kW0BF6EHkHpeJ2Pp6cZNpDGzjt",
-      "link3": "https://drive.google.com/uc?export=download&id=13InNAnnJp3cu1vOwuc5E8a90VzVh4r-h",
-      "link4": "https://drive.google.com/uc?export=download&id=1JyCIrtnlac8gmWwf8x72F4tchR_j32ss"
-    },
+    "image": ["https://i.postimg.cc/N0mdZ2bp/Realme-GT-Neo-5-1.png",
+    "https://i.postimg.cc/Vk377W9J/Realme-GT-Neo-5-2.png",
+    "https://i.postimg.cc/63KMK6mw/Realme-GT-Neo-5-3.png",
+    "https://i.postimg.cc/yYxvsbvJ/Realme-GT-Neo-5-4.png"],
     "price": {
       "regularPrice": 1099,
       "discountPrice": 999,
@@ -3613,12 +3545,10 @@
       "processorChipsetSize": "5nm",
       "batterySize": "6000mAh"
     },
-    "image": {
-      "link1": "https://drive.google.com/uc?export=download&id=1IZalQnUfoPoWKOvLStJ53b9lpeUrS_E_",
-      "link2": "https://drive.google.com/uc?export=download&id=1BCBn_pgP5R7uybODxVbQK050gLQVgezT",
-      "link3": "https://drive.google.com/uc?export=download&id=1xXNfBP661JQoAfNce9BrAmvOnhsi6Qyd",
-      "link4": "https://drive.google.com/uc?export=download&id=1xXNfBP661JQoAfNce9BrAmvOnhsi6Qyd"
-    },
+    "image": ["https://i.postimg.cc/N0mdZ2bp/Realme-GT-Neo-5-1.png",
+    "https://i.postimg.cc/Vk377W9J/Realme-GT-Neo-5-2.png",
+    "https://i.postimg.cc/63KMK6mw/Realme-GT-Neo-5-3.png",
+    "https://i.postimg.cc/yYxvsbvJ/Realme-GT-Neo-5-4.png"],
     "price": {
       "regularPrice": 1599,
       "discountPrice": 1499,

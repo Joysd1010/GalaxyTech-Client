@@ -14,17 +14,19 @@ const MonitorCard = ({ state }) => {
   } = state.key;
   const { size, type,  refreshRate,  } = state.display;
  
-  // const image = state.imageLinks[1]
-  const image = "https://img.telemart.ua/559699-709162-product_popup/acer-238-kg241ys3biip-umqx1ee301-black.png";
+   const getRandomIndex = (max) => Math.floor(Math.random() * max);
+  const getRandomData = () => {
+    const randomIndex = getRandomIndex(state.imageLinks.length);
+    return state.imageLinks[randomIndex];
+  };
+  const image = getRandomData();
+
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
       <div className=" my-5 w-full mx-auto overflow-hidden">
-       <img
-          src={image}
-          alt="drive image "
+      <img src={image}
           className="transition duration-300 ease-in-out hover:scale-110"
         />
-        
       </div>
       <div>
         <hr className=" " />

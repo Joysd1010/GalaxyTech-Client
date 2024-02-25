@@ -14,6 +14,8 @@ const Monitor = () => {
   const [MinPrice, setMinPrice] = useState(0);
   const [CurrentPage, setPage] = useState(1);
   const postPerPage = 12;
+  const [filterState, setStateNumber] = useState(0);
+ 
   const [MaxPrice, setMaxPrice] = useState(0);
   const param = location.state;
 
@@ -143,10 +145,20 @@ const Monitor = () => {
     );
   };
   //-------------------------UserDefinedFilter--------------------
-  const HandleChoice = (attribute, value) => {
-    setUseMonitor(
-      AllMonitor.filter((item) => item.display[attribute] == value)
-    );
+  const HandleChoice = (e,attribute, value) => {
+     
+    if (e.target.checked) {
+      setStateNumber(filterState + 1);
+      const filteredArray = AllMonitor.filter(
+        (item) => item.display[attribute] == value
+      );
+      setUseMonitor([...filteredArray]);
+      console.log(filteredArray);
+    } else {
+      setStateNumber(filterState - 1);
+      setUseMonitor(AllMonitor);
+      console.log(filterState);
+    }
   };
   //-------------------------Shorting------------------------------------
 
@@ -232,7 +244,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("resolution", "1920x1080")}
+                onChange={(e) => HandleChoice(e,"resolution", "1920x1080")}
                 className="w-5    "
                 value=""
                 id="pexel1"
@@ -245,7 +257,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("resolution", "2560x1440")}
+                onChange={(e) => HandleChoice(e,"resolution", "2560x1440")}
                 className="w-5"
                 value=""
                 id="pexel2"
@@ -258,7 +270,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("resolution", "3840x2160")}
+                onChange={(e) => HandleChoice(e,"resolution", "3840x2160")}
                 className="w-5"
                 value=""
                 id="pexel3"
@@ -279,7 +291,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("type", "VA")}
+                onChange={(e) => HandleChoice(e,"type", "VA")}
                 className="w-5    "
                 value=""
                 id="core1"
@@ -292,7 +304,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("type", "IPS")}
+                onChange={(e) => HandleChoice(e,"type", "IPS")}
                 className="w-5"
                 value=""
                 id="core2"
@@ -305,7 +317,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("type", "TN")}
+                onChange={(e) => HandleChoice(e,"type", "TN")}
                 className="w-5"
                 value=""
                 id="core3"
@@ -318,7 +330,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("type", "QLED")}
+                onChange={(e) => HandleChoice(e,"type", "QLED")}
                 className="w-5"
                 value=""
                 id="core4"
@@ -339,7 +351,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "60Hz")}
+                onChange={(e) => HandleChoice(e,"refreshRate", "60Hz")}
                 className="w-5    "
                 value=""
                 id="refresh1"
@@ -352,7 +364,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "75Hz")}
+                onChange={(e) => HandleChoice(e,"refreshRate", "75Hz")}
                 className="w-5"
                 value=""
                 id="refresh2"
@@ -365,7 +377,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "144Hz")}
+                onChange={(e) => HandleChoice(e,"refreshRate", "144Hz")}
                 className="w-5"
                 value=""
                 id="refresh3"
@@ -378,7 +390,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "165Hz")}
+                onChange={(e) => HandleChoice(e,"refreshRate", "165Hz")}
                 className="w-5"
                 value=""
                 id="refresh4"
@@ -391,7 +403,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={() => HandleChoice("refreshRate", "240Hz")}
+                onChange={(e) => HandleChoice(e,"refreshRate", "240Hz")}
                 className="w-5"
                 value=""
                 id="refresh5"
@@ -447,10 +459,15 @@ const Monitor = () => {
         )}
 
         <div className="pagination flex gap-6 py-6 ">
-          {generatePageNumbers(
-            Math.ceil(AllMonitor.length / postPerPage),
-            CurrentPage
-          )}
+        {filterState == 0
+            ? generatePageNumbers(
+                Math.ceil(AllMonitor.length / postPerPage),
+                CurrentPage
+              )
+            : generatePageNumbers(
+                Math.ceil(UseMonitor.length / postPerPage),
+                CurrentPage
+              )}
         </div>
       </div>
     </div>

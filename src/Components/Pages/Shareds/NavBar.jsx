@@ -21,24 +21,24 @@ const NavBar = () => {
     { value: "Lenovo", path: "laptop", param: "Lenovo" },
     { value: "MSI", path: "laptop", param: "MSI" },
     { value: "Hp", path: "laptop", param: "HP" },
+    { value: "Acer", path: "laptop", param: "Acer" },
     { value: "All", path: "laptop", param: "All" },
   ];
   const GPUJson = [
-    { value: "Asus", path: "gpu", param:'Asus' },
-    { value: "Nvidia", path: "gpu", param:'Nvidia' },
-    { value: "Gigabyte", path: "gpu", param:'Gigabyte' },
-    { value: "AMD", path: "gpu", param:'AMD' },
-    { value: "MSI", path: "gpu", param:'MSI' },
-    { value: "Zotak", path: "gpu", param:'Zotak' },
-    { value: "All", path: "gpu" ,param:'All'},
+    { value: "Asus", path: "gpu", param: "Asus" },
+    { value: "Nvidia", path: "gpu", param: "Nvidia" },
+    { value: "Gigabyte", path: "gpu", param: "Gigabyte" },
+    { value: "AMD", path: "gpu", param: "AMD" },
+    { value: "MSI", path: "gpu", param: "MSI" },
+    { value: "Zotak", path: "gpu", param: "Zotak" },
+    { value: "All", path: "gpu", param: "All" },
   ];
   const PhoneJson = [
-    { value: "Apple", path: "phone" ,param:'Apple' },
-    { value: "Samsung", path: "phone" ,param:'Samsung' },
-    { value: "Redmi", path: "phone" ,param:'Redmi' },
-    { value: "Realme", path: "phone" ,param:'Realme' },
-
-    { value: "All", path: "phone",param:'All' },
+    { value: "Apple", path: "phone", param: "Apple" },
+    { value: "Samsung", path: "phone", param: "Samsung" },
+    { value: "Redmi", path: "phone", param: "Redmi" },
+    { value: "Realme", path: "phone", param: "Realme" },
+    { value: "All", path: "phone", param: "All" },
   ];
   const MotherJson = [
     { value: "Asus", path: "mother/Asus" },
@@ -50,17 +50,17 @@ const NavBar = () => {
     { value: "All", path: "mother" },
   ];
   const ComponentJson = [
-    { value: "Processor", path: "All", param: "Processor" },
-    { value: "Ram", path: "All", param: "Ram" },
-    { value: "Storage (SSD) ", path: "All", param: "SSD " },
-    { value: "Storage (HDD) ", path: "All", param: "HDD " },
-    { value: "Graphics Card", path: "All", param: "Card" },
-    { value: "Casing", path: "All", param: "Casing" },
-    { value: "Casing Cooler", path: "All", param: "Cooler" },
-    { value: "CPU Cooler", path: "All", param: "CpuCooler" },
-    { value: "MotherBoard", path: "All", param: "MotherBoard" },
-    { value: "PSU", path: "All", param: "PSU" },
-    { value: "All", path: "All", param: "All Components" },
+    { value: "Processor", path: "Processor", param: "All" },
+    { value: "Ram", path: "Ram", param: "All" },
+    { value: "Storage (SSD) ", path: "SSD", param: "All " },
+    { value: "Storage (HDD) ", path: "HDD", param: "All" },
+    { value: "Graphics Card", path: "gpu", param: "All" },
+    { value: "Casing", path: "Casing", param: "All" },
+    { value: "Casing Cooler", path: "CasingCooler", param: "All" },
+    { value: "CPU Cooler", path: "CpuCooler", param: "All" },
+    { value: "MotherBoard", path: "MotherBoard", param: "All" },
+    { value: "PSU", path: "PSU", param: "All" },
+    { value: "All", path: "Component", param: "All" },
   ];
   const SSDJson = [
     { value: "Adata", path: "ssd/Adata" },
@@ -115,7 +115,7 @@ const NavBar = () => {
         element={ComponentJson}
         header={{
           value: "Components",
-          path: "AllComponent",
+          path: "Component",
           param: "All Components",
         }}
       />

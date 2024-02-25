@@ -15,10 +15,17 @@ const LapTopCard = ({ state }) => {
     ram,
     specialFeatures,
   } = state.keyFeatures;
+
+  const getRandomIndex = (max) => Math.floor(Math.random() * max);
+  const getRandomData = () => {
+    const randomIndex = getRandomIndex(state.imageLinks.length);
+    return state.imageLinks[randomIndex];
+  };
+  const image = getRandomData();
+
   const { brand, model, clockSpeed, cache, core, thread } = state.processor;
   const { storageType, storageSize } = state.memory;
-  // const image = state.imageLinks[1]
-  const image = "https://i.ibb.co/k5n3DVg/Lenovo3.png";
+ 
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
       <div className=" my-5 w-full mx-auto overflow-hidden">

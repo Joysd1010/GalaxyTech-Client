@@ -31,17 +31,24 @@ const NavTemplate = ({ element, header }) => {
           tabIndex={0}
           className="dropdown-content z-[1]  flex flex-col bg-white   shadow-md  border-t-4 border-t-[#FF0303] w-36"
         >
-          {element.map((item, index) => (
-            <Link key={index} to={item.path} state={item.param}>
+          {element.map((item, index) => {
+            // if (item.path=='All'&&item.param!='All') {
+            //   return (
+            //   <Link key={index} to={item.param} state={item.param}>
+            //   {" "}
+            //   <div className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
+            //     {item.value}
+            //   </div>
+            // </Link>)
+            // }
+          
+            return(<Link key={index} to={item.path} state={item.param}>
               {" "}
-              <div
-                
-                className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3"
-              >
+              <div className=" hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
                 {item.value}
               </div>
-            </Link>
-          ))}
+            </Link>);
+          })}
         </div>
       </div>
     </div>

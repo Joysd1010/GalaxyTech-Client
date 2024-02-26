@@ -1,39 +1,37 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
-import LapTopCard from "./LapTopCard";
 import { FaHome } from "react-icons/fa";
+import RamCard from "./RamCard";
 
-const Laptop = () => {
+const Ram = () => {
   const axiosPoint = useAxiosPublic();
   const location = useLocation();
-  const [AllLaptop, setLaptop] = useState([]);
-  const [UseLaptop, setUseLaptop] = useState([]);
+  const [AllRam, setRam] = useState([]);
+  const [UseRam, setUseRam] = useState([]);
   const [Range, setRange] = useState(0);
   const [MinPrice, setMinPrice] = useState(0);
   const [CurrentPage, setPage] = useState(1);
-  const postPerPage=12;
+  const postPerPage = 12;
   const [filterState, setStateNumber] = useState(0);
-
   const [MaxPrice, setMaxPrice] = useState(0);
   const param = location.state;
+  const gpuType = ["GDDR5", "GDDR6", "GDDR6X"];
+  const gpuMemorySize = [4, 6, 8, 10, 12, 16, 24];
+
   const setCurrentPost = () => {
-    
-      const start = (CurrentPage -1)* postPerPage ;
-      const end = postPerPage * CurrentPage;
-    
-  
-    console.log(start, end);
-    setUseLaptop(AllLaptop.slice(start, end));
+    const start = (CurrentPage - 1) * postPerPage;
+    const end = postPerPage * CurrentPage;
+
+    setUseRam(AllRam.slice(start, end));
   };
-  
+
   const handlePageChange = (newPage) => {
-    console.log('this page', newPage);
+    console.log("this page", newPage);
     setPage(newPage);
   };
-  
+
   useEffect(() => {
-    console.log("Current page", CurrentPage);
     setCurrentPost();
   }, [CurrentPage]);
 
@@ -80,7 +78,10 @@ const Laptop = () => {
       pageNumbers.push(
         <button
           key="next"
-          onClick={() =>{let pageNow=CurrentPage+1; handlePageChange(pageNow)}}
+          onClick={() => {
+            let pageNow = CurrentPage + 1;
+            handlePageChange(pageNow);
+          }}
           className="next-btn underline hover:text-red-600"
           disabled={currentPage === totalPages}
         >
@@ -97,20 +98,20 @@ const Laptop = () => {
 
     return pageNumbers;
   };
-  const getAllLaptop = async () => {
+  const getAllRam = async () => {
     try {
-      const response = await axiosPoint.get("/laptop");
-     
-      setLaptop(response.data);
-      setUseLaptop(response.data.slice(0,12));
+      const response = await axiosPoint.get("/gpu");
+
+      setRam(response.data);
+      setUseRam(response.data.slice(0, 12));
       setMinPrice(
         Math.min(
-          ...response.data.map((item) => item.keyFeatures.discountedPrice)
+          ...response.data.map((item) => item.keyFeatures.price.discount)
         )
       );
       setMaxPrice(
         Math.max(
-          ...response.data.map((item) => item.keyFeatures.discountedPrice)
+          ...response.data.map((item) => item.keyFeatures.price.discount)
         )
       );
     } catch (error) {
@@ -118,20 +119,20 @@ const Laptop = () => {
     }
   };
 
-  const getLaptopByBrand = async (parameter) => {
+  const getRamByBrand = async (parameter) => {
     try {
-      const response = await axiosPoint.get(`/laptop/${parameter}`);
+      const response = await axiosPoint.get(`/gpu/${parameter}`);
       console.log(response.data);
-      setLaptop(response.data);
-      setUseLaptop(response.data.slice(0,12));
+      setRam(response.data);
+      setUseRam(response.data.slice(0, 12));
       setMinPrice(
         Math.min(
-          ...response.data.map((item) => item.keyFeatures.discountedPrice)
+          ...response.data.map((item) => item.keyFeatures.price.discount)
         )
       );
       setMaxPrice(
         Math.max(
-          ...response.data.map((item) => item.keyFeatures.discountedPrice)
+          ...response.data.map((item) => item.keyFeatures.price.discount)
         )
       );
     } catch (error) {
@@ -141,81 +142,86 @@ const Laptop = () => {
   //------------------------Price filter-----------------
   const handleOnchange = (value) => {
     setRange(value);
-    setUseLaptop(
-      AllLaptop.filter((item) => item.keyFeatures.discountedPrice <= value).slice(0,12)
+    setUseRam(
+      AllRam.filter((item) => item.keyFeatures.price.discount <= value).slice(
+        0,
+        12
+      )
     );
   };
+  //-----------------------------Finding the chipSet filtered gpu---------------------------------
+  const handleChip = (chip) => {
+    setUseRam(
+      AllRam.filter((item) => item.keyFeatures.chipset.startsWith(chip))
+    );
+  };
+
   //-------------------------UserDefinedFilter--------------------
+
   const HandleChoice = (e, container, attribute, value) => {
-    console.log(e);
+    console.log(e.target.checked);
 
     if (e.target.checked) {
       setStateNumber(filterState + 1);
-      const filteredArray = AllLaptop.filter(
+      const filteredArray = AllRam.filter(
         (item) => item[container][attribute] == value
       );
-      setUseLaptop([...filteredArray]);
+      setUseRam([...filteredArray]);
       console.log(filterState);
     } else {
       setStateNumber(filterState - 1);
-      setUseLaptop(AllLaptop);
+      setUseRam(AllRam);
       console.log(filterState);
     }
   };
-const HandleChoiceBtn=(container, attribute, value)=>{
-  setStateNumber(filterState+1)
-setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
-}
+
   useEffect(() => {
     console.log(filterState);
     setStateNumber(filterState);
   }, [filterState]);
   //-------------------------Shorting------------------------------------
-
+  console.log(filterState);
   const handleSortByPrice = async (event) => {
     const sortBy = parseInt(event.target.value);
-  
+
     switch (sortBy) {
       case 2:
-        const sortedByPriceAsc = await shortingAsc(UseLaptop);
-        setUseLaptop(sortedByPriceAsc);
+        const sortedByPriceAsc = await shortingAsc(UseRam);
+        setUseRam(sortedByPriceAsc);
         break;
       case 3:
-        const sortedByPriceDesc = shortingDesc(UseLaptop);
-        setUseLaptop(sortedByPriceDesc);
+        const sortedByPriceDesc = shortingDesc(UseRam);
+        setUseRam(sortedByPriceDesc);
         break;
       default:
         break;
     }
   };
 
-  
   const shortingAsc = async (laptop) => {
-    const filterLaptop = [...laptop].sort(
-      (a, b) => a.keyFeatures.discountedPrice - b.keyFeatures.discountedPrice
+    const filterRam = [...laptop].sort(
+      (a, b) => a.keyFeatures.price.discount - b.keyFeatures.price.discount
     );
-    return filterLaptop;
-  };
-  
-  const shortingDesc = (laptop) => {
-    const filterLaptop = [...laptop].sort(
-      (a, b) => b.keyFeatures.discountedPrice - a.keyFeatures.discountedPrice
-    );
-    return filterLaptop;
+    return filterRam;
   };
 
+  const shortingDesc = (laptop) => {
+    const filterRam = [...laptop].sort(
+      (a, b) => b.keyFeatures.price.discount - a.keyFeatures.price.discount
+    );
+    return filterRam;
+  };
 
   //-----------------------fetching data-------------------------
   useEffect(() => {
     if (param === "All") {
-      getAllLaptop();
+      getAllRam();
     } else {
-      getLaptopByBrand(param);
+      getRamByBrand(param);
     }
     setCurrentPost();
   }, [param]);
 
-  
   return (
     <div className="bg-indigo-100 px-10 py-5 grid grid-cols-5 gap-2">
       <div className=" flex flex-col gap-2">
@@ -236,114 +242,96 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
               max={MaxPrice}
               defaultValue={MaxPrice}
               className="range border-2 bg-white  range-error "
-             
             />
-            
           </div>
 
           <div className="px-5 pb-2 text-center">
-          <h1> {Range==0?'Set Range':'Under'}</h1>
+            <h1> {Range == 0 ? "Set Range" : "Under"}</h1>
             <hr className="mx-2/3" />
-            <h1> {Range}</h1>          </div>
+            <h1> {Range}</h1>{" "}
+          </div>
         </div>
 
         {/*-----------------------------Processor Filter---------------------------------- */}
-        <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Processor</h1>
+        <div className=" bg-white rounded-md  ">
+          <h1 className=" text-lg font-medium py-2 px-5 "> ChipSet</h1>
           <hr />
-          <div className=" px-5 py-2 class-name flex gap-2">
+          <div className=" px-5 py-2 class-name flex-wrap flex gap-2">
             <button
-              onClick={() => HandleChoiceBtn("processor", "brand", "Intel")}
-              className=" px-3 bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
+              onClick={() => handleChip("NVIDIA")}
+              className=" px-3  bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
             >
-              Intel
+              NVIDIA
             </button>
             <button
-              onClick={() => HandleChoiceBtn("processor", "brand", "AMD")}
+              onClick={() => handleChip("AMD")}
               className=" px-3 bg-red-600 text-white btn  hover:bg-red-600 "
             >
-              AMD
+              AMD Radeon
             </button>
           </div>
         </div>
-        {/* ------------------------------Processor core------------------------ */}
+        {/* ------------------------------Memory size------------------------ */}
         <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Number of Core</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 "> Memory Size</h1>
           <hr />
           <div className="px-5 py-2 flex flex-col gap-2">
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="core1"
-            >
-              <input
-                type="checkbox"
-                onChange={(e) => HandleChoice(e,"processor", "core", 4)}
-                className="w-5    "
-                value=""
-                id="core1"
-              />{" "} 
-                
-              <p> 4</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="core2"
-            >   
-              <input
-                type="checkbox"
-                onChange={(e) => HandleChoice(e,"processor", "core", 6)}
-                className="w-5"
-                value=""
-                id="core2"
-              />{" "}
-              <p> 6</p>
-            </label>
-            <label
-              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-              htmlFor="core3"
-            >
-              <input
-                type="checkbox"
-                onChange={(e) => HandleChoice(e,"processor", "core", 8)}
-                className="w-5"
-                value=""
-                id="core3"
-              />{" "}
-              <p> 8</p>
-            </label>
+            {gpuMemorySize.map((size) => {
+              return(<label
+                key={size}
+                className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+                htmlFor={size}
+              >
+                <input
+                  type="checkbox"
+                 
+                  onChange={(e) =>
+                    HandleChoice(e, "keyFeatures", "memorySize", size)
+                  }
+                  className="w-5 "
+                  id={size}
+                />{" "}
+                <p> {size} GB</p>
+              </label>)
+             
+            })}
           </div>
         </div>
 
         {/*-----------------------------graphics---------------------------------- */}
         <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Graphics</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 "> Memory Type</h1>
           <hr />
-          <div className=" px-5 py-2 class-name flex flex-wrap  gap-2">
-            <button
-              onClick={() => HandleChoiceBtn("graphics", "brand", "Intel")}
-              className=" px-2 bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
-            >
-              Intel
-            </button>
-            <button
-              onClick={() => HandleChoiceBtn("graphics", "brand", "AMD")}
-              className=" px-2 bg-red-600 text-white btn btn-active hover:bg-red-600 "
-            >
-              AMD Radeon
-            </button>
-            <button
-              onClick={() => HandleChoiceBtn("graphics", "brand", "Nvidia")}
-              className=" px-2 bg-[#73B301] text-white btn btn-active hover:bg-[#73B301] "
-            >
-              NVIDIA
-            </button>
+          <div className="px-5 py-2 flex flex-col gap-2">
+          {gpuType.map((type,index) => {
+              return(<label
+                key={index}
+                className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+                htmlFor={index}
+              >
+                <input
+                  type="checkbox"
+                  onChange={(e) =>
+                    HandleChoice(e, "keyFeatures", "memoryType", type)
+                  }
+                  className="w-5 "
+                  id={index}
+                />{" "}
+                <p> {type} </p>
+              </label>)})}
+             
           </div>
         </div>
       </div>
 
       <div className=" col-span-4 ">
         <div className=" px-5 py-3 bg-white items-center  flex justify-between  rounded-md">
-        <div className="font-semibold text-lg flex items-center gap-1"><Link to={'/'}><FaHome/></Link>{" "} {location.pathname.toUpperCase()}/{param.toUpperCase()}</div>
+          <div className="font-semibold text-lg flex items-center gap-1">
+            <Link to={"/"}>
+              <FaHome />
+            </Link>{" "}
+            {location.pathname.toUpperCase()}/{param.toUpperCase()}
+          </div>
           <div className=" flex items-center gap-2">
             <p className=" text-gray-500">Sort By : </p>{" "}
             <div>
@@ -358,27 +346,35 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
             </div>
           </div>
         </div>
-        {UseLaptop?.length > 1 ?<div className=" grid grid-cols-4 gap-3 pt-2 ">
-         
-          {
-            UseLaptop.map((item) => (
-             
-              <LapTopCard key={item._id} state={item}  />
-            ))
-          
-           
-          }
-        </div>:<div className="bg-white rounded-md my-2 mx-auto "> <h1 className="text-3xl text-center py-10 font-semibold text-gray-600">Looking For your Laptop</h1> <hr className=" border-2" /> <img className="mx-auto w-1/4" src="https://i.postimg.cc/kXqSBhC4/Untitleddesign-ezgif-com-optimize-1.gif" alt="" /></div> 
-        }
-        
+        {UseRam?.length > 0 ? (
+          <div className=" grid grid-cols-4 gap-3 pt-2 ">
+            {UseRam.map((item) => (
+              <RamCard key={item._id} state={item} />
+            ))}
+          </div>
+        ) : (
+          <div className="bg-white rounded-md my-2 mx-auto ">
+            {" "}
+            <h1 className="text-3xl text-center py-10 font-semibold text-gray-600">
+              Looking For your Ram
+            </h1>{" "}
+            <hr className=" border-2" />{" "}
+            <img
+              className="mx-auto w-1/4"
+              src="https://i.postimg.cc/kXqSBhC4/Untitleddesign-ezgif-com-optimize-1.gif"
+              alt=""
+            />
+          </div>
+        )}
+
         <div className="pagination flex gap-6 py-6 ">
-        {filterState == 0
+          {filterState == 0
             ? generatePageNumbers(
-                Math.ceil(AllLaptop.length / postPerPage),
+                Math.ceil(AllRam.length / postPerPage),
                 CurrentPage
               )
             : generatePageNumbers(
-                Math.ceil(UseLaptop.length / postPerPage),
+                Math.ceil(UseRam.length / postPerPage),
                 CurrentPage
               )}
         </div>
@@ -387,4 +383,4 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
   );
 };
 
-export default Laptop;
+export default Ram;

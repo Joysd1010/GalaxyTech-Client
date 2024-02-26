@@ -9,6 +9,7 @@ import DetailPage from "../Pages/Products/Laptop/DetailPage";
 import Monitor from "../Pages/Products/Monitor/Monitor";
 import Gpu from "../Pages/Products/GPU/Gpu";
 import Phone from "../Pages/Products/Phone/Phone";
+import Ram from "../Pages/Products/Ram/Ram";
 
 const Router = createBrowserRouter([
   {
@@ -51,8 +52,60 @@ const Router = createBrowserRouter([
       
       },
       {
+        path: "SSD",
+        element: <p>this is the SSD</p>
+      
+      },
+      {
+        path: "HDD",
+        element: <p>this is the HDD</p>
+      
+      },
+      {
+        path: "Casing",
+        element: <p>this is the Casing</p>
+      
+      },
+      {
+        path: "MotherBoard",
+        element:<p>this is the Motherboard</p>
+      
+      },
+      {
+        path: "CpuCooler",
+        element:<p>this is the cpuColler</p>
+      
+      },
+      {
         path: "phone",
         element: <Phone/>
+      
+      },
+      {
+        path: "CasingCooler",
+        element:<p>this is the Casing Cooler</p>
+      
+      },
+      {
+        path: "PSU",
+        element: <p>this is the Psu</p>
+      
+      },
+      
+      {
+        path: "Processor",
+        element: <p>this is the processor</p>
+      
+      },
+      {
+        path: "Component",
+        element: <p>this is the Component</p>
+      
+      },
+      
+      {
+        path: "ram",
+        element: <Ram/>
       
       },
       {

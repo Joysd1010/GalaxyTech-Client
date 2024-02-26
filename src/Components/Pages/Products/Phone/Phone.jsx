@@ -16,14 +16,12 @@ const Phone = () => {
   const [filterState, setStateNumber] = useState(0);
   const [MaxPrice, setMaxPrice] = useState(0);
 
-  const RamSize = ["4GB", "6GB", "8GB", "12GB", "16GB"];
-  const RomSize = ["64GB", "128GB", "256GB", "512GB"];
   const param = location.state;
   const setCurrentPost = () => {
     const start = (CurrentPage - 1) * postPerPage;
     const end = postPerPage * CurrentPage;
 
-    
+    console.log(start, end);
     setUsePhone(AllPhone.slice(start, end));
   };
 
@@ -33,6 +31,7 @@ const Phone = () => {
   };
 
   useEffect(() => {
+    console.log("Current page", CurrentPage);
     setCurrentPost();
   }, [CurrentPage]);
 
@@ -140,23 +139,28 @@ const Phone = () => {
     );
   };
 
-  const handleChip = (container, attribute, value) => {
+  const handleChip = (e,container, attribute, value) => {
+    if (e.target.checked) {
+      setStateNumber(filterState + 1);
     const filter = AllPhone.filter((item) =>
       item[container][attribute].includes(value)
     );
-    setUsePhone([...filter]);
+    setUsePhone([...filter]);}
+     else{setStateNumber(filterState - 1);
+      setUsePhone(AllPhone);
+      console.log(filterState);}
   };
   //-------------------------UserDefinedFilter--------------------
   const HandleChoice = (e, container, attribute, value) => {
     console.log(e.target.checked);
-    console.log(value)
+
     if (e.target.checked) {
       setStateNumber(filterState + 1);
       const filteredArray = AllPhone.filter(
         (item) => item[container][attribute] == value
       );
       setUsePhone([...filteredArray]);
-      console.log(filteredArray);
+      console.log(filterState);
     } else {
       setStateNumber(filterState - 1);
       setUsePhone(AllPhone);
@@ -165,6 +169,7 @@ const Phone = () => {
   };
 
   useEffect(() => {
+    console.log(filterState);
     setStateNumber(filterState);
   }, [filterState]);
   //-------------------------Shorting------------------------------------
@@ -251,8 +256,8 @@ const Phone = () => {
             >
               <input
                 type="checkbox"
-                onChange={() =>
-                  handleChip(
+                onChange={(e) =>
+                  handleChip(e,
                     "keyFeatures",
                     "processorChipsetName",
                     "Snapdragon"
@@ -270,8 +275,8 @@ const Phone = () => {
             >
               <input
                 type="checkbox"
-                onChange={() =>
-                  handleChip("keyFeatures", "processorChipsetName", "Helio")
+                onChange={(e) =>
+                  handleChip(e,"keyFeatures", "processorChipsetName", "Helio")
                 }
                 className="w-5    "
                 value=""
@@ -285,8 +290,8 @@ const Phone = () => {
             >
               <input
                 type="checkbox"
-                onChange={() =>
-                  handleChip("keyFeatures", "processorChipsetName", "Bionic")
+                onChange={(e) =>
+                  handleChip(e,"keyFeatures", "processorChipsetName", "Bionic")
                 }
                 className="w-5    "
                 value=""
@@ -300,8 +305,8 @@ const Phone = () => {
             >
               <input
                 type="checkbox"
-                onChange={() =>
-                  handleChip("keyFeatures", "processorChipsetName", "Kirin")
+                onChange={(e) =>
+                  handleChip(e,"keyFeatures", "processorChipsetName", "Kirin")
                 }
                 className="w-5    "
                 value=""
@@ -315,8 +320,8 @@ const Phone = () => {
             >
               <input
                 type="checkbox"
-                onChange={() =>
-                  handleChip("keyFeatures", "processorChipsetName", "Dimensity")
+                onChange={(e) =>
+                  handleChip(e,"keyFeatures", "processorChipsetName", "Dimensity")
                 }
                 className="w-5    "
                 value=""
@@ -330,8 +335,8 @@ const Phone = () => {
             >
               <input
                 type="checkbox"
-                onChange={() =>
-                  handleChip("keyFeatures", "processorChipsetName", "Exynos")
+                onChange={(e) =>
+                  handleChip(e,"keyFeatures", "processorChipsetName", "Exynos")
                 }
                 className="w-5    "
                 value=""
@@ -346,21 +351,71 @@ const Phone = () => {
           <h1 className=" text-lg font-medium py-2 px-5 "> Ram Size</h1>
           <hr />
           <div className="px-5 py-2 flex flex-col gap-2">
-            {RamSize.map((size) => {
-              return (<label
-                className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-                htmlFor={size} key={size}
-              >
-                <input
-                  type="checkbox"
-                  onChange={(e) => HandleChoice(e,"keyFeatures", "ramSize", {size})}
-                  className="w-5    "
-                  value=""
-                  id={size}
-                />{" "}
-                <p> {size}</p>
-              </label>)
-            })}
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Ram1"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "ramSize", "4GB")}
+                className="w-5    "
+                value=""
+                id="Ram1"
+              />{" "}
+              <p> 4 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Ram2"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "ramSize", "6GB")}
+                className="w-5    "
+                value=""
+                id="Ram2"
+              />{" "}
+              <p> 6 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Ram3"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "ramSize", "8GB")}
+                className="w-5    "
+                value=""
+                id="Ram3"
+              />{" "}
+              <p> 8 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Ram5"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "ramSize", "12GB")}
+                className="w-5    "
+                value=""
+                id="Ram5"
+              />{" "}
+              <p>12 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Ram7"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "ramSize", "16GB")}
+                className="w-5    "
+                value=""
+                id="Ram7"
+              />{" "}
+              <p> 16 GB</p>
+            </label>
           </div>
         </div>
         {/*--------------------------------Rom select------------------------------------  */}
@@ -368,24 +423,58 @@ const Phone = () => {
           <h1 className=" text-lg font-medium py-2 px-5 "> Rom Size</h1>
           <hr />
           <div className="px-5 py-2 flex flex-col gap-2">
-            {RomSize.map((size)=>{
-              return(<label
-                className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
-                htmlFor={size}
-              >
-                <input
-                  type="checkbox"
-                  onChange={(e) =>
-                    HandleChoice(e, "keyFeatures", "romSize", {size})
-                  }
-                  className="w-5    "
-                  value=""
-                  id={size}
-                />{" "}
-                <p> {size}</p>
-              </label>)
-            })}
-           
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="ROM1"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "romSize", "64GB")}
+                className="w-5    "
+                value=""
+                id="ROM1"
+              />{" "}
+              <p> 64 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="ROM2"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "romSize", "128GB")}
+                className="w-5    "
+                value=""
+                id="ROM2"
+              />{" "}
+              <p> 128 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="ROM3"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "romSize", "256GB")}
+                className="w-5    "
+                value=""
+                id="ROM3"
+              />{" "}
+              <p> 256 GB</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="ROM5"
+            >
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"keyFeatures", "romSize", "512GB")}
+                className="w-5    "
+                value=""
+                id="ROM5"
+              />{" "}
+              <p>512 GB</p>
+            </label>
           </div>
         </div>
       </div>
@@ -434,7 +523,7 @@ const Phone = () => {
         )}
 
         <div className="pagination flex gap-6 py-6 ">
-          {filterState == 0
+        {filterState == 0
             ? generatePageNumbers(
                 Math.ceil(AllPhone.length / postPerPage),
                 CurrentPage

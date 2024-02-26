@@ -17,8 +17,13 @@ const GpuCard = ({ state }) => {
   const { chargerType } = state.battery;
   const { romType } = state.memory;
 
-  // const image = state.imageLinks[1]
-  const image = "https://www.netnest.com.au/Content/Images/MF-SM-S911BLIEATS.jpg";
+   const getRandomIndex = (max) => Math.floor(Math.random() * max);
+  const getRandomData = () => {
+    const randomIndex = getRandomIndex(state.image.length);
+    return state.image[randomIndex];
+  };
+  const image = getRandomData();
+  //const image = "https://www.netnest.com.au/Content/Images/MF-SM-S911BLIEATS.jpg";
   return (
     <div className=" bg-white flex flex-col justify-between rounded-md px-3">
       <div className=" my-5 w-full mx-auto overflow-hidden">

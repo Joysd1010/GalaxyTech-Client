@@ -79,18 +79,18 @@ const NavBar = () => {
   ];
   const UpsJson = [
     { value: "CyberPower", path: "ups/CyberPower" },
-    { value: "ARC", path: "ups/ARC" },
-    { value: "Tripple Lite", path: "ups/tripple" },
+    { value: "APC", path: "ups/ARC" },
+    { value: "Tripp Lite", path: "ups/tripple" },
     { value: "All", path: "ups" },
   ];
   const RamJson = [
-    { value: "Adata", path: "ram/Adata" },
-    { value: "CorsAir", path: "ram/CorsAir" },
-    { value: "G.Skill", path: "ram/G.Skill" },
-    { value: "Team", path: "ram/Team" },
-    { value: "Kingston", path: "ram/Kingston" },
-    { value: "Crucial", path: "ram/Crucial" },
-    { value: "All", path: "ram" },
+    { value: "G.Skill", path: "ram",param:'G.Skill' },
+    { value: "Adata", path: "ram",param:'Adata' },
+    { value: "CorsAir", path: "ram",param:'CorsAir' },
+    { value: "Team", path: "ram",param:'Team' },
+    { value: "Kingston", path: "ram",param:'Kingston' },
+    { value: "Crucial", path: "ram",param:'Crucial' },
+    { value: "All", path: "ram",param:'All' },
   ];
 
   const AccessoriesJson = [
@@ -127,7 +127,7 @@ const NavBar = () => {
         header={{ value: "Graphics Card", path: "gpu", param: "All" }}
         element={GPUJson}
       />
-      <NavTemplate element={RamJson} header={{ value: "RAM", path: "ram" }} />
+      <NavTemplate element={RamJson} header={{ value: "RAM", path: "ram",param:'RAM' ,param:'All' }} />
       <NavTemplate
         element={MotherJson}
         header={{ value: "MotherBoard", path: "mother" }}

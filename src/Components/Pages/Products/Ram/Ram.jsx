@@ -16,8 +16,8 @@ const Ram = () => {
   const [filterState, setStateNumber] = useState(0);
   const [MaxPrice, setMaxPrice] = useState(0);
   const param = location.state;
-  const gpuType = ["GDDR5", "GDDR6", "GDDR6X"];
-  const gpuMemorySize = [4, 6, 8, 10, 12, 16, 24];
+  const BussSpeed = ["2400 MHz","2666 MHz","3000 MHz", "3200 MHz", "3600 MHz"];
+  const MemorySize = ['8GB',  '16GB', '32GB'];
 
   const setCurrentPost = () => {
     const start = (CurrentPage - 1) * postPerPage;
@@ -100,7 +100,7 @@ const Ram = () => {
   };
   const getAllRam = async () => {
     try {
-      const response = await axiosPoint.get("/gpu");
+      const response = await axiosPoint.get("/component/ram");
 
       setRam(response.data);
       setUseRam(response.data.slice(0, 12));
@@ -121,7 +121,7 @@ const Ram = () => {
 
   const getRamByBrand = async (parameter) => {
     try {
-      const response = await axiosPoint.get(`/gpu/${parameter}`);
+      const response = await axiosPoint.get(`/component/ram/${parameter}`);
       console.log(response.data);
       setRam(response.data);
       setUseRam(response.data.slice(0, 12));
@@ -164,7 +164,7 @@ const Ram = () => {
     if (e.target.checked) {
       setStateNumber(filterState + 1);
       const filteredArray = AllRam.filter(
-        (item) => item[container][attribute] == value
+        (item) => item[container][attribute].includes(value) 
       );
       setUseRam([...filteredArray]);
       console.log(filterState);
@@ -176,11 +176,10 @@ const Ram = () => {
   };
 
   useEffect(() => {
-    console.log(filterState);
+    
     setStateNumber(filterState);
   }, [filterState]);
   //-------------------------Shorting------------------------------------
-  console.log(filterState);
   const handleSortByPrice = async (event) => {
     const sortBy = parseInt(event.target.value);
 
@@ -252,31 +251,13 @@ const Ram = () => {
           </div>
         </div>
 
-        {/*-----------------------------Processor Filter---------------------------------- */}
-        <div className=" bg-white rounded-md  ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> ChipSet</h1>
-          <hr />
-          <div className=" px-5 py-2 class-name flex-wrap flex gap-2">
-            <button
-              onClick={() => handleChip("NVIDIA")}
-              className=" px-3  bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
-            >
-              NVIDIA
-            </button>
-            <button
-              onClick={() => handleChip("AMD")}
-              className=" px-3 bg-red-600 text-white btn  hover:bg-red-600 "
-            >
-              AMD Radeon
-            </button>
-          </div>
-        </div>
+        
         {/* ------------------------------Memory size------------------------ */}
         <div className=" bg-white rounded-md ">
           <h1 className=" text-lg font-medium py-2 px-5 "> Memory Size</h1>
           <hr />
           <div className="px-5 py-2 flex flex-col gap-2">
-            {gpuMemorySize.map((size) => {
+            {MemorySize.map((size) => {
               return(<label
                 key={size}
                 className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
@@ -286,7 +267,7 @@ const Ram = () => {
                   type="checkbox"
                  
                   onChange={(e) =>
-                    HandleChoice(e, "keyFeatures", "memorySize", size)
+                    HandleChoice(e, "keyFeatures", "size", size)
                   }
                   className="w-5 "
                   id={size}
@@ -300,10 +281,10 @@ const Ram = () => {
 
         {/*-----------------------------graphics---------------------------------- */}
         <div className=" bg-white rounded-md ">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Memory Type</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 "> Memory Bus Speed</h1>
           <hr />
           <div className="px-5 py-2 flex flex-col gap-2">
-          {gpuType.map((type,index) => {
+          {BussSpeed.map((type,index) => {
               return(<label
                 key={index}
                 className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
@@ -312,7 +293,7 @@ const Ram = () => {
                 <input
                   type="checkbox"
                   onChange={(e) =>
-                    HandleChoice(e, "keyFeatures", "memoryType", type)
+                    HandleChoice(e, "keyFeatures", "busSpeed", type)
                   }
                   className="w-5 "
                   id={index}
@@ -329,7 +310,7 @@ const Ram = () => {
           <div className="font-semibold text-lg flex items-center gap-1">
             <Link to={"/"}>
               <FaHome />
-            </Link>{" "}
+            </Link>{" "} 
             {location.pathname.toUpperCase()}/{param.toUpperCase()}
           </div>
           <div className=" flex items-center gap-2">

@@ -5,7 +5,7 @@ const useReview = (ProductId) => {
   const axiosPoint = useAxiosPublic();
 
   const { refetch, data: Review = [] } = useQuery({
-    queryKey: ["Product", ProductId],
+    queryKey: ["Review", ProductId],
     queryFn: async () => {
       try {
         const response = await axiosPoint.get(`/review?Product=${ProductId}`);

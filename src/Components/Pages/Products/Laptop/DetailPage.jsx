@@ -3,6 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { RiMessage2Fill } from "react-icons/ri";
 import Swal from "sweetalert2";
+import { FaArrowUp } from "react-icons/fa";
 import useAuth from "../../../Hooks/useAuth";
 import useQNA from "../../../Hooks/useQNA";
 import LaptopReview from "./LaptopReview";
@@ -113,7 +114,6 @@ const DetailPage = () => {
         }
       });
   };
-  console.log("QNA ", QNA);
 
   // Function to handle Buy Now option click
   const handleBuyNowClick = () => {
@@ -138,6 +138,59 @@ const DetailPage = () => {
     };
     getRelated();
   }, []);
+
+  const scrollToTop = (speed) => {
+    const currentPosition = window.scrollY;
+    const step = currentPosition / speed;
+
+    const scrollStep = () => {
+      if (window.scrollY > 0) {
+        window.scrollBy(0, -step);
+        requestAnimationFrame(scrollStep);
+      } else {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    scrollStep();
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(!emiChecked&&!buyNowChecked){
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please select one Payment Option...",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      return;
+    }
+    const price = buyNowChecked?discountedPrice:emiPrice
+    const product={ price}
+    
+    console.log(product)
+  };
+
+  const scrollToRef = (ref, speed) => {
+    const targetPosition = ref.current.offsetTop;
+    const currentPosition = window.scrollY;
+    const distance = targetPosition - currentPosition;
+
+    const step = distance / speed;
+
+    const scrollStep = () => {
+      if (Math.abs(window.scrollY - targetPosition) > Math.abs(step)) {
+        window.scrollBy(0, step);
+        requestAnimationFrame(scrollStep);
+      } else {
+        window.scrollTo(0, targetPosition);
+      }
+    };
+
+    scrollStep();
+  };
 
   const specRef = useRef(null);
   const qnaRef = useRef(null);
@@ -216,66 +269,71 @@ const DetailPage = () => {
           </section>
 
           <h1 className=" text-xl py-10"> Payment Options</h1>
-          <section className="flex gap-5">
-            <div
-              className={`px-3 hover:border-blue-700 rounded-xl border-2 ${
-                buyNowChecked ? "border-blue-700" : ""
-              }`}
-            >
-              <label
-                htmlFor="buynow"
-                className="flex gap-3 items-center"
-                onClick={handleBuyNowClick}
+          <form onSubmit={handleSubmit}>
+            <section className="flex gap-5">
+              <div
+                className={`px-3 hover:border-blue-700 rounded-xl border-2 ${
+                  buyNowChecked ? "border-blue-700" : ""
+                }`}
               >
-                <input
-                  onChange={() => console.log("done")}
-                  type="checkbox"
-                  name="buynow"
-                  value="buynow"
-                  checked={buyNowChecked}
-                  id="buynow"
-                  className="radio checked:bg-blue-500"
-                />
-                <div>
-                  <h1 className="text-xl">{discountedPrice}$</h1>
-                  <h1>Cash discount price</h1>
-                  <h1 className="text-slate-400">Online / cash payment</h1>
-                </div>
-              </label>
-            </div>
-            <div
-              className={`px-3 hover:border-blue-700 rounded-xl border-2 ${
-                emiChecked ? "border-blue-700" : ""
-              }`}
-            >
-              <label
-                htmlFor="emi"
-                className="flex gap-3 items-center"
-                onClick={handleEmiClick}
+                <label
+                  htmlFor="buynow"
+                  className="flex gap-3 items-center"
+                  onClick={handleBuyNowClick}
+                >
+                  <input
+                    onChange={() => console.log("done")}
+                    type="checkbox"
+                    name="buynow"
+                    value="buynow"
+                    checked={buyNowChecked}
+                    id="buynow"
+                    className="radio checked:bg-blue-500"
+                  />
+                  <div>
+                    <h1 className="text-xl">{discountedPrice}$</h1>
+                    <h1>Cash discount price</h1>
+                    <h1 className="text-slate-400">Online / cash payment</h1>
+                  </div>
+                </label>
+              </div>
+              <div
+                className={`px-3 hover:border-blue-700 rounded-xl border-2 ${
+                  emiChecked ? "border-blue-700" : ""
+                }`}
               >
-                <input
-                  onChange={() => console.log("done")}
-                  type="checkbox"
-                  name="buynow"
-                  checked={emiChecked}
-                  value="buynow"
-                  id="emi"
-                  className="radio checked:bg-blue-500"
-                />
-                <div>
-                  <h1 className="text-xl">{emiPrice}$ / month</h1>
-                  <h1>EMI in regular price</h1>
-                  <h1 className="text-slate-400">{regularPrice}</h1>
-                </div>
-              </label>
-            </div>
-          </section>
-          <section className=" flex gap-3 py-5">
-            <button className="btn bg-blue-700 text-white hover:text-blue-600">
-              Buy Now
-            </button>
-            <button className="btn bg-slate-300">Add to cart</button>
-          </section>
+                <label
+                  htmlFor="emi"
+                  className="flex gap-3 items-center"
+                  onClick={handleEmiClick}
+                >
+                  <input
+                    onChange={() => console.log("done")}
+                    type="checkbox"
+                    name="buynow"
+                    checked={emiChecked}
+                    value="buynow"
+                    id="emi"
+                    className="radio checked:bg-blue-500"
+                  />
+                  <div>
+                    <h1 className="text-xl">{emiPrice}$ / month</h1>
+                    <h1>EMI in regular price</h1>
+                    <h1 className="text-slate-400">{regularPrice}$</h1>
+                  </div>
+                </label>
+              </div>
+            </section>
+            <section className=" flex gap-3 py-5">
+              <button
+                type="submit"
+                className="btn bg-blue-700 text-white hover:text-blue-600"
+              >
+                Buy Now
+              </button>
+              <button className="btn bg-slate-300">Add to cart</button>
+            </section>
+          </form>
         </div>
       </div>
       <div className="  grid grid-cols-4 gap-5  px-10 bg-[#f0efff] py-5">
@@ -283,7 +341,7 @@ const DetailPage = () => {
           <section className=" flex gap-5 py-5">
             <button
               onClick={() => {
-                specRef.current?.scrollIntoView({ behavior: "smooth" });
+                scrollToRef(specRef, 180);
               }}
             >
               <h1 className="px-4 hover:bg-[#EE4B23] duration-300 shadow-lg hover:text-white bg-white  py-2 rounded-md">
@@ -292,7 +350,7 @@ const DetailPage = () => {
             </button>
             <button
               onClick={() => {
-                qnaRef.current?.scrollIntoView({ behavior: "smooth" });
+                scrollToRef(qnaRef, 130);
               }}
             >
               <h1 className="px-4 hover:bg-[#EE4B23] duration-300 shadow-lg  hover:text-white bg-white  py-2 rounded-md">
@@ -301,7 +359,7 @@ const DetailPage = () => {
             </button>
             <button
               onClick={() => {
-                reviewRef.current?.scrollIntoView({ behavior: "smooth" });
+                scrollToRef(reviewRef, 130);
               }}
             >
               <h1 className="px-4 hover:bg-[#EE4B23] duration-300 shadow-lg  hover:text-white bg-white  py-2 rounded-md">
@@ -692,11 +750,16 @@ const DetailPage = () => {
                   {QNA.map((item, index) => (
                     <div key={index}>
                       <div className="py-3 flex gap-5">
-                        <img
-                          src={item.userImage}
-                          className="border-2 w-14 rounded-full p-1"
-                          alt="User Photo"
-                        />
+                        <div>
+                          <img
+                            src={item.userImage}
+                            className="border-2 w-14 rounded-full p-1 mx-auto"
+                            alt="User Photo"
+                          />
+                          <h1 className=" text-blue-700 text-xs ">
+                            {item.userName}
+                          </h1>
+                        </div>
                         <div className="">
                           <h1 className="font-bold">✥ {item.Question} ?</h1>
                           <h1 className=" text-gray-600">
@@ -761,7 +824,7 @@ const DetailPage = () => {
                       </h1>
                     </Link>
                     <h1 className=" text-red-600">
-                      {item.keyFeatures.discountedPrice}
+                      {item.keyFeatures.discountedPrice}$
                     </h1>
                   </div>
                 </div>
@@ -771,6 +834,13 @@ const DetailPage = () => {
           })}
         </div>
       </div>
+
+      <button
+        className="fixed bottom-8 right-28 bg-blue-500 text-white py-2 px-4 rounded-full shadow-md transition-opacity duration-300 hover:opacity-30 animate-bounce"
+        onClick={() => scrollToTop(100)} // Adjust speed by changing the argument (default: 20)
+      >
+        <FaArrowUp />
+      </button>
     </div>
   );
 };

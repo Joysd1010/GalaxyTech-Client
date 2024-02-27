@@ -3,22 +3,29 @@ import ReactStars from "react-rating-stars-component";
 import useReview from "../../../Hooks/useReview";
 import { TbReportSearch } from "react-icons/tb";
 import useAuth from "../../../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 const LaptopReview = ({ state }) => {
     
   const [Rating, setRating] = useState(0);
   const [Review, refetch] = useReview(state);
   const {user} = useAuth();
-  console.log("review", Review);
+
   const ratingChanged = (newRating) => {
     setRating(newRating);
-    console.log(newRating);
+    
   }; 
 
   const handleReviewSubmit = (e) => {
     e.preventDefault();
     const inputValue = e.target.elements.inputText.value;
-
+    if (Rating === 0) {
+        document.getElementById('errorMessage').innerText = 'Please provide a rating!';
+        return; // Exit the function if rating is not provided
+      }
+    
+      // Clear the error message if rating is provided
+      document.getElementById('errorMessage').innerText = '';
     const newReview = {
       userImage: user?.photoURL,
       email: user?.email,
@@ -27,7 +34,7 @@ const LaptopReview = ({ state }) => {
       Product:state,
       Rating: Rating,
     };  
-    console.log(newReview);
+   
     fetch("http://localhost:5000/review", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -35,7 +42,7 @@ const LaptopReview = ({ state }) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+       
         if (data.insertedId) {
           e.target.reset();
           document.getElementById("my_modal_3").close();
@@ -60,7 +67,7 @@ const LaptopReview = ({ state }) => {
   };
 
   return (
-    <div className=" bg-white px-5 rounded-md">
+    <div className=" bg-white  rounded-md">
       <section className="bg-white rounded-md py-5 px-5 mt-5">
         <div className="flex justify-between items-center pb-3">
           <div>
@@ -93,14 +100,28 @@ const LaptopReview = ({ state }) => {
             <div>
               {Review.map((item, index) => (
                 <div key={index}>
-                  <div className="py-3 flex gap-5">
-                    <img
+                  <div className="py-3 flex items-center gap-5">
+                    <div>
+                        <img
                       src={item.userImage}
-                      className="border-2 w-14 rounded-full p-1"
+                      className="border-2 w-14 rounded-full p-1 mx-auto"
                       alt="User Photo"
                     />
+                    <h1 className=" text-blue-700 text-xs ">{item.userName}</h1>
+                    </div>
+                    
                     <div className="">
-                      <h1 className="font-bold">✥ {item.Review} ?</h1>
+                      <h1 className="font-bold">◈ {item.Review} </h1>
+                      <ReactStars
+                count={5}
+                value={item.Rating}
+                size={24}
+                isHalf={true}
+                emptyIcon={<i className="far fa-star"></i>}
+                halfIcon={<i className="fa fa-star-half-alt"></i>}
+                fullIcon={<i className="fa fa-star"></i>}
+                activeColor="#ffd700"
+              />
                     </div>
                   </div>
                   <hr />
@@ -127,14 +148,16 @@ const LaptopReview = ({ state }) => {
               <ReactStars
                 count={5}
                 onChange={ratingChanged}
-                size={24}
+                size={30}
                 isHalf={true}
                 emptyIcon={<i className="far fa-star"></i>}
                 halfIcon={<i className="fa fa-star-half-alt"></i>}
                 fullIcon={<i className="fa fa-star"></i>}
                 activeColor="#ffd700"
               />
-              <input type="submit" value="Submit" className="btn btn-primary" />
+              <input type="submit" value="Submit" className="btn btn-primary my-3" />
+              <div id="errorMessage" className="text-red-600"></div>
+
             </form>
           </div>
           <form method="dialog" className="modal-backdrop">

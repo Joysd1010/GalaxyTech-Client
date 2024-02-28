@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { RiMessage2Fill } from "react-icons/ri";
 import Swal from "sweetalert2";
@@ -17,7 +17,7 @@ const DetailPage = () => {
     discountedPrice,
     emiPrice,
     regularPrice,
-    storage,
+    
     ram,
     brand,
     generation,
@@ -59,7 +59,7 @@ const DetailPage = () => {
   const { os, architecture } = laptop?.osDetails;
   const { warrantyPeriod, warrantyType } = laptop?.warrantyDetails;
   const { user } = useAuth();
-
+  const navigate=useNavigate()
   // -----------------------------------------all handlers  are in this file------------------------------
   const [QNA, refetch] = useQNA(laptop._id);
   const [selectedImage, setSelectedImage] = useState(laptop.imageLinks[0]);
@@ -167,12 +167,17 @@ const DetailPage = () => {
       });
       return;
     }
+    const image=laptop.imageLinks[1]
+    const name=`${modelname} ${brand} ${display} laptop`
     const price = buyNowChecked?discountedPrice:emiPrice
-    const product={ price}
+    const product={ price,name,image}
     
-    console.log(product)
+    navigate('/buynow',{state:[{product}]})
+    
   };
-
+  const handleCart=()=>{
+    
+  }
   const scrollToRef = (ref, speed) => {
     const targetPosition = ref.current.offsetTop;
     const currentPosition = window.scrollY;
@@ -431,7 +436,7 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Display Features</span>{" "}
-                <span>{displayFeatures.join(", ")}</span>{" "}
+                <span>{displayFeatures?.join(", ")}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -540,7 +545,7 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Touch Pad</span>{" "}
-                <span>{touchpadFeatures.join(", ")}</span>{" "}
+                <span>{touchpadFeatures?.join(", ")}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>

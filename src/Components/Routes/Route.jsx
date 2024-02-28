@@ -10,6 +10,7 @@ import Monitor from "../Pages/Products/Monitor/Monitor";
 import Gpu from "../Pages/Products/GPU/Gpu";
 import Phone from "../Pages/Products/Phone/Phone";
 import Ram from "../Pages/Products/Ram/Ram";
+import BuyNow from "../Pages/Products/BuyNowPage/BuyNow";
 
 const Router = createBrowserRouter([
   {
@@ -108,6 +109,8 @@ const Router = createBrowserRouter([
         element: <Ram/>
       
       },
+      {path: "buynow",
+      element: <BuyNow/>},
       {
         path:'*',
         element:<Error/>

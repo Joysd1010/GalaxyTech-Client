@@ -11,7 +11,6 @@ const LapTopCard = ({ state }) => {
     generation,
     modelname,
     display,
-    storage,
     ram,
     specialFeatures,
   } = state.keyFeatures;

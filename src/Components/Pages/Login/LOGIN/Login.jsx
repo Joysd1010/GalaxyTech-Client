@@ -10,8 +10,8 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [error, setError] = useState();
-
-  const from = location.state?.from?.pathname || "/";
+console.log(location.state)
+  const from = location?.state || "/";
  
   const {
     register,
@@ -43,6 +43,7 @@ const Login = () => {
       });
   };
 
+  
   return (
     <div className="">
       

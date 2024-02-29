@@ -1,66 +1,75 @@
-import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
-import React from 'react';
+import React, { useState } from "react";
+import {
+  CardElement,
+  useStripe,
+  useElements
+} from "@stripe/react-stripe-js";
 
 const CheckOutForm = () => {
+  const stripe = useStripe();
+  const elements = useElements();
+  const [message, setMessage] = useState(null);
+  const [isProcessing, setIsProcessing] = useState(false);
 
-const stripe=useStripe()
-const elements=useElements()
-const handleSubmit = async (event) => {
-    // Block native form submission.
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
     if (!stripe || !elements) {
-      // Stripe.js has not loaded yet. Make sure to disable
-      // form submission until Stripe.js has loaded.
       return;
     }
 
-    // Get a reference to a mounted CardElement. Elements knows how
-    // to find your CardElement because there can only ever be one of
-    // each type of element.
-    const card = elements.getElement(CardElement);
+    setIsProcessing(true);
 
-    if (card == null) {
-      return;
-    }
-
-    // Use your card Element with other Stripe.js APIs
-    const {error, paymentMethod} = await stripe.createPaymentMethod({
-      type: 'card',
-      card,
+    const { error, paymentMethod } = await stripe.createPaymentMethod({
+      type: "card",
+      card: elements.getElement(CardElement),
+      billing_details: {
+        address: {
+          postal_code: e.target.zip.value
+        }
+      }
     });
 
     if (error) {
-      console.log('[error]', error);
+      setMessage(error.message);
+      setIsProcessing(false);
     } else {
-      console.log('[PaymentMethod]', paymentMethod);
+      setMessage(`Payment successful, ${paymentMethod.id}`);
+      setIsProcessing(false);
     }
   };
 
-    return (
-        <form className=' border-2  rounded-md p-2 w-2/3' onSubmit={handleSubmit}>
-      <CardElement
-      
-        options={{
-          style: {
-            base: {
-              fontSize: '20px',
-              color: '#120F39',
-              '::placeholder': {
-                color: '#1D4ED8',
-              },
-            },
-            invalid: {
-              color: '#9e2146',
-            },
-          },
-        }}
-      />
-      <button type="submit" disabled={!stripe}>
-        Pay
+  return (
+    <form id="payment-form" onSubmit={handleSubmit}>
+      <label>
+        Card Number
+        <CardElement options={{ style: { base: { fontSize: "16px" } } }} />
+      </label>
+
+      <label>
+        Zip Code
+        <input type="text" name="zip" required />
+      </label>
+
+      <button type="submit" disabled={isProcessing}>
+        {isProcessing ? "Processing..." : "Pay now"}
       </button>
+
+      {message && <div>{message}  <LineWave
+  visible={true}
+  height="100"
+  width="100"
+  color="#4fa94d"
+  ariaLabel="line-wave-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  firstLineColor=""
+  middleLineColor=""
+  lastLineColor=""
+  /></div>}
+
     </form>
-    );
+  );
 };
 
 export default CheckOutForm;

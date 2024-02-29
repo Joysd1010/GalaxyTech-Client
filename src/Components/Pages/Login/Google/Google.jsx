@@ -8,7 +8,7 @@ const Google = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const from = location.state?.from?.pathname || "/";
+  const from = location.state || "/";
 
   const handleGoogleSignIn = () => {
     googleSignIn()

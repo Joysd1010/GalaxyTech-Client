@@ -18,7 +18,7 @@ const Signup = () => {
 
   const [error, setError] = useState("");
 
-  const from = location.state?.from?.pathname || "/";
+  const from = location.state || "/";
 
 
   const fetchSignup = async(user) => {

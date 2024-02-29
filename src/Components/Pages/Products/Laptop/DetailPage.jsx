@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, useLoaderData, useNavigate } from "react-router-dom";
+import { Link, useLoaderData, useLocation, useNavigate } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { RiMessage2Fill } from "react-icons/ri";
 import Swal from "sweetalert2";
@@ -10,7 +10,7 @@ import LaptopReview from "./LaptopReview";
 
 const DetailPage = () => {
   const laptop = useLoaderData();
-
+  const location=useLocation()
   // --------------------------------------------declaring all  the variables and functions---------------------------
   const {
     specialFeatures,
@@ -170,9 +170,9 @@ const DetailPage = () => {
     const image=laptop.imageLinks[1]
     const name=`${modelname} ${brand} ${display} laptop`
     const price = buyNowChecked?discountedPrice:emiPrice
-    const product={ price,name,image}
+    const products={price,name,image ,id:laptop._id,collection:'Laptop' };
     
-    navigate('/buynow',{state:[{product}]})
+    navigate('/buynow',{state:{from:location.pathname,prop:[{price,name,image ,id:laptop._id,collection:'Laptop'}]}})
     
   };
   const handleCart=()=>{

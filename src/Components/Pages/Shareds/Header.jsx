@@ -3,14 +3,15 @@ import logo from "./../../../assets/Tech shop2.png";
 import { BsSearch } from "react-icons/bs";
 import { FaGift, FaUser } from "react-icons/fa";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Header = () => {
   const { user, logOut } = useAuth();
 
- 
-
+ const location=useLocation()
+// console.log(location.pathname)
+const navigate=useNavigate()
   // ======================= to do ==============================
   // # make all the link connected
   // # Account will be conditional with user name
@@ -64,19 +65,19 @@ const Header = () => {
               <h1 onClick={logOut} className=" hover:text-red-400 text-xs text-white cursor-pointer">LogOut</h1>
             ) : (
               <div className="flex gap-1">
-                <Link to={'/login'}>
+               
                   
-                  <p className=" hover:text-red-400 text-xs text-white">
+                  <p onClick={()=>{navigate('/login',{state:location.pathname})}} className=" cursor-pointer hover:text-red-400 text-xs text-white">
                     Log in
                   </p>
-                </Link>
+             
                 <p className=" text-xs text-white"> Or</p>
-                <Link to={'/signup'}>
+                
                   {" "}
-                  <p className=" hover:text-red-400 text-xs text-white">
+                  <p onClick={()=>{navigate('/login',{state:location.pathname})}} className=" cursor-pointer hover:text-red-400 text-xs text-white">
                     Sign Up
                   </p>
-                </Link>
+           
               </div>
             )}
           </div>

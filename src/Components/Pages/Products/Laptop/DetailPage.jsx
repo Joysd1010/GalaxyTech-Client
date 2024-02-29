@@ -172,7 +172,7 @@ const DetailPage = () => {
     const price = buyNowChecked?discountedPrice:emiPrice
     const products={price,name,image ,id:laptop._id,collection:'Laptop' };
     
-    navigate('/buynow',{state:{from:location.pathname,prop:[{price,name,image ,id:laptop._id,collection:'Laptop'}]}})
+    navigate('/buynow',{state:{from:location.pathname,prop:[{price,name,image,quantity:laptop.quantity ,id:laptop._id,collection:'Laptop'}]}})
     
   };
   const handleCart=()=>{
@@ -331,12 +331,13 @@ const DetailPage = () => {
             </section>
             <section className=" flex gap-3 py-5">
               <button
-                type="submit"
+                type="submit" 
+                disabled={!laptop.quantity>0}
                 className="btn bg-blue-700 text-white hover:text-blue-600"
               >
                 Buy Now
               </button>
-              <button className="btn bg-slate-300">Add to cart</button>
+              <button   disabled={!laptop.quantity>0} className="btn bg-slate-300">Add to cart</button>
             </section>
           </form>
         </div>

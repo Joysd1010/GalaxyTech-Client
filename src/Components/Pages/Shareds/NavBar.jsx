@@ -127,7 +127,7 @@ const NavBar = () => {
         header={{ value: "Graphics Card", path: "gpu", param: "All" }}
         element={GPUJson}
       />
-      <NavTemplate element={RamJson} header={{ value: "RAM", path: "ram",param:'RAM' ,param:'All' }} />
+      <NavTemplate element={RamJson} header={{ value: "RAM", path: "ram" ,param:'All' }} />
       <NavTemplate
         element={MotherJson}
         header={{ value: "MotherBoard", path: "mother" }}

@@ -82,7 +82,7 @@ const LaptopReview = ({ state }) => {
           </button>
         </div>
         <hr />
-        <div className="py-5">
+        <div className="py-5"> 
           {Review.length == 0 ? (
             <div>
               <div className="w-36 h-36 bg-blue-50 mx-auto  rounded-full flex flex-col justify-around">

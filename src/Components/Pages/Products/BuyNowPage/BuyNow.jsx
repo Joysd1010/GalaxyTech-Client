@@ -12,6 +12,7 @@ import ConfettiExplosion from "react-confetti-explosion";
 import "./Custom.css";
 import Swal from "sweetalert2";
 import { useReactToPrint } from "react-to-print";
+import { FaTrashAlt } from "react-icons/fa";
 
 const CheckOutForm = ({
   Price,
@@ -85,8 +86,6 @@ const CheckOutForm = ({
       .then((data) => {
         if (data.insertedId) {
           console.log(data);
-
-         
         }
       });
   };
@@ -136,7 +135,7 @@ const CheckOutForm = ({
         CardUser: name,
         TotalCost: Price,
         TransectionId: paymentMethod.id,
-        Card: paymentMethod.card.brand,
+        Card: paymentMethod?.card.brand,
         Phone: phone,
       };
       SaveToDB(PaymentData);
@@ -234,19 +233,50 @@ const BuyNow = () => {
   const location = useLocation();
   const navigate = useNavigate();
   console.log(location.state);
-  const State = location.state;
+  // const State = location.state;
+  const [State, setPreState] = useState(location.state);
   const from = State ? State.from : "/";
   const [completed, setCompleted] = useState(false);
   const [Print, setPrint] = useState(false);
   const [Order, setOrder] = useState({});
   console.log("order", Order);
-  const totalPrice = State.prop.reduce((sum, item) => {
+  const totalPrice = State?.prop.reduce((sum, item) => {
     return sum + item.price;
   }, 0);
   const printref = useRef();
   const handlePrint = useReactToPrint({
     content: () => printref.current,
   });
+  const handleDelete = (index) => {
+    Swal.fire({
+      title: `Are you sure you don't want to purchase this right now?`,
+      text: "This item will stay in your cart; you can purchase it later.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, remove it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        if (index !== -1) {
+          const updatedProp = [...State.prop];
+          updatedProp.splice(index, 1);
+          setPreState((prevState) => ({
+            ...prevState,
+            prop: updatedProp,
+          }));
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: `Successfully removed!`,
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      }
+    });
+  };
+
   return (
     <div className="bg-blue-100 px-10">
       <div className="grid grid-cols-2 w-full py-10 gap-5">
@@ -255,47 +285,77 @@ const BuyNow = () => {
             Products detail
           </h1>
           <hr className=" border-2 my-3" />
-          <div className="grid px-5 grid-cols-4">
-            <div className="px-3 text-center">
-              {" "}
-              <h1> Image </h1>
-              <hr className=" border-2 my-3" />
+          {
+            State.prop.length>0?<div>
+            <div className="grid px-5 grid-cols-6">
+              <div className="px-3 text-center">
+                {" "}
+                <h1> Image </h1>
+                <hr className=" border-2 my-3" />
+              </div>
+              <div className="px-3 col-span-3 text-center">
+                {" "}
+                <h1> Name </h1>
+                <hr className=" border-2 my-3" />
+              </div>
+              <div className="px-3 text-center">
+                {" "}
+                <h1> Price </h1>
+                <hr className=" border-2 my-3" />
+              </div>
             </div>
-            <div className="px-3 col-span-2 text-center">
-              {" "}
-              <h1> Name </h1>
-              <hr className=" border-2 my-3" />
+            {State.prop?.map((item, index) => (
+              <div key={index} className="grid px-5 items-center grid-cols-6">
+                <img src={item.image} className=" w-24 mx-auto" alt="" />
+                <h1 className=" text-center col-span-3 px-3">{item.name}</h1>
+                <h1 className=" text-center text-blue-700 px-3">
+                  {item.price}$
+                </h1>
+                <FaTrashAlt
+                  className="cursor-pointer mx-auto text-red-600"
+                  onClick={() => handleDelete(index)}
+                />
+              </div>
+            ))}
+            <hr className=" border-2 my-3" />
+            <div className="grid grid-cols-6 px-5">
+              <h1 className=" col-span-4 text-end">Total Price : </h1>{" "}
+              <p className=" text-xl text-center font-bold text-red-700">
+                {totalPrice} $
+              </p>
             </div>
-            <div className="px-3 text-center">
-              {" "}
-              <h1> Price </h1>
-              <hr className=" border-2 my-3" />
+            <div className="flex justify-around pt-3">
+              <div
+                onClick={() => {
+                  navigate(from);
+                }}
+                className="btn mx-auto bg-red-600 text-white hover:text-red-600 hover:border-red-600 shadow-lg border-2"
+              >
+                Cancel & Go Back
+              </div>
             </div>
-          </div>
-          {State.prop.map((item, index) => (
-            <div key={index} className="grid px-5 items-center grid-cols-4">
-              <img src={item.image} className=" w-24 mx-auto" alt="" />
-              <h1 className=" text-center col-span-2 px-3">{item.name}</h1>
-              <h1 className=" text-center text-blue-700 px-3">{item.price}$</h1>
+          </div>: <div>
+              <img
+                className=" w-2/4 mx-auto"
+                src="https://cdn.dribbble.com/users/2046015/screenshots/5973727/06-loader_telega.gif"
+                alt=""
+              />
+              <h1 className=" text-xl text-center font-bold">
+                No Products are selected !! 😔
+              </h1>
+              <div className="flex justify-around pt-3">
+              <div
+                onClick={() => {
+                  navigate('/');
+                }}
+                className="btn mx-auto bg-red-600 text-white hover:text-red-600 hover:border-red-600 shadow-lg border-2"
+              >
+                 Go Back
+              </div>
             </div>
-          ))}
-          <hr className=" border-2 my-3" />
-          <div className="grid grid-cols-4 px-5">
-            <h1 className=" col-span-3 text-end">Total Price : </h1>{" "}
-            <p className=" text-xl text-center font-bold text-red-700">
-              {totalPrice} $
-            </p>
-          </div>
-          <div className="flex justify-around pt-3">
-            <div
-              onClick={() => {
-                navigate(from);
-              }}
-              className="btn mx-auto bg-red-600 text-white hover:text-red-600 hover:border-red-600 shadow-lg border-2"
-            >
-              Cancel & Go Back
             </div>
-          </div>
+          }
+          
         </div>
         {/* -------------------------------------Payment--------------------------------------------- */}
         <div id="detail" className=" pt-5 pb-5  bg-white rounded-md ">
@@ -373,7 +433,9 @@ const BuyNow = () => {
               <hr className="border-2 my-2 mx-28 border-gray-600" />
               <h1>
                 Invoice id :{" "}
-                <span className="text-red-700 underline">{Math.floor(10000000 + Math.random() * 90000000)}</span>
+                <span className="text-red-700 underline">
+                  {Math.floor(10000000 + Math.random() * 90000000)}
+                </span>
               </h1>
               <h1>
                 Transaction id :{" "}
@@ -436,7 +498,10 @@ const BuyNow = () => {
       <div>
         {Print ? (
           <div className="flex justify-around">
-            <button onClick={handlePrint} className="text-xl font-bold px-5 py-2 my-5 rounded-md bg-green-600 text-white hover:bg-green-500 btn ">
+            <button
+              onClick={handlePrint}
+              className="text-xl font-bold px-5 py-2 my-5 rounded-md bg-green-600 text-white hover:bg-green-500 btn "
+            >
               Print the receipt
             </button>
           </div>

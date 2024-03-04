@@ -11,6 +11,7 @@ import Gpu from "../Pages/Products/GPU/Gpu";
 import Phone from "../Pages/Products/Phone/Phone";
 import Ram from "../Pages/Products/Ram/Ram";
 import BuyNow from "../Pages/Products/BuyNowPage/BuyNow";
+import PrivateRoute from "../Pages/PrivateRoute/Privateroute";
 
 const Router = createBrowserRouter([
   {
@@ -110,7 +111,7 @@ const Router = createBrowserRouter([
       
       },
       {path: "buynow",
-      element: <BuyNow/>},
+      element:<PrivateRoute><BuyNow/></PrivateRoute> },
       {
         path:'*',
         element:<Error/>

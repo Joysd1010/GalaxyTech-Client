@@ -8,201 +8,56 @@ import { FaHome } from "react-icons/fa";
 const Monitor = () => {
   const axiosPoint = useAxiosPublic();
   const location = useLocation();
-  const [AllMonitor, setMonitor] = useState([]);
-  const [UseMonitor, setUseMonitor] = useState([]);
-  const [Range, setRange] = useState(0);
-  const [MinPrice, setMinPrice] = useState(0);
-  const [CurrentPage, setPage] = useState(1);
-  const postPerPage = 12;
-  const [filterState, setStateNumber] = useState(0);
- 
-  const [MaxPrice, setMaxPrice] = useState(0);
   const param = location.state;
+  const [data, setData] = useState([]);
+  const [MinPrice, setMinPrice] = useState(0);
+  const [MaxPrice, setMaxPrice] = useState(0);
+  const [Panel, setPanel] = useState([]);
+  const [resolution, setResolution] = useState([]);
+  const [RefreshRate, setRefreshRate] = useState([]);
+  const [page, setPage] = useState(1);
+  const [sort, setSort] = useState('');
 
-  //   console.log(location);
 
-  const setCurrentPost = () => {
-    const start = (CurrentPage - 1) * postPerPage;
-    const end = postPerPage * CurrentPage;
-    setUseMonitor(AllMonitor.slice(start, end));
-  };
 
-  const handlePageChange = (newPage) => {
-    // console.log("this page", newPage);
-    setPage(newPage);
-  };
+  
+ useEffect(() => {
 
-  useEffect(() => {
-    // console.log("Current page", CurrentPage);
-    setCurrentPost();
-  }, [CurrentPage]);
-
-  const generatePageNumbers = (totalPages, currentPage) => {
-    const pageNumbers = [];
-
-    if (currentPage > 1) {
-      pageNumbers.push(
-        <button
-          key="prev"
-          onClick={() => handlePageChange(currentPage - 1)}
-          className="prev-btn underline hover:text-red-600"
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
-      );
-    } else {
-      pageNumbers.push(
-        <button key="prev" className="prev-btn btn-disabled text-gray-400">
-          Previous
-        </button>
-      );
-    }
-
-    for (let i = 1; i <= totalPages; i++) {
-      pageNumbers.push(
-        <button
-          key={i}
-          onClick={() => handlePageChange(i)}
-          className={
-            i === currentPage
-              ? "active text-white px-3 bg-red-600 rounded-md"
-              : ""
-          }
-          disabled={i === currentPage}
-        >
-          {i}
-        </button>
-      );
-    }
-
-    if (currentPage < totalPages) {
-      pageNumbers.push(
-        <button
-          key="next"
-          onClick={() => {
-            let pageNow = CurrentPage + 1;
-            handlePageChange(pageNow);
-          }}
-          className="next-btn underline hover:text-red-600"
-          disabled={currentPage === totalPages}
-        >
-          Next
-        </button>
-      );
-    } else {
-      pageNumbers.push(
-        <button key="next" className="next-btn btn-disabled text-gray-400">
-          Next
-        </button>
-      );
-    }
-
-    return pageNumbers;
-  };
-
-  const getAllMonitor = async () => {
+  const getAllMovies = async () => {
     try {
-      const response = await axiosPoint.get("/monitor");
-      setMonitor(response.data);
-      setUseMonitor(response.data.slice(0, 12));
-      setMinPrice(
-        Math.min(...response.data.map((item) => item.key.price.discount))
-      );
-      setMaxPrice(
-        Math.max(...response.data.map((item) => item.key.price.discount))
-      );
-    } catch (error) {
-      console.error("Error fetching laptop data:", error);
+      const url = `monitor/get?page=${page}&display.refreshRate=${page}&display.type=${page}&display.resolution=${page}&key.brand=ASuS&price=1200&sortBy=discountDesc`;
+      const { data } = await axios.get(url);
+      setObj(data);
+    } catch (err) {
+      console.log(err);
     }
   };
 
-  const getMonitorByBrand = async (parameter) => {
-    try {
-      const response = await axiosPoint.get(`/monitor/${parameter}`);
+  getAllMovies();
+    
+  }, []);
 
-      setMonitor(response.data);
-      setUseMonitor(response.data.slice(0, 12));
-      setMinPrice(
-        Math.min(...response.data.map((item) => item.key.price.discount))
-      );
-      setMaxPrice(
-        Math.max(...response.data.map((item) => item.key.price.discount))
-      );
-    } catch (error) {
-      console.error("Error fetching laptop data:", error);
-    }
-  };
+ 
 
-  //------------------------Price filter-----------------
-  const handleOnchange = (value) => {
-    setRange(value);
-    setUseMonitor(
-      AllMonitor?.filter((item) => item.key.price.discount <= value).slice(
-        0,
-        12
-      )
-    );
-  };
-  //-------------------------UserDefinedFilter--------------------
+  
   const HandleChoice = (e,attribute, value) => {
      
     if (e.target.checked) {
-      setStateNumber(filterState + 1);
-      const filteredArray = AllMonitor.filter(
-        (item) => item.display[attribute] == value
-      );
-      setUseMonitor([...filteredArray]);
-      console.log(filteredArray);
+      
     } else {
-      setStateNumber(filterState - 1);
-      setUseMonitor(AllMonitor);
-      console.log(filterState);
+     
     }
   };
   //-------------------------Shorting------------------------------------
 
   const handleSortByPrice = async (event) => {
-    const sortBy = parseInt(event.target.value);
-
-    switch (sortBy) {
-      case 2:
-        const sortedByPriceAsc = await shortingAsc(UseMonitor);
-        setUseMonitor(sortedByPriceAsc);
-        break;
-      case 3:
-        const sortedByPriceDesc = shortingDesc(UseMonitor);
-        setUseMonitor(sortedByPriceDesc);
-        break;
-      default:
-        break;
-    }
+    
+    
   };
 
-  const shortingAsc = async (laptop) => {
-    const filterMonitor = [...laptop].sort(
-      (a, b) => a.key.price.discount - b.key.price.discount
-    );
-    return filterMonitor;
-  };
-
-  const shortingDesc = (laptop) => {
-    const filterMonitor = [...laptop].sort(
-      (a, b) => b.key.price.discount - a.key.price.discount
-    );
-    return filterMonitor;
-  };
-
+  
   //-----------------------fetching data-------------------------
-  useEffect(() => {
-    if (param === "All") {
-      getAllMonitor();
-    } else {
-      getMonitorByBrand(param);
-    }
-    setCurrentPost();
-  }, [param]);
-
+  
   return (
     <div className="bg-indigo-100 px-10 py-5 grid grid-cols-5 gap-2">
       <div className=" flex flex-col gap-2">
@@ -415,7 +270,7 @@ const Monitor = () => {
 
       </div>
 
-      <div className=" col-span-4 ">
+      {/* <div className=" col-span-4 ">
         <div className=" px-5 py-3 bg-white items-center  flex justify-between  rounded-md">
           <div className="font-semibold text-lg flex items-center gap-1">
             <Link to={"/"}>
@@ -437,7 +292,7 @@ const Monitor = () => {
             </div>
           </div>
         </div>
-        {UseMonitor?.length > 1 ? (
+        {UseMonitor?.length > 0 ? (
           <div className=" grid grid-cols-4 gap-3 pt-2 ">
             {UseMonitor.map((item) => (
               <MonitorCard key={item._id} state={item} />
@@ -459,17 +314,9 @@ const Monitor = () => {
         )}
 
         <div className="pagination flex gap-6 py-6 ">
-        {filterState == 0
-            ? generatePageNumbers(
-                Math.ceil(AllMonitor.length / postPerPage),
-                CurrentPage
-              )
-            : generatePageNumbers(
-                Math.ceil(UseMonitor.length / postPerPage),
-                CurrentPage
-              )}
+        
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

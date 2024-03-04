@@ -343,7 +343,7 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
 
       <div className=" col-span-4 ">
         <div className=" px-5 py-3 bg-white items-center  flex justify-between  rounded-md">
-        <div className="font-semibold text-lg flex items-center gap-1"><Link to={'/'}><FaHome/></Link>{" "} {location.pathname.toUpperCase()}/{param.toUpperCase()}</div>
+        <div className="font-semibold text-lg flex items-center gap-1"><Link to={'/'}><FaHome/></Link>{" "} {location?.pathname?.toUpperCase()}/{param?.toUpperCase()}</div>
           <div className=" flex items-center gap-2">
             <p className=" text-gray-500">Sort By : </p>{" "}
             <div>

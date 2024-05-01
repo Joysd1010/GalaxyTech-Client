@@ -159,13 +159,13 @@ const LapTopCard = ({ state }) => {
         <div className="flex justify-around">
           <div
             onClick={() => handleNavigate()}
-            className=" flex gap-2 px-16 text-sm py-2 rounded-md cursor-pointer text-blue-700 hover:text-white hover:bg-blue-700 transition duration-500 bg-indigo-50"
+            className=" flex gap-2 md:px-14 px-10 text-sm py-2 rounded-md cursor-pointer text-blue-700 hover:text-white hover:bg-blue-700 transition duration-500 bg-indigo-50"
           >
             <IoMdCart size={20} /> <h1> Buy Now</h1>
           </div>
         </div>
 
-        <div onClick={addToCartHandler} className=" flex gap-2 px-14 text-sm py-2 rounded-md mt-2 text-[#535656] cursor-pointer hover:bg-slate-300 duration-500 ">
+        <div onClick={addToCartHandler} className=" flex gap-2 md:px-12 md:mx-1 px-7 text-sm py-2 rounded-md mt-2 text-[#535656] cursor-pointer hover:bg-slate-300 duration-500 ">
           <FaCartPlus size={20} /> <h1> Add to Cart</h1>
         </div>
       </div>

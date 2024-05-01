@@ -854,7 +854,7 @@ const DetailPage = () => {
       </div>
 
       <button
-        className="fixed bottom-8 z-20 right-28 bg-blue-500 text-white py-2 px-4 rounded-full shadow-md transition-opacity duration-300 hover:opacity-30 animate-bounce"
+        className="fixed bottom-8 z-20 right-5 md:right-28 bg-blue-500 text-white py-2 px-4 rounded-full shadow-md transition-opacity duration-300 hover:opacity-30 animate-bounce"
         onClick={() => scrollToTop(100)} // Adjust speed by changing the argument (default: 20)
       >
         <FaArrowUp />

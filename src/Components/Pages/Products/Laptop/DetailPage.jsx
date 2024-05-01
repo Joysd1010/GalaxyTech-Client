@@ -73,6 +73,18 @@ const DetailPage = () => {
 
   const handleQnaSubmit = (e) => {
     e.preventDefault();
+    if (!user) {
+      document.getElementById("my_modal_3").close();
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please Log in First",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      navigate("/login", { state: { from: location.pathname } });
+    }
+
     const inputValue = e.target.elements.inputText.value;
 
     const newQuestion = {
@@ -201,10 +213,10 @@ const DetailPage = () => {
   const qnaRef = useRef(null);
   const reviewRef = useRef(null);
   return (
-    <div className="">
-      <div className=" px-10 grid grid-cols-2 pb-4">
+    < >
+      <div className=" px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 pb-4">
         <div>
-          <img src={selectedImage} className="ml-14" alt="Main Image" />
+          <img src={selectedImage} className="md:ml-14" alt="Main Image" />
 
           <div className=" flex gap-2 justify-center">
             {laptop.imageLinks.map((image, index) => (
@@ -222,7 +234,7 @@ const DetailPage = () => {
           <h1 className=" text-2xl text-blue-700">
             {modelname} {brand} {display}
           </h1>
-          <div className="flex gap-5 py-3">
+          <div className="flex flex-wrap gap-5 py-3">
             
             <h1 className=" bg-blue-50 px-3 text-sm text-slate-500 rounded-full">
               Price:{" "}
@@ -288,7 +300,6 @@ const DetailPage = () => {
                   onClick={handleBuyNowClick}
                 >
                   <input
-                    onChange={() => console.log("done")}
                     type="checkbox"
                     name="buynow"
                     value="buynow"
@@ -343,8 +354,8 @@ const DetailPage = () => {
           </form>
         </div>
       </div>
-      <div className="  grid grid-cols-4 gap-5  px-10 bg-[#f0efff] py-5">
-        <div className=" col-span-3">
+      <div className="  grid md:grid-cols-4 gap-5 px-5 md:px-10 bg-[#f0efff] py-5">
+        <div className=" md:col-span-3">
           <section className=" flex gap-5 py-5">
             <button
               onClick={() => {
@@ -387,37 +398,37 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Processor Brand</span>{" "}
-                <span>{laptop?.processor.brand}</span>{" "}
+                <span className=" col-span-2">{laptop?.processor.brand}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Processor Model</span>{" "}
-                <span>{model}</span>{" "}
+                <span className=" col-span-2">{model}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Generation</span>{" "}
-                <span>{laptop?.processor.generation} Gen</span>{" "}
+                <span className=" col-span-2">{laptop?.processor.generation} Gen</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Processor Frequency</span>{" "}
-                <span>{clockSpeed}</span>{" "}
+                <span className=" col-span-2">{clockSpeed}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Processor Core</span>{" "}
-                <span>{core}</span>{" "}
+                <span className=" col-span-2">{core}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Processor Thread</span>{" "}
-                <span>{thread}</span>{" "}
+                <span className=" col-span-2">{thread}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">CPU Cache</span>{" "}
-                <span>{cache}MB</span>{" "}
+                <span className=" col-span-2">{cache}MB</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -428,17 +439,17 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Display Size</span>{" "}
-                <span>{size}</span>{" "}
+                <span className=" col-span-2">{size}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Display Resolution</span>{" "}
-                <span>{resolution}</span>{" "}
+                <span className=" col-span-2">{resolution}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Display Features</span>{" "}
-                <span>{displayFeatures?.join(", ")}</span>{" "}
+                <span className=" col-span-2">{displayFeatures?.join(", ")}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -449,27 +460,27 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">RAM Size</span>{" "}
-                <span>{ramSize} GB</span>{" "}
+                <span className=" col-span-2">{ramSize} GB</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">RAM Type</span>{" "}
-                <span>{ramType}</span>{" "}
+               <span className=" col-span-2">{ramType}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">RAM Frequency</span>{" "}
-                <span>{ramFrequency} MHz</span>{" "}
+               <span className=" col-span-2">{ramFrequency} MHz</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">RAM Slot</span>{" "}
-                <span>{totalRamSlots}</span>{" "}
+               <span className=" col-span-2">{totalRamSlots}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Max Capacity</span>{" "}
-                <span>{maxRamCapacity} GB</span>{" "}
+               <span className=" col-span-2">{maxRamCapacity} GB</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -480,12 +491,12 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Storage Type</span>{" "}
-                <span>{storageType}</span>{" "}
+               <span className=" col-span-2">{storageType}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Capacity</span>{" "}
-                <span>
+               <span className=" col-span-2">
                   {storageSize == 1 ? "1000 GB" : storageSize + " GB"}
                 </span>{" "}
               </h1>
@@ -493,17 +504,17 @@ const DetailPage = () => {
 
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">SSD Slot</span>{" "}
-                <span>{ssdSlot}</span>{" "}
+               <span className=" col-span-2">{ssdSlot}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Storage Expansion Slot</span>{" "}
-                <span>{extraSsdSlot > 0 ? "Yes" : "No"}</span>{" "}
+               <span className=" col-span-2">{extraSsdSlot > 0 ? "Yes" : "No"}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Read/Write Speed</span>{" "}
-                <span>
+               <span className=" col-span-2">
                   {readSpeed}/{writeSpeed} Mbps
                 </span>{" "}
               </h1>
@@ -516,22 +527,22 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Graphics Brand</span>{" "}
-                <span>{laptop?.graphics.brand}</span>{" "}
+               <span className=" col-span-2">{laptop?.graphics.brand}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Model</span>{" "}
-                <span>{laptop?.graphics.model}</span>{" "}
+               <span className=" col-span-2">{laptop?.graphics.model}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Memory Size</span>{" "}
-                <span>{memorySize} GB</span>{" "}
+               <span className=" col-span-2">{memorySize} GB</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Memory type</span>{" "}
-                <span>{memoryType}</span>{" "}
+               <span className=" col-span-2">{memoryType}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -542,12 +553,12 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Keyboard</span>{" "}
-                <span>{keyboardFeatures.join(", ")}</span>{" "}
+               <span className=" col-span-2">{keyboardFeatures.join(", ")}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Touch Pad</span>{" "}
-                <span>{touchpadFeatures?.join(", ")}</span>{" "}
+               <span className=" col-span-2">{touchpadFeatures?.join(", ")}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -558,22 +569,22 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">WebCam</span>{" "}
-                <span>{webcamFeature}</span>{" "}
+               <span className=" col-span-2">{webcamFeature}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Audio</span>{" "}
-                <span>{audioFeature}</span>{" "}
+               <span className=" col-span-2">{audioFeature}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Speaker</span>{" "}
-                <span>{speakerFeature}</span>{" "}
+               <span className=" col-span-2">{speakerFeature}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Audio</span>{" "}
-                <span>{microphoneFeature}</span>{" "}
+               <span className=" col-span-2">{microphoneFeature}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -584,32 +595,32 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">HDMI</span>{" "}
-                <span>{hdmiFeature ? "Yes" : "No"}</span>{" "}
+               <span className=" col-span-2">{hdmiFeature ? "Yes" : "No"}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Audio Port</span>{" "}
-                <span>{audioPort ? "Yes" : "No"}</span>{" "}
+               <span className=" col-span-2">{audioPort ? "Yes" : "No"}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">HeadPhone</span>{" "}
-                <span>{headphonePort ? "Yes" : "No"}</span>{" "}
+               <span className=" col-span-2">{headphonePort ? "Yes" : "No"}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">USB</span>{" "}
-                <span>{usbFeatures.join(", ")}</span>{" "}
+               <span className=" col-span-2">{usbFeatures.join(", ")}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Optical Drive</span>{" "}
-                <span>{opticalDrive ? "Yes" : "No"}</span>{" "}
+               <span className=" col-span-2">{opticalDrive ? "Yes" : "No"}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">I/O Ports</span>{" "}
-                <span>{ioPorts.join(", ")}</span>{" "}
+               <span className=" col-span-2">{ioPorts.join(", ")}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -620,17 +631,17 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">LAN Connect</span>{" "}
-                <span>{lanDetails}</span>{" "}
+               <span className=" col-span-2">{lanDetails}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Wifi</span>{" "}
-                <span>{wifiDetails}</span>{" "}
+               <span className=" col-span-2">{wifiDetails}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">BlueTooth</span>{" "}
-                <span>{bluetoothDetails}</span>{" "}
+               <span className=" col-span-2">{bluetoothDetails}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -641,22 +652,22 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Color</span>{" "}
-                <span>{color}</span>{" "}
+               <span className=" col-span-2">{color}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Weight</span>{" "}
-                <span>{weight}</span>{" "}
+               <span className=" col-span-2">{weight}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Thickness</span>{" "}
-                <span>{thickness}</span>{" "}
+               <span className=" col-span-2">{thickness}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Dimension</span>{" "}
-                <span>{dimensions}</span>{" "}
+               <span className=" col-span-2">{dimensions}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -667,17 +678,17 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Battery Capacity</span>{" "}
-                <span>{capacity}</span>{" "}
+               <span className=" col-span-2">{capacity}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Adapter</span>{" "}
-                <span>{adapterType}</span>{" "}
+               <span className=" col-span-2">{adapterType}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Charging Watt</span>{" "}
-                <span>{adapterWatt} Watt</span>{" "}
+               <span className=" col-span-2">{adapterWatt} Watt</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -687,12 +698,12 @@ const DetailPage = () => {
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">OS</span> <span>{os}</span>{" "}
+                <span className=" text-slate-600">OS</span><span className=" col-span-2">{os}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Architecture</span>{" "}
-                <span>{architecture}</span>{" "}
+               <span className=" col-span-2">{architecture}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -703,12 +714,12 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Warranty </span>{" "}
-                <span>{warrantyType}</span>{" "}
+               <span className=" col-span-2">{warrantyType}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2 mb-5 hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Warranty Period</span>{" "}
-                <span>{warrantyPeriod}</span>{" "}
+               <span className=" col-span-2">{warrantyPeriod}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -785,20 +796,20 @@ const DetailPage = () => {
             {/* ---------------------modal------------------------------ */}
 
             <dialog id="my_modal_2" className="modal">
-              <div className="modal-box">
-                <h3 className="font-bold text-lg">Ask a Question!</h3>
+              <div className="modal-box bg-indigo-50">
+                <h3 className="font-bold text-gray-800 text-lg">Ask a Question!</h3>
                 <form onSubmit={handleQnaSubmit}>
                   <input
                     type="text"
                     required={true}
                     name="inputText"
                     placeholder="Place your  question here..."
-                    className="py-4 border-2 rounded-xl my-3 px-3 w-full border-blue-400 outline-none"
+                    className="py-4 border-2 bg-white rounded-xl my-3 px-3 w-full border-blue-400 outline-none"
                   />
                   <input
                     type="submit"
                     value="Submit"
-                    className="btn btn-primary"
+                    className="btn btn-primary "
                   />
                 </form>
               </div>
@@ -848,7 +859,7 @@ const DetailPage = () => {
       >
         <FaArrowUp />
       </button>
-    </div>
+    </>
   );
 };
 

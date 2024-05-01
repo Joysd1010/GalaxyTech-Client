@@ -7,23 +7,20 @@ import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const LaptopReview = ({ state }) => {
-    
   const [Rating, setRating] = useState(0);
-  
+
   const [Review, refetch] = useReview(state);
-  const {user} = useAuth();
-  const navigate=useNavigate()
- 
+  const { user } = useAuth();
+  const navigate = useNavigate();
+
   const ratingChanged = (newRating) => {
     setRating(newRating);
-    
-  }; 
+  };
 
   const handleReviewSubmit = (e) => {
     e.preventDefault();
     if (!user) {
-
-      document.getElementById("my_modal_3").close()
+      document.getElementById("my_modal_3").close();
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -31,27 +28,27 @@ const LaptopReview = ({ state }) => {
         showConfirmButton: false,
         timer: 1500,
       });
-      navigate('/login', { state: { from: location.pathname } });      
-    
+      navigate("/login", { state: { from: location.pathname } });
     }
 
     const inputValue = e.target.elements.inputText.value;
     if (Rating === 0) {
-        document.getElementById('errorMessage').innerText = 'Please provide a rating!';
-        return; // Exit the function if rating is not provided
-      }
-    
-      // Clear the error message if rating is provided
-      document.getElementById('errorMessage').innerText = '';
+      document.getElementById("errorMessage").innerText =
+        "Please provide a rating!";
+      return; // Exit the function if rating is not provided
+    }
+
+    // Clear the error message if rating is provided
+    document.getElementById("errorMessage").innerText = "";
     const newReview = {
       userImage: user?.photoURL,
       email: user?.email,
       Review: inputValue,
       userName: user?.displayName,
-      Product:state,
+      Product: state,
       Rating: Rating,
-    };  
-   
+    };
+
     fetch("http://localhost:5000/review", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -59,7 +56,6 @@ const LaptopReview = ({ state }) => {
     })
       .then((res) => res.json())
       .then((data) => {
-       
         if (data.insertedId) {
           e.target.reset();
           document.getElementById("my_modal_3").close();
@@ -94,12 +90,12 @@ const LaptopReview = ({ state }) => {
           <button
             className="bg-white duration-500 border-2 border-blue-700 text-blue-700 hover:text-white hover:bg-blue-700 rounded-md px-3 py-2 "
             onClick={() => document.getElementById("my_modal_3").showModal()}
-          > 
+          >
             Place Review
           </button>
         </div>
         <hr />
-        <div className="py-5"> 
+        <div className="py-5">
           {Review.length == 0 ? (
             <div>
               <div className="w-36 h-36 bg-blue-50 mx-auto  rounded-full flex flex-col justify-around">
@@ -119,28 +115,30 @@ const LaptopReview = ({ state }) => {
                 <div key={index}>
                   <div className="py-3 flex items-center gap-5">
                     <div>
-                        <img
-                      src={item.userImage}
-                      className="border-2 w-14 rounded-full p-1 mx-auto"
-                      alt="User Photo"
-                    />
-                    <h1 className=" text-blue-700 text-xs ">{item.userName}</h1>
+                      <img
+                        src={item.userImage}
+                        className="border-2 w-14 rounded-full p-1 mx-auto"
+                        alt="User Photo"
+                      />
+                      <h1 className=" text-blue-700 text-xs ">
+                        {item.userName}
+                      </h1>
                     </div>
-                    
+
                     <div className="">
                       <h1 className="font-bold">◈ {item.Review} </h1>
                       <ReactStars
-                count={5}
-                value={item.Rating}
-                size={24}
-                isHalf={true}
-                emptyIcon={<i className="far fa-star"></i>}
-                halfIcon={<i className="fa fa-star-half-alt"></i>}
-                fullIcon={<i className="fa fa-star"></i>}
-                activeColor="#ffd700"
-                color='#C4E4FF'
-                edit={false}
-              />
+                        count={5}
+                        value={item.Rating}
+                        size={24}
+                        isHalf={true}
+                        emptyIcon={<i className="far fa-star"></i>}
+                        halfIcon={<i className="fa fa-star-half-alt"></i>}
+                        fullIcon={<i className="fa fa-star"></i>}
+                        activeColor="#ffd700"
+                        color="#C4E4FF"
+                        edit={false}
+                      />
                     </div>
                   </div>
                   <hr />
@@ -168,18 +166,19 @@ const LaptopReview = ({ state }) => {
                 count={5}
                 onChange={ratingChanged}
                 size={30}
-               
                 isHalf={true}
                 emptyIcon={<i className="far fa-star"></i>}
                 halfIcon={<i className="fa fa-star-half-alt"></i>}
                 fullIcon={<i className="fa fa-star"></i>}
                 activeColor="#ffd700"
-                color='#86A7FC'
-                
+                color="#86A7FC"
               />
-              <input type="submit" value="Submit" className="btn btn-primary my-3" />
+              <input
+                type="submit"
+                value="Submit"
+                className="btn btn-primary my-3"
+              />
               <div id="errorMessage" className="text-red-600"></div>
-
             </form>
           </div>
           <form method="dialog" className="modal-backdrop">

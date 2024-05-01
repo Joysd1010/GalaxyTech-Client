@@ -202,7 +202,7 @@ const DetailPage = () => {
   const reviewRef = useRef(null);
   return (
     <div className="">
-      <div className=" px-20 grid grid-cols-2 pb-4">
+      <div className=" px-10 grid grid-cols-2 pb-4">
         <div>
           <img src={selectedImage} className="ml-14" alt="Main Image" />
 
@@ -223,11 +223,12 @@ const DetailPage = () => {
             {modelname} {brand} {display}
           </h1>
           <div className="flex gap-5 py-3">
+            
             <h1 className=" bg-blue-50 px-3 text-sm text-slate-500 rounded-full">
               Price:{" "}
               <span className="text-lg text-black">{discountedPrice}$</span>
             </h1>
-            <h1 className=" bg-blue-50 px-3 text-sm text-slate-500 rounded-full">
+            <h1 className=" bg-blue-50 px-3  text-sm text-slate-500 rounded-full">
               Regular Price:{" "}
               <span className="text-lg text-black">{regularPrice}$</span>
             </h1>
@@ -333,11 +334,11 @@ const DetailPage = () => {
               <button
                 type="submit" 
                 disabled={!laptop.quantity>0}
-                className="btn bg-blue-700 text-white hover:text-blue-600"
+                className="btn bg-blue-700 text-white hover:bg-white border-white border-2 hover:border-blue-700 hover:border-2 hover:text-blue-600"
               >
                 Buy Now
               </button>
-              <button   disabled={!laptop.quantity>0} className="btn bg-slate-300">Add to cart</button>
+              <button   disabled={!laptop.quantity>0} className="btn bg-slate-300 hover:bg-gray-200 border-0 hover:text-black">Add to cart</button>
             </section>
           </form>
         </div>
@@ -842,7 +843,7 @@ const DetailPage = () => {
       </div>
 
       <button
-        className="fixed bottom-8 right-28 bg-blue-500 text-white py-2 px-4 rounded-full shadow-md transition-opacity duration-300 hover:opacity-30 animate-bounce"
+        className="fixed bottom-8 z-20 right-28 bg-blue-500 text-white py-2 px-4 rounded-full shadow-md transition-opacity duration-300 hover:opacity-30 animate-bounce"
         onClick={() => scrollToTop(100)} // Adjust speed by changing the argument (default: 20)
       >
         <FaArrowUp />

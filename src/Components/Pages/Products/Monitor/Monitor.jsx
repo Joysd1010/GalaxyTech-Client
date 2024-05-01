@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
+import { GrChapterNext, GrChapterPrevious } from "react-icons/gr";
 
 import MonitorCard from "./MonitorCard";
 import { FaHome } from "react-icons/fa";
+import useScrollOnTOp from "../../../Hooks/useScrollOnTOp";
 
 const Monitor = () => {
+  useScrollOnTOp('monitor')
   const axiosPoint = useAxiosPublic();
   const location = useLocation();
   const param = location.state;
@@ -16,48 +19,84 @@ const Monitor = () => {
   const [resolution, setResolution] = useState([]);
   const [RefreshRate, setRefreshRate] = useState([]);
   const [page, setPage] = useState(1);
-  const [sort, setSort] = useState('');
+  const [totalPage, setToatlPage] = useState(0);
+  const [sort, setSort] = useState("");
+  const [Price, setPrice] = useState(9999999999);
+  let pageNumber = [];
+  for (let i = 1; i <= totalPage; i++) {
+    pageNumber.push(i);
+  }
 
-
-
-  
- useEffect(() => {
 
   const getAllMovies = async () => {
     try {
-      const url = `monitor/get?page=${page}&display.refreshRate=${page}&display.type=${page}&display.resolution=${page}&key.brand=ASuS&price=1200&sortBy=discountDesc`;
-      const { data } = await axios.get(url);
-      setObj(data);
+      const url = `/monitor/get?page=${page}&display.refreshRate=${RefreshRate.toString()}&display.type=${Panel.toString()}&price=${Price}&key.brand=${param}&display.resolution=${resolution.toString()}&sortBy=${sort}`;
+      const response = await axiosPoint.get(url);
+      const resData = response.data;
+      // ---------------------------setting all data ----------------------------------
+      setData(resData.monitors);
+      setMaxPrice(resData.maxDiscountPrice);
+      setMinPrice(resData.minDiscountPrice);
+      setToatlPage(resData.totalpage);
     } catch (err) {
       console.log(err);
     }
   };
 
-  getAllMovies();
+  useEffect(()=>{
+
+    setPage(1)
+getAllMovies()
+  },[param])
+
+  useEffect(() => {
     
-  }, []);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    getAllMovies();
+    
+  }, [page, RefreshRate, Panel, resolution, param, Price, sort]);
 
- 
+  console.log(data);
 
-  
-  const HandleChoice = (e,attribute, value) => {
-     
+  //-------------------------Price setting ------------------------------------
+  const handleOnchange = (value) => {
+    setPrice(value);
+  };
+  //-----------------------resolution filtering data-------------------------
+  const filterByRes = (e, value) => {
     if (e.target.checked) {
-      
+      setResolution([...resolution, value]);
     } else {
-     
+      const tempArray = resolution?.filter((item) => item != value);
+      setResolution([...tempArray]);
     }
+    setPage(1)
   };
-  //-------------------------Shorting------------------------------------
-
-  const handleSortByPrice = async (event) => {
-    
-    
+  //------------------------Panel type sorting ------------------------------
+  const filterByPanel = (e, value) => {
+    if (e.target.checked) {
+      setPanel([...Panel, value]);
+    } else {
+      const tempArray = Panel?.filter((item) => item != value);
+      setPanel([...tempArray]);
+    }
+    setPage(1)
+  };
+  //--------------------------Filter by refreshRate ---------------------------------
+  const filterByRefresh = (e, value) => {
+    if (e.target.checked) {
+      setRefreshRate([...RefreshRate, value]);
+    } else {
+      const tempArray = RefreshRate?.filter((item) => item != value);
+      setRefreshRate([...tempArray]);
+    }
+    setPage(1)
+  };
+  // ------------------------------sorting based on price----------------------------------
+  const handleSortByPrice = (selectedValue) => {
+    setSort(selectedValue);
   };
 
-  
-  //-----------------------fetching data-------------------------
-  
   return (
     <div className="bg-indigo-100 px-10 py-5 grid grid-cols-5 gap-2">
       <div className=" flex flex-col gap-2">
@@ -82,9 +121,9 @@ const Monitor = () => {
           </div>
 
           <div className="px-5 pb-2 text-center">
-            <h1> {Range == 0 ? "Set Range" : "Under"}</h1>
+            <h1> {Price > MaxPrice ? "Set Range under" : "Under"}</h1>
             <hr className="mx-2/3" />
-            <h1>{Range} $</h1>
+            <h1>{Price > MaxPrice ? MaxPrice : Price} $</h1>
           </div>
         </div>
 
@@ -99,7 +138,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"resolution", "1920x1080")}
+                onChange={(e) => filterByRes(e, "1920x1080")}
                 className="w-5    "
                 value=""
                 id="pexel1"
@@ -112,7 +151,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"resolution", "2560x1440")}
+                onChange={(e) => filterByRes(e, "2560x1440")}
                 className="w-5"
                 value=""
                 id="pexel2"
@@ -125,14 +164,13 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"resolution", "3840x2160")}
+                onChange={(e) => filterByRes(e, "3840x2160")}
                 className="w-5"
                 value=""
                 id="pexel3"
               />{" "}
               <p> 4K</p>
             </label>
-            
           </div>
         </div>
         {/* ------------------------------Panel type------------------------ */}
@@ -146,8 +184,8 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"type", "VA")}
-                className="w-5    "
+                onChange={(e) => filterByPanel(e, "VA")}
+                className="w-5  "
                 value=""
                 id="core1"
               />{" "}
@@ -159,7 +197,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"type", "IPS")}
+                onChange={(e) => filterByPanel(e, "IPS")}
                 className="w-5"
                 value=""
                 id="core2"
@@ -172,7 +210,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"type", "TN")}
+                onChange={(e) => filterByPanel(e, "TN")}
                 className="w-5"
                 value=""
                 id="core3"
@@ -185,7 +223,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"type", "QLED")}
+                onChange={(e) => filterByPanel(e, "QLED")}
                 className="w-5"
                 value=""
                 id="core4"
@@ -194,7 +232,6 @@ const Monitor = () => {
             </label>
           </div>
         </div>
-
         {/*-----------------------------Refresh Rate---------------------------------- */}
         <div className=" bg-white rounded-md ">
           <h1 className=" text-lg font-medium py-2 px-5 "> Refresh Rate</h1>
@@ -206,7 +243,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"refreshRate", "60Hz")}
+                onChange={(e) => filterByRefresh(e, "60Hz")}
                 className="w-5    "
                 value=""
                 id="refresh1"
@@ -219,7 +256,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"refreshRate", "75Hz")}
+                onChange={(e) => filterByRefresh(e, "75Hz")}
                 className="w-5"
                 value=""
                 id="refresh2"
@@ -232,7 +269,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"refreshRate", "144Hz")}
+                onChange={(e) => filterByRefresh(e, "144Hz")}
                 className="w-5"
                 value=""
                 id="refresh3"
@@ -245,7 +282,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"refreshRate", "165Hz")}
+                onChange={(e) => filterByRefresh(e, "165Hz")}
                 className="w-5"
                 value=""
                 id="refresh4"
@@ -258,7 +295,7 @@ const Monitor = () => {
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"refreshRate", "240Hz")}
+                onChange={(e) => filterByRefresh(e, "240Hz")}
                 className="w-5"
                 value=""
                 id="refresh5"
@@ -267,10 +304,8 @@ const Monitor = () => {
             </label>
           </div>
         </div>
-
       </div>
-
-      {/* <div className=" col-span-4 ">
+      <div className=" col-span-4 ">
         <div className=" px-5 py-3 bg-white items-center  flex justify-between  rounded-md">
           <div className="font-semibold text-lg flex items-center gap-1">
             <Link to={"/"}>
@@ -282,19 +317,19 @@ const Monitor = () => {
             <p className=" text-gray-500">Sort By : </p>{" "}
             <div>
               <select
-                onChange={handleSortByPrice}
+                onChange={(event) => handleSortByPrice(event.target.value)}
                 className="bg-slate-200 w-42 rounded-md px-3 py-2 outline-none"
               >
                 <option value="1">Default</option>
-                <option value="2">Price (low to high)</option>
-                <option value="3"> Price (high to low)</option>
+                <option value="discountAsc">Price (low to high)</option>
+                <option value="discountDesc"> Price (high to low)</option>
               </select>
             </div>
           </div>
         </div>
-        {UseMonitor?.length > 0 ? (
+        {data?.length > 0 ? (
           <div className=" grid grid-cols-4 gap-3 pt-2 ">
-            {UseMonitor.map((item) => (
+            {data.map((item) => (
               <MonitorCard key={item._id} state={item} />
             ))}
           </div>
@@ -314,9 +349,14 @@ const Monitor = () => {
         )}
 
         <div className="pagination flex gap-6 py-6 ">
-        
+          <button onClick={()=>setPage(page-1)} className={`flex ${page<=1?'btn-disabled text-gray-500':'cursor-pointer font-bold hover:text-red-600 underline'} items-center gap-1 `} ><GrChapterPrevious />Prev</button>
+          {
+            pageNumber.map(pa=><button onClick={()=>setPage(pa)} className={`flex ${pa==page?'px-3 bg-red-600 text-white rounded-md':'font-bold underline px-3'} items-center gap-1 `}>{pa}</button>)
+          }
+          <div  onClick={()=>{setPage(page+1)}} className={`flex ${page>=totalPage?'btn-disabled text-gray-500':'cursor-pointer font-bold hover:text-red-600 underline'} items-center gap-1 `}>Next<GrChapterNext /></div>
+
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

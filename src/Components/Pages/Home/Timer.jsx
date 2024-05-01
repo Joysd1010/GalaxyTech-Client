@@ -39,31 +39,31 @@ const Timer = () => {
     <div>
       <div className=" border-3 border-blue-700 rounded-md flex gap-2">
         <div>
-          <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-7 bg-blue-600 w-full text-white">
+          <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-4 md:px-7 bg-blue-600 w-full text-white">
             Days
           </h1>
 
-          <h1 className=" text-center rounded-md text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.days}</h1>
+          <h1 className=" text-center rounded-md text-3xl md:text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.days}</h1>
         </div>
         <div>
-          <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-7 bg-blue-600 w-full text-white">
+          <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-4 md:px-7 bg-blue-600 w-full text-white">
             Hours
           </h1>
 
-          <h1 className=" text-center rounded-md text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.hours}</h1>
+          <h1 className=" text-center rounded-md text-3xl md:text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.hours}</h1>
         </div>
         <div>
           <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-3 bg-blue-600 w-full text-white">
             Minutes
           </h1>
 
-          <h1 className=" text-center rounded-md text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.minutes}</h1>
+          <h1 className=" text-center rounded-md text-3xl md:text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.minutes}</h1>
         </div>
         <div>
           <h1 className=" text-center rounded-md text-xl py-2 mb-2 px-3 bg-blue-600 w-full text-white">
 Seconds          </h1>
 
-          <h1 className=" text-center rounded-md text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.seconds}</h1>
+          <h1 className=" text-center rounded-md text-3xl md:text-4xl py-2 mb-2 bg-blue-600 w-full text-white">{time.seconds}</h1>
         </div>
       </div>
       

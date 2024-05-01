@@ -101,7 +101,8 @@ const NavBar = () => {
   ];
 
   return (
-    <div className=" px-20 z-40 py-3 shadow-md sticky flex justify-around gap-x-8">
+    <div className=" px-5 md:px-20 z-40 overflow-x-auto   md:py-3 shadow-md sticky flex justify-around gap-x-8 md:overflow-x-visible">
+
       <DeskTop />
       <NavTemplate
         element={LaptopJson}

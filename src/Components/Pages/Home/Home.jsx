@@ -68,8 +68,8 @@ const Home = () => {
 
   return (
     <div className=" ">
-      <div className="flex gap-2 mx-5">
-        <div className="w-2/3">
+      <div className="flex gap-2 flex-col md:flex-row mx-5">
+        <div className="md:w-2/3">
           <Slider />
         </div>
         <div className=" w-full">
@@ -78,12 +78,12 @@ const Home = () => {
             src="https://img.freepik.com/premium-vector/cyber-monday-sale-banner-template_7087-895.jpg"
             alt=""
           />
-          <h1 className="text-white bg-blue-700 text-2xl text-center rounded-lg my-3 py-3 mr-4">
+          <h1 className="text-white mx-5 bg-blue-700 text-2xl text-center rounded-lg my-3 py-3 mr-4">
             -:Offers time left:-
           </h1>
           <Timer />
           <img
-            className=" w-[420px]"
+            className=" w-full md:w-[420px]"
             src="https://i.postimg.cc/pV3k6vvj/new-items.png"
             alt=""
           />
@@ -109,32 +109,35 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {
-          UseGpu.length>0?<div className=" grid py-5 gap-10 grid-cols-4 px-20 bg-blue-100">
-          {UseGpu?.map((item) => (
-            <GpuCard key={item._id} state={item} />
-          ))}
-          {UseGpu?.map((item) => (
-            <GpuCard key={item._id} state={item} />
-          ))}
-          {UseGpu?.map((item) => (
-            <GpuCard key={item._id} state={item} />
-          ))}
-          {UseRam?.map((item) => (
-            <RamCard key={item._id} state={item} />
-          ))}
-       
-        </div>:<div className=" flex justify-around"><MagnifyingGlass
-  visible={true}
-  height="180"
-  width="280"
-  ariaLabel="magnifying-glass-loading"
-  wrapperStyle={{}}
-  wrapperClass="magnifying-glass-wrapper"
-  glassColor="#c0efff"
-  color="#e15b64"
-  /></div>
-        }
+        {UseGpu.length > 0 ? (
+          <div className=" grid py-5 gap-10 md:grid-cols-4 px-5 md:px-20 bg-blue-100">
+            {UseGpu?.map((item) => (
+              <GpuCard key={item._id} state={item} />
+            ))}
+            {UseGpu?.map((item) => (
+              <GpuCard key={item._id} state={item} />
+            ))}
+            {UseGpu?.map((item) => (
+              <GpuCard key={item._id} state={item} />
+            ))}
+            {UseRam?.map((item) => (
+              <RamCard key={item._id} state={item} />
+            ))}
+          </div>
+        ) : (
+          <div className=" flex justify-around">
+            <MagnifyingGlass
+              visible={true}
+              height="180"
+              width="280"
+              ariaLabel="magnifying-glass-loading"
+              wrapperStyle={{}}
+              wrapperClass="magnifying-glass-wrapper"
+              glassColor="#c0efff"
+              color="#e15b64"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

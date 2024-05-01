@@ -16,7 +16,7 @@ const Category = () => {
       <h1 className=" text-xl text-center">
         Get Your Desired Product from Featured Category!
       </h1>
-      <div className="pt-5 grid grid-cols-5 mx-28 gap-3">
+      <div className="pt-5 grid grid-cols-3 md:grid-cols-5 mx-5 md:mx-28 gap-3">
         <Link to={`laptop`} state={"All"}>
           {" "}
           <div className=" gap-1 flex flex-col items-center hover:border-red-600 hover:text-red-600 py-3 hover:scale-105 duration-500 bg-slate-200 border-slate-600 border-2 rounded-md">

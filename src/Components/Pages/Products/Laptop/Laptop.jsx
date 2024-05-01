@@ -3,226 +3,111 @@ import { Link, useLocation } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import LapTopCard from "./LapTopCard";
 import { FaHome } from "react-icons/fa";
+import { GrChapterNext, GrChapterPrevious } from "react-icons/gr";
+import './laptop.css'
+
 
 const Laptop = () => {
   const axiosPoint = useAxiosPublic();
   const location = useLocation();
-  const [AllLaptop, setLaptop] = useState([]);
-  const [UseLaptop, setUseLaptop] = useState([]);
-  const [Range, setRange] = useState(0);
-  const [MinPrice, setMinPrice] = useState(0);
-  const [CurrentPage, setPage] = useState(1);
-  const postPerPage=12;
-  const [filterState, setStateNumber] = useState(0);
-
-  const [MaxPrice, setMaxPrice] = useState(0);
   const param = location.state;
-  const setCurrentPost = () => {
-    
-      const start = (CurrentPage -1)* postPerPage ;
-      const end = postPerPage * CurrentPage;
-    
-  
-    console.log(start, end);
-    setUseLaptop(AllLaptop.slice(start, end));
-  };
-  
-  const handlePageChange = (newPage) => {
-    console.log('this page', newPage);
-    setPage(newPage);
-  };
-  
+  const [data, setData] = useState([]);
+  const [MinPrice, setMinPrice] = useState(0);
+  const [MaxPrice, setMaxPrice] = useState(0);
+
+  const [Processor, setProcessor] = useState([]);
+  const [Graphics, setGraphics] = useState([]);
+  const [Core, setCore] = useState([]);
+
+  const [page, setPage] = useState(1);
+  const [totalPage, setToatlPage] = useState(0);
+  const [sort, setSort] = useState("");
+  const [Price, setPrice] = useState(9999999999);
+  let pageNumber = [];
+  for (let i = 1; i <= totalPage; i++) {
+    pageNumber.push(i);
+  }
+
   useEffect(() => {
-    console.log("Current page", CurrentPage);
-    setCurrentPost();
-  }, [CurrentPage]);
+    const getLaptops = async () => {
+      try {
+        const url = `/laptop/get?page=${page}&Processor=${Processor.toString()}&Graphics=${Graphics.toString()}&core=${Core.toString()}&Brand=${param}&price=${Price}&sortBy=${sort}`;
+        const response = await axiosPoint.get(url);
+        const resData = response.data;
+       
+        // ---------------------------setting all data ----------------------------------
+        setData(resData.laptops);
+        setMaxPrice(resData.maxDiscountPrice);
+        setMinPrice(resData.minDiscountPrice);
+        setToatlPage(resData.totalpage);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    getLaptops();
+  }, [page, Processor, Graphics, Core, param, Price, sort]);
 
-  const generatePageNumbers = (totalPages, currentPage) => {
-    const pageNumbers = [];
+  console.log(data);
 
-    if (currentPage > 1) {
-      pageNumbers.push(
-        <button
-          key="prev"
-          onClick={() => handlePageChange(currentPage - 1)}
-          className="prev-btn underline hover:text-red-600"
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
-      );
-    } else {
-      pageNumbers.push(
-        <button key="prev" className="prev-btn btn-disabled text-gray-400">
-          Previous
-        </button>
-      );
-    }
-
-    for (let i = 1; i <= totalPages; i++) {
-      pageNumbers.push(
-        <button
-          key={i}
-          onClick={() => handlePageChange(i)}
-          className={
-            i === currentPage
-              ? "active text-white px-3 bg-red-600 rounded-md"
-              : ""
-          }
-          disabled={i === currentPage}
-        >
-          {i}
-        </button>
-      );
-    }
-
-    if (currentPage < totalPages) {
-      pageNumbers.push(
-        <button
-          key="next"
-          onClick={() =>{let pageNow=CurrentPage+1; handlePageChange(pageNow)}}
-          className="next-btn underline hover:text-red-600"
-          disabled={currentPage === totalPages}
-        >
-          Next
-        </button>
-      );
-    } else {
-      pageNumbers.push(
-        <button key="next" className="next-btn btn-disabled text-gray-400">
-          Next
-        </button>
-      );
-    }
-
-    return pageNumbers;
-  };
-  const getAllLaptop = async () => {
-    try {
-      const response = await axiosPoint.get("/laptop");
-     
-      setLaptop(response.data);
-      setUseLaptop(response.data.slice(0,12));
-      setMinPrice(
-        Math.min(
-          ...response.data.map((item) => item.keyFeatures.discountedPrice)
-        )
-      );
-      setMaxPrice(
-        Math.max(
-          ...response.data.map((item) => item.keyFeatures.discountedPrice)
-        )
-      );
-    } catch (error) {
-      console.error("Error fetching laptop data:", error);
-    }
-  };
-
-  const getLaptopByBrand = async (parameter) => {
-    try {
-      const response = await axiosPoint.get(`/laptop/${parameter}`);
-      console.log(response.data);
-      setLaptop(response.data);
-      setUseLaptop(response.data.slice(0,12));
-      setMinPrice(
-        Math.min(
-          ...response.data.map((item) => item.keyFeatures.discountedPrice)
-        )
-      );
-      setMaxPrice(
-        Math.max(
-          ...response.data.map((item) => item.keyFeatures.discountedPrice)
-        )
-      );
-    } catch (error) {
-      console.error("Error fetching laptop data:", error);
-    }
-  };
-  //------------------------Price filter-----------------
+  //-------------------------Price setting ------------------------------------
   const handleOnchange = (value) => {
-    setRange(value);
-    setUseLaptop(
-      AllLaptop.filter((item) => item.keyFeatures.discountedPrice <= value).slice(0,12)
-    );
+    setPrice(value);
   };
-  //-------------------------UserDefinedFilter--------------------
-  const HandleChoice = (e, container, attribute, value) => {
-    console.log(e);
-
+  //-----------------------resolution filtering data-------------------------
+  const HandleChoice = (e, state, value) => {
     if (e.target.checked) {
-      setStateNumber(filterState + 1);
-      const filteredArray = AllLaptop.filter(
-        (item) => item[container][attribute] == value
-      );
-      setUseLaptop([...filteredArray]);
-      console.log(filterState);
+      switch (state) {
+        case "processor":
+          setProcessor([...Processor, value]);
+          break;
+  
+        case "core":
+          setCore([...Core, value]);
+          break;
+  
+        case "graphics":
+          setGraphics([...Graphics, value]);
+          break;
+  
+        default:
+          break;
+      }
     } else {
-      setStateNumber(filterState - 1);
-      setUseLaptop(AllLaptop);
-      console.log(filterState);
+      switch (state) {
+        case "processor":
+          const tempProcessor = Processor.filter((val) => val !== value);
+          setProcessor([...tempProcessor]);
+          break;
+  
+        case "core":
+          const tempCore = Core.filter((val) => val !== value);
+          setCore([...tempCore]);
+          break;
+  
+        case "graphics":
+          const tenpGpu = Graphics.filter((val) => val !== value);
+          setGraphics(tenpGpu);
+          break;
+  
+        default:
+          break;
+      }
     }
   };
-const HandleChoiceBtn=(container, attribute, value)=>{
-  setStateNumber(filterState+1)
-setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
-}
-  useEffect(() => {
-    console.log(filterState);
-    setStateNumber(filterState);
-  }, [filterState]);
-  //-------------------------Shorting------------------------------------
-
-  const handleSortByPrice = async (event) => {
-    const sortBy = parseInt(event.target.value);
   
-    switch (sortBy) {
-      case 2:
-        const sortedByPriceAsc = await shortingAsc(UseLaptop);
-        setUseLaptop(sortedByPriceAsc);
-        break;
-      case 3:
-        const sortedByPriceDesc = shortingDesc(UseLaptop);
-        setUseLaptop(sortedByPriceDesc);
-        break;
-      default:
-        break;
-    }
+  // ------------------------------sorting based on price----------------------------------
+  const handleSortByPrice = (selectedValue) => {
+    setSort(selectedValue);
   };
 
-  
-  const shortingAsc = async (laptop) => {
-    const filterLaptop = [...laptop].sort(
-      (a, b) => a.keyFeatures.discountedPrice - b.keyFeatures.discountedPrice
-    );
-    return filterLaptop;
-  };
-  
-  const shortingDesc = (laptop) => {
-    const filterLaptop = [...laptop].sort(
-      (a, b) => b.keyFeatures.discountedPrice - a.keyFeatures.discountedPrice
-    );
-    return filterLaptop;
-  };
-
-
-  //-----------------------fetching data-------------------------
-  useEffect(() => {
-    if (param === "All") {
-      getAllLaptop();
-    } else {
-      getLaptopByBrand(param);
-    }
-    setCurrentPost();
-  }, [param]);
-
-  
   return (
     <div className="bg-indigo-100 px-10 py-5 grid grid-cols-5 gap-2">
       <div className=" flex flex-col gap-2">
         {/*-------------------------- Price range adjuster-------------------------------- Intel*/}
 
         <div className=" bg-white rounded-md">
-          <h1 className=" text-lg font-medium py-2 px-5 "> Price Range</h1>
+          <h1 className=" text-lg font-medium py-2 px-5 text-center "> Price Range</h1>
           <hr />
           <div className="px-5 py-3">
             <div className=" flex justify-between px-2">
@@ -236,34 +121,47 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
               max={MaxPrice}
               defaultValue={MaxPrice}
               className="range border-2 bg-white  range-error "
-             
             />
-            
           </div>
 
           <div className="px-5 pb-2 text-center">
-          <h1> {Range==0?'Set Range':'Under'}</h1>
+            <h1> {Price > MaxPrice ? "Set Range under" : "Under"}</h1>
             <hr className="mx-2/3" />
-            <h1> {Range}</h1>          </div>
+            <h1>{Price > MaxPrice ? MaxPrice : Price} $</h1>
+          </div>
         </div>
 
         {/*-----------------------------Processor Filter---------------------------------- */}
         <div className=" bg-white rounded-md ">
           <h1 className=" text-lg font-medium py-2 px-5 "> Processor</h1>
           <hr />
-          <div className=" px-5 py-2 class-name flex gap-2">
-            <button
-              onClick={() => HandleChoiceBtn("processor", "brand", "Intel")}
-              className=" px-3 bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
+          <div className=" px-5 py-2 class-name">
+          <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Process"
             >
-              Intel
-            </button>
-            <button
-              onClick={() => HandleChoiceBtn("processor", "brand", "AMD")}
-              className=" px-3 bg-red-600 text-white btn  hover:bg-red-600 "
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e, "processor", "Intel")}
+                className="w-5    "
+                value=""
+                id="Process"
+              />{" "}
+              <p> Intel</p>
+            </label>
+            <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="Process2"
             >
-              AMD
-            </button>
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e, "processor", 'AMD')}
+                className="w-5 custom-checkbox"
+                value=""
+                id="Process2"
+              />{" "}
+              <p> AMD</p>
+            </label>
           </div>
         </div>
         {/* ------------------------------Processor core------------------------ */}
@@ -277,21 +175,20 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"processor", "core", 4)}
+                onChange={(e) => HandleChoice(e, "core", 4)}
                 className="w-5    "
                 value=""
                 id="core1"
-              />{" "} 
-                
+              />{" "}
               <p> 4</p>
             </label>
             <label
               className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
               htmlFor="core2"
-            >   
+            >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"processor", "core", 6)}
+                onChange={(e) => HandleChoice(e,"core", 6)}
                 className="w-5"
                 value=""
                 id="core2"
@@ -304,7 +201,7 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
             >
               <input
                 type="checkbox"
-                onChange={(e) => HandleChoice(e,"processor", "core", 8)}
+                onChange={(e) => HandleChoice(e,"core", 8)}
                 className="w-5"
                 value=""
                 id="core3"
@@ -318,25 +215,47 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
         <div className=" bg-white rounded-md ">
           <h1 className=" text-lg font-medium py-2 px-5 "> Graphics</h1>
           <hr />
-          <div className=" px-5 py-2 class-name flex flex-wrap  gap-2">
-            <button
-              onClick={() => HandleChoiceBtn("graphics", "brand", "Intel")}
-              className=" px-2 bg-blue-700 text-white btn btn-active hover:bg-blue-700 "
+          <div className=" px-5 py-2 class-name flex flex-col gap-4">
+          <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="gpu1"
             >
-              Intel
-            </button>
-            <button
-              onClick={() => HandleChoiceBtn("graphics", "brand", "AMD")}
-              className=" px-2 bg-red-600 text-white btn btn-active hover:bg-red-600 "
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"graphics",  "Intel")}
+                className="w-5    "
+                value=""
+                id="gpu1"
+              />{" "}
+              <p> Intel Irish</p>
+            </label>
+          <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="gpu2"
             >
-              AMD Radeon
-            </button>
-            <button
-              onClick={() => HandleChoiceBtn("graphics", "brand", "Nvidia")}
-              className=" px-2 bg-[#73B301] text-white btn btn-active hover:bg-[#73B301] "
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"graphics",  "Nvidia")}
+                className="w-5 "
+                value=""
+                style={{ backgroundColor: 'white' }}
+                id="gpu2"
+              />{" "}
+              <p>NVIDIA</p>
+            </label>
+          <label
+              className="flex hover:cursor-pointer gap-2 hover:bg-indigo-50 p-1 rounded-sm"
+              htmlFor="gpu3"
             >
-              NVIDIA
-            </button>
+              <input
+                type="checkbox"
+                onChange={(e) => HandleChoice(e,"graphics",  "AMD")}
+                className="w-5    "
+                value=""
+                id="gpu3"
+              />{" "}
+              <p> AMD Radeon</p>
+            </label>
           </div>
         </div>
       </div>
@@ -348,20 +267,20 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
             <p className=" text-gray-500">Sort By : </p>{" "}
             <div>
               <select
-                onChange={handleSortByPrice}
+                onChange={(event) => handleSortByPrice(event.target.value)}
                 className="bg-slate-200 w-42 rounded-md px-3 py-2 outline-none"
               >
                 <option value="1">Default</option>
-                <option value="2">Price (low to high)</option>
-                <option value="3"> Price (high to low)</option>
+                <option value="discountAsc">Price (low to high)</option>
+                <option value="discountDesc"> Price (high to low)</option>
               </select>
             </div>
           </div>
         </div>
-        {UseLaptop?.length > 1 ?<div className=" grid grid-cols-4 gap-3 pt-2 ">
+        {data?.length > 0 ?<div className=" grid grid-cols-4 gap-3 pt-2 ">
          
           {
-            UseLaptop.map((item) => (
+            data.map((item) => (
              
               <LapTopCard key={item._id} state={item}  />
             ))
@@ -372,18 +291,16 @@ setUseLaptop(AllLaptop.filter((item)=>item[container][attribute]==value))
         }
         
         <div className="pagination flex gap-6 py-6 ">
-        {filterState == 0
-            ? generatePageNumbers(
-                Math.ceil(AllLaptop.length / postPerPage),
-                CurrentPage
-              )
-            : generatePageNumbers(
-                Math.ceil(UseLaptop.length / postPerPage),
-                CurrentPage
-              )}
+          <button onClick={()=>setPage(page-1)} className={`flex ${page<=1?'btn-disabled text-gray-500':'cursor-pointer font-bold hover:text-red-600 underline'} items-center gap-1 `} ><GrChapterPrevious />Prev</button>
+          {
+            pageNumber.map(pa=><button onClick={()=>setPage(pa)} className={`flex ${pa==page?'px-3 bg-red-600 text-white rounded-md':'font-bold underline px-3'} items-center gap-1 `}>{pa}</button>)
+          }
+          <div  onClick={()=>setPage(page+1)} className={`flex ${page>=totalPage?'btn-disabled text-gray-500':'cursor-pointer font-bold hover:text-red-600 underline'} items-center gap-1 `}>Next<GrChapterNext /></div>
+
+        </div>
         </div>
       </div>
-    </div>
+      
   );
 };
 

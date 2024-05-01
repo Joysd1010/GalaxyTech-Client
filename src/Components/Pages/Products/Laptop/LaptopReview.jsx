@@ -18,6 +18,10 @@ const LaptopReview = ({ state }) => {
 
   const handleReviewSubmit = (e) => {
     e.preventDefault();
+    if (user) {
+      
+    }
+
     const inputValue = e.target.elements.inputText.value;
     if (Rating === 0) {
         document.getElementById('errorMessage').innerText = 'Please provide a rating!';
@@ -121,6 +125,8 @@ const LaptopReview = ({ state }) => {
                 halfIcon={<i className="fa fa-star-half-alt"></i>}
                 fullIcon={<i className="fa fa-star"></i>}
                 activeColor="#ffd700"
+                color='#C4E4FF'
+                edit={false}
               />
                     </div>
                   </div>
@@ -133,27 +139,30 @@ const LaptopReview = ({ state }) => {
 
         {/* ---------------------modal------------------------------ */}
 
-        <dialog id="my_modal_3" className="modal">
-          <div className="modal-box">
-            <h3 className="font-bold text-lg">Place a Review!</h3>
+        <dialog id="my_modal_3" className="modal ">
+          <div className="modal-box bg-indigo-50">
+            <h3 className="font-bold text-lg text-gray-800">Place a Review!</h3>
             <form onSubmit={handleReviewSubmit}>
               <input
                 type="text"
                 required={true}
                 name="inputText"
                 placeholder="Express  your thoughts for this product here..."
-                className="py-4 border-2 rounded-xl my-3 px-3 w-full border-blue-400 outline-none"
+                className="py-4 border-2 rounded-xl my-3 px-3 w-full bg-white border-blue-400 outline-none"
               />
-              <h1>Give a rating </h1>
+              <h1 className=" text-gray-700">Give a rating </h1>
               <ReactStars
                 count={5}
                 onChange={ratingChanged}
                 size={30}
+               
                 isHalf={true}
                 emptyIcon={<i className="far fa-star"></i>}
                 halfIcon={<i className="fa fa-star-half-alt"></i>}
                 fullIcon={<i className="fa fa-star"></i>}
                 activeColor="#ffd700"
+                color='#86A7FC'
+                
               />
               <input type="submit" value="Submit" className="btn btn-primary my-3" />
               <div id="errorMessage" className="text-red-600"></div>

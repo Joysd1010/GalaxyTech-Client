@@ -34,7 +34,7 @@ const DeskTop = () => {
             <div onMouseEnter={handleOpen}
                 onMouseLeave={handleClose}
                 tabIndex={0}
-                className="dropdown-content z-[1]  flex flex-col   shadow-md bg-base-100 border-t-4 border-t-[#FF0303] w-40">
+                className="dropdown-content z-[1]  flex flex-col   bg-white shadow-md  border-t-4 border-t-[#FF0303] w-40">
                 <div onMouseEnter={subMenuHandlerOpen}
                     onMouseLeave={subMenuHandlerClose}
                     className="dropdown dropdown-hover dropdown-right hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
@@ -44,7 +44,7 @@ const DeskTop = () => {
                     </div>
 
                     {
-                    Submenu && (<ul tabindex="0" className="dropdown-content z-[1]  shadow bg-base-100  w-40">
+                    Submenu && (<ul tabindex="0" className="dropdown-content z-[1]  shadow  bg-white  w-40">
                         <li className=" text-black hover:text-white text-sm hover:bg-[#FF0303] py-1 px-3">
                            <NavLink to={'intelpc'}>Intel PC</NavLink> 
                         </li>

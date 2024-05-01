@@ -10,9 +10,9 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [error, setError] = useState();
-console.log(location.state)
-  const from = location?.state || "/";
- 
+
+  const from = location?.state?.from || "/";
+
   const {
     register,
     handleSubmit,

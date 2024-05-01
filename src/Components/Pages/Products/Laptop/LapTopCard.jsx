@@ -41,8 +41,7 @@ const LapTopCard = ({ state }) => {
         timer: 2500,
       });
 
-      navigate("/login");
-    } else {
+      navigate('/login', { state: { from: location.pathname } });    } else {
       navigate("/buynow", {
         state: {
           from: "/",
@@ -80,8 +79,7 @@ const LapTopCard = ({ state }) => {
         timer: 2500,
       });
 
-      navigate("/login");
-    } else {
+      navigate('/login', { state: { from: location.pathname } });    } else {
 
     fetch("http://localhost:5000/cart", {
       method: "POST",

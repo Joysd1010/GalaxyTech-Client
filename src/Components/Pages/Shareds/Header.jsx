@@ -24,8 +24,7 @@ import { ImMenu } from "react-icons/im";const Header = () => {
         showConfirmButton: false,
         timer: 2500,
       });
-      navigate("/login");
-    }
+      navigate('/login', { state: { from: location.pathname } });    }
     document.getElementById("my_modal_6").showModal();
   };
   const handleDeletFromcart = (ItemId) => {
@@ -166,8 +165,7 @@ import { ImMenu } from "react-icons/im";const Header = () => {
                 <div className="flex gap-1">
                   <p
                     onClick={() => {
-                      navigate("/login", { state: location.pathname });
-                    }}
+                      navigate('/login', { state: { from: location.pathname } });                    }}
                     className=" cursor-pointer hover:text-red-400 text-xs text-white"
                   >
                     Log in
@@ -175,8 +173,7 @@ import { ImMenu } from "react-icons/im";const Header = () => {
                   <p className=" text-xs text-white"> Or</p>{" "}
                   <p
                     onClick={() => {
-                      navigate("/login", { state: location.pathname });
-                    }}
+                      navigate('/login', { state: { from: location.pathname } });                    }}
                     className=" cursor-pointer hover:text-red-400 text-xs text-white"
                   >
                     Sign Up

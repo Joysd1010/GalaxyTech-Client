@@ -4,13 +4,16 @@ import useReview from "../../../Hooks/useReview";
 import { TbReportSearch } from "react-icons/tb";
 import useAuth from "../../../Hooks/useAuth";
 import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const LaptopReview = ({ state }) => {
     
   const [Rating, setRating] = useState(0);
+  
   const [Review, refetch] = useReview(state);
   const {user} = useAuth();
-
+  const navigate=useNavigate()
+ 
   const ratingChanged = (newRating) => {
     setRating(newRating);
     
@@ -18,8 +21,18 @@ const LaptopReview = ({ state }) => {
 
   const handleReviewSubmit = (e) => {
     e.preventDefault();
-    if (user) {
-      
+    if (!user) {
+
+      document.getElementById("my_modal_3").close()
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please Log in First",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      navigate('/login', { state: { from: location.pathname } });      
+    
     }
 
     const inputValue = e.target.elements.inputText.value;
@@ -148,7 +161,7 @@ const LaptopReview = ({ state }) => {
                 required={true}
                 name="inputText"
                 placeholder="Express  your thoughts for this product here..."
-                className="py-4 border-2 rounded-xl my-3 px-3 w-full bg-white border-blue-400 outline-none"
+                className="py-4 text-black border-2 rounded-xl my-3 px-3 w-full bg-white border-blue-400 outline-none"
               />
               <h1 className=" text-gray-700">Give a rating </h1>
               <ReactStars

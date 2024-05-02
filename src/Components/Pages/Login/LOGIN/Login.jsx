@@ -93,7 +93,7 @@ const Login = () => {
               />{" "}
             </form>
             <p className="text-xl text-white">{error}</p>
-            <GoggleLogin></GoggleLogin>
+            <GoggleLogin from={from}></GoggleLogin>
             <p className="text-gray-600">
               Not Registered yet ?
               <Link to={"/signup"} className="text-[#55D1E6] underline">

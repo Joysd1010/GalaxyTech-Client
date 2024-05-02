@@ -12,7 +12,7 @@ const Laptop = () => {
   const axiosPoint = useAxiosPublic();
   const location = useLocation();
   const [sideMenu,setSideMenu]=useState(false)
-  const param = location.state;
+  const param = location.state||'All';
   const [data, setData] = useState([]);
   const [MinPrice, setMinPrice] = useState(0);
   const [MaxPrice, setMaxPrice] = useState(0);
@@ -285,7 +285,7 @@ const Laptop = () => {
             <div>
               <select
                 onChange={(event) => handleSortByPrice(event.target.value)}
-                className="bg-slate-200 md:w-42 w-24 rounded-md px-3 py-2 outline-none"
+                className="bg-slate-200 md:w-52 w-24 rounded-md px-3 py-2 outline-none"
               >
                 <option value="1">Default</option>
                 <option value="discountAsc">Price (low to high)</option>
@@ -319,6 +319,8 @@ const Laptop = () => {
             />
           </div>
         )}
+
+        {/* ----------------------Pagination --------------------------------- */}
 
         <div className="pagination flex gap-6 py-6 ">
           <button

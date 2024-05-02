@@ -3,12 +3,12 @@ import useAuth from "../../../Hooks/useAuth";
 import { FcGoogle } from "react-icons/fc";
 import Swal from "sweetalert2";
 
-const Google = () => {
+const Google = ({from}) => {
   const { googleSignIn } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
-  const from = location.state || "/";
+  
 
   const handleGoogleSignIn = () => {
     googleSignIn()

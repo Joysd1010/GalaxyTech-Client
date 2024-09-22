@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
-import useReview from "../../../Hooks/useReview";
+import useReview from "./useReview";
 import { TbReportSearch } from "react-icons/tb";
-import useAuth from "../../../Hooks/useAuth";
+import useAuth from "./useAuth";
 import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const LaptopReview = ({ state }) => {
+const AddReview = ({ state }) => {
   const [Rating, setRating] = useState(0);
 
   const [Review, refetch] = useReview(state);
@@ -191,4 +191,4 @@ const LaptopReview = ({ state }) => {
   );
 };
 
-export default LaptopReview;
+export default AddReview;

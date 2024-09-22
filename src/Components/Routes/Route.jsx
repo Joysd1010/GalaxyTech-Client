@@ -12,6 +12,7 @@ import Phone from "../Pages/Products/Phone/Phone";
 import Ram from "../Pages/Products/Ram/Ram";
 import BuyNow from "../Pages/Products/BuyNowPage/BuyNow";
 import PrivateRoute from "../Pages/PrivateRoute/Privateroute";
+import DetailpageG from "../Pages/Products/GPU/DetailpageG";
 
 const Router = createBrowserRouter([
   {
@@ -42,6 +43,12 @@ const Router = createBrowserRouter([
         element: <DetailPage/>,
         loader: ({ params }) =>
         fetch(`http://localhost:5000/laptop/detail/${params.id}`)      
+      },
+      
+      { path: "gpuID/:id",
+        element: <DetailpageG/>,
+        loader: ({ params }) =>
+        fetch(`http://localhost:5000/gpu/detail/${params.id}`)      
       },
       {
         path: "monitor",

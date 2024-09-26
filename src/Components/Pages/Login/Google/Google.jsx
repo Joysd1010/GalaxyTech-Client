@@ -22,7 +22,7 @@ const Google = ({from}) => {
           email: googleUser.email,
         };
 
-        fetch("http://localhost:5000/user", {
+        fetch("https://galaxytechserver.onrender.com/user", {
           method: "POST",
           headers: {
             "content-type": "application/json",

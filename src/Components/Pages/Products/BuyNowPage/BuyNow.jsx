@@ -39,7 +39,7 @@ const CheckOutForm = ({
   }, []);
 
   const updateProductQuantity = async (element) => {
-    const url = `http://localhost:5000/payment/update/${element.collection}/${element.id}`;
+    const url = `https://galaxytechserver.onrender.com/payment/update/${element.collection}/${element.id}`;
     // const updateValue = 20;
     const updateValue = element.quantity - 1;
 
@@ -78,7 +78,7 @@ const CheckOutForm = ({
   };
 
   const SaveToDB = (data) => {
-    fetch("http://localhost:5000/payment/save", {
+    fetch("https://galaxytechserver.onrender.com/payment/save", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

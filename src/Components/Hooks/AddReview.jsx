@@ -49,7 +49,7 @@ const AddReview = ({ state }) => {
       Rating: Rating,
     };
 
-    fetch("http://localhost:5000/review", {
+    fetch("https://galaxytechserver.onrender.com/review", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(newReview),

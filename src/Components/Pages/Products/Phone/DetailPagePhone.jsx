@@ -1,68 +1,58 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, useLoaderData, useLocation, useNavigate } from "react-router-dom";
+import {
+  Link,
+  useLoaderData,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { RiMessage2Fill } from "react-icons/ri";
 import Swal from "sweetalert2";
 import { FaArrowUp } from "react-icons/fa";
 import useAuth from "../../../Hooks/useAuth";
 import useQNA from "../../../Hooks/useQNA";
-import AddReview from "./../../../Hooks/AddReview";
+import AddReview from "../../../Hooks/AddReview";
 
-const DetailPage = () => {
-  const laptop = useLoaderData();
-  const location=useLocation()
+const DetailPagePhone = () => {
+  const GPU = useLoaderData();
+  const location = useLocation();
+  const navigate = useNavigate();
   // --------------------------------------------declaring all  the variables and functions---------------------------
   const {
-    specialFeatures,
-    discountedPrice,
-    emiPrice,
-    regularPrice,
-    
-    ram,
-    brand,
-    generation,
-    display,
-    cache,
-    modelname,
-  } = laptop?.keyFeatures;
-
-  const { model, clockSpeed, core, thread } = laptop?.processor;
-  const { size, resolution, displayFeatures } = laptop?.display;
-  const {
-    ramSize,
-    ramFrequency,
-    ramType,
-    totalRamSlots,
-    maxRamCapacity,
-    storageType,
-    storageSize,
-    ssdSlot,
-    extraSsdSlot,
-    readSpeed,
-    writeSpeed,
-  } = laptop?.memory;
-  const { memorySize, memoryType } = laptop?.graphics;
-  const { keyboardFeatures, touchpadFeatures } = laptop?.keyboard;
-  const { webcamFeature, audioFeature } = laptop?.camera;
-  const {
-    opticalDrive,
-    hdmiFeature,
-    usbFeatures,
-    headphonePort,
-    audioPort,
-    ioPorts,
-  } = laptop?.ports;
-  const { speakerFeature, microphoneFeature } = laptop?.audio;
-  const { lanDetails, wifiDetails, bluetoothDetails } = laptop?.network;
-  const { color, weight, thickness, dimensions } = laptop?.physicalDetails;
-  const { capacity, adapterWatt, adapterType } = laptop?.batteryDetails;
-  const { os, architecture } = laptop?.osDetails;
-  const { warrantyPeriod, warrantyType } = laptop?.warrantyDetails;
-  const { user } = useAuth();
-  const navigate=useNavigate()
-  // -----------------------------------------all handlers  are in this file------------------------------
-  const [QNA, refetch] = useQNA(laptop._id);
-  const [selectedImage, setSelectedImage] = useState(laptop.imageLinks[0]);
+    keyFeatures: {
+      name,
+      brandName,
+      modelName,
+      price: { regular, discount, emi },
+      chipset,
+      core,
+      coreClockSpeed,
+      cudaCores,
+      displayPorts,
+      memoryType,
+      memorySize,
+      memoryClock,
+      memoryInterface,
+      memoryBusType,
+    },
+    display: {
+      hdmi,
+      multiDisplay,
+      connectors,
+      recommendedPSU,
+      resolution,
+      specialFeatures,
+    },
+    api: { directX, openGL },
+    physical: { dimension, weight },
+    images,
+    warrantyDetails: { warrantyPeriod, warrantyType },
+    quantity,
+  } = GPU;
+console.log(connectors,multiDisplay)
+  // // -----------------------------------------all handlers  are in this file------------------------------
+  const [QNA, refetch] = useQNA(GPU._id);
+  const [selectedImage, setSelectedImage] = useState(images[0]);
 
   const handleThumbnailClick = (image) => {
     setSelectedImage(image);
@@ -93,7 +83,7 @@ const DetailPage = () => {
       Question: inputValue,
       userName: user?.displayName,
       Ans: "no",
-      Product: laptop._id,
+      Product: GPU._id,
     };
     console.log(newQuestion);
     fetch("https://galaxytechserver.onrender.com/qna", {
@@ -127,13 +117,13 @@ const DetailPage = () => {
       });
   };
 
-  // Function to handle Buy Now option click
+  // ------------------------------------------------Function to handle Buy Now option click-----------------------------------------------------
   const handleBuyNowClick = () => {
     setBuyNowChecked(true);
     setEmiChecked(false);
   };
 
-  // Function to handle EMI option click
+  // ------------------------------------------------ Function to handle EMI option click------------------------------------------------
   const handleEmiClick = () => {
     setEmiChecked(true);
     setBuyNowChecked(false);
@@ -141,11 +131,11 @@ const DetailPage = () => {
   useEffect(() => {
     const getRelated = async () => {
       try {
-        const response = await useAxiosPublic().get(`/laptop/related`);
+        const response = await useAxiosPublic().get(`/GPU/related`);
 
         setRelated(response.data);
       } catch (error) {
-        console.error("Error fetching laptop data:", error);
+        console.error("Error fetching GPU data:", error);
       }
     };
     getRelated();
@@ -169,7 +159,7 @@ const DetailPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!emiChecked&&!buyNowChecked){
+    if (!emiChecked && !buyNowChecked) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -179,15 +169,27 @@ const DetailPage = () => {
       });
       return;
     }
-    const image=laptop.imageLinks[1]
-    const name=`${modelname} ${brand} ${display} laptop`
-    const price = buyNowChecked?discountedPrice:emiPrice
-    const products={price,name,image ,id:laptop._id,collection:'Laptop' };
-    
-    navigate('/buynow',{state:{from:location.pathname,prop:[{price,name,image,quantity:laptop.quantity ,id:laptop._id,collection:'Laptop'}]}})
-    
+
+    const image = images[1];
+    const ProductName = `${name} ${memorySize} ${memoryType} Graphics Card`;
+    const ProductPrice = buyNowChecked ? discount : emi;
+    navigate("/buynow", {
+      state: {
+        from: location.pathname,
+        prop: [
+          {
+            price: ProductPrice,
+            name: ProductName,
+            image,
+            quantity: quantity,
+            id: GPU._id,
+            collection: "GraphicsCard",
+          },
+        ],
+      },
+    });
   };
- 
+
   const scrollToRef = (ref, speed) => {
     const targetPosition = ref.current.offsetTop;
     const currentPosition = window.scrollY;
@@ -211,13 +213,17 @@ const DetailPage = () => {
   const qnaRef = useRef(null);
   const reviewRef = useRef(null);
   return (
-    < >
+    <>
       <div className=" px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 pb-4">
         <div>
-          <img src={selectedImage} className="md:ml-14" alt="Main Image" />
+          <img
+            src={selectedImage}
+            className="md:ml-14 max-w-lg"
+            alt="Main Image"
+          />
 
-          <div className=" flex gap-2 justify-center">
-            {laptop.imageLinks.map((image, index) => (
+          <div className=" flex gap-2 py-5 justify-center">
+            {images.map((image, index) => (
               <img
                 className=" cursor-pointer w-20 px-3 border-2 border-blue-100 rounded-md"
                 key={index}
@@ -230,52 +236,51 @@ const DetailPage = () => {
         </div>
         <div className="pt-5">
           <h1 className=" text-2xl text-blue-700">
-            {modelname} {brand} {display}
+            {name} {memorySize} {memoryType} Graphics Card
           </h1>
           <div className="flex flex-wrap gap-5 py-3">
-            
             <h1 className=" bg-blue-50 px-3 text-sm text-slate-500 rounded-full">
-              Price:{" "}
-              <span className="text-lg text-black">{discountedPrice}$</span>
+              Price: <span className="text-lg text-black">{discount}$</span>
             </h1>
             <h1 className=" bg-blue-50 px-3  text-sm text-slate-500 rounded-full">
               Regular Price:{" "}
-              <span className="text-lg text-black">{regularPrice}$</span>
+              <span className="text-lg text-black">{regular}$</span>
             </h1>
             <h1 className=" bg-blue-50 px-3 text-sm text-slate-500 rounded-full">
               Status:{" "}
               <span className="text-lg text-black">
-                {laptop.quantity > 0 ? "In stock" : "Out of Stock"}
+                {quantity > 0 ? "In stock" : "Out of Stock"}
               </span>
             </h1>
             <h1 className=" bg-blue-50 px-3 text-sm text-slate-500 rounded-full">
-              Brand: <span className="text-lg text-black">{brand}</span>
+              Brand: <span className="text-lg text-black">{brandName}</span>
             </h1>
           </div>
           <section>
             <h1 className="text-xl py-3">Key Features</h1>
             <h1 className=" pt-1">
               {" "}
-              <span className=" text-slate-600"> Modelname :</span> {modelname}
+              <span className=" text-slate-600"> Model Name :</span> {modelName}
             </h1>
             <h1 className=" pt-1">
               {" "}
-              <span className=" text-slate-600"> Processor :</span> {model}{" "}
-              {laptop.processor.brand}
-              {generation}({cache}MB, {clockSpeed})
+              <span className=" text-slate-600"> Boost Clock :</span>{" "}
+              {coreClockSpeed}
             </h1>
             <h1 className=" pt-1">
               {" "}
-              <span className=" text-slate-600"> Ram :</span> {ram}GB {ramType}
+              <span className=" text-slate-600"> Type :</span> {memoryInterface}{" "}
+              {memoryType}
             </h1>
             <h1 className=" pt-1">
               {" "}
-              <span className=" text-slate-600"> Storage :</span>
-              {storageType}
+              <span className=" text-slate-600"> Cuda Cores :</span>
+              {cudaCores}
             </h1>
             <h1 className=" pt-1">
               {" "}
-              <span className=" text-slate-600"> Display :</span> {display}
+              <span className=" text-slate-600"> Display Ports :</span>{" "}
+              {displayPorts.join(", ")}
             </h1>
             <h1 className=" pt-1">
               {" "}
@@ -306,7 +311,7 @@ const DetailPage = () => {
                     className="radio checked:bg-blue-500"
                   />
                   <div>
-                    <h1 className="text-xl">{discountedPrice}$</h1>
+                    <h1 className="text-xl">{discount}$</h1>
                     <h1>Cash discount price</h1>
                     <h1 className="text-slate-400">Online / cash payment</h1>
                   </div>
@@ -332,22 +337,27 @@ const DetailPage = () => {
                     className="radio checked:bg-blue-500"
                   />
                   <div>
-                    <h1 className="text-xl">{emiPrice}$ / month</h1>
+                    <h1 className="text-xl">{emi}$ / month</h1>
                     <h1>EMI in regular price</h1>
-                    <h1 className="text-slate-400">{regularPrice}$</h1>
+                    <h1 className="text-slate-400">{regular}$</h1>
                   </div>
                 </label>
               </div>
             </section>
             <section className=" flex gap-3 py-5">
               <button
-                type="submit" 
-                disabled={!laptop.quantity>0}
+                type="submit"
+                disabled={!quantity > 0}
                 className="btn bg-blue-700 text-white hover:bg-white border-white border-2 hover:border-blue-700 hover:border-2 hover:text-blue-600"
               >
                 Buy Now
               </button>
-              <button   disabled={!laptop.quantity>0} className="btn bg-slate-300 hover:bg-gray-200 border-0 hover:text-black">Add to cart</button>
+              <button
+                disabled={!quantity > 0}
+                className="btn bg-slate-300 hover:bg-gray-200 border-0 hover:text-black"
+              >
+                Add to cart
+              </button>
             </section>
           </form>
         </div>
@@ -391,255 +401,151 @@ const DetailPage = () => {
             <h1 className=" font-semibold text-xl py-4 ">Specification</h1>
             <div>
               <h1 className="bg-blue-50 text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Processor
+                Video Memory Specifications
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Processor Brand</span>{" "}
-                <span className=" col-span-2">{laptop?.processor.brand}</span>{" "}
+                <span className=" text-slate-600">Memory Type</span>{" "}
+                <span className=" col-span-2">{memoryType}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Processor Model</span>{" "}
-                <span className=" col-span-2">{model}</span>{" "}
+                <span className=" text-slate-600">Memory Size</span>{" "}
+                <span className=" col-span-2">{memorySize}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Generation</span>{" "}
-                <span className=" col-span-2">{laptop?.processor.generation} Gen</span>{" "}
+                <span className=" text-slate-600">Resolution</span>{" "}
+                <span className=" col-span-2">{resolution} </span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Processor Frequency</span>{" "}
-                <span className=" col-span-2">{clockSpeed}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Processor Core</span>{" "}
+                <span className=" text-slate-600">Core</span>{" "}
                 <span className=" col-span-2">{core}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Processor Thread</span>{" "}
-                <span className=" col-span-2">{thread}</span>{" "}
+                <span className=" text-slate-600">Memory Interface</span>{" "}
+                <span className=" col-span-2">{memoryInterface}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">CPU Cache</span>{" "}
-                <span className=" col-span-2">{cache}MB</span>{" "}
+                <span className=" text-slate-600">Memory Clock</span>{" "}
+                <span className=" col-span-2">{memoryClock}</span>{" "}
+              </h1>
+              <hr className="border-1" />
+              <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
+                <span className=" text-slate-600">Bus Type</span>{" "}
+                <span className=" col-span-2">{memoryBusType}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
             <div>
               <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Display
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Display Size</span>{" "}
-                <span className=" col-span-2">{size}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Display Resolution</span>{" "}
-                <span className=" col-span-2">{resolution}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Display Features</span>{" "}
-                <span className=" col-span-2">{displayFeatures?.join(", ")}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-            </div>
-            <div>
-              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Memory
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">RAM Size</span>{" "}
-                <span className=" col-span-2">{ramSize} GB</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">RAM Type</span>{" "}
-               <span className=" col-span-2">{ramType}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">RAM Frequency</span>{" "}
-               <span className=" col-span-2">{ramFrequency} MHz</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">RAM Slot</span>{" "}
-               <span className=" col-span-2">{totalRamSlots}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Max Capacity</span>{" "}
-               <span className=" col-span-2">{maxRamCapacity} GB</span>{" "}
-              </h1>
-              <hr className="border-1" />
-            </div>
-            <div>
-              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Storage
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Storage Type</span>{" "}
-               <span className=" col-span-2">{storageType}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Capacity</span>{" "}
-               <span className=" col-span-2">
-                  {storageSize == 1 ? "1000 GB" : storageSize + " GB"}
-                </span>{" "}
-              </h1>
-              <hr className="border-1" />
-
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">SSD Slot</span>{" "}
-               <span className=" col-span-2">{ssdSlot}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Storage Expansion Slot</span>{" "}
-               <span className=" col-span-2">{extraSsdSlot > 0 ? "Yes" : "No"}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Read/Write Speed</span>{" "}
-               <span className=" col-span-2">
-                  {readSpeed}/{writeSpeed} Mbps
-                </span>{" "}
-              </h1>
-              <hr className="border-1" />
-            </div>
-            <div>
-              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Graphics
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Graphics Brand</span>{" "}
-               <span className=" col-span-2">{laptop?.graphics.brand}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Model</span>{" "}
-               <span className=" col-span-2">{laptop?.graphics.model}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Memory Size</span>{" "}
-               <span className=" col-span-2">{memorySize} GB</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Memory type</span>{" "}
-               <span className=" col-span-2">{memoryType}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-            </div>
-            <div>
-              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Keyboard
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Keyboard</span>{" "}
-               <span className=" col-span-2">{keyboardFeatures.join(", ")}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Touch Pad</span>{" "}
-               <span className=" col-span-2">{touchpadFeatures?.join(", ")}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-            </div>
-            <div>
-              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Camera & Audio
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">WebCam</span>{" "}
-               <span className=" col-span-2">{webcamFeature}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Audio</span>{" "}
-               <span className=" col-span-2">{audioFeature}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Speaker</span>{" "}
-               <span className=" col-span-2">{speakerFeature}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Audio</span>{" "}
-               <span className=" col-span-2">{microphoneFeature}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-            </div>
-            <div>
-              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                I/O Ports
+                Display Ports
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">HDMI</span>{" "}
-               <span className=" col-span-2">{hdmiFeature ? "Yes" : "No"}</span>{" "}
+                <span className=" col-span-2">
+                  {displayPorts.some((item) =>
+                    item.toLowerCase().includes("hdmi")
+                  )
+                    ? "Yes"
+                    : "No"}
+                </span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Audio Port</span>{" "}
-               <span className=" col-span-2">{audioPort ? "Yes" : "No"}</span>{" "}
+                <span className=" text-slate-600">DVI</span>{" "}
+                <span className=" col-span-2">
+                  {displayPorts.some((item) =>
+                    item.toLowerCase().includes("dvi")
+                  )
+                    ? "Yes"
+                    : "No"}
+                </span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">HeadPhone</span>{" "}
-               <span className=" col-span-2">{headphonePort ? "Yes" : "No"}</span>{" "}
+                <span className=" text-slate-600">VGA</span>{" "}
+                <span className=" col-span-2">
+                  {displayPorts.some((item) =>
+                    item.toLowerCase().includes("vga")
+                  )
+                    ? "Yes"
+                    : "No"}
+                </span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">USB</span>{" "}
-               <span className=" col-span-2">{usbFeatures.join(", ")}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Optical Drive</span>{" "}
-               <span className=" col-span-2">{opticalDrive ? "Yes" : "No"}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">I/O Ports</span>{" "}
-               <span className=" col-span-2">{ioPorts.join(", ")}</span>{" "}
+                <span className=" text-slate-600">DisplayPort</span>{" "}
+                <span className=" col-span-2">
+                  {displayPorts.some((item) =>
+                    item.toLowerCase().includes("display")
+                  )
+                    ? "Yes"
+                    : "No"}
+                </span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
             <div>
               <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Network & Connectivity
+              Power Specifications
+              </h1>
+              <hr className="border-1" />
+              <h1 className=" px-5  py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
+                <span className=" text-slate-600">Recommended PSU</span>{" "}
+                <span className=" col-span-2">{recommendedPSU}</span>{" "}
+              </h1>
+              <hr className="border-1" />
+            </div>
+            
+            <div>
+              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
+              Interface
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">LAN Connect</span>{" "}
-               <span className=" col-span-2">{lanDetails}</span>{" "}
+                <span className=" text-slate-600">HDMI</span>{" "}
+                <span className=" col-span-2">
+                  {/* {hdmiFeature ? "Yes" : "No"} */}
+
+                  {hdmi}
+                </span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Wifi</span>{" "}
-               <span className=" col-span-2">{wifiDetails}</span>{" "}
+                <span className=" text-slate-600">Ports</span>{" "}
+                <span className=" col-span-2">{connectors.join(', ')}</span>{" "}
+              </h1>
+              
+              <hr className="border-1" />
+              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
+                <span className=" text-slate-600">Multiple display</span>{" "}
+                <span className=" col-span-2">{multiDisplay?"Yes":"No"}</span>{" "}
+
+              </h1>
+              
+              <hr className="border-1" />
+              
+              
+            </div>
+            <div>
+              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
+              Application Programming Interfaces
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">BlueTooth</span>{" "}
-               <span className=" col-span-2">{bluetoothDetails}</span>{" "}
+                <span className=" text-slate-600">Direct XL</span>{" "}
+                <span className=" col-span-2">{directX}</span>{" "}
+              </h1>
+             
+              <hr className="border-1" />
+              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
+                <span className=" text-slate-600">Open GL</span>{" "}
+                <span className=" col-span-2">{openGL}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -648,60 +554,16 @@ const DetailPage = () => {
                 Physical Details
               </h1>
               <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Color</span>{" "}
-               <span className=" col-span-2">{color}</span>{" "}
-              </h1>
-              <hr className="border-1" />
+             
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Weight</span>{" "}
-               <span className=" col-span-2">{weight}</span>{" "}
+                <span className=" col-span-2">{weight}</span>{" "}
               </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Thickness</span>{" "}
-               <span className=" col-span-2">{thickness}</span>{" "}
-              </h1>
+              
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Dimension</span>{" "}
-               <span className=" col-span-2">{dimensions}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-            </div>
-            <div>
-              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Power
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Battery Capacity</span>{" "}
-               <span className=" col-span-2">{capacity}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Adapter</span>{" "}
-               <span className=" col-span-2">{adapterType}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Charging Watt</span>{" "}
-               <span className=" col-span-2">{adapterWatt} Watt</span>{" "}
-              </h1>
-              <hr className="border-1" />
-            </div>
-            <div>
-              <h1 className="bg-blue-50 mt-3  text-blue-700 px-5 py-2 rounded-md font-semibold">
-                Operating System
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">OS</span><span className=" col-span-2">{os}</span>{" "}
-              </h1>
-              <hr className="border-1" />
-              <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
-                <span className=" text-slate-600">Architecture</span>{" "}
-               <span className=" col-span-2">{architecture}</span>{" "}
+                <span className=" col-span-2">{dimension}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -712,12 +574,12 @@ const DetailPage = () => {
               <hr className="border-1" />
               <h1 className=" px-5 py-2  hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Warranty </span>{" "}
-               <span className=" col-span-2">{warrantyType}</span>{" "}
+                <span className=" col-span-2">{warrantyType}</span>{" "}
               </h1>
               <hr className="border-1" />
               <h1 className=" px-5 py-2 mb-5 hover:bg-blue-50 grid grid-cols-3 gap-28">
                 <span className=" text-slate-600">Warranty Period</span>{" "}
-               <span className=" col-span-2">{warrantyPeriod}</span>{" "}
+                <span className=" col-span-2">{warrantyPeriod}</span>{" "}
               </h1>
               <hr className="border-1" />
             </div>
@@ -791,11 +653,13 @@ const DetailPage = () => {
               )}
             </div>
 
-            {/* ---------------------modal------------------------------ */}
+            {/* ---------------------modal------------------------------*/}
 
             <dialog id="my_modal_2" className="modal">
               <div className="modal-box bg-indigo-50">
-                <h3 className="font-bold text-gray-800 text-lg">Ask a Question!</h3>
+                <h3 className="font-bold text-gray-800 text-lg">
+                  Ask a Question!
+                </h3>
                 <form onSubmit={handleQnaSubmit}>
                   <input
                     type="text"
@@ -818,8 +682,7 @@ const DetailPage = () => {
             {/* ------------------------------modal---------------------------- */}
           </section>
           <section ref={reviewRef} id="review">
-            {/* <LaptopReview state={laptop._id} /> */}
-            <AddReview state={laptop._id}/>
+            <AddReview state={GPU._id} />
           </section>
         </div>
         <div className="">
@@ -828,13 +691,13 @@ const DetailPage = () => {
             Related Products
           </h1>
           <hr />
-          {relatedData?.map((item) => {
+          {/* {relatedData?.map((item) => {
             return (
               <div key={item._id} className=" bg-white py-5 px-5">
                 <div className=" flex gap-5 items-center">
                   <img src={item.imageLinks[0]} className="w-1/4" alt="" />
                   <div>
-                    <Link to={`/laptopId/${item._id}`}>
+                    <Link to={`/GPUId/${item._id}`}>
                       <h1 className=" font-extrabold py-2 text-sm hover:underline hover:text-red-600 duration-200">
                         {item.keyFeatures.modelname} {item.keyFeatures.brand}{" "}
                         {item.processor.model} {item.keyFeatures.display}
@@ -848,7 +711,7 @@ const DetailPage = () => {
                 <hr />
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
 
@@ -862,4 +725,4 @@ const DetailPage = () => {
   );
 };
 
-export default DetailPage;
+export default DetailPagePhone;

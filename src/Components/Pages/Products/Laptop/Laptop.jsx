@@ -334,8 +334,9 @@ const Laptop = () => {
             <GrChapterPrevious />
             Prev
           </button>
-          {pageNumber.map((pa) => (
+          {pageNumber.map((pa,index) => (
             <button
+              key={index}
               onClick={() => setPage(pa)}
               className={`flex ${
                 pa == page

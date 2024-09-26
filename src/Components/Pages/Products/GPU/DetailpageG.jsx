@@ -86,7 +86,7 @@ console.log(connectors,multiDisplay)
       Product: GPU._id,
     };
     console.log(newQuestion);
-    fetch("http://localhost:5000/qna", {
+    fetch("https://galaxytechserver.onrender.com/qna", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(newQuestion),

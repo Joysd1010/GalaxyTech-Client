@@ -22,7 +22,7 @@ const Signup = () => {
 
 
   const fetchSignup = async(user) => {
-    await fetch("http://localhost:5000/user", {
+    await fetch("https://galaxytechserver.onrender.com/user", {
         method: "POST",
         headers: {
           "content-type": "application/json",

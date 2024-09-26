@@ -82,7 +82,7 @@ const LapTopCard = ({ state }) => {
 
       navigate("/login", { state: { from: location.pathname } });
     } else {
-      fetch("http://localhost:5000/cart", {
+      fetch("https://galaxytechserver.onrender.com/cart", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(newData),

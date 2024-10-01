@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import PhoneCard from "./PhoneCard";
 import { FaHome } from "react-icons/fa";
+import { BiDotsVertical } from "react-icons/bi";
+import { RxCross1 } from "react-icons/rx";
 
 const Phone = () => {
   const axiosPoint = useAxiosPublic();
@@ -15,6 +17,7 @@ const Phone = () => {
   const postPerPage = 12;
   const [filterState, setStateNumber] = useState(0);
   const [MaxPrice, setMaxPrice] = useState(0);
+  const [sideMenu,setSideMenu]=useState(false)
 
   const param = location.state;
   const setCurrentPost = () => {
@@ -215,6 +218,9 @@ const Phone = () => {
     setCurrentPost();
   }, [param]);
 
+  const handleSideMenu=()=>{
+    setSideMenu(!sideMenu)
+  }
   return (
     <div className="bg-indigo-100 px-10 py-5 grid grid-cols-5 gap-2">
       <div className=" flex flex-col gap-2">
@@ -499,6 +505,11 @@ const Phone = () => {
                 <option value="3"> Price (high to low)</option>
               </select>
             </div>
+          </div>
+          <div onClick={handleSideMenu} className=" md:hidden block ">
+          {sideMenu?<RxCross1   size={30}/>:
+            <BiDotsVertical  size={30}/>
+          }
           </div>
         </div>
         {UsePhone?.length > 0 ? (

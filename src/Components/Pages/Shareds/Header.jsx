@@ -182,7 +182,7 @@ import { ImMenu } from "react-icons/im";const Header = () => {
               )}
             </div>
           </div>
-          <Link>
+          <Link className=" md:block hidden">
             <button className="group relative px-5 py-2.5 inline-flex justify-center items-center  rounded-md bg-gradient-to-r from-blue-800 via-red-500 to-violet-800 tracking-wide text-base text-white font-medium antialiased overflow-hidden active:top-0.5 focus:outline-none">
               {/* button::before */}
               <span className="absolute top-1/2 left-0 w-full opacity-0 transition-all duration-300 ease-in-out transform -translate-x-full -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-0">

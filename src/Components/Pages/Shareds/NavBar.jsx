@@ -103,7 +103,7 @@ const NavBar = () => {
   return (
     <div className=" px-5 md:px-20 z-40 overflow-x-auto   md:py-3 shadow-md sticky flex justify-around gap-x-8 md:overflow-x-visible">
 
-      <DeskTop />
+      {/* <DeskTop /> */}
       <NavTemplate
         element={LaptopJson}
         header={{ value: "Laptop", path: "laptop", param: "All" }}
@@ -112,14 +112,14 @@ const NavBar = () => {
         element={PhoneJson}
         header={{ value: "Phone", path: "phone", param: "All" }}
       />
-      <NavTemplate
+      {/* <NavTemplate
         element={ComponentJson}
         header={{
           value: "Components",
           path: "Component",
           param: "All Components",
         }}
-      />
+      /> */}
       <NavTemplate
         element={MonitorJson}
         header={{ value: "Monitor", path: "monitor", param: "All" }}

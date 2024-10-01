@@ -4,6 +4,7 @@ import { IoMdCart } from "react-icons/io";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useCart from "../../../Hooks/useCart";
 import useAuth from "../../../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 const GpuCard = ({ state }) => {
   const {
@@ -88,6 +89,7 @@ const {user}=useAuth()
         .then((res) => res.json())
         .then((data) => {
           if (data.insertedId) {
+            console.log(data)
             refetch();
             Swal.fire({
               position: "center",

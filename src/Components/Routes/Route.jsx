@@ -14,6 +14,7 @@ import BuyNow from "../Pages/Products/BuyNowPage/BuyNow";
 import PrivateRoute from "../Pages/PrivateRoute/Privateroute";
 import DetailpageG from "../Pages/Products/GPU/DetailpageG";
 import DetailPagePhone from "../Pages/Products/Phone/DetailPagePhone";
+import Demo from "../Pages/Products/Demo/Demo";
 
 const Router = createBrowserRouter([
   {
@@ -68,27 +69,27 @@ const Router = createBrowserRouter([
       },
       {
         path: "SSD",
-        element: <p>this is the SSD</p>
+        element: <Demo/>
       
       },
       {
         path: "HDD",
-        element: <p>this is the HDD</p>
+        element: <Demo/>
       
       },
       {
         path: "Casing",
-        element: <p>this is the Casing</p>
+        element: <Demo/>
       
       },
       {
         path: "MotherBoard",
-        element:<p>this is the Motherboard</p>
+        element:<Demo/>
       
       },
       {
         path: "CpuCooler",
-        element:<p>this is the cpuColler</p>
+        element:<Demo/>
       
       },
       {
@@ -98,23 +99,23 @@ const Router = createBrowserRouter([
       },
       {
         path: "CasingCooler",
-        element:<p>this is the Casing Cooler</p>
+        element:<Demo/>
       
       },
       {
         path: "PSU",
-        element: <p>this is the Psu</p>
+        element: <Demo/>
       
       },
       
       {
         path: "Processor",
-        element: <p>this is the processor</p>
+        element: <Demo/>
       
       },
       {
         path: "Component",
-        element: <p>this is the Component</p>
+        element: <Demo/>
       
       },
       

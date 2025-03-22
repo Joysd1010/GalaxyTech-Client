@@ -41,13 +41,13 @@ const NavBar = () => {
     { value: "All", path: "phone", param: "All" },
   ];
   const MotherJson = [
-    { value: "Asus", path: "mother/Asus" },
-    { value: "MSI", path: "mother/MSI" },
-    { value: "GigaByte", path: "mother/GigaByte" },
-    { value: "ASRock", path: "mother/ASRock" },
-    { value: "BioStar", path: "mother/BioStar" },
-    { value: "EVGA", path: "mother/EVGA" },
-    { value: "All", path: "mother" },
+    { value: "Asus", path: "mother/", param:"Asus" },
+    { value: "MSI", path: "mother/", param:"MSI" },
+    { value: "GigaByte", path: "mother/" , param:"GigaByte"},
+    { value: "ASRock", path: "mother/" , param:"ASRock"},
+    { value: "BioStar", path: "mother/" , param:"BioStar"},
+    { value: "EVGA", path: "mother/", param:"EVGA" },
+    { value: "All", path: "mother", param:"all" },
   ];
   const ComponentJson = [
     { value: "Processor", path: "Processor", param: "All" },
@@ -63,19 +63,19 @@ const NavBar = () => {
     { value: "All", path: "Component", param: "All" },
   ];
   const SSDJson = [
-    { value: "Adata", path: "ssd/Adata" },
-    { value: "Samsung", path: "ssd/Samsung" },
-    { value: "Hp", path: "ssd/Hp" },
-    { value: "WesternDigital", path: "ssd/WesternDigital" },
-    { value: "Sandisk", path: "ssd/Sandisk" },
-    { value: "All", path: "ssd" },
+    { value: "Adata", path: "ssd/", param:"Adata" },
+    { value: "Samsung", path: "ssd/", param:"Samsung" },
+    { value: "Hp", path: "ssd/" , param:"Hp"},
+    { value: "WesternDigital", path: "ssd/" , param:"WesternDigital"},
+    { value: "Sandisk", path: "ssd/" , param:"Sandisk"},
+    { value: "All", path: "ssd" , param:"all"},
   ];
   const SpeakerJson = [
-    { value: "JBL", path: "speaker/JBL" },
-    { value: "Razer", path: "speaker/Razer" },
-    { value: "Sony", path: "speaker/Sony" },
-    { value: "Logitech", path: "speaker/Logitech" },
-    { value: "All", path: "speaker" },
+    { value: "JBL", path: "speaker/" , param:"JBL"},
+    { value: "Razer", path: "speaker/", param:"Razer" },
+    { value: "Sony", path: "speaker/" , param:"Sony"},
+    { value: "Logitech", path: "speaker/", param:"Logitech" },
+    { value: "All", path: "speaker" , param:"all"},
   ];
   const UpsJson = [
     { value: "CyberPower", path: "ups/CyberPower" },
@@ -94,11 +94,11 @@ const NavBar = () => {
   ];
 
   const AccessoriesJson = [
-    { value: "Headphone", path: "Headphone" },
-    { value: "Mouse", path: "mouse" },
-    { value: "Keyboard", path: "keyboard" },
-    { value: "All", path: "accessories" },
-  ];
+  { value: "Headphone", param: "Headphone", path: "accessories" },
+{ value: "Mouse", param: "mouse", path: "accessories" },
+{ value: "Keyboard", param: "keyboard", path: "accessories" },
+{ value: "All", param: "accessories", path: "accessories" }
+];
 
   return (
     <div className=" px-5 md:px-20 z-40 overflow-x-auto   md:py-3 shadow-md sticky flex justify-around gap-x-8 md:overflow-x-visible">

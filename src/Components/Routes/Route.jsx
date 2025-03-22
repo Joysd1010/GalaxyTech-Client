@@ -83,12 +83,12 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "MotherBoard",
+        path: "mother",
         element:<Demo/>
       
       },
       {
-        path: "CpuCooler",
+        path: "speaker",
         element:<Demo/>
       
       },
@@ -103,13 +103,13 @@ const Router = createBrowserRouter([
       
       },
       {
-        path: "PSU",
+        path: "ups",
         element: <Demo/>
       
       },
       
       {
-        path: "Processor",
+        path: "accessories",
         element: <Demo/>
       
       },
